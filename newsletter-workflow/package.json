@@ -7,6 +7,7 @@
   "scripts": {
     "auth:gmail": "tsx src/auth-gmail.ts",
     "digest": "tsx src/index.ts",
+    "inspect:grafana": "tsx src/inspect-grafana.ts",
     "inspect:gmail": "tsx src/inspect-gmail.ts",
     "inspect:links": "tsx src/inspect-links.ts",
     "typecheck": "tsc --noEmit"
@@ -18,6 +19,7 @@
     "googleapis": "^144.0.0",
     "jsdom": "^24.1.3",
     "openai": "^4.104.0",
+    "pino": "^9.6.0",
     "turndown": "^7.2.0"
   },
   "devDependencies": {

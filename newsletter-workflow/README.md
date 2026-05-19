@@ -60,7 +60,44 @@ GMAIL_MAX_RESULTS=20
 GMAIL_NEWER_THAN_DAYS=2
 OPENAI_API_KEY=
 OPENAI_MODEL=gpt-4o-mini
+LOG_LEVEL=info
 ```
+
+## Observabilidade
+
+O workflow usa logs estruturados com `pino`. Sem configuração extra, os logs aparecem no console. Para enviar os eventos para Grafana Cloud Loki, configure:
+
+```bash
+GRAFANA_LOKI_URL=
+GRAFANA_LOKI_USER=
+GRAFANA_LOKI_TOKEN=
+```
+
+No Grafana Cloud, esses valores ficam nos detalhes do serviço Loki da sua stack. A URL normalmente termina com:
+
+```text
+/loki/api/v1/push
+```
+
+Também é possível informar apenas a URL base do Loki; o workflow adiciona esse caminho automaticamente.
+
+O workflow não registra corpo completo de e-mails, conteúdo integral de artigos nem tokens; os eventos usam contagens, etapas, duração e erros sanitizados.
+
+Para monitorar a execução diária, crie alertas no Grafana procurando eventos como `workflow_failed` ou ausência de `workflow_finished` no período esperado.
+
+Para testar apenas a conexão com o Grafana:
+
+```bash
+npm run inspect:grafana
+```
+
+Pela raiz do repositório:
+
+```bash
+npm run newsletter:inspect:grafana
+```
+
+Se o teste retornar `401`, revise o `GRAFANA_LOKI_USER` e gere um Grafana Cloud Access Policy token para a mesma stack com o escopo `logs:write`.
 
 Para inspecionar os e-mails encontrados sem gerar resumo:
 
