@@ -58,6 +58,8 @@ Variáveis opcionais:
 ```bash
 GMAIL_MAX_RESULTS=20
 GMAIL_NEWER_THAN_DAYS=2
+NEWSLETTER_MAX_LINKS_PER_EMAIL=8
+LINK_RESOLVE_TIMEOUT_MS=8000
 OPENAI_API_KEY=
 OPENAI_MODEL=gpt-4o-mini
 LOG_LEVEL=info
@@ -98,6 +100,18 @@ npm run newsletter:inspect:grafana
 ```
 
 Se o teste retornar `401`, revise o `GRAFANA_LOKI_USER` e gere um Grafana Cloud Access Policy token para a mesma stack com o escopo `logs:write`.
+
+Para inspecionar a resolução de redirects sem baixar artigos nem chamar IA:
+
+```bash
+npm run inspect:redirects
+```
+
+Pela raiz do repositório:
+
+```bash
+npm run newsletter:inspect:redirects
+```
 
 Para inspecionar os e-mails encontrados sem gerar resumo:
 

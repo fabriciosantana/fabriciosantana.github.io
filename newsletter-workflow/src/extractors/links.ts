@@ -27,6 +27,7 @@ const IGNORED_URL_PATTERNS = [
 const IGNORED_ANCHOR_TEXTS = new Set([
   "",
   "read online",
+  "unsubscribe",
   "view online",
   "subscribe",
   "sponsor",

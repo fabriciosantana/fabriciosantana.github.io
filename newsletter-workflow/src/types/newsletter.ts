@@ -14,6 +14,14 @@ export type NewsletterLink = {
   anchorText?: string;
 };
 
+export type ResolvedNewsletterLink = NewsletterLink & {
+  originalUrl: string;
+  finalUrl: string;
+  finalHost: string;
+  resolutionMethod: "embedded_url" | "http_redirect";
+  statusCode?: number;
+};
+
 export type Article = {
   url: string;
   canonicalUrl: string;

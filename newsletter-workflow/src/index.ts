@@ -4,6 +4,7 @@ import { summarizeDigest } from "./ai/summarize.js";
 import { clusterArticles } from "./ai/cluster.js";
 import { fetchArticles } from "./extractors/articles.js";
 import { extractNewsletterLinks } from "./extractors/links.js";
+import { resolveNewsletterLinks } from "./extractors/redirects.js";
 import { GmailEmailProvider } from "./providers/gmail.js";
 import { publishDigestToSite } from "./publishers/site-content.js";
 import { logEvent, logStep, sanitizeError } from "./observability/logger.js";
@@ -26,10 +27,17 @@ async function main() {
     (result) => ({ linkCount: result.length })
   );
 
+  const resolvedLinks = await logStep(
+    "links.resolve",
+    () => resolveNewsletterLinks(links),
+    { linkCount: links.length },
+    (result) => ({ resolvedLinkCount: result.length })
+  );
+
   const articles = await logStep(
     "articles.fetch",
-    () => fetchArticles(links),
-    { linkCount: links.length },
+    () => fetchArticles(resolvedLinks),
+    { resolvedLinkCount: resolvedLinks.length },
     (result) => ({ articleCount: result.length })
   );
 
@@ -57,6 +65,7 @@ async function main() {
     event: "workflow_finished",
     emailCount: emails.length,
     linkCount: links.length,
+    resolvedLinkCount: resolvedLinks.length,
     articleCount: articles.length,
     clusterCount: clusters.length,
     digestItems: digest.items.length,

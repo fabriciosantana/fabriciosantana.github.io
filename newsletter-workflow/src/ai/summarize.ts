@@ -4,7 +4,7 @@ import type { Digest, NewsCluster } from "../types/newsletter.js";
 
 export async function summarizeDigest(clusters: NewsCluster[]): Promise<Digest> {
   if (!process.env.OPENAI_API_KEY) {
-    return emptyDigest("Defina OPENAI_API_KEY para gerar o resumo com IA.");
+    throw new Error("OPENAI_API_KEY is required to generate the digest.");
   }
 
   if (clusters.length === 0) {

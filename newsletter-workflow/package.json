@@ -10,6 +10,7 @@
     "inspect:grafana": "tsx src/inspect-grafana.ts",
     "inspect:gmail": "tsx src/inspect-gmail.ts",
     "inspect:links": "tsx src/inspect-links.ts",
+    "inspect:redirects": "tsx src/inspect-redirects.ts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

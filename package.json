@@ -14,6 +14,7 @@
     "newsletter:inspect:grafana": "npm --prefix newsletter-workflow run inspect:grafana",
     "newsletter:inspect:gmail": "npm --prefix newsletter-workflow run inspect:gmail",
     "newsletter:inspect:links": "npm --prefix newsletter-workflow run inspect:links",
+    "newsletter:inspect:redirects": "npm --prefix newsletter-workflow run inspect:redirects",
     "newsletter:typecheck": "npm --prefix newsletter-workflow run typecheck"
   },
   "author": "Fabricio Santana",
