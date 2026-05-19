@@ -1,18 +1,31 @@
-# Hello, I am Fabricio Santana! 👋
+# Fabricio Santana
 
-## About me
+Site pessoal publicado em:
 
-I am a developer passionate about technology and innovation. I have experience in various programming languages and love learning new things.
+https://fabriciosantana.github.io/
 
-## Technologies and Tools
+## Desenvolvimento
 
-- **Languages:** JavaScript, Python, Java, C#
-- **Frameworks:** React, Angular, Django, Spring Boot, Nodejs
-- **Tools:** Git, Docker, Jenkins, VS Code
+Instale as dependências:
 
-## Contact
+```bash
+npm install
+```
 
-- **Email:** [fabricio.santana@gmail.com](mailto:fabricio.santana@gmail.com)
-- **LinkedIn:** [Fabricio Santana](https://www.linkedin.com/in/fabriciofsantana)
+Rode localmente:
 
-Thank you for visiting my profile! 😊
+```bash
+npm start
+```
+
+Gere o build para GitHub Pages:
+
+```bash
+npm run build-gh
+```
+
+Publique:
+
+```bash
+npm run deploy
+```
