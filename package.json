@@ -10,6 +10,7 @@
     "build-gh": "npm --prefix site run build-gh",
     "deploy": "npm --prefix site run deploy",
     "newsletter:digest": "npm --prefix newsletter-workflow run digest",
+    "newsletter:inspect:gmail": "npm --prefix newsletter-workflow run inspect:gmail",
     "newsletter:typecheck": "npm --prefix newsletter-workflow run typecheck"
   },
   "author": "Fabricio Santana",
