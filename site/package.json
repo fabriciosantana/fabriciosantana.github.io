@@ -1,0 +1,32 @@
+{
+  "name": "fabriciosantana.github.io",
+  "version": "1.0.0",
+  "description": "Fabricio Santana",
+  "source": "src/index.html",
+  "homepage": "https://fabriciosantana.github.io/",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build",
+    "build-gh": "parcel build --public-url '/'",
+    "predeploy": "npm run build-gh",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabriciosantana/fabriciosantana.github.io.git"
+  },
+  "author": "Fabricio Santana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fabriciosantana/fabriciosantana.github.io/issues"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0",
+    "parcel": "^2.7.0",
+    "prettier": "^2.7.1"
+  }
+}
