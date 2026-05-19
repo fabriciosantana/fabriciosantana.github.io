@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import profilePhoto from "./images/Fabricio.jpg";
 import "./styles.css";
@@ -37,6 +37,13 @@ const articles = [
 ];
 
 const App = () => {
+  const [newsletterMessage, setNewsletterMessage] = useState("");
+
+  const handleNewsletterSubmit = (event) => {
+    event.preventDefault();
+    setNewsletterMessage("Obrigado! Seu interesse na newsletter foi registrado.");
+  };
+
   return (
     <main className="site-shell">
       <header className="site-header">
@@ -53,19 +60,36 @@ const App = () => {
       <section className="intro-section" id="inicio">
         <div className="intro-copy">
           <p className="eyebrow">Tecnologia, ensino e gestão</p>
-          <h1>Tecnologia.</h1>
           <p className="intro-text">
             Sou Fabricio Santana, profissional de tecnologia com experiência em desenvolvimento
             de software, liderança técnica, computação em nuvem e ensino superior.
           </p>
-          <div className="intro-actions">
-            <a className="button primary" href="#cursos">
-              Ver cursos
-            </a>
-            <a className="button secondary" href="#conteudos">
-              Ler conteúdos
-            </a>
-          </div>
+          <p className="newsletter-callout">
+            Receba meu resumo diário sobre tecnologia e inovação.
+          </p>
+          <form className="newsletter-form" onSubmit={handleNewsletterSubmit}>
+            <div className="form-grid">
+              <label>
+                Nome
+                <input type="text" name="name" autoComplete="name" required />
+              </label>
+              <label>
+                E-mail
+                <input type="email" name="email" autoComplete="email" required />
+              </label>
+            </div>
+            <label className="consent-field">
+              <input type="checkbox" name="privacyConsent" required />
+              <span>
+                Aceito os termos de privacidade e concordo em receber comunicações de Fabricio
+                Santana.
+              </span>
+            </label>
+            <button className="button primary" type="submit">
+              Assinar newsletter
+            </button>
+            {newsletterMessage && <p className="form-message">{newsletterMessage}</p>}
+          </form>
         </div>
         <img className="profile-photo" src={profilePhoto} alt="Fabricio Santana" />
       </section>
