@@ -50,6 +50,7 @@ Variáveis de ambiente necessárias:
 GMAIL_CLIENT_ID=
 GMAIL_CLIENT_SECRET=
 GMAIL_REFRESH_TOKEN=
+GMAIL_REDIRECT_URI=http://localhost:3000/oauth2callback
 ```
 
 Variáveis opcionais:
@@ -72,3 +73,42 @@ Pela raiz do repositório:
 ```bash
 npm run newsletter:inspect:gmail
 ```
+
+### Como configurar OAuth do Gmail
+
+1. Crie ou selecione um projeto no Google Cloud.
+2. Ative a Gmail API no projeto.
+3. Configure a OAuth consent screen.
+4. Crie um OAuth Client ID.
+5. Use um client do tipo "Desktop app" ou registre o redirect URI:
+
+```text
+http://localhost:3000/oauth2callback
+```
+
+6. Copie `.env.example` para `.env`:
+
+```bash
+cp .env.example .env
+```
+
+7. Preencha no `.env`:
+
+```bash
+GMAIL_CLIENT_ID=
+GMAIL_CLIENT_SECRET=
+```
+
+8. Gere o refresh token:
+
+```bash
+npm run auth:gmail
+```
+
+Pela raiz do repositório:
+
+```bash
+npm run newsletter:auth:gmail
+```
+
+9. O comando imprimirá o `GMAIL_REFRESH_TOKEN`. Copie esse valor para o `.env`.

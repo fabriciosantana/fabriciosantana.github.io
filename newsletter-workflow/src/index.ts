@@ -1,3 +1,5 @@
+import "dotenv/config";
+
 import { summarizeDigest } from "./ai/summarize.js";
 import { clusterArticles } from "./ai/cluster.js";
 import { fetchArticles } from "./extractors/articles.js";

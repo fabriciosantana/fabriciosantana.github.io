@@ -1,3 +1,5 @@
+import "dotenv/config";
+
 import { GmailEmailProvider } from "./providers/gmail.js";
 
 async function main() {
