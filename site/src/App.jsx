@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+import latestDigest from "./content/digests/2026-05-20.json";
 import profilePhoto from "./images/Fabricio.jpg";
 import "./styles.css";
 
@@ -21,28 +22,118 @@ const courses = [
   },
 ];
 
-const articles = [
-  {
-    title: "Arquitetura de software",
-    description: "Reflexões sobre desenho de sistemas, trade-offs e manutenção de longo prazo.",
-  },
-  {
-    title: "Carreira em TI",
-    description: "Textos sobre liderança, formação de equipes e crescimento profissional.",
-  },
-  {
-    title: "IA e desenvolvimento",
-    description: "Conteúdos sobre como a inteligência artificial está mudando a prática de software.",
-  },
-];
+const latestDigestItem = latestDigest.items[0];
+const latestDigestSlug = `resumo-${latestDigest.date}`;
+
+const formatDate = (date) =>
+  new Intl.DateTimeFormat("pt-BR", {
+    day: "2-digit",
+    month: "long",
+    year: "numeric",
+  }).format(new Date(`${date}T00:00:00`));
+
+const renderDigestMarkdown = (markdown) => {
+  const escapeHtml = (value) =>
+    value
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;");
+  const renderInline = (value) =>
+    escapeHtml(value)
+      .replace(/\*\*\[([^\]]+)\]\((https?:\/\/[^)]+)\)\*\*/g, '<a href="$2" target="_blank" rel="noreferrer">$1</a>')
+      .replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, '<a href="$2" target="_blank" rel="noreferrer">$1</a>')
+      .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+
+  return markdown
+    .split("\n")
+    .map((line) => line.trim())
+    .filter(Boolean)
+    .map((line) => {
+      if (line.startsWith("### ")) {
+        return `<h3>${renderInline(line.slice(4))}</h3>`;
+      }
+
+      if (line.startsWith("#### ")) {
+        return `<h4>${renderInline(line.slice(5))}</h4>`;
+      }
+
+      if (line.startsWith("- ")) {
+        return `<p class="digest-bullet">${renderInline(line.slice(2))}</p>`;
+      }
+
+      return `<p>${renderInline(line)}</p>`;
+    })
+    .join("");
+};
 
 const App = () => {
   const [newsletterMessage, setNewsletterMessage] = useState("");
+  const [currentHash, setCurrentHash] = useState(window.location.hash);
+  const isDigestDetail = currentHash === `#${latestDigestSlug}`;
 
   const handleNewsletterSubmit = (event) => {
     event.preventDefault();
     setNewsletterMessage("Obrigado! Seu interesse na newsletter foi registrado.");
   };
+
+  React.useEffect(() => {
+    const handleHashChange = () => setCurrentHash(window.location.hash);
+    window.addEventListener("hashchange", handleHashChange);
+
+    return () => window.removeEventListener("hashchange", handleHashChange);
+  }, []);
+
+  if (isDigestDetail) {
+    return (
+      <main className="site-shell">
+        <header className="site-header">
+          <a className="brand" href="#inicio" aria-label="Fabricio Santana">
+            Fabricio Santana
+          </a>
+          <nav className="nav-links" aria-label="Navegacao principal">
+            <a href="#sobre">Sobre</a>
+            <a href="#cursos">Cursos</a>
+            <a href="#conteudos">Conteúdos</a>
+          </nav>
+        </header>
+
+        <article className="digest-detail-page">
+          <a className="back-link" href="#conteudos">
+            Voltar para conteúdos
+          </a>
+          <div className="digest-meta">
+            <span>Resumo diário</span>
+            <time dateTime={latestDigest.date}>{formatDate(latestDigest.date)}</time>
+          </div>
+          <h1>{latestDigest.title}</h1>
+          <div
+            className="digest-content"
+            dangerouslySetInnerHTML={{
+              __html: renderDigestMarkdown(latestDigestItem.summary),
+            }}
+          />
+          <div className="digest-sources">
+            <h4>Fontes citadas</h4>
+            <ul>
+              {latestDigestItem.sources.map((source) => (
+                <li key={source.url}>
+                  <a href={source.url} target="_blank" rel="noreferrer">
+                    {source.sourceName ? `${source.sourceName}: ` : ""}
+                    {source.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </article>
+
+        <footer className="site-footer">
+          <p>Fabricio Santana</p>
+          <a href="mailto:fabricio.santana@gmail.com">fabricio.santana@gmail.com</a>
+        </footer>
+      </main>
+    );
+  }
 
   return (
     <main className="site-shell">
@@ -131,16 +222,23 @@ const App = () => {
       <section className="content-section" id="conteudos">
         <div className="section-heading">
           <p className="eyebrow">Conteúdos sobre TI</p>
-          <h2>Textos sobre tecnologia e carreira</h2>
+          <h2>Publicações e resumos de tecnologia</h2>
         </div>
-        <div className="article-list">
-          {articles.map((article) => (
-            <article className="article-item" key={article.title}>
-              <h3>{article.title}</h3>
-              <p>{article.description}</p>
-            </article>
-          ))}
-        </div>
+        <a className="digest-card" href={`#${latestDigestSlug}`}>
+          <div className="digest-meta">
+            <span>Resumo diário</span>
+            <time dateTime={latestDigest.date}>{formatDate(latestDigest.date)}</time>
+          </div>
+          <h3>{latestDigest.title}</h3>
+          <p>
+            Principais novidades sobre inteligência artificial, desenvolvimento, mercado e
+            ferramentas de tecnologia.
+          </p>
+          <div className="digest-card-footer">
+            <span>{latestDigestItem.sources.length} fontes citadas</span>
+            <strong>Ler resumo completo</strong>
+          </div>
+        </a>
       </section>
 
       <footer className="site-footer">

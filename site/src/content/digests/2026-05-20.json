@@ -1,0 +1,63 @@
+{
+  "date": "2026-05-20",
+  "title": "Resumo diário de tecnologia",
+  "items": [
+    {
+      "title": "Resumo gerado",
+      "summary": "### Resumo Diário de Tecnologia\n\n#### Gemini 3.5: Inteligência de Fronteira com Ação\n- **[Gemini 3.5: frontier intelligence with action](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/)** (Google)\n  - O Google lançou o Gemini 3.5, que combina inteligência de ponta com ação, permitindo a execução de fluxos de trabalho complexos. O modelo 3.5 Flash é otimizado para tarefas de codificação e é quatro vezes mais rápido que outros modelos. Ele já está disponível para desenvolvedores e empresas, com aplicações em setores como finanças e automação de processos.\n  \n- **[Gemini 3.5 Flash](https://ai.google.dev/gemini-api/docs/models/gemini-3.5-flash?hl=pt-br)** (Google AI for Developers)\n  - O modelo oferece inteligência otimizada para tarefas do mundo real, com suporte para entradas multimodais e capacidade de execução em larga escala.\n\n#### Novidades em Agentes Gerenciados Claude\n- **[New in Claude Managed Agents: self-hosted sandboxes and MCP tunnels](https://claude.com/blog/claude-managed-agents-updates)** (Claude)\n  - A Claude introduziu sandboxes auto-hospedadas e túneis MCP, permitindo que as equipes executem ferramentas de agentes dentro de sua própria infraestrutura, aumentando a segurança e o controle.\n\n#### Demissões na Meta e Impacto da IA\n- **[Meta Begins 8,000 Global Job Cuts in AI Efficiency Push](https://finance.yahoo.com/news/meta-begins-8000-global-job-cuts-in-asian-hub-of-singapore-004153264.html)** (Yahoo Finance)\n  - A Meta anunciou a demissão de 8.000 funcionários como parte de uma reestruturação para reduzir custos enquanto investe em inteligência artificial. As demissões afetarão principalmente equipes de engenharia e produto.\n\n#### Reflexões sobre Gestão e IA\n- **[An uncomfortable truth for middle managers about AI](https://www.inthemakingleadership.com/p/an-uncomfortable-truth-for-middle)** \n  - Jack Dorsey argumenta que a IA pode substituir muitas funções de gerentes intermediários, levantando questões sobre a verdadeira natureza da gestão versus liderança.\n\n#### Avanços em Pesquisa e Desenvolvimento\n- **[Code as Agent Harness](https://arxiv.org/abs/2605.18747)** (arXiv)\n  - Um estudo discute como o código pode servir como uma infraestrutura operacional para sistemas de agentes, abordando desafios e aplicações práticas.\n\n#### Colaboração e Inovações em IA\n- **[KPMG integrates Claude across its core business and workforce of more than 276,000 in strategic alliance](https://www.anthropic.com/news/anthropic-kpmg)** (Anthropic)\n  - A KPMG anunciou uma aliança global com a Anthropic para integrar a IA Claude em suas operações, visando melhorar a eficiência e a inovação.\n\n- **[Automation Anywhere Collaborates with Cisco, NVIDIA, Okta, and OpenAI, Launching EnterpriseClaw to Run Next-Generation AI Agents Inside Enterprise Systems](https://www.prnewswire.com/news-releases/automation-anywhere-collaborates-with-cisco-nvidia-okta-and-openai-launching-enterpriseclaw-to-run-next-generation-ai-agents-inside-enterprise-systems-302775670.html)** \n  - A Automation Anywhere lançou o EnterpriseClaw, permitindo que agentes de IA operem em sistemas empresariais com controle centralizado.\n\n#### Desafios e Oportunidades em IA\n- **[Gen Z is over-relying on AI at work—and it could cost them their careers | Fortune](https://fortune.com/2026/05/19/gen-z-workers-over-reliance-ai-early-career-jobs/)** \n  - Um estudo revela que muitos trabalhadores da Geração Z estão excessivamente dependentes da IA, o que pode prejudicar seu desenvolvimento profissional.\n\n#### Novas Funcionalidades em Navegadores\n- **[Copilot in Edge | Microsoft Edge](https://www.microsoft.com/en-in/edge/copilot)** \n  - O Microsoft Edge agora inclui o Copilot, que ajuda os usuários a realizar tarefas diretamente no navegador, melhorando a produtividade.\n\n- **[Go behind the browser with Chrome’s new AI features](https://blog.google/products-and-platforms/products/chrome/new-ai-features-for-chrome/)** \n  - O Google Chrome está recebendo atualizações significativas com novas funcionalidades de IA, permitindo que os usuários realizem tarefas complexas de forma mais eficiente.\n\n#### Considerações Finais\n- O cenário tecnológico está em rápida evolução, com a IA desempenhando um papel central em inovações, reestruturações e desafios enfrentados por empresas e trabalhadores. As novas ferramentas e modelos, como o Gemini 3.5 e as integrações de Claude, estão moldando o futuro do trabalho e da colaboração.",
+      "sources": [
+        {
+          "title": "Gemini 3.5: frontier intelligence with action",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
+          "sourceName": "Google"
+        },
+        {
+          "title": "Gemini 3.5 Flash",
+          "url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.5-flash?hl=pt-br",
+          "sourceName": "Google AI for Developers"
+        },
+        {
+          "title": "New in Claude Managed Agents: self-hosted sandboxes and MCP tunnels",
+          "url": "https://claude.com/blog/claude-managed-agents-updates",
+          "sourceName": "Claude"
+        },
+        {
+          "title": "Meta Begins 8,000 Global Job Cuts in AI Efficiency Push",
+          "url": "https://finance.yahoo.com/news/meta-begins-8000-global-job-cuts-in-asian-hub-of-singapore-004153264.html",
+          "sourceName": "Yahoo Finance"
+        },
+        {
+          "title": "An uncomfortable truth for middle managers about AI",
+          "url": "https://www.inthemakingleadership.com/p/an-uncomfortable-truth-for-middle"
+        },
+        {
+          "title": "Code as Agent Harness",
+          "url": "https://arxiv.org/abs/2605.18747",
+          "sourceName": "arXiv.org"
+        },
+        {
+          "title": "KPMG integrates Claude across its core business and workforce of more than 276,000 in strategic alliance",
+          "url": "https://www.anthropic.com/news/anthropic-kpmg"
+        },
+        {
+          "title": "Automation Anywhere Collaborates with Cisco, NVIDIA, Okta, and OpenAI, Launching EnterpriseClaw to Run Next-Generation AI Agents Inside Enterprise Systems",
+          "url": "https://www.prnewswire.com/news-releases/automation-anywhere-collaborates-with-cisco-nvidia-okta-and-openai-launching-enterpriseclaw-to-run-next-generation-ai-agents-inside-enterprise-systems-302775670.html"
+        },
+        {
+          "title": "Gen Z is over-relying on AI at work—and it could cost them their careers | Fortune",
+          "url": "https://fortune.com/2026/05/19/gen-z-workers-over-reliance-ai-early-career-jobs/",
+          "sourceName": "Fortune"
+        },
+        {
+          "title": "Copilot in Edge | Microsoft Edge",
+          "url": "https://www.microsoft.com/en-in/edge/copilot"
+        },
+        {
+          "title": "Go behind the browser with Chrome’s new AI features",
+          "url": "https://blog.google/products-and-platforms/products/chrome/new-ai-features-for-chrome/",
+          "sourceName": "Google"
+        }
+      ]
+    }
+  ]
+}
