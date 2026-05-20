@@ -1,0 +1,425 @@
+{
+  "date": "2026-05-19",
+  "title": "Resumo diário de tecnologia",
+  "items": [
+    {
+      "title": "Resumo gerado",
+      "summary": "### Resumo das Principais Notícias de Tecnologia\n\n#### 1. **Snapchat e Machine Learning**\nO Snapchat, que começou como um aplicativo de mensagens efêmeras, agora conta com 946 milhões de usuários mensais e utiliza um sistema chamado Bento para gerenciar suas operações de machine learning. Este sistema é responsável por decisões rápidas sobre conteúdo, anúncios e sugestões de amigos, processando bilhões de previsões por segundo. O desafio é manter a velocidade e a precisão em um ambiente com alta demanda. O Bento é dividido em duas partes: recuperação e classificação, onde modelos leves filtram candidatos antes que modelos mais pesados façam a classificação final. [Fonte: ByteByteGo](https://blog.bytebytego.com/p/how-snapchat-serves-a-billion-predictions)\n\n#### 2. **Curso de Programação de Filipe Deschamps**\nFilipe Deschamps lançou um curso de programação que visa transformar alunos em programadores competentes, focando em projetos reais e na prática do mercado. O curso é acessível vitaliciamente e inclui atualizações contínuas. Deschamps tem uma vasta experiência na área de tecnologia e é conhecido por seu canal no YouTube e por sua newsletter sobre tecnologia. [Fonte: curso.dev](https://curso.dev/index)\n\n#### 3. **Uso de IA na Grab**\nA Grab, um super-app do Sudeste Asiático, implementou um sistema de IA para aumentar a produtividade de sua equipe de engenharia de dados. O sistema automatiza a resposta a perguntas frequentes, permitindo que os engenheiros se concentrem em tarefas mais complexas. A arquitetura do sistema é modular, facilitando a manutenção e a atualização. [Fonte: ByteByteGo](https://blog.bytebytego.com/p/how-grab-is-using-ai-agents-to-boost)\n\n#### 4. **Desafios e Avanços em IA**\n- **Nebius** oferece uma plataforma que hospeda mais de 60 modelos de IA, facilitando a integração sem a necessidade de infraestrutura complexa. [Fonte: What's Up in AI]\n- **Claude**, da Anthropic, agora permite execução de código em servidores próprios, aumentando a segurança e privacidade dos dados. [Fonte: AlphaSignal]\n- **Google I/O** trouxe novidades sobre ferramentas e modelos de IA, destacando a evolução contínua da tecnologia. [Fonte: What's Up in AI]\n\n#### 5. **Desenvolvimentos em Segurança e Infraestrutura**\n- **Ataques cibernéticos** aumentaram 46% no Brasil, com organizações enfrentando uma média de 4.118 ataques por semana. [Fonte: Filipe Deschamps Newsletter]\n- **Cloudflare** testou seu código com a IA da Anthropic, revelando vulnerabilidades significativas em seus repositórios. [Fonte: The Code]\n\n#### 6. **Novidades em Produtos e Serviços**\n- **Microsoft** lançou sua primeira distribuição Linux, o Azure Linux 4.0, voltada para desenvolvedores. [Fonte: Filipe Deschamps Newsletter]\n- **OpenAI** introduziu novas funcionalidades no ChatGPT, transformando-o em um espaço de trabalho mais robusto. [Fonte: Dan Rice | AI Signal]\n\n#### 7. **Tendências e Previsões**\n- Acesso a modelos de IA avançados deve se tornar mais restrito devido a preocupações de segurança e espionagem. [Fonte: Filipe Deschamps Newsletter]\n- **Blackstone** e **Google** anunciaram uma parceria para um novo serviço de nuvem de IA, com um investimento inicial de US$ 5 bilhões. [Fonte: The Intelligent Worker]\n\nEssas notícias refletem as tendências atuais em tecnologia, incluindo o uso crescente de IA, desafios de segurança cibernética e inovações em educação e infraestrutura.",
+      "sources": [
+        {
+          "title": "How Snapchat Serves a Billion Predictions Per Second",
+          "url": "https://blog.bytebytego.com/p/how-snapchat-serves-a-billion-predictions"
+        },
+        {
+          "title": "Curso de Programação do Filipe Deschamps",
+          "url": "https://curso.dev/index",
+          "sourceName": "curso.dev"
+        },
+        {
+          "title": "How Grab is Using AI Agents to Boost Team Productivity",
+          "url": "https://blog.bytebytego.com/p/how-grab-is-using-ai-agents-to-boost"
+        },
+        {
+          "title": "An AI model in the backend — the most critical part",
+          "url": "email://19e4293f784c009b/1",
+          "sourceName": "What's Up in AI"
+        },
+        {
+          "title": "But before we do that, we’re bringing you LIVE updates",
+          "url": "email://19e4293f784c009b/2",
+          "sourceName": "What's Up in AI"
+        },
+        {
+          "title": "A front end — what your users actually see and type into, the chat window",
+          "url": "email://19e4293f784c009b/3",
+          "sourceName": "What's Up in AI"
+        },
+        {
+          "title": "Describe a shot, change the angle, add a cinematic zoom",
+          "url": "email://19e4293f784c009b/4",
+          "sourceName": "What's Up in AI"
+        },
+        {
+          "title": "Flow Music lets you upload a raw audio recording and generate full musical compositions around it",
+          "url": "email://19e4293f784c009b/5",
+          "sourceName": "What's Up in AI"
+        },
+        {
+          "title": "It scouts the entire internet for the cheapest current price",
+          "url": "email://19e4293f784c009b/6",
+          "sourceName": "What's Up in AI"
+        },
+        {
+          "title": "Part 2 is coming in less than 24 hours",
+          "url": "email://19e4293f784c009b/7",
+          "sourceName": "What's Up in AI"
+        },
+        {
+          "title": "Yes, we’re living in 2026 and it’s insane",
+          "url": "email://19e4293f784c009b/8",
+          "sourceName": "What's Up in AI"
+        },
+        {
+          "title": "Claude tried to blackmail its own engineers",
+          "url": "email://19e41d6ce167fd3a/1",
+          "sourceName": "The AI Report"
+        },
+        {
+          "title": "Until now, when Claude ran tasks for you, everything happened on Anthropic's servers",
+          "url": "email://19e41a530de9e78e/1",
+          "sourceName": "AlphaSignal"
+        },
+        {
+          "title": "Self-hosted sandboxes (public beta): Claude's \"thinking\" stays on Anthropic's side, but the actual code execution hap...",
+          "url": "email://19e41a530de9e78e/2",
+          "sourceName": "AlphaSignal"
+        },
+        {
+          "title": "MCP tunnels (research preview): MCP is a standard way for AI agents to talk to tools and services",
+          "url": "email://19e41a530de9e78e/3",
+          "sourceName": "AlphaSignal"
+        },
+        {
+          "title": "Your cluster performs or stalls based on three things: where it sits, how it's designed, and who tunes it",
+          "url": "email://19e41a530de9e78e/4",
+          "sourceName": "AlphaSignal"
+        },
+        {
+          "title": "Hermes Agent just dropped v0",
+          "url": "email://19e41a530de9e78e/5",
+          "sourceName": "AlphaSignal"
+        },
+        {
+          "title": "Local subscription proxy -- turns your Claude Pro, ChatGPT Pro, or SuperGrok login into a local API endpoint that too...",
+          "url": "email://19e41a530de9e78e/6",
+          "sourceName": "AlphaSignal"
+        },
+        {
+          "title": "LSP diagnostics on every file write -- the agent runs a real language server after editing your code and catches type...",
+          "url": "email://19e41a530de9e78e/7",
+          "sourceName": "AlphaSignal"
+        },
+        {
+          "title": "The model uses a new internal format called O-Voxel, which is basically a smart grid that stores both the shape and t...",
+          "url": "email://19e41a530de9e78e/8",
+          "sourceName": "AlphaSignal"
+        },
+        {
+          "title": "Most meetings end with no feedback and no growth",
+          "url": "email://19e419d43e384a86/1",
+          "sourceName": "The Intelligent Worker"
+        },
+        {
+          "title": "Intelligence: Pope Leo XIV is personally presenting his first major encyclical on May 25, a document titled Magnifica...",
+          "url": "email://19e419d43e384a86/2",
+          "sourceName": "The Intelligent Worker"
+        },
+        {
+          "title": "The document was signed on May 15, exactly 135 years after Leo XIII signed Rerum Novarum, the landmark encyclical on ...",
+          "url": "email://19e419d43e384a86/3",
+          "sourceName": "The Intelligent Worker"
+        },
+        {
+          "title": "Anthropic's presence carries extra weight given the company was recently labeled a supply chain risk by the Pentagon ...",
+          "url": "email://19e419d43e384a86/4",
+          "sourceName": "The Intelligent Worker"
+        },
+        {
+          "title": "The Vatican also announced a new cross-dicastery AI study group the same weekend, signaling that Magnifica Humanitas ...",
+          "url": "email://19e419d43e384a86/5",
+          "sourceName": "The Intelligent Worker"
+        },
+        {
+          "title": "Intelligence: Google and Blackstone just announced a joint AI cloud venture that will give organizations access to Go...",
+          "url": "email://19e419d43e384a86/6",
+          "sourceName": "The Intelligent Worker"
+        },
+        {
+          "title": "Blackstone has been steadily ramping up AI infrastructure investments including data centers, power generation, and t...",
+          "url": "email://19e419d43e384a86/7",
+          "sourceName": "The Intelligent Worker"
+        },
+        {
+          "title": "Liquid enables users to go long or short on any market from your phone or desktop 24/7",
+          "url": "email://19e419d43e384a86/8",
+          "sourceName": "The Intelligent Worker"
+        },
+        {
+          "title": "After three weeks of high-profile testimony, private texts, and billionaire drama, Elon Musk's lawsuit against OpenAI...",
+          "url": "email://19e414a067145050/1",
+          "sourceName": "That1AI+Newsletter"
+        },
+        {
+          "title": "OpenAI's defense argued Musk had supported a for-profit structure himself, pushed for personal control early on, and ...",
+          "url": "email://19e414a067145050/2",
+          "sourceName": "That1AI+Newsletter"
+        },
+        {
+          "title": "For OpenAI, it's a clean legal win heading into a critical period of its for-profit transition",
+          "url": "email://19e414a067145050/3",
+          "sourceName": "That1AI+Newsletter"
+        },
+        {
+          "title": "The launch video crossed 14 million views — which says something about how many people have been waiting for a tool t...",
+          "url": "email://19e414a067145050/4",
+          "sourceName": "That1AI+Newsletter"
+        },
+        {
+          "title": "On pricing, the standard version runs $0",
+          "url": "email://19e414a067145050/5",
+          "sourceName": "That1AI+Newsletter"
+        },
+        {
+          "title": "Speak your prompts into ChatGPT or Claude and get detailed, paste-ready input that actually gives you useful output",
+          "url": "email://19e414a067145050/6",
+          "sourceName": "That1AI+Newsletter"
+        },
+        {
+          "title": "Agentic AI Engineering Course by Paul Iustzin (aff)",
+          "url": "email://19e4113899f2c9f4/1",
+          "sourceName": "Javarevisited Newsletter"
+        },
+        {
+          "title": "Why Books Still Win in 2026?",
+          "url": "email://19e4113899f2c9f4/2",
+          "sourceName": "Javarevisited Newsletter"
+        },
+        {
+          "title": "Final Word",
+          "url": "email://19e4113899f2c9f4/3",
+          "sourceName": "Javarevisited Newsletter"
+        },
+        {
+          "title": "Foundation Layer: Understand What AI Engineering Actually Is",
+          "url": "email://19e4113899f2c9f4/4",
+          "sourceName": "Javarevisited Newsletter"
+        },
+        {
+          "title": "LLM Engineering Layer: Master Building with Large Language Models",
+          "url": "email://19e4113899f2c9f4/5",
+          "sourceName": "Javarevisited Newsletter"
+        },
+        {
+          "title": "Practical Implementation Layer: Build and Deploy",
+          "url": "email://19e4113899f2c9f4/6",
+          "sourceName": "Javarevisited Newsletter"
+        },
+        {
+          "title": "Advanced Layer: Build Autonomous Systems",
+          "url": "email://19e4113899f2c9f4/7",
+          "sourceName": "Javarevisited Newsletter"
+        },
+        {
+          "title": "The Recommended Reading Order",
+          "url": "email://19e4113899f2c9f4/8",
+          "sourceName": "Javarevisited Newsletter"
+        },
+        {
+          "title": "Practically, this impacts users running long coding sessions, OpenClaw workflows, autonomous research, and multi-hour...",
+          "url": "email://19e410b375da64b5/1",
+          "sourceName": "What's Up in AI"
+        },
+        {
+          "title": "This means users who previously left Claude agents running for hours may now start rationing larger tasks and reducin...",
+          "url": "email://19e410b375da64b5/2",
+          "sourceName": "What's Up in AI"
+        },
+        {
+          "title": "OpenAI specifically highlighted that this goes beyond simply “remote controlling a task” — a clear shot at Anthropic’...",
+          "url": "email://19e410b375da64b5/3",
+          "sourceName": "What's Up in AI"
+        },
+        {
+          "title": "Researchers from Carnegie Mellon University and the Bosch Center for AI have developed a new system that dramatically...",
+          "url": "email://19e410b375da64b5/4",
+          "sourceName": "What's Up in AI"
+        },
+        {
+          "title": "What’s Up in AI is one of the most engaged & loved newsletter for professionals, AI enthusiasts & business owners wit...",
+          "url": "email://19e410b375da64b5/5",
+          "sourceName": "What's Up in AI"
+        },
+        {
+          "title": "Now those workflows use a separate monthly credit pool: Pro users get $20/month, Max 5x gets $100, and Max 20x gets $...",
+          "url": "email://19e410b375da64b5/6",
+          "sourceName": "What's Up in AI"
+        },
+        {
+          "title": "The Shape of a Ranking Workload",
+          "url": "email://19e40ea5259a613e/1",
+          "sourceName": "ByteByteGo"
+        },
+        {
+          "title": "The Training Pipeline",
+          "url": "email://19e40ea5259a613e/2",
+          "sourceName": "ByteByteGo"
+        },
+        {
+          "title": "The Serving Path",
+          "url": "email://19e40ea5259a613e/3",
+          "sourceName": "ByteByteGo"
+        },
+        {
+          "title": "The Feature Store Split",
+          "url": "email://19e40ea5259a613e/4",
+          "sourceName": "ByteByteGo"
+        },
+        {
+          "title": "What Makes The Inference Engine Cheap",
+          "url": "email://19e40ea5259a613e/5",
+          "sourceName": "ByteByteGo"
+        },
+        {
+          "title": "The Feedback Loop",
+          "url": "email://19e40ea5259a613e/6",
+          "sourceName": "ByteByteGo"
+        },
+        {
+          "title": "Conclusion",
+          "url": "email://19e40ea5259a613e/7",
+          "sourceName": "ByteByteGo"
+        },
+        {
+          "title": "Snapchat started in 2011 as an ephemeral messaging app where photos disappeared after a few seconds, and it has since...",
+          "url": "email://19e40ea5259a613e/8",
+          "sourceName": "ByteByteGo"
+        },
+        {
+          "title": "What's new: On May 14, 2026, OpenAI added File Library and Recent files to ChatGPT on web, iOS, and Android",
+          "url": "email://19e40a7c170fd7a3/1",
+          "sourceName": "Dan Rice | AI Signal"
+        },
+        {
+          "title": "ChatGPT is becoming a workspace, not just a chatbot",
+          "url": "email://19e40a7c170fd7a3/2",
+          "sourceName": "Dan Rice | AI Signal"
+        },
+        {
+          "title": "Your tabs are already context",
+          "url": "email://19e40a7c170fd7a3/3",
+          "sourceName": "Dan Rice | AI Signal"
+        },
+        {
+          "title": "Both systems handled basic summaries in testing (May 2026, Chrome and Edge)",
+          "url": "email://19e40a7c170fd7a3/4",
+          "sourceName": "Dan Rice | AI Signal"
+        },
+        {
+          "title": "📡 ChatGPT can now find your old files — if you named them well →🔍 Chrome and Edge Copilot can compare your open tab...",
+          "url": "email://19e40a7c170fd7a3/5",
+          "sourceName": "Dan Rice | AI Signal"
+        },
+        {
+          "title": "One common mistake: Don't ask ChatGPT to \"use my file\" when you have multiple versions named things like \"Brief_v2\" o...",
+          "url": "email://19e40a7c170fd7a3/6",
+          "sourceName": "Dan Rice | AI Signal"
+        },
+        {
+          "title": "Mitchell Hashimoto, cofundador da Hashicorp, afirma que muitas empresas estão sob “forte psicose de IA”: na psicologi...",
+          "url": "email://19e408d4b20051ab/1",
+          "sourceName": "Filipe Deschamps Newsletter"
+        },
+        {
+          "title": "Mais 317 módulos npm, com 15 milhões de downloads mensais, são comprometidos e pesquisadores alertam para mais ataque...",
+          "url": "email://19e408d4b20051ab/2",
+          "sourceName": "Filipe Deschamps Newsletter"
+        },
+        {
+          "title": "Acesso a modelos de IA mais avançados deve tornar-se cada vez mais escasso e seletivo, argumenta analista: para Anton...",
+          "url": "email://19e408d4b20051ab/3",
+          "sourceName": "Filipe Deschamps Newsletter"
+        },
+        {
+          "title": "Anthropic adquire startup fornecedora de ferramentas fundamentais para a OpenAI, Google e Cloudflare: os termos do ne...",
+          "url": "email://19e408d4b20051ab/4",
+          "sourceName": "Filipe Deschamps Newsletter"
+        },
+        {
+          "title": "Curiosidade para o dia 19 de maio: em 2010, o Google lançava o WebM, formato de vídeo de código aberto e isento de ro...",
+          "url": "email://19e408d4b20051ab/5",
+          "sourceName": "Filipe Deschamps Newsletter"
+        },
+        {
+          "title": "Microsoft surpreende e anuncia sua primeira distribuição Linux completa para uso geral: o Azure Linux 4",
+          "url": "email://19e408d4b20051ab/6",
+          "sourceName": "Filipe Deschamps Newsletter"
+        },
+        {
+          "title": "Organizações brasileiras sofrem, em média, 4",
+          "url": "email://19e408d4b20051ab/7",
+          "sourceName": "Filipe Deschamps Newsletter"
+        },
+        {
+          "title": "CEITEC fecha parceria com empresa chinesa para produzir semicondutores no Brasil: a aliança também mira em transferên...",
+          "url": "email://19e408d4b20051ab/8",
+          "sourceName": "Filipe Deschamps Newsletter"
+        },
+        {
+          "title": "Cloudflare red-teams its own code with Anthropic's Mythos: The web infrastructure company just released results from ...",
+          "url": "email://19e40548d921bb08/1",
+          "sourceName": "The Code"
+        },
+        {
+          "title": "Welcome back",
+          "url": "email://19e40548d921bb08/2",
+          "sourceName": "The Code"
+        },
+        {
+          "title": "Cursor ships its most capable coding model yet: The AI coding startup just dropped Composer 2",
+          "url": "email://19e40548d921bb08/3",
+          "sourceName": "The Code"
+        },
+        {
+          "title": "Cognition ships an always-on bug triage agent: The SF-based startup just shipped Auto-Triage, a persistent agent that...",
+          "url": "email://19e40548d921bb08/4",
+          "sourceName": "The Code"
+        },
+        {
+          "title": "Lost in the middle",
+          "url": "email://19e40548d921bb08/5",
+          "sourceName": "The Code"
+        },
+        {
+          "title": "Karpathy Confession: A year after coining \"vibe coding,\" Andrej Karpathy admits he's never felt more behind",
+          "url": "email://19e40548d921bb08/6",
+          "sourceName": "The Code"
+        },
+        {
+          "title": "Claude Code makes dozens of decisions when implementing a spec, from resolving ambiguities to picking tradeoffs",
+          "url": "email://19e40548d921bb08/7",
+          "sourceName": "The Code"
+        },
+        {
+          "title": "How to use HTML files as AI specs (by a Claude Code engineer): This tutorial shows developers how and why HTML is rep...",
+          "url": "email://19e40548d921bb08/8",
+          "sourceName": "The Code"
+        },
+        {
+          "title": "Before today's stories — this is the one to act on: the AI Executive's Pass is live right now. We've been teasing this for a while, and it's finally here. One $199/year membership that bundles $11,000+ in AI tools and resources — Notion, beehiiv, ListKit, Make.com, Paperform, Intercom, a private GPT training session, and a LinkedIn growth consult. Launch pricing only runs until May 19, so if you've been on the fence, now's the time.",
+          "url": "email://19e3fec949a2c266/1",
+          "sourceName": "The AI Report"
+        },
+        {
+          "title": "The UK's Information Commissioner's Office (ICO) is telling British employers that AI-powered CV screening, candidate...",
+          "url": "email://19e3fec949a2c266/2",
+          "sourceName": "The AI Report"
+        },
+        {
+          "title": "⚡️ Musk loses OpenAI lawsuit",
+          "url": "email://19e3fec949a2c266/3",
+          "sourceName": "The AI Report"
+        },
+        {
+          "title": "Framer helps teams design, build, and launch their marketing sites lightning fast",
+          "url": "email://19e3fec949a2c266/4",
+          "sourceName": "The AI Report"
+        },
+        {
+          "title": "A jury in Oakland, California, ruled against Elon Musk in his lawsuit against Sam Altman and OpenAI on Monday, findin...",
+          "url": "email://19e3fec949a2c266/5",
+          "sourceName": "The AI Report"
+        }
+      ]
+    }
+  ]
+}

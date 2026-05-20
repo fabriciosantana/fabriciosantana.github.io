@@ -1,5 +1,5 @@
 import { Readability } from "@mozilla/readability";
-import { JSDOM } from "jsdom";
+import { JSDOM, VirtualConsole } from "jsdom";
 
 import { logEvent, sanitizeError } from "../observability/logger.js";
 import type { Article, NewsletterLink } from "../types/newsletter.js";
@@ -50,8 +50,8 @@ async function fetchArticle(
       return { ok: false, reason: `http_${response.status}` };
     }
 
-    const html = await response.text();
-    const dom = new JSDOM(html, { url });
+    const html = stripStyles(await response.text());
+    const dom = new JSDOM(html, { url, virtualConsole: new VirtualConsole() });
     const parsed = new Readability(dom.window.document).parse();
 
     if (!parsed?.textContent || !parsed.title) {
@@ -84,6 +84,10 @@ async function fetchArticle(
     });
     return { ok: false, reason: "request_failed" };
   }
+}
+
+function stripStyles(html: string): string {
+  return html.replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, "");
 }
 
 function dedupeArticlesByCanonicalUrl(articles: Article[]): Article[] {
