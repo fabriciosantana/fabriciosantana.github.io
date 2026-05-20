@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
-import latestDigest from "./content/digests/2026-05-20.json";
+import digest20260520 from "./content/digests/2026-05-20.json";
+import digestIndex from "./content/digests/index.json";
 import profilePhoto from "./images/Fabricio.jpg";
 import "./styles.css";
 
@@ -22,8 +23,17 @@ const courses = [
   },
 ];
 
-const latestDigestItem = latestDigest.items[0];
-const latestDigestSlug = `resumo-${latestDigest.date}`;
+const digestsByFile = {
+  "2026-05-20.json": digest20260520,
+};
+
+const digestPosts = digestIndex
+  .map((entry) => ({
+    ...entry,
+    digest: digestsByFile[entry.file],
+    slug: `resumo-${entry.date}`,
+  }))
+  .filter((entry) => entry.digest);
 
 const formatDate = (date) =>
   new Intl.DateTimeFormat("pt-BR", {
@@ -69,7 +79,7 @@ const renderDigestMarkdown = (markdown) => {
 const App = () => {
   const [newsletterMessage, setNewsletterMessage] = useState("");
   const [currentHash, setCurrentHash] = useState(window.location.hash);
-  const isDigestDetail = currentHash === `#${latestDigestSlug}`;
+  const selectedDigestPost = digestPosts.find((post) => currentHash === `#${post.slug}`);
 
   const handleNewsletterSubmit = (event) => {
     event.preventDefault();
@@ -83,7 +93,10 @@ const App = () => {
     return () => window.removeEventListener("hashchange", handleHashChange);
   }, []);
 
-  if (isDigestDetail) {
+  if (selectedDigestPost) {
+    const selectedDigest = selectedDigestPost.digest;
+    const selectedDigestItem = selectedDigest.items[0];
+
     return (
       <main className="site-shell">
         <header className="site-header">
@@ -103,19 +116,19 @@ const App = () => {
           </a>
           <div className="digest-meta">
             <span>Resumo diário</span>
-            <time dateTime={latestDigest.date}>{formatDate(latestDigest.date)}</time>
+            <time dateTime={selectedDigest.date}>{formatDate(selectedDigest.date)}</time>
           </div>
-          <h1>{latestDigest.title}</h1>
+          <h1>{selectedDigest.title}</h1>
           <div
             className="digest-content"
             dangerouslySetInnerHTML={{
-              __html: renderDigestMarkdown(latestDigestItem.summary),
+              __html: renderDigestMarkdown(selectedDigestItem.summary),
             }}
           />
           <div className="digest-sources">
             <h4>Fontes citadas</h4>
             <ul>
-              {latestDigestItem.sources.map((source) => (
+              {selectedDigestItem.sources.map((source) => (
                 <li key={source.url}>
                   <a href={source.url} target="_blank" rel="noreferrer">
                     {source.sourceName ? `${source.sourceName}: ` : ""}
@@ -224,21 +237,22 @@ const App = () => {
           <p className="eyebrow">Conteúdos sobre TI</p>
           <h2>Publicações e resumos de tecnologia</h2>
         </div>
-        <a className="digest-card" href={`#${latestDigestSlug}`}>
-          <div className="digest-meta">
-            <span>Resumo diário</span>
-            <time dateTime={latestDigest.date}>{formatDate(latestDigest.date)}</time>
-          </div>
-          <h3>{latestDigest.title}</h3>
-          <p>
-            Principais novidades sobre inteligência artificial, desenvolvimento, mercado e
-            ferramentas de tecnologia.
-          </p>
-          <div className="digest-card-footer">
-            <span>{latestDigestItem.sources.length} fontes citadas</span>
-            <strong>Ler resumo completo</strong>
-          </div>
-        </a>
+        <div className="digest-list">
+          {digestPosts.map((post) => (
+            <a className="digest-card" href={`#${post.slug}`} key={post.date}>
+              <div className="digest-meta">
+                <span>Resumo diário</span>
+                <time dateTime={post.date}>{formatDate(post.date)}</time>
+              </div>
+              <h3>{post.title}</h3>
+              <p>{post.summary}</p>
+              <div className="digest-card-footer">
+                <span>{post.sourceCount} fontes citadas</span>
+                <strong>Ler resumo completo</strong>
+              </div>
+            </a>
+          ))}
+        </div>
       </section>
 
       <footer className="site-footer">

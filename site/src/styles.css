@@ -322,6 +322,11 @@ p {
   padding: clamp(24px, 4vw, 40px);
 }
 
+.digest-list {
+  display: grid;
+  gap: 16px;
+}
+
 .digest-card {
   color: inherit;
   display: block;
