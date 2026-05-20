@@ -1,6 +1,7 @@
 import { Buffer } from "node:buffer";
 
 import { google } from "googleapis";
+import type { OAuth2Client } from "google-auth-library";
 
 import { NEWSLETTER_SENDERS } from "../config/senders.js";
 import type { NewsletterEmail } from "../types/newsletter.js";
@@ -16,6 +17,9 @@ type GmailHeader = {
   name?: string | null;
   value?: string | null;
 };
+
+const DEFAULT_PROCESSED_LABEL = "newsletter-workflow";
+const GMAIL_UNREAD_LABEL_ID = "UNREAD";
 
 export class GmailEmailProvider implements EmailProvider {
   private readonly maxResults: number;
@@ -42,15 +46,7 @@ export class GmailEmailProvider implements EmailProvider {
       return [];
     }
 
-    const auth = new google.auth.OAuth2(
-      process.env.GMAIL_CLIENT_ID,
-      process.env.GMAIL_CLIENT_SECRET
-    );
-    auth.setCredentials({
-      refresh_token: process.env.GMAIL_REFRESH_TOKEN,
-    });
-
-    const gmail = google.gmail({ version: "v1", auth });
+    const gmail = google.gmail({ version: "v1", auth: this.createAuthClient() });
     const query = this.buildQuery();
     const listResponse = await gmail.users.messages.list({
       userId: "me",
@@ -78,9 +74,75 @@ export class GmailEmailProvider implements EmailProvider {
     return emails;
   }
 
+  async markNewsletterEmailsProcessed(emails: NewsletterEmail[]): Promise<void> {
+    if (emails.length === 0) {
+      return;
+    }
+
+    if (!this.isConfigured()) {
+      console.warn("Gmail provider not configured. Emails were not marked as processed.");
+      return;
+    }
+
+    const gmail = google.gmail({ version: "v1", auth: this.createAuthClient() });
+    const labelName = process.env.GMAIL_PROCESSED_LABEL ?? DEFAULT_PROCESSED_LABEL;
+    const labelId = await this.getOrCreateLabelId(gmail, labelName);
+    const ids = emails.map((email) => email.id);
+
+    await gmail.users.messages.batchModify({
+      userId: "me",
+      requestBody: {
+        ids,
+        addLabelIds: [labelId],
+        removeLabelIds: [GMAIL_UNREAD_LABEL_ID],
+      },
+    });
+  }
+
   private buildQuery(): string {
     const fromQuery = this.senders.map((sender) => `from:${sender}`).join(" OR ");
     return `(${fromQuery}) newer_than:${this.newerThanDays}d`;
+  }
+
+  private createAuthClient(): OAuth2Client {
+    const auth = new google.auth.OAuth2(
+      process.env.GMAIL_CLIENT_ID,
+      process.env.GMAIL_CLIENT_SECRET
+    );
+    auth.setCredentials({
+      refresh_token: process.env.GMAIL_REFRESH_TOKEN,
+    });
+
+    return auth;
+  }
+
+  private async getOrCreateLabelId(
+    gmail: ReturnType<typeof google.gmail>,
+    labelName: string
+  ): Promise<string> {
+    const labelsResponse = await gmail.users.labels.list({
+      userId: "me",
+    });
+    const existingLabel = labelsResponse.data.labels?.find((label) => label.name === labelName);
+
+    if (existingLabel?.id) {
+      return existingLabel.id;
+    }
+
+    const createResponse = await gmail.users.labels.create({
+      userId: "me",
+      requestBody: {
+        labelListVisibility: "labelShow",
+        messageListVisibility: "show",
+        name: labelName,
+      },
+    });
+
+    if (!createResponse.data.id) {
+      throw new Error(`Could not create Gmail label "${labelName}".`);
+    }
+
+    return createResponse.data.id;
   }
 
   private toNewsletterEmail(messageId: string, message: unknown): NewsletterEmail {

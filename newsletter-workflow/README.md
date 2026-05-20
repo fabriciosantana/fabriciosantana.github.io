@@ -51,6 +51,7 @@ GMAIL_CLIENT_ID=
 GMAIL_CLIENT_SECRET=
 GMAIL_REFRESH_TOKEN=
 GMAIL_REDIRECT_URI=http://localhost:3000/oauth2callback
+GMAIL_PROCESSED_LABEL=newsletter-workflow
 ```
 
 Variáveis opcionais:
@@ -178,3 +179,5 @@ npm run newsletter:auth:gmail
 ```
 
 9. O comando imprimirá o `GMAIL_REFRESH_TOKEN`. Copie esse valor para o `.env`.
+
+O workflow usa o escopo `gmail.modify` para ler os e-mails, aplicar o label `newsletter-workflow` e marcar como lidos apenas os e-mails processados com sucesso após a publicação do resumo. Se você já tinha gerado um refresh token antigo com permissão somente leitura, gere um novo token.

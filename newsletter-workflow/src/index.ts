@@ -71,6 +71,16 @@ async function main() {
     (result) => ({ outputPath: result })
   );
 
+  await logStep(
+    "gmail.mark_processed",
+    () => emailProvider.markNewsletterEmailsProcessed(emails),
+    { emailCount: emails.length },
+    () => ({
+      processedLabel: process.env.GMAIL_PROCESSED_LABEL ?? "newsletter-workflow",
+      markedEmailCount: emails.length,
+    })
+  );
+
   await logEvent("info", "Newsletter workflow finished", {
     event: "workflow_finished",
     emailCount: emails.length,
@@ -81,6 +91,7 @@ async function main() {
     summarizableArticleCount: summarizableArticles.length,
     clusterCount: clusters.length,
     digestItems: digest.items.length,
+    markedEmailCount: emails.length,
     outputPath,
   });
 }

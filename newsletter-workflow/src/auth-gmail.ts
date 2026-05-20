@@ -4,7 +4,7 @@ import http from "node:http";
 
 import { google } from "googleapis";
 
-const GMAIL_READONLY_SCOPE = "https://www.googleapis.com/auth/gmail.readonly";
+const GMAIL_MODIFY_SCOPE = "https://www.googleapis.com/auth/gmail.modify";
 const REDIRECT_URI = process.env.GMAIL_REDIRECT_URI ?? "http://localhost:3000/oauth2callback";
 
 async function main() {
@@ -21,10 +21,10 @@ async function main() {
   const authUrl = auth.generateAuthUrl({
     access_type: "offline",
     prompt: "consent",
-    scope: [GMAIL_READONLY_SCOPE],
+    scope: [GMAIL_MODIFY_SCOPE],
   });
 
-  console.log("Abra esta URL no navegador e autorize o acesso readonly ao Gmail:");
+  console.log("Abra esta URL no navegador e autorize o acesso ao Gmail para ler, marcar como lido e aplicar labels:");
   console.log(authUrl);
   console.log("");
   console.log(`Aguardando callback em ${REDIRECT_URI} ...`);
