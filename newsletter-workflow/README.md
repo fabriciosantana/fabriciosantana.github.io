@@ -27,7 +27,7 @@ npm run newsletter:digest
 
 ## Gmail
 
-O provider do Gmail filtra os remetentes em `src/config/senders.ts`.
+O provider do Gmail filtra os remetentes em `src/config/senders.ts` e ignora mensagens que já possuem o label configurado em `GMAIL_PROCESSED_LABEL`.
 
 Remetentes configurados:
 

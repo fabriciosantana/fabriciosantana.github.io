@@ -101,7 +101,8 @@ export class GmailEmailProvider implements EmailProvider {
 
   private buildQuery(): string {
     const fromQuery = this.senders.map((sender) => `from:${sender}`).join(" OR ");
-    return `(${fromQuery}) newer_than:${this.newerThanDays}d`;
+    const processedLabel = process.env.GMAIL_PROCESSED_LABEL ?? DEFAULT_PROCESSED_LABEL;
+    return `(${fromQuery}) newer_than:${this.newerThanDays}d -label:${processedLabel}`;
   }
 
   private createAuthClient(): OAuth2Client {
