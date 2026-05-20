@@ -4,17 +4,16 @@
   "items": [
     {
       "title": "Resumo gerado",
-      "summary": "### Resumo Diário de Tecnologia\n\n#### Gemini 3.5: Inteligência de Fronteira com Ação\n- **[Gemini 3.5: frontier intelligence with action](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/)** (Google)\n  - O Google lançou o Gemini 3.5, que combina inteligência de ponta com ação, permitindo a execução de fluxos de trabalho complexos. O modelo 3.5 Flash é otimizado para tarefas de codificação e é quatro vezes mais rápido que outros modelos. Ele já está disponível para desenvolvedores e empresas, com aplicações em setores como finanças e automação de processos.\n  \n- **[Gemini 3.5 Flash](https://ai.google.dev/gemini-api/docs/models/gemini-3.5-flash?hl=pt-br)** (Google AI for Developers)\n  - O modelo oferece inteligência otimizada para tarefas do mundo real, com suporte para entradas multimodais e capacidade de execução em larga escala.\n\n#### Novidades em Agentes Gerenciados Claude\n- **[New in Claude Managed Agents: self-hosted sandboxes and MCP tunnels](https://claude.com/blog/claude-managed-agents-updates)** (Claude)\n  - A Claude introduziu sandboxes auto-hospedadas e túneis MCP, permitindo que as equipes executem ferramentas de agentes dentro de sua própria infraestrutura, aumentando a segurança e o controle.\n\n#### Demissões na Meta e Impacto da IA\n- **[Meta Begins 8,000 Global Job Cuts in AI Efficiency Push](https://finance.yahoo.com/news/meta-begins-8000-global-job-cuts-in-asian-hub-of-singapore-004153264.html)** (Yahoo Finance)\n  - A Meta anunciou a demissão de 8.000 funcionários como parte de uma reestruturação para reduzir custos enquanto investe em inteligência artificial. As demissões afetarão principalmente equipes de engenharia e produto.\n\n#### Reflexões sobre Gestão e IA\n- **[An uncomfortable truth for middle managers about AI](https://www.inthemakingleadership.com/p/an-uncomfortable-truth-for-middle)** \n  - Jack Dorsey argumenta que a IA pode substituir muitas funções de gerentes intermediários, levantando questões sobre a verdadeira natureza da gestão versus liderança.\n\n#### Avanços em Pesquisa e Desenvolvimento\n- **[Code as Agent Harness](https://arxiv.org/abs/2605.18747)** (arXiv)\n  - Um estudo discute como o código pode servir como uma infraestrutura operacional para sistemas de agentes, abordando desafios e aplicações práticas.\n\n#### Colaboração e Inovações em IA\n- **[KPMG integrates Claude across its core business and workforce of more than 276,000 in strategic alliance](https://www.anthropic.com/news/anthropic-kpmg)** (Anthropic)\n  - A KPMG anunciou uma aliança global com a Anthropic para integrar a IA Claude em suas operações, visando melhorar a eficiência e a inovação.\n\n- **[Automation Anywhere Collaborates with Cisco, NVIDIA, Okta, and OpenAI, Launching EnterpriseClaw to Run Next-Generation AI Agents Inside Enterprise Systems](https://www.prnewswire.com/news-releases/automation-anywhere-collaborates-with-cisco-nvidia-okta-and-openai-launching-enterpriseclaw-to-run-next-generation-ai-agents-inside-enterprise-systems-302775670.html)** \n  - A Automation Anywhere lançou o EnterpriseClaw, permitindo que agentes de IA operem em sistemas empresariais com controle centralizado.\n\n#### Desafios e Oportunidades em IA\n- **[Gen Z is over-relying on AI at work—and it could cost them their careers | Fortune](https://fortune.com/2026/05/19/gen-z-workers-over-reliance-ai-early-career-jobs/)** \n  - Um estudo revela que muitos trabalhadores da Geração Z estão excessivamente dependentes da IA, o que pode prejudicar seu desenvolvimento profissional.\n\n#### Novas Funcionalidades em Navegadores\n- **[Copilot in Edge | Microsoft Edge](https://www.microsoft.com/en-in/edge/copilot)** \n  - O Microsoft Edge agora inclui o Copilot, que ajuda os usuários a realizar tarefas diretamente no navegador, melhorando a produtividade.\n\n- **[Go behind the browser with Chrome’s new AI features](https://blog.google/products-and-platforms/products/chrome/new-ai-features-for-chrome/)** \n  - O Google Chrome está recebendo atualizações significativas com novas funcionalidades de IA, permitindo que os usuários realizem tarefas complexas de forma mais eficiente.\n\n#### Considerações Finais\n- O cenário tecnológico está em rápida evolução, com a IA desempenhando um papel central em inovações, reestruturações e desafios enfrentados por empresas e trabalhadores. As novas ferramentas e modelos, como o Gemini 3.5 e as integrações de Claude, estão moldando o futuro do trabalho e da colaboração.",
+      "summary": "### Como a Netflix Está Usando IA Multimodal para Potencializar a Busca de Vídeos\nA Netflix desenvolveu um sistema de busca que utiliza uma série de modelos de IA especializados para facilitar a localização de momentos específicos em grandes volumes de filmagens. Este sistema, que opera com uma arquitetura de três camadas, permite consultas híbridas de texto e vetor com latência de sub-segundo. A abordagem envolve o uso de múltiplos modelos de IA, cada um otimizado para tarefas específicas, como reconhecimento de personagens e classificação de cenas. [Leia mais](https://blog.bytebytego.com/p/how-netflix-is-using-multimodal-ai).\n\n### Lançamento do Gemini 3.5: Inteligência Fronteiriça com Ação\nO Google anunciou o Gemini 3.5, um modelo que combina inteligência avançada com a capacidade de executar tarefas complexas. O modelo é otimizado para desempenho em tarefas de codificação e agentes autônomos, prometendo ser quatro vezes mais rápido que outros modelos de ponta. O Gemini 3.5 Flash já está disponível para desenvolvedores e empresas através de várias plataformas, incluindo Google Antigravity e Google AI Studio. [Leia mais](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/).\n\n### Novidades nos Agentes Gerenciados do Claude: Sandboxes Autônomos e Túneis MCP\nA Anthropic lançou atualizações para os Agentes Gerenciados do Claude, permitindo que operem em sandboxes autônomos e se conectem a servidores privados via Model Context Protocol (MCP). Essas inovações visam aumentar a segurança e a eficiência, permitindo que as equipes mantenham o controle sobre a execução de ferramentas de IA dentro de sua própria infraestrutura. [Leia mais](https://claude.com/blog/claude-managed-agents-updates).\n\n### Meta Inicia Corte de 8.000 Empregos em Empreitada de Eficiência em IA\nA Meta anunciou a demissão de 8.000 funcionários como parte de uma reestruturação focada em reduzir custos e investir em inteligência artificial. O CEO Mark Zuckerberg destacou a necessidade de melhorar a comunicação interna e reforçou que a empresa está se transformando para se manter competitiva no setor de IA. [Leia mais](https://finance.yahoo.com/news/meta-begins-8000-global-job-cuts-in-asian-hub-of-singapore-004153264.html).\n\n### Uma Verdade Incômoda para Gerentes Intermediários sobre IA\nJack Dorsey argumenta que a IA pode substituir muitas funções dos gerentes intermediários, que frequentemente se tornam meros transmissores de informações. O artigo discute a diferença entre gerenciar e liderar, enfatizando que a liderança verdadeira não pode ser automatizada. [Leia mais](https://www.inthemakingleadership.com/p/an-uncomfortable-truth-for-middle).\n\n### Seis Níveis de Complexidade em um Briefing Matinal com Codex\nJason Liu apresenta um modelo de briefing matinal utilizando IA, que ajuda os usuários a organizarem suas tarefas diárias de maneira mais eficiente. O artigo detalha seis níveis de complexidade, desde a simples consulta de compromissos até a automação de relatórios recorrentes. [Leia mais](https://jxnl.co/writing/2026/05/18/six-levels-of-complexity-of-an-ai-powered-morning-brief-with-codex/).\n\n### Uso de Subagentes e Agentes Personalizados no Codex\nO OpenAI Codex agora oferece suporte a subagentes, permitindo que os usuários definam agentes personalizados com instruções específicas. Essa funcionalidade é semelhante à implementação do Claude Code e visa facilitar a execução de tarefas complexas em paralelo. [Leia mais](https://simonwillison.net/2026/Mar/16/codex-subagents/).\n\n### Código como Estrutura de Agente\nUm novo artigo no arXiv explora como o código pode servir como uma estrutura operacional para sistemas de IA, discutindo a interface de harness, mecanismos de planejamento e a escalabilidade de sistemas multiagentes. [Leia mais](https://arxiv.org/abs/2605.18747).\n\n### Google Lança Gemini 3.5 Flash e GitHub Sofre Violação por Extensão Maliciosa\nO Google lançou o Gemini 3.5 Flash, destacando sua capacidade de lidar com pipelines de codificação. Em contrapartida, o GitHub confirmou a violação de repositórios internos devido a uma extensão comprometida. [Leia mais](https://codenewsletter.ai/p/google-drops-gemini-3-5-flash-github-breached-via-a-malicious-extension).\n\n### Uma Nova Era para a Busca em IA\nO Google anunciou uma atualização significativa em seu sistema de busca, integrando capacidades de IA que permitem interações mais intuitivas e personalizadas. A nova caixa de busca inteligente promete facilitar a formulação de perguntas e a busca de informações. [Leia mais](https://blog.google/products-and-platforms/products/search/search-io-2026/).",
       "sources": [
+        {
+          "title": "How Netflix is Using Multimodal AI to Power Video Search",
+          "url": "https://blog.bytebytego.com/p/how-netflix-is-using-multimodal-ai"
+        },
         {
           "title": "Gemini 3.5: frontier intelligence with action",
           "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
           "sourceName": "Google"
-        },
-        {
-          "title": "Gemini 3.5 Flash",
-          "url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.5-flash?hl=pt-br",
-          "sourceName": "Google AI for Developers"
         },
         {
           "title": "New in Claude Managed Agents: self-hosted sandboxes and MCP tunnels",
@@ -31,30 +30,27 @@
           "url": "https://www.inthemakingleadership.com/p/an-uncomfortable-truth-for-middle"
         },
         {
+          "title": "Six levels of complexity in a Codex morning brief - Jason Liu",
+          "url": "https://jxnl.co/writing/2026/05/18/six-levels-of-complexity-of-an-ai-powered-morning-brief-with-codex/"
+        },
+        {
+          "title": "Use subagents and custom agents in Codex",
+          "url": "https://simonwillison.net/2026/Mar/16/codex-subagents/",
+          "sourceName": "Simon Willison’s Weblog"
+        },
+        {
           "title": "Code as Agent Harness",
           "url": "https://arxiv.org/abs/2605.18747",
           "sourceName": "arXiv.org"
         },
         {
-          "title": "KPMG integrates Claude across its core business and workforce of more than 276,000 in strategic alliance",
-          "url": "https://www.anthropic.com/news/anthropic-kpmg"
+          "title": "Google drops Gemini 3.5 Flash, GitHub breached via a malicious extension",
+          "url": "https://codenewsletter.ai/p/google-drops-gemini-3-5-flash-github-breached-via-a-malicious-extension",
+          "sourceName": "The Code"
         },
         {
-          "title": "Automation Anywhere Collaborates with Cisco, NVIDIA, Okta, and OpenAI, Launching EnterpriseClaw to Run Next-Generation AI Agents Inside Enterprise Systems",
-          "url": "https://www.prnewswire.com/news-releases/automation-anywhere-collaborates-with-cisco-nvidia-okta-and-openai-launching-enterpriseclaw-to-run-next-generation-ai-agents-inside-enterprise-systems-302775670.html"
-        },
-        {
-          "title": "Gen Z is over-relying on AI at work—and it could cost them their careers | Fortune",
-          "url": "https://fortune.com/2026/05/19/gen-z-workers-over-reliance-ai-early-career-jobs/",
-          "sourceName": "Fortune"
-        },
-        {
-          "title": "Copilot in Edge | Microsoft Edge",
-          "url": "https://www.microsoft.com/en-in/edge/copilot"
-        },
-        {
-          "title": "Go behind the browser with Chrome’s new AI features",
-          "url": "https://blog.google/products-and-platforms/products/chrome/new-ai-features-for-chrome/",
+          "title": "A new era for AI Search",
+          "url": "https://blog.google/products-and-platforms/products/search/search-io-2026/",
           "sourceName": "Google"
         }
       ]
