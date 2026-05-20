@@ -12,6 +12,7 @@ const IGNORED_URL_PATTERNS = [
   "beehiiv.com/advertise",
   "beehiiv.com/privacy",
   "beehiiv.com/tos",
+  "media.beehiiv.com",
   "hp.beehiiv.com",
   "/fb/",
   "feedback=",
@@ -50,7 +51,7 @@ export function extractNewsletterLinks(email: NewsletterEmail): NewsletterLink[]
   const html = email.html ?? "";
   const $ = cheerio.load(html);
 
-  const links = $("a[href]")
+  const htmlLinks = $("a[href]")
     .toArray()
     .map((element) => {
       const url = normalizeUrl($(element).attr("href") ?? "");
@@ -65,7 +66,9 @@ export function extractNewsletterLinks(email: NewsletterEmail): NewsletterLink[]
     })
     .filter((link) => isRelevantLink(link));
 
-  return dedupeLinks(links);
+  const textLinks = extractTextLinks(email);
+
+  return dedupeLinks([...htmlLinks, ...textLinks]);
 }
 
 function normalizeUrl(rawUrl: string): string {
@@ -101,6 +104,53 @@ function isRelevantLink(link: NewsletterLink): boolean {
   }
 
   return anchorText.length >= 8;
+}
+
+function extractTextLinks(email: NewsletterEmail): NewsletterLink[] {
+  const text = email.text ?? "";
+  const links: NewsletterLink[] = [];
+  const urlPattern = /https?:\/\/[^\s)>\]]+/g;
+
+  for (const line of text.split(/\r?\n/)) {
+    const matches = line.matchAll(urlPattern);
+
+    for (const match of matches) {
+      const rawUrl = trimTrailingPunctuation(match[0]);
+      const url = normalizeUrl(rawUrl);
+      const anchorText = inferTextLinkAnchor(line, rawUrl);
+      const link = {
+        url,
+        anchorText,
+        sourceEmailId: email.id,
+        sourceEmailSubject: email.subject,
+      };
+
+      if (isRelevantLink(link)) {
+        links.push(link);
+      }
+    }
+  }
+
+  return links;
+}
+
+function inferTextLinkAnchor(line: string, rawUrl: string): string {
+  const textWithoutUrl = line.replace(rawUrl, "").replace(/[()[\]]/g, " ");
+  const normalized = textWithoutUrl.replace(/\s+/g, " ").trim();
+
+  if (normalized.length >= 8) {
+    return normalized;
+  }
+
+  try {
+    return new URL(rawUrl).hostname.replace(/^www\./, "");
+  } catch {
+    return rawUrl;
+  }
+}
+
+function trimTrailingPunctuation(url: string): string {
+  return url.replace(/[.,;:!?]+$/, "");
 }
 
 function dedupeLinks(links: NewsletterLink[]): NewsletterLink[] {

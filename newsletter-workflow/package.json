@@ -7,6 +7,7 @@
   "scripts": {
     "auth:gmail": "tsx src/auth-gmail.ts",
     "digest": "tsx src/index.ts",
+    "inspect:email-content": "tsx src/inspect-email-content.ts",
     "inspect:grafana": "tsx src/inspect-grafana.ts",
     "inspect:gmail": "tsx src/inspect-gmail.ts",
     "inspect:links": "tsx src/inspect-links.ts",

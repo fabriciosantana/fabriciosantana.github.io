@@ -3,6 +3,7 @@ import "dotenv/config";
 import { summarizeDigest } from "./ai/summarize.js";
 import { clusterArticles } from "./ai/cluster.js";
 import { fetchArticles } from "./extractors/articles.js";
+import { extractArticlesFromEmailContent } from "./extractors/email-content.js";
 import { extractNewsletterLinks } from "./extractors/links.js";
 import { resolveNewsletterLinks } from "./extractors/redirects.js";
 import { GmailEmailProvider } from "./providers/gmail.js";
@@ -41,10 +42,19 @@ async function main() {
     (result) => ({ articleCount: result.length })
   );
 
+  const emailContentArticles = await logStep(
+    "emails.extract_content_articles",
+    () => extractArticlesFromEmailContent(emails),
+    { emailCount: emails.length },
+    (result) => ({ emailContentArticleCount: result.length })
+  );
+
+  const summarizableArticles = [...articles, ...emailContentArticles];
+
   const clusters = await logStep(
     "articles.cluster",
-    async () => clusterArticles(articles),
-    { articleCount: articles.length },
+    async () => clusterArticles(summarizableArticles),
+    { articleCount: summarizableArticles.length },
     (result) => ({ clusterCount: result.length })
   );
 
@@ -67,6 +77,8 @@ async function main() {
     linkCount: links.length,
     resolvedLinkCount: resolvedLinks.length,
     articleCount: articles.length,
+    emailContentArticleCount: emailContentArticles.length,
+    summarizableArticleCount: summarizableArticles.length,
     clusterCount: clusters.length,
     digestItems: digest.items.length,
     outputPath,

@@ -14,6 +14,7 @@ const DEFAULT_MAX_PER_EMAIL = 8;
 const DEFAULT_TIMEOUT_MS = 8000;
 
 const TRACKING_HOST_PATTERNS = [
+  "app.alphasignal.ai",
   "link.mail.beehiiv.com",
   "click.convertkit-mail",
   "open.substack.com",
@@ -57,6 +58,7 @@ export async function resolveNewsletterLinks(
 
   const dedupedLinks = dedupeByFinalUrl(resolvedLinks);
   const limitedLinks = limitLinksPerEmail(dedupedLinks, maxPerEmail);
+  const resolutionCountsByMethod = countByResolutionMethod(limitedLinks);
 
   await logEvent("info", "Links resolved", {
     event: "links_resolved",
@@ -67,9 +69,17 @@ export async function resolveNewsletterLinks(
     maxPerEmail,
     failureCountsByHost: Object.fromEntries(failureCountsByHost),
     failureCountsByReason: Object.fromEntries(failureCountsByReason),
+    resolutionCountsByMethod,
   });
 
   return limitedLinks;
+}
+
+function countByResolutionMethod(links: ResolvedNewsletterLink[]): Record<string, number> {
+  return links.reduce<Record<string, number>>((counts, link) => {
+    counts[link.resolutionMethod] = (counts[link.resolutionMethod] ?? 0) + 1;
+    return counts;
+  }, {});
 }
 
 async function resolveNewsletterLink(
@@ -94,18 +104,35 @@ async function resolveNewsletterLink(
     };
   }
 
+  if (isContentUrl(link.url, link.anchorText)) {
+    const finalUrl = normalizeFinalUrl(link.url);
+    return {
+      ok: true,
+      link: {
+        ...link,
+        url: finalUrl,
+        originalUrl: link.url,
+        finalUrl,
+        finalHost: getHost(finalUrl),
+        resolutionMethod: "direct_url",
+      },
+    };
+  }
+
   const abortController = new AbortController();
   const timeout = setTimeout(() => abortController.abort(), timeoutMs);
 
   try {
     const response = await fetch(link.url, {
       headers: {
+        accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7",
         "user-agent": "FabricioSantanaNewsletterBot/0.1",
       },
       redirect: "follow",
       signal: abortController.signal,
     });
-    await response.body?.cancel();
+    await response.arrayBuffer();
 
     const finalUrl = normalizeFinalUrl(response.url || link.url);
     const finalHost = getHost(finalUrl);
@@ -296,7 +323,7 @@ function isContentUrl(rawUrl: string, anchorText?: string): boolean {
   }
 
   if (
-    ["/action/disable_email", "/subscribe", "/newsletter"].some((path) =>
+    ["/action/disable_email", "/app-link", "/redirect", "/subscribe", "/newsletter"].some((path) =>
       url.pathname.toLowerCase().includes(path)
     )
   ) {

@@ -59,6 +59,8 @@ Variáveis opcionais:
 GMAIL_MAX_RESULTS=20
 GMAIL_NEWER_THAN_DAYS=2
 NEWSLETTER_MAX_LINKS_PER_EMAIL=8
+NEWSLETTER_MAX_EMAIL_CONTENT_ITEMS_PER_EMAIL=4
+NEWSLETTER_MAX_EMAIL_CONTENT_ARTICLES=60
 LINK_RESOLVE_TIMEOUT_MS=8000
 OPENAI_API_KEY=
 OPENAI_MODEL=gpt-4o-mini
@@ -111,6 +113,18 @@ Pela raiz do repositório:
 
 ```bash
 npm run newsletter:inspect:redirects
+```
+
+Para inspecionar os itens extraídos diretamente do corpo das newsletters:
+
+```bash
+npm run inspect:email-content
+```
+
+Pela raiz do repositório:
+
+```bash
+npm run newsletter:inspect:email-content
 ```
 
 Para inspecionar os e-mails encontrados sem gerar resumo:

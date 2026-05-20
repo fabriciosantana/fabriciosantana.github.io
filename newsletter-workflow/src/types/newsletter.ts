@@ -18,7 +18,7 @@ export type ResolvedNewsletterLink = NewsletterLink & {
   originalUrl: string;
   finalUrl: string;
   finalHost: string;
-  resolutionMethod: "embedded_url" | "http_redirect";
+  resolutionMethod: "direct_url" | "embedded_url" | "http_redirect";
   statusCode?: number;
 };
 
