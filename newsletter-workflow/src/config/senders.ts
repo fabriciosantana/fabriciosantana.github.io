@@ -9,4 +9,8 @@ export const NEWSLETTER_SENDERS = [
   "ai-signal@mail.beehiiv.com",
   "newsletter@filipedeschamps.com.br",
   "thecode@mail.joinsuperhuman.ai",
+  "abinoda@substack.com",
+  "thepalindrome@substack.com",
+  "garymarcus@substack.com",
+  "lenny@substack.com",
 ];
