@@ -1,0 +1,50 @@
+{
+  "date": "2026-05-21",
+  "title": "Resumo diário de tecnologia",
+  "items": [
+    {
+      "title": "Resumo gerado",
+      "summary": "### Resumo Diário de Tecnologia\n\n#### A Revolução dos Agentes de IA\n- **Podcast \"The AI Why\" com Swati Trehan**: A cofundadora da Ema discute como empresas da Fortune 500, como Hitachi, estão utilizando agentes de IA para gerenciar funções como RH, TI e atendimento ao cliente. Ela explica a evolução dos sistemas de IA de simples copilotos para agentes autônomos, além de abordar desafios como a complexidade do Excel e o futuro do software empresarial. [Ouça aqui](https://podcasts.apple.com/ca/podcast/the-ai-why-with-liam-lawson/id1723870953).\n- **Artigo da The AI Report**: Swati Trehan detalha como a Ema orquestra múltiplos modelos de IA e porque o RH é um ponto de entrada crucial para a adoção de IA nas empresas. [Leia mais](https://newsletter.theaireport.ai/p/ai-agents-are-replacing-software).\n\n#### Inovações da Google\n- **Co-Scientist da Google DeepMind**: Um novo sistema de IA multi-agente que ajuda pesquisadores a gerar e refinar hipóteses científicas. O sistema utiliza um \"torneio de ideias\" para debater e priorizar as melhores hipóteses, já sendo testado em problemas complexos como resistência a antimicrobianos. [Saiba mais](https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-to-accelerate-research/).\n- **Lançamento do Gemini 3.5**: Este modelo promete executar tarefas complexas de forma mais eficiente, sendo ideal para desenvolvedores e empresas. O Gemini 3.5 Flash é descrito como o modelo mais capaz até agora, com melhorias significativas em velocidade e desempenho. [Confira os detalhes](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/).\n\n#### Google I/O 2026\n- **Principais Lançamentos**: O evento trouxe inovações como o Gemini Omni, que permite edição de vídeo com compreensão física do mundo real, e o Gemini Spark, um agente pessoal que opera continuamente para gerenciar tarefas e monitorar projetos. [Leia mais sobre o evento](https://whatsupinai.beehiiv.com/p/the-google-i-o-2026).\n\n#### Ferramentas e Aplicações de IA\n- **StoreClaw**: Uma plataforma de IA que ajuda a otimizar e automatizar operações de e-commerce, monitorando pedidos e conversões em tempo real. [Explore a ferramenta](https://www.storeclaw.ai/).\n- **GhostSnap**: Um aplicativo que permite capturar múltiplas capturas de tela, compactá-las automaticamente e colá-las de uma só vez, otimizando o compartilhamento de informações visuais. [Saiba mais](https://ghostsnap.app/).\n\n#### Movimentos de Mercado\n- **Manus**: Agora parte da Meta, a Manus traz soluções de IA para empresas, permitindo a criação de apresentações, sites e aplicativos de forma simplificada. [Visite o site](https://manus.im/).\n\nEssas inovações e discussões refletem um momento significativo na evolução da tecnologia de IA e seu impacto em diversas indústrias, desde a pesquisa científica até o comércio eletrônico.",
+      "sources": [
+        {
+          "title": "The AI Why with Liam Lawson",
+          "url": "https://podcasts.apple.com/ca/podcast/the-ai-why-with-liam-lawson/id1723870953",
+          "sourceName": "Apple Podcasts"
+        },
+        {
+          "title": "⚡️ AI agents are replacing software",
+          "url": "https://newsletter.theaireport.ai/p/ai-agents-are-replacing-software",
+          "sourceName": "The AI Report"
+        },
+        {
+          "title": "Co-Scientist: A multi-agent AI partner to accelerate research",
+          "url": "https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-to-accelerate-research/",
+          "sourceName": "Google DeepMind"
+        },
+        {
+          "title": "Gemini 3.5: frontier intelligence with action",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
+          "sourceName": "Google"
+        },
+        {
+          "title": "AI Agent for Ecommerce — Run Your Store 24/7",
+          "url": "https://www.storeclaw.ai/",
+          "sourceName": "StoreClaw"
+        },
+        {
+          "title": "Manus: Hands On AI",
+          "url": "https://manus.im/"
+        },
+        {
+          "title": "GhostSnap — Snap. Pack. Paste.",
+          "url": "https://ghostsnap.app/"
+        },
+        {
+          "title": "The Google I/O 2026",
+          "url": "https://whatsupinai.beehiiv.com/p/the-google-i-o-2026",
+          "sourceName": "What's Up in AI"
+        }
+      ]
+    }
+  ]
+}
