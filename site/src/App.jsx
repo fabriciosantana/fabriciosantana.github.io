@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
-import digest20260520 from "./content/digests/2026-05-20.json";
-import digestIndex from "./content/digests/index.json";
+import { digestIndex, digestsByFile } from "./content/digests/generated.js";
 import profilePhoto from "./images/Fabricio.jpg";
 import "./styles.css";
 
@@ -22,10 +21,6 @@ const courses = [
     status: "Em breve",
   },
 ];
-
-const digestsByFile = {
-  "2026-05-20.json": digest20260520,
-};
 
 const digestPosts = digestIndex
   .map((entry) => ({

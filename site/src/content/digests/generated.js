@@ -1,0 +1,24 @@
+import digest0 from "./2026-05-21.json";
+import digest1 from "./2026-05-20.json";
+
+export const digestIndex = [
+  {
+    "date": "2026-05-21",
+    "file": "2026-05-21.json",
+    "sourceCount": 8,
+    "summary": "Resumo Diário de Tecnologia A Revolução dos Agentes de IA - Podcast \"The AI Why\" com Swati Trehan: A cofundadora da Ema discute como empresas da Fortune 500, como Hitachi, estão ut",
+    "title": "Resumo diário de tecnologia"
+  },
+  {
+    "date": "2026-05-20",
+    "file": "2026-05-20.json",
+    "sourceCount": 10,
+    "summary": "Como a Netflix Está Usando IA Multimodal para Potencializar a Busca de Vídeos A Netflix desenvolveu um sistema de busca que utiliza uma arquitetura de três camadas para orquestrar múltiplos modelos de",
+    "title": "Resumo diário de tecnologia"
+  }
+];
+
+export const digestsByFile = {
+  "2026-05-21.json": digest0,
+  "2026-05-20.json": digest1,
+};

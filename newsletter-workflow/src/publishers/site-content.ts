@@ -7,6 +7,7 @@ import type { Digest } from "../types/newsletter.js";
 const currentDir = path.dirname(fileURLToPath(import.meta.url));
 const DIGESTS_DIR = path.resolve(currentDir, "../../../site/src/content/digests");
 const DIGEST_INDEX_PATH = path.join(DIGESTS_DIR, "index.json");
+const DIGEST_MANIFEST_PATH = path.join(DIGESTS_DIR, "generated.js");
 
 type DigestIndexEntry = {
   date: string;
@@ -35,6 +36,7 @@ async function updateDigestIndex(digest: Digest, file: string): Promise<void> {
   );
 
   await writeFile(DIGEST_INDEX_PATH, `${JSON.stringify(nextIndex, null, 2)}\n`, "utf8");
+  await writeDigestManifest(nextIndex);
 }
 
 async function readDigestIndex(): Promise<DigestIndexEntry[]> {
@@ -65,4 +67,24 @@ function buildSummaryExcerpt(summary: string): string {
     .replace(/\s+/g, " ")
     .trim()
     .slice(0, 180);
+}
+
+async function writeDigestManifest(index: DigestIndexEntry[]): Promise<void> {
+  const imports = index
+    .map((entry, indexPosition) => `import digest${indexPosition} from "./${entry.file}";`)
+    .join("\n");
+  const digestsByFileEntries = index
+    .map((entry, indexPosition) => `  ${JSON.stringify(entry.file)}: digest${indexPosition},`)
+    .join("\n");
+
+  const content = `${imports}
+
+export const digestIndex = ${JSON.stringify(index, null, 2)};
+
+export const digestsByFile = {
+${digestsByFileEntries}
+};
+`;
+
+  await writeFile(DIGEST_MANIFEST_PATH, content, "utf8");
 }
