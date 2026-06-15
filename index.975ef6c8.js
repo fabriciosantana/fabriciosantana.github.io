@@ -27086,12 +27086,13 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _20260520Json = require("./content/digests/2026-05-20.json");
-var _20260520JsonDefault = parcelHelpers.interopDefault(_20260520Json);
+var _generatedJs = require("./content/digests/generated.js");
 var _fabricioJpg = require("./images/Fabricio.jpg");
 var _fabricioJpgDefault = parcelHelpers.interopDefault(_fabricioJpg);
 var _stylesCss = require("./styles.css");
-var _s = $RefreshSig$();
+var _s = $RefreshSig$(), _s1 = $RefreshSig$();
+const whatsappNumber = "5561982336222";
+const whatsappUrl = `https://wa.me/${whatsappNumber}`;
 const courses = [
     {
         title: "Engenharia de Software",
@@ -27109,13 +27110,17 @@ const courses = [
         status: "Em breve"
     }, 
 ];
-const latestDigestItem = (0, _20260520JsonDefault.default).items[0];
-const latestDigestSlug = `resumo-${(0, _20260520JsonDefault.default).date}`;
+const digestPosts = (0, _generatedJs.digestIndex).map((entry)=>({
+        ...entry,
+        digest: (0, _generatedJs.digestsByFile)[entry.file],
+        slug: `resumo-${entry.date}`
+    })).filter((entry)=>entry.digest);
 const formatDate = (date)=>new Intl.DateTimeFormat("pt-BR", {
         day: "2-digit",
         month: "long",
         year: "numeric"
     }).format(new Date(`${date}T00:00:00`));
+const formatPrice = (price, language)=>price[language];
 const renderDigestMarkdown = (markdown)=>{
     const escapeHtml = (value)=>value.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
     const renderInline = (value)=>escapeHtml(value).replace(/\*\*\[([^\]]+)\]\((https?:\/\/[^)]+)\)\*\*/g, '<a href="$2" target="_blank" rel="noreferrer">$1</a>').replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, '<a href="$2" target="_blank" rel="noreferrer">$1</a>').replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
@@ -27126,11 +27131,1297 @@ const renderDigestMarkdown = (markdown)=>{
         return `<p>${renderInline(line)}</p>`;
     }).join("");
 };
-const App = ()=>{
+const projectLanding = {
+    pt: {
+        nav: [
+            "Solu\xe7\xf5es",
+            "Como funciona",
+            "Pacotes",
+            "Contato"
+        ],
+        labels: {
+            positioning: "Posicionamento",
+            solutions: "Solu\xe7\xf5es",
+            process: "Processo",
+            packages: "Pacotes de entrega",
+            risk: "Redu\xe7\xe3o de risco",
+            leadership: "Lideran\xe7a t\xe9cnica",
+            skills: "Compet\xeancias",
+            faq: "FAQ",
+            contact: "Pr\xf3ximo passo"
+        },
+        switchLabel: "English",
+        heroEyebrow: "Desenvolvimento de software sob demanda",
+        heroTitle: "Transforme seu problema em um MVP, API, automa\xe7\xe3o ou solu\xe7\xe3o com IA com escopo claro e entrega previs\xedvel.",
+        heroText: "Receba uma solu\xe7\xe3o de software com pre\xe7o fixo, escopo definido e sem surpresas de entrega.",
+        heroCta: "Falar no WhatsApp",
+        secondaryCta: "Ver pacotes",
+        heroNote: "Primeira etapa fixa: 1 semana, at\xe9 5 encontros, R$ 3.000.",
+        stats: [
+            [
+                "20+",
+                "anos de experi\xeancia em engenharia, lideran\xe7a e arquitetura"
+            ],
+            [
+                "60+",
+                "engenheiros liderados em sistemas cr\xedticos institucionais"
+            ],
+            [
+                "4 semanas",
+                "por ciclo de entrega com escopo e valor combinados"
+            ], 
+        ],
+        problemTitle: "Para quem esta oferta foi criada",
+        problemText: "Para empresas que precisam contratar desenvolvimento de software com previsibilidade: sem proposta vaga, sem horas abertas e sem incerteza sobre o que ser\xe1 entregue. Antes de construir, a equipe entende o problema, organiza prioridades e transforma o projeto em um plano execut\xe1vel.",
+        processTitle: "Um fluxo simples para reduzir risco",
+        steps: [
+            {
+                title: "1. Discovery Sprint",
+                text: "Em 1 semana, at\xe9 5 encontros para entender o problema, mapear requisitos, riscos, integra\xe7\xf5es e prioridades. Entrega: relat\xf3rio detalhado e plano de trabalho."
+            },
+            {
+                title: "2. Backlog e acordo de entrega",
+                text: "O escopo do primeiro ciclo \xe9 definido com clareza: funcionalidades, crit\xe9rios de aceite, responsabilidades, depend\xeancias e indicadores de sucesso."
+            },
+            {
+                title: "3. Ciclos de 4 semanas",
+                text: "A equipe executa o ciclo com pr\xe1ticas inspiradas no Scrum, acompanhamento frequente, testes, revis\xe3o t\xe9cnica e demonstra\xe7\xe3o do que foi entregue."
+            }, 
+        ],
+        discoveryTitle: "Etapa inicial obrigat\xf3ria",
+        discoveryName: "Discovery Sprint",
+        discoveryPrice: {
+            pt: "R$ 3.000",
+            en: "US$ 500"
+        },
+        discoveryDuration: "1 semana",
+        discoveryDescription: "A forma mais segura de come\xe7ar. O cliente paga uma etapa fixa para receber clareza antes de assumir um ciclo maior de desenvolvimento.",
+        discoveryItems: [
+            "At\xe9 5 encontros remotos",
+            "Entendimento do problema e objetivos de neg\xf3cio",
+            "Levantamento de requisitos, riscos e integra\xe7\xf5es",
+            "Prioriza\xe7\xe3o inicial do produto",
+            "Plano de trabalho para desenvolvimento da solu\xe7\xe3o", 
+        ],
+        packagesTitle: "Escolha o ciclo certo para o seu momento",
+        packagesText: "Todos os pacotes t\xeam dura\xe7\xe3o fixa de 4 semanas. A melhor escolha depende da urg\xeancia, da complexidade t\xe9cnica e do volume de funcionalidades desejado.",
+        packages: [
+            {
+                name: "Essential Delivery",
+                price: {
+                    pt: "R$ 12.000",
+                    en: "US$ 2,000"
+                },
+                tag: "Para MVPs e m\xf3dulos objetivos",
+                description: "Ideal quando o problema est\xe1 bem delimitado e a empresa precisa de uma entrega s\xf3lida, test\xe1vel e pronta para evoluir.",
+                team: "Scrum Master, 1 engenheiro full-stack e 1 engenheiro de testes, DevOps, observabilidade e implanta\xe7\xe3o.",
+                includes: [
+                    "Backlog do ciclo",
+                    "Desenvolvimento full-stack",
+                    "Testes automatizados",
+                    "Deploy e acompanhamento t\xe9cnico", 
+                ]
+            },
+            {
+                name: "Product Acceleration",
+                price: {
+                    pt: "R$ 24.000",
+                    en: "US$ 4,000"
+                },
+                tag: "Escolha recomendada",
+                description: "Para empresas que precisam acelerar a constru\xe7\xe3o de um produto, API ou integra\xe7\xe3o com mais capacidade de desenvolvimento e refinamento.",
+                team: "Lideran\xe7a t\xe9cnica, Scrum Master, 2 engenheiros full-stack e 1 especialista em qualidade, DevOps e implanta\xe7\xe3o.",
+                includes: [
+                    "Mais velocidade de entrega",
+                    "Arquitetura e revis\xe3o t\xe9cnica",
+                    "Testes e CI/CD",
+                    "Demonstra\xe7\xe3o e relat\xf3rio do ciclo", 
+                ],
+                featured: true
+            },
+            {
+                name: "Scale & Intelligence",
+                price: {
+                    pt: "R$ 36.000",
+                    en: "US$ 6,000"
+                },
+                tag: "Para projetos cr\xedticos ou com IA",
+                description: "Para solu\xe7\xf5es com maior complexidade, integra\xe7\xf5es relevantes, automa\xe7\xe3o avan\xe7ada, requisitos de seguran\xe7a ou componentes de intelig\xeancia artificial.",
+                team: "Respons\xe1vel t\xe9cnico, Scrum Master, 2 engenheiros full-stack, especialista em QA/DevOps e especialista em IA, dados ou integra\xe7\xf5es.",
+                includes: [
+                    "Arquitetura evolutiva",
+                    "Automa\xe7\xe3o e IA quando aplic\xe1vel",
+                    "Observabilidade e seguran\xe7a",
+                    "Plano t\xe9cnico de escala", 
+                ]
+            }, 
+        ],
+        leadershipTitle: "Lideran\xe7a t\xe9cnica com experi\xeancia real em sistemas cr\xedticos",
+        leadershipText: "Fabricio Santana atua como respons\xe1vel t\xe9cnico, l\xedder e gestor dos projetos. Sua experi\xeancia inclui coordena\xe7\xe3o de times com mais de 60 engenheiros, sistemas cr\xedticos para o processo legislativo brasileiro, transforma\xe7\xe3o digital, aplica\xe7\xf5es m\xf3veis, fluxos sem papel, automa\xe7\xe3o, seguran\xe7a, testes e iniciativas de intelig\xeancia artificial.",
+        leadershipBullets: [
+            "Coordena\xe7\xe3o de projetos complexos e comunica\xe7\xe3o entre neg\xf3cio e tecnologia",
+            "Arquitetura, backend, APIs, integra\xe7\xf5es, seguran\xe7a e qualidade",
+            "Experi\xeancia acad\xeamica em Engenharia de Software e Ci\xeancia da Computa\xe7\xe3o",
+            "Pr\xe1ticas modernas de engenharia para software seguro, test\xe1vel e sustent\xe1vel", 
+        ],
+        useCasesTitle: "O que a equipe pode construir para sua empresa",
+        useCasesText: "A oferta \xe9 especialmente adequada para projetos que precisam sair do plano e virar software funcional, com c\xf3digo organizado, testes e implanta\xe7\xe3o.",
+        useCases: [
+            "MVPs e produtos web",
+            "APIs REST e backends Java/Spring Boot",
+            "Ferramentas internas e dashboards",
+            "Integra\xe7\xf5es entre sistemas e bancos de dados",
+            "Automa\xe7\xe3o de processos manuais",
+            "Aplica\xe7\xf5es com intelig\xeancia artificial",
+            "Testes automatizados e qualidade cont\xednua",
+            "Melhorias de arquitetura e seguran\xe7a", 
+        ],
+        riskTitle: "Menos risco para contratar desenvolvimento remoto",
+        riskItems: [
+            "Escopo do ciclo definido antes da execu\xe7\xe3o",
+            "Crit\xe9rios de aceite claros para cada funcionalidade",
+            "Demonstra\xe7\xf5es frequentes do que foi entregue",
+            "C\xf3digo versionado em reposit\xf3rio Git",
+            "Testes automatizados quando aplic\xe1vel",
+            "Deploy, observabilidade e acompanhamento t\xe9cnico",
+            "Voc\xea mant\xe9m a propriedade do c\xf3digo produzido",
+            "Sem cobran\xe7a aberta por horas indefinidas", 
+        ],
+        faqTitle: "Perguntas frequentes",
+        faqs: [
+            {
+                question: "A equipe trabalha com clientes dos Estados Unidos?",
+                answer: "Sim. A comunica\xe7\xe3o pode ser feita em ingl\xeas, com reuni\xf5es remotas e alinhamentos adequados a clientes internacionais."
+            },
+            {
+                question: "Os valores em d\xf3lar s\xe3o fixos?",
+                answer: "Na vers\xe3o em ingl\xeas, os valores s\xe3o apresentados em d\xf3lar. A contrata\xe7\xe3o pode ser ajustada conforme a plataforma usada."
+            },
+            {
+                question: "O cliente \xe9 dono do c\xf3digo?",
+                answer: "Sim. O c\xf3digo produzido para o projeto pertence ao cliente, conforme as condi\xe7\xf5es acordadas na contrata\xe7\xe3o."
+            },
+            {
+                question: "O projeto precisa come\xe7ar pelo Discovery Sprint?",
+                answer: "Sim. Essa etapa reduz risco, organiza o escopo e permite recomendar o pacote certo antes de iniciar um ciclo maior."
+            },
+            {
+                question: "Quais canais de comunica\xe7\xe3o s\xe3o usados?",
+                answer: "WhatsApp, email, reuni\xf5es remotas e, quando necess\xe1rio, ferramentas do pr\xf3prio cliente ou da plataforma de contrata\xe7\xe3o."
+            },
+            {
+                question: "O trabalho inclui implanta\xe7\xe3o?",
+                answer: "Sim, os pacotes consideram suporte t\xe9cnico para implanta\xe7\xe3o e acompanhamento dentro do escopo acordado para o ciclo."
+            }, 
+        ],
+        techTitle: "Principais tecnologias e compet\xeancias",
+        techs: [
+            "Java",
+            "Spring Boot",
+            "Backend Development",
+            "REST APIs",
+            "Software Architecture",
+            "System Integration",
+            "PostgreSQL",
+            "Oracle Database",
+            "SQL",
+            "Angular",
+            "Bootstrap",
+            "Git",
+            "Docker",
+            "CI/CD",
+            "GitHub Actions",
+            "Automated Testing",
+            "JUnit",
+            "Cucumber",
+            "Playwright",
+            "Agile Methodologies",
+            "Scrum",
+            "Cybersecurity",
+            "Artificial Intelligence", 
+        ],
+        finalTitle: "Vamos transformar sua necessidade em um plano de entrega claro?",
+        finalText: "Comece pelo Discovery Sprint. Em uma semana, sua empresa recebe clareza t\xe9cnica, plano de trabalho e uma recomenda\xe7\xe3o objetiva sobre o melhor ciclo de desenvolvimento."
+    },
+    en: {
+        nav: [
+            "Solutions",
+            "How it works",
+            "Packages",
+            "Contact"
+        ],
+        labels: {
+            positioning: "Positioning",
+            solutions: "Solutions",
+            process: "Process",
+            packages: "Delivery packages",
+            risk: "Risk reduction",
+            leadership: "Technical leadership",
+            skills: "Skills",
+            faq: "FAQ",
+            contact: "Next step"
+        },
+        switchLabel: "Portugu\xeas",
+        heroEyebrow: "Custom software development",
+        heroTitle: "Launch your MVP, API, automation, or AI solution with clear scope, fixed delivery, and predictable pricing.",
+        heroText: "Get a software partner that turns a defined business problem into working software without open-ended billing, scope drift, or delivery surprises.",
+        heroCta: "Contact on WhatsApp",
+        secondaryCta: "See packages",
+        heroNote: "First fixed step: 1 week, up to 5 meetings, US$ 500.",
+        stats: [
+            [
+                "20+",
+                "years in engineering, technical leadership, and architecture"
+            ],
+            [
+                "60+",
+                "engineers led in mission-critical institutional systems"
+            ],
+            [
+                "4 weeks",
+                "per delivery cycle with agreed scope and fixed price"
+            ], 
+        ],
+        problemTitle: "Who this offer is for",
+        problemText: "For companies that need predictable software development: no vague proposal, no open-ended hours, and no uncertainty about what will be delivered. Before building, the team understands the problem, organizes priorities, and turns the project into an executable plan.",
+        processTitle: "A simple flow to reduce risk",
+        steps: [
+            {
+                title: "1. Discovery Sprint",
+                text: "In 1 week, up to 5 meetings to understand the problem, map requirements, risks, integrations, and priorities. Deliverable: a detailed report and work plan."
+            },
+            {
+                title: "2. Backlog and delivery agreement",
+                text: "The first cycle scope is clearly defined: features, acceptance criteria, responsibilities, dependencies, and success indicators."
+            },
+            {
+                title: "3. Four-week delivery cycles",
+                text: "The team executes the cycle with Scrum-inspired practices, frequent alignment, testing, technical review, and a demo of what was delivered."
+            }, 
+        ],
+        discoveryTitle: "Required first step",
+        discoveryName: "Discovery Sprint",
+        discoveryPrice: {
+            pt: "R$ 3.000",
+            en: "US$ 500"
+        },
+        discoveryDuration: "1 week",
+        discoveryDescription: "The safest way to start. The client pays for a fixed step to gain clarity before committing to a larger development cycle.",
+        discoveryItems: [
+            "Up to 5 remote meetings",
+            "Problem and business-goal understanding",
+            "Requirements, risks, and integrations mapping",
+            "Initial product prioritization",
+            "Work plan for solution development", 
+        ],
+        packagesTitle: "Choose the right cycle for your stage",
+        packagesText: "All packages run for a fixed 4-week cycle. The best choice depends on urgency, technical complexity, and the amount of functionality expected.",
+        packages: [
+            {
+                name: "Essential Delivery",
+                price: {
+                    pt: "R$ 12.000",
+                    en: "US$ 2,000"
+                },
+                tag: "For MVPs and focused modules",
+                description: "Best when the problem is well defined and the company needs a solid, testable delivery that is ready to evolve.",
+                team: "Scrum Master, 1 full-stack engineer, and 1 engineer focused on test automation, DevOps, observability, and deployment.",
+                includes: [
+                    "Cycle backlog",
+                    "Full-stack development",
+                    "Automated tests",
+                    "Deployment and technical follow-up", 
+                ]
+            },
+            {
+                name: "Product Acceleration",
+                price: {
+                    pt: "R$ 24.000",
+                    en: "US$ 4,000"
+                },
+                tag: "Recommended choice",
+                description: "For companies that need to accelerate a product, API, or integration with more development capacity and refinement.",
+                team: "Technical leadership, Scrum Master, 2 full-stack engineers, and 1 specialist in quality, DevOps, and deployment.",
+                includes: [
+                    "More delivery capacity",
+                    "Architecture and technical review",
+                    "Testing and CI/CD",
+                    "Cycle demo and report", 
+                ],
+                featured: true
+            },
+            {
+                name: "Scale & Intelligence",
+                price: {
+                    pt: "R$ 36.000",
+                    en: "US$ 6,000"
+                },
+                tag: "For critical or AI projects",
+                description: "For solutions with higher complexity, relevant integrations, advanced automation, security requirements, or artificial intelligence components.",
+                team: "Technical lead, Scrum Master, 2 full-stack engineers, QA/DevOps specialist, and AI, data, or integration specialist.",
+                includes: [
+                    "Evolutionary architecture",
+                    "Automation and AI when applicable",
+                    "Observability and security",
+                    "Technical scale plan", 
+                ]
+            }, 
+        ],
+        leadershipTitle: "Technical leadership with real experience in critical systems",
+        leadershipText: "Fabricio Santana acts as the technical owner, leader, and project manager. His experience includes leading teams of more than 60 engineers, mission-critical systems for the Brazilian legislative process, digital transformation, mobile applications, paperless workflows, automation, security, testing, and artificial intelligence initiatives.",
+        leadershipBullets: [
+            "Coordination of complex projects and communication between business and technology",
+            "Architecture, backend, APIs, integrations, security, and quality",
+            "Academic experience in Software Engineering and Computer Science",
+            "Modern engineering practices for secure, testable, and maintainable software", 
+        ],
+        useCasesTitle: "What the team can build for your company",
+        useCasesText: "This offer is designed for projects that need to move from idea to working software, with organized code, tests, and deployment.",
+        useCases: [
+            "MVPs and web products",
+            "REST APIs and Java/Spring Boot backends",
+            "Internal tools and dashboards",
+            "System and database integrations",
+            "Manual process automation",
+            "Artificial intelligence applications",
+            "Automated testing and continuous quality",
+            "Architecture and security improvements", 
+        ],
+        riskTitle: "Lower risk when hiring remote development",
+        riskItems: [
+            "Cycle scope agreed before execution",
+            "Clear acceptance criteria for each feature",
+            "Frequent demos of delivered work",
+            "Code versioned in a Git repository",
+            "Automated tests when applicable",
+            "Deployment, observability, and technical follow-up",
+            "You keep ownership of the produced code",
+            "No open-ended hourly billing", 
+        ],
+        faqTitle: "Frequently asked questions",
+        faqs: [
+            {
+                question: "Does the team work with US clients?",
+                answer: "Yes. Communication can be handled in English, with remote meetings and alignment suitable for international clients."
+            },
+            {
+                question: "Are the dollar prices fixed?",
+                answer: "In the English version, the prices are presented in USD. Contract details can be adjusted according to the platform used."
+            },
+            {
+                question: "Does the client own the code?",
+                answer: "Yes. The code produced for the project belongs to the client, according to the conditions agreed during contracting."
+            },
+            {
+                question: "Does the project need to start with the Discovery Sprint?",
+                answer: "Yes. This step reduces risk, organizes scope, and makes it possible to recommend the right package before starting a larger cycle."
+            },
+            {
+                question: "Which communication channels are used?",
+                answer: "WhatsApp, email, remote meetings, and, when needed, the client’s own tools or the hiring platform."
+            },
+            {
+                question: "Is deployment included?",
+                answer: "Yes, the packages include technical support for deployment and follow-up within the agreed cycle scope."
+            }, 
+        ],
+        techTitle: "Core technologies and skills",
+        techs: [
+            "Java",
+            "Spring Boot",
+            "Backend Development",
+            "REST APIs",
+            "Software Architecture",
+            "System Integration",
+            "PostgreSQL",
+            "Oracle Database",
+            "SQL",
+            "Angular",
+            "Bootstrap",
+            "Git",
+            "Docker",
+            "CI/CD",
+            "GitHub Actions",
+            "Automated Testing",
+            "JUnit",
+            "Cucumber",
+            "Playwright",
+            "Agile Methodologies",
+            "Scrum",
+            "Cybersecurity",
+            "Artificial Intelligence", 
+        ],
+        finalTitle: "Ready to turn your need into a clear delivery plan?",
+        finalText: "Start with the Discovery Sprint. In one week, your company gets technical clarity, a work plan, and an objective recommendation for the best development cycle."
+    }
+};
+const ProjectsLanding = ()=>{
     _s();
+    const [language, setLanguage] = (0, _react.useState)("en");
+    const content = projectLanding[language];
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {
+        className: "site-shell projects-page",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
+                className: "site-header projects-header",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        className: "brand",
+                        href: "/",
+                        "aria-label": "Fabricio Santana",
+                        children: "Fabricio Santana"
+                    }, void 0, false, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 495,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
+                        className: "nav-links",
+                        "aria-label": "Projects navigation",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "#solucoes",
+                                children: content.nav[0]
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 499,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "#como-funciona",
+                                children: content.nav[1]
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 500,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "#pacotes",
+                                children: content.nav[2]
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 501,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "#contato",
+                                children: content.nav[3]
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 502,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: "language-toggle",
+                                type: "button",
+                                onClick: ()=>setLanguage(language === "pt" ? "en" : "pt"),
+                                children: content.switchLabel
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 503,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 498,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/App.jsx",
+                lineNumber: 494,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                className: "projects-hero",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "projects-hero-copy",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "eyebrow",
+                                children: content.heroEyebrow
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 514,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                children: content.heroTitle
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 515,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "projects-lead",
+                                children: content.heroText
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 516,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "hero-note",
+                                children: content.heroNote
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 517,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 513,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("aside", {
+                        className: "hero-proof",
+                        "aria-label": "Experience highlights",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "hero-proof-title",
+                                children: content.labels.contact
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 520,
+                                columnNumber: 11
+                            }, undefined),
+                            content.stats.map(([value, label])=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "proof-item",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                            children: value
+                                        }, void 0, false, {
+                                            fileName: "src/App.jsx",
+                                            lineNumber: 523,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            children: label
+                                        }, void 0, false, {
+                                            fileName: "src/App.jsx",
+                                            lineNumber: 524,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, value, true, {
+                                    fileName: "src/App.jsx",
+                                    lineNumber: 522,
+                                    columnNumber: 13
+                                }, undefined)),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "hero-proof-actions",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    className: "button primary",
+                                    href: whatsappUrl,
+                                    target: "_blank",
+                                    rel: "noreferrer",
+                                    children: content.heroCta
+                                }, void 0, false, {
+                                    fileName: "src/App.jsx",
+                                    lineNumber: 528,
+                                    columnNumber: 13
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 527,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 519,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/App.jsx",
+                lineNumber: 512,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                className: "projects-section split-section",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "eyebrow",
+                                children: content.labels.positioning
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 536,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                children: content.problemTitle
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 537,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 535,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: "large-copy",
+                        children: content.problemText
+                    }, void 0, false, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 539,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/App.jsx",
+                lineNumber: 534,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                className: "projects-section use-cases-section",
+                id: "solucoes",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "section-heading wide-heading",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "eyebrow",
+                                children: content.labels.solutions
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 543,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                children: content.useCasesTitle
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 544,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: content.useCasesText
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 545,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 542,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "use-case-grid",
+                        children: content.useCases.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
+                                className: "use-case-card",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                    children: item
+                                }, void 0, false, {
+                                    fileName: "src/App.jsx",
+                                    lineNumber: 550,
+                                    columnNumber: 15
+                                }, undefined)
+                            }, item, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 549,
+                                columnNumber: 13
+                            }, undefined))
+                    }, void 0, false, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 547,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/App.jsx",
+                lineNumber: 541,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                className: "projects-section",
+                id: "como-funciona",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "section-heading wide-heading",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "eyebrow",
+                                children: content.labels.process
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 557,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                children: content.processTitle
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 558,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 556,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "process-grid",
+                        children: content.steps.map((step)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
+                                className: "process-card",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                        children: step.title
+                                    }, void 0, false, {
+                                        fileName: "src/App.jsx",
+                                        lineNumber: 563,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        children: step.text
+                                    }, void 0, false, {
+                                        fileName: "src/App.jsx",
+                                        lineNumber: 564,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, step.title, true, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 562,
+                                columnNumber: 13
+                            }, undefined))
+                    }, void 0, false, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 560,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/App.jsx",
+                lineNumber: 555,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                className: "projects-section discovery-band",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "eyebrow",
+                                children: content.discoveryTitle
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 571,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                children: content.discoveryName
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 572,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: content.discoveryDescription
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 573,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 570,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "discovery-card",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "price-row",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                        children: formatPrice(content.discoveryPrice, language)
+                                    }, void 0, false, {
+                                        fileName: "src/App.jsx",
+                                        lineNumber: 577,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        children: content.discoveryDuration
+                                    }, void 0, false, {
+                                        fileName: "src/App.jsx",
+                                        lineNumber: 578,
+                                        columnNumber: 13
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 576,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                children: content.discoveryItems.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                        children: item
+                                    }, item, false, {
+                                        fileName: "src/App.jsx",
+                                        lineNumber: 582,
+                                        columnNumber: 15
+                                    }, undefined))
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 580,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 575,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/App.jsx",
+                lineNumber: 569,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                className: "projects-section",
+                id: "pacotes",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "section-heading wide-heading",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "eyebrow",
+                                children: content.labels.packages
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 589,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                children: content.packagesTitle
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 590,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: content.packagesText
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 591,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 588,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "pricing-grid",
+                        children: content.packages.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
+                                className: `pricing-card${item.featured ? " featured" : ""}`,
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "package-tag",
+                                        children: item.tag
+                                    }, void 0, false, {
+                                        fileName: "src/App.jsx",
+                                        lineNumber: 596,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                        children: item.name
+                                    }, void 0, false, {
+                                        fileName: "src/App.jsx",
+                                        lineNumber: 597,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "package-price",
+                                        children: formatPrice(item.price, language)
+                                    }, void 0, false, {
+                                        fileName: "src/App.jsx",
+                                        lineNumber: 598,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        children: item.description
+                                    }, void 0, false, {
+                                        fileName: "src/App.jsx",
+                                        lineNumber: 599,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                        className: "team-line",
+                                        children: item.team
+                                    }, void 0, false, {
+                                        fileName: "src/App.jsx",
+                                        lineNumber: 600,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                        children: item.includes.map((feature)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                children: feature
+                                            }, feature, false, {
+                                                fileName: "src/App.jsx",
+                                                lineNumber: 603,
+                                                columnNumber: 19
+                                            }, undefined))
+                                    }, void 0, false, {
+                                        fileName: "src/App.jsx",
+                                        lineNumber: 601,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                        className: "button primary",
+                                        href: whatsappUrl,
+                                        target: "_blank",
+                                        rel: "noreferrer",
+                                        children: content.heroCta
+                                    }, void 0, false, {
+                                        fileName: "src/App.jsx",
+                                        lineNumber: 606,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, item.name, true, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 595,
+                                columnNumber: 13
+                            }, undefined))
+                    }, void 0, false, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 593,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/App.jsx",
+                lineNumber: 587,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                className: "projects-section risk-section",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "section-heading wide-heading",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "eyebrow",
+                                children: content.labels.risk
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 615,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                children: content.riskTitle
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 616,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 614,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "risk-grid",
+                        children: content.riskItems.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "risk-item",
+                                children: item
+                            }, item, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 620,
+                                columnNumber: 13
+                            }, undefined))
+                    }, void 0, false, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 618,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/App.jsx",
+                lineNumber: 613,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                className: "projects-section split-section",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "eyebrow",
+                                children: content.labels.leadership
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 628,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                children: content.leadershipTitle
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 629,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 627,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "large-copy",
+                                children: content.leadershipText
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 632,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                className: "check-list",
+                                children: content.leadershipBullets.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                        children: item
+                                    }, item, false, {
+                                        fileName: "src/App.jsx",
+                                        lineNumber: 635,
+                                        columnNumber: 15
+                                    }, undefined))
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 633,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 631,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/App.jsx",
+                lineNumber: 626,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                className: "projects-section tech-section",
+                id: "tecnologias",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "section-heading wide-heading",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "eyebrow",
+                                children: content.labels.skills
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 642,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                children: content.techTitle
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 643,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 641,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "tech-cloud",
+                        children: content.techs.map((tech)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                children: tech
+                            }, tech, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 647,
+                                columnNumber: 13
+                            }, undefined))
+                    }, void 0, false, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 645,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/App.jsx",
+                lineNumber: 640,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                className: "projects-section faq-section",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "section-heading wide-heading",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "eyebrow",
+                                children: content.labels.faq
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 653,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                children: content.faqTitle
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 654,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 652,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "faq-grid",
+                        children: content.faqs.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
+                                className: "faq-item",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                        children: item.question
+                                    }, void 0, false, {
+                                        fileName: "src/App.jsx",
+                                        lineNumber: 659,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        children: item.answer
+                                    }, void 0, false, {
+                                        fileName: "src/App.jsx",
+                                        lineNumber: 660,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, item.question, true, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 658,
+                                columnNumber: 13
+                            }, undefined))
+                    }, void 0, false, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 656,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/App.jsx",
+                lineNumber: 651,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                className: "projects-final",
+                id: "contato",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: "eyebrow",
+                        children: content.labels.contact
+                    }, void 0, false, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 666,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        children: content.finalTitle
+                    }, void 0, false, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 667,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: content.finalText
+                    }, void 0, false, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 668,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "final-actions",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            className: "button primary",
+                            href: whatsappUrl,
+                            target: "_blank",
+                            rel: "noreferrer",
+                            children: [
+                                content.heroCta,
+                                ": +55 61 98233-6222"
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/App.jsx",
+                            lineNumber: 670,
+                            columnNumber: 11
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 669,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/App.jsx",
+                lineNumber: 665,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("footer", {
+                className: "site-footer",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: "Fabricio Santana"
+                    }, void 0, false, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 676,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: "mailto:fabricio.santana@gmail.com",
+                        children: "fabricio.santana@gmail.com"
+                    }, void 0, false, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 677,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/App.jsx",
+                lineNumber: 675,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/App.jsx",
+        lineNumber: 493,
+        columnNumber: 5
+    }, undefined);
+};
+_s(ProjectsLanding, "JgNS4s3wc06/6u6z+Ak7Ai5ELN8=");
+_c = ProjectsLanding;
+const App = ()=>{
+    _s1();
     const [newsletterMessage, setNewsletterMessage] = (0, _react.useState)("");
     const [currentHash, setCurrentHash] = (0, _react.useState)(window.location.hash);
-    const isDigestDetail = currentHash === `#${latestDigestSlug}`;
+    const selectedDigestPost = digestPosts.find((post)=>currentHash === `#${post.slug}`);
     const handleNewsletterSubmit = (event)=>{
         event.preventDefault();
         setNewsletterMessage("Obrigado! Seu interesse na newsletter foi registrado.");
@@ -27140,192 +28431,209 @@ const App = ()=>{
         window.addEventListener("hashchange", handleHashChange);
         return ()=>window.removeEventListener("hashchange", handleHashChange);
     }, []);
-    if (isDigestDetail) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {
-        className: "site-shell",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
-                className: "site-header",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        className: "brand",
-                        href: "#inicio",
-                        "aria-label": "Fabricio Santana",
-                        children: "Fabricio Santana"
-                    }, void 0, false, {
-                        fileName: "src/App.jsx",
-                        lineNumber: 90,
-                        columnNumber: 11
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
-                        className: "nav-links",
-                        "aria-label": "Navegacao principal",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: "#sobre",
-                                children: "Sobre"
-                            }, void 0, false, {
-                                fileName: "src/App.jsx",
-                                lineNumber: 94,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: "#cursos",
-                                children: "Cursos"
-                            }, void 0, false, {
-                                fileName: "src/App.jsx",
-                                lineNumber: 95,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: "#conteudos",
-                                children: "Conte\xfados"
-                            }, void 0, false, {
-                                fileName: "src/App.jsx",
-                                lineNumber: 96,
-                                columnNumber: 13
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/App.jsx",
-                        lineNumber: 93,
-                        columnNumber: 11
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/App.jsx",
-                lineNumber: 89,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
-                className: "digest-detail-page",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        className: "back-link",
-                        href: "#conteudos",
-                        children: "Voltar para conte\xfados"
-                    }, void 0, false, {
-                        fileName: "src/App.jsx",
-                        lineNumber: 101,
-                        columnNumber: 11
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "digest-meta",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                children: "Resumo di\xe1rio"
-                            }, void 0, false, {
-                                fileName: "src/App.jsx",
-                                lineNumber: 105,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("time", {
-                                dateTime: (0, _20260520JsonDefault.default).date,
-                                children: formatDate((0, _20260520JsonDefault.default).date)
-                            }, void 0, false, {
-                                fileName: "src/App.jsx",
-                                lineNumber: 106,
-                                columnNumber: 13
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/App.jsx",
-                        lineNumber: 104,
-                        columnNumber: 11
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        children: (0, _20260520JsonDefault.default).title
-                    }, void 0, false, {
-                        fileName: "src/App.jsx",
-                        lineNumber: 108,
-                        columnNumber: 11
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "digest-content",
-                        dangerouslySetInnerHTML: {
-                            __html: renderDigestMarkdown(latestDigestItem.summary)
-                        }
-                    }, void 0, false, {
-                        fileName: "src/App.jsx",
-                        lineNumber: 109,
-                        columnNumber: 11
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "digest-sources",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                                children: "Fontes citadas"
-                            }, void 0, false, {
-                                fileName: "src/App.jsx",
-                                lineNumber: 116,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                                children: latestDigestItem.sources.map((source)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                            href: source.url,
-                                            target: "_blank",
-                                            rel: "noreferrer",
-                                            children: [
-                                                source.sourceName ? `${source.sourceName}: ` : "",
-                                                source.title
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "src/App.jsx",
-                                            lineNumber: 120,
-                                            columnNumber: 19
-                                        }, undefined)
-                                    }, source.url, false, {
-                                        fileName: "src/App.jsx",
-                                        lineNumber: 119,
-                                        columnNumber: 17
-                                    }, undefined))
-                            }, void 0, false, {
-                                fileName: "src/App.jsx",
-                                lineNumber: 117,
-                                columnNumber: 13
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/App.jsx",
-                        lineNumber: 115,
-                        columnNumber: 11
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/App.jsx",
-                lineNumber: 100,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("footer", {
-                className: "site-footer",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: "Fabricio Santana"
-                    }, void 0, false, {
-                        fileName: "src/App.jsx",
-                        lineNumber: 131,
-                        columnNumber: 11
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        href: "mailto:fabricio.santana@gmail.com",
-                        children: "fabricio.santana@gmail.com"
-                    }, void 0, false, {
-                        fileName: "src/App.jsx",
-                        lineNumber: 132,
-                        columnNumber: 11
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/App.jsx",
-                lineNumber: 130,
-                columnNumber: 9
-            }, undefined)
-        ]
-    }, void 0, true, {
+    if (window.location.pathname.startsWith("/projects")) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ProjectsLanding, {}, void 0, false, {
         fileName: "src/App.jsx",
-        lineNumber: 88,
-        columnNumber: 7
+        lineNumber: 701,
+        columnNumber: 12
     }, undefined);
+    if (selectedDigestPost) {
+        const selectedDigest = selectedDigestPost.digest;
+        const selectedDigestItem = selectedDigest.items[0];
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {
+            className: "site-shell",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
+                    className: "site-header",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            className: "brand",
+                            href: "#inicio",
+                            "aria-label": "Fabricio Santana",
+                            children: "Fabricio Santana"
+                        }, void 0, false, {
+                            fileName: "src/App.jsx",
+                            lineNumber: 711,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
+                            className: "nav-links",
+                            "aria-label": "Navegacao principal",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    href: "#sobre",
+                                    children: "Sobre"
+                                }, void 0, false, {
+                                    fileName: "src/App.jsx",
+                                    lineNumber: 715,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    href: "/projects",
+                                    children: "Servi\xe7os"
+                                }, void 0, false, {
+                                    fileName: "src/App.jsx",
+                                    lineNumber: 716,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    href: "#cursos",
+                                    children: "Cursos"
+                                }, void 0, false, {
+                                    fileName: "src/App.jsx",
+                                    lineNumber: 717,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    href: "#conteudos",
+                                    children: "Conte\xfados"
+                                }, void 0, false, {
+                                    fileName: "src/App.jsx",
+                                    lineNumber: 718,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/App.jsx",
+                            lineNumber: 714,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/App.jsx",
+                    lineNumber: 710,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
+                    className: "digest-detail-page",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            className: "back-link",
+                            href: "#conteudos",
+                            children: "Voltar para conte\xfados"
+                        }, void 0, false, {
+                            fileName: "src/App.jsx",
+                            lineNumber: 723,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "digest-meta",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    children: "Resumo di\xe1rio"
+                                }, void 0, false, {
+                                    fileName: "src/App.jsx",
+                                    lineNumber: 727,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("time", {
+                                    dateTime: selectedDigest.date,
+                                    children: formatDate(selectedDigest.date)
+                                }, void 0, false, {
+                                    fileName: "src/App.jsx",
+                                    lineNumber: 728,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/App.jsx",
+                            lineNumber: 726,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                            children: selectedDigest.title
+                        }, void 0, false, {
+                            fileName: "src/App.jsx",
+                            lineNumber: 730,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "digest-content",
+                            dangerouslySetInnerHTML: {
+                                __html: renderDigestMarkdown(selectedDigestItem.summary)
+                            }
+                        }, void 0, false, {
+                            fileName: "src/App.jsx",
+                            lineNumber: 731,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "digest-sources",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                    children: "Fontes citadas"
+                                }, void 0, false, {
+                                    fileName: "src/App.jsx",
+                                    lineNumber: 738,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                    children: selectedDigestItem.sources.map((source)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                href: source.url,
+                                                target: "_blank",
+                                                rel: "noreferrer",
+                                                children: [
+                                                    source.sourceName ? `${source.sourceName}: ` : "",
+                                                    source.title
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/App.jsx",
+                                                lineNumber: 742,
+                                                columnNumber: 19
+                                            }, undefined)
+                                        }, source.url, false, {
+                                            fileName: "src/App.jsx",
+                                            lineNumber: 741,
+                                            columnNumber: 17
+                                        }, undefined))
+                                }, void 0, false, {
+                                    fileName: "src/App.jsx",
+                                    lineNumber: 739,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/App.jsx",
+                            lineNumber: 737,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/App.jsx",
+                    lineNumber: 722,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("footer", {
+                    className: "site-footer",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            children: "Fabricio Santana"
+                        }, void 0, false, {
+                            fileName: "src/App.jsx",
+                            lineNumber: 753,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            href: "mailto:fabricio.santana@gmail.com",
+                            children: "fabricio.santana@gmail.com"
+                        }, void 0, false, {
+                            fileName: "src/App.jsx",
+                            lineNumber: 754,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/App.jsx",
+                    lineNumber: 752,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/App.jsx",
+            lineNumber: 709,
+            columnNumber: 7
+        }, undefined);
+    }
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {
         className: "site-shell",
         children: [
@@ -27339,7 +28647,7 @@ const App = ()=>{
                         children: "Fabricio Santana"
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 141,
+                        lineNumber: 763,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
@@ -27351,7 +28659,7 @@ const App = ()=>{
                                 children: "Sobre"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 145,
+                                lineNumber: 767,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -27359,7 +28667,7 @@ const App = ()=>{
                                 children: "Cursos"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 146,
+                                lineNumber: 768,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -27367,19 +28675,19 @@ const App = ()=>{
                                 children: "Conte\xfados"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 147,
+                                lineNumber: 769,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 144,
+                        lineNumber: 766,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 140,
+                lineNumber: 762,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -27394,7 +28702,7 @@ const App = ()=>{
                                 children: "Tecnologia, ensino e gest\xe3o"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 153,
+                                lineNumber: 775,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -27402,7 +28710,7 @@ const App = ()=>{
                                 children: "Sou Fabricio Santana, profissional de tecnologia com experi\xeancia em desenvolvimento de software, lideran\xe7a t\xe9cnica, computa\xe7\xe3o em nuvem e ensino superior."
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 154,
+                                lineNumber: 776,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -27410,7 +28718,7 @@ const App = ()=>{
                                 children: "Receba meu resumo di\xe1rio sobre tecnologia e inova\xe7\xe3o."
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 158,
+                                lineNumber: 780,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
@@ -27430,13 +28738,13 @@ const App = ()=>{
                                                         required: true
                                                     }, void 0, false, {
                                                         fileName: "src/App.jsx",
-                                                        lineNumber: 165,
+                                                        lineNumber: 787,
                                                         columnNumber: 17
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/App.jsx",
-                                                lineNumber: 163,
+                                                lineNumber: 785,
                                                 columnNumber: 15
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
@@ -27449,19 +28757,19 @@ const App = ()=>{
                                                         required: true
                                                     }, void 0, false, {
                                                         fileName: "src/App.jsx",
-                                                        lineNumber: 169,
+                                                        lineNumber: 791,
                                                         columnNumber: 17
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/App.jsx",
-                                                lineNumber: 167,
+                                                lineNumber: 789,
                                                 columnNumber: 15
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 162,
+                                        lineNumber: 784,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
@@ -27473,20 +28781,20 @@ const App = ()=>{
                                                 required: true
                                             }, void 0, false, {
                                                 fileName: "src/App.jsx",
-                                                lineNumber: 173,
+                                                lineNumber: 795,
                                                 columnNumber: 15
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                 children: "Aceito os termos de privacidade e concordo em receber comunica\xe7\xf5es de Fabricio Santana."
                                             }, void 0, false, {
                                                 fileName: "src/App.jsx",
-                                                lineNumber: 174,
+                                                lineNumber: 796,
                                                 columnNumber: 15
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 172,
+                                        lineNumber: 794,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -27495,7 +28803,7 @@ const App = ()=>{
                                         children: "Assinar newsletter"
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 179,
+                                        lineNumber: 801,
                                         columnNumber: 13
                                     }, undefined),
                                     newsletterMessage && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -27503,19 +28811,19 @@ const App = ()=>{
                                         children: newsletterMessage
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 182,
+                                        lineNumber: 804,
                                         columnNumber: 35
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 161,
+                                lineNumber: 783,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 152,
+                        lineNumber: 774,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -27524,13 +28832,13 @@ const App = ()=>{
                         alt: "Fabricio Santana"
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 185,
+                        lineNumber: 807,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 151,
+                lineNumber: 773,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -27545,20 +28853,20 @@ const App = ()=>{
                                 children: "Sobre mim"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 190,
+                                lineNumber: 812,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                 children: "Minha trajet\xf3ria em tecnologia"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 191,
+                                lineNumber: 813,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 189,
+                        lineNumber: 811,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27568,26 +28876,26 @@ const App = ()=>{
                                 children: "Atuo h\xe1 mais de 20 anos na \xe1rea de tecnologia, conectando engenharia de software, gest\xe3o de times, cloud computing e intelig\xeancia artificial. Tamb\xe9m leciono em cursos de gradua\xe7\xe3o em Ci\xeancia da Computa\xe7\xe3o e Engenharia de Software."
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 194,
+                                lineNumber: 816,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                 children: "Este espa\xe7o vai reunir cursos, materiais e textos sobre temas que acompanho de perto: arquitetura, desenvolvimento, IA, carreira, ensino e pr\xe1ticas modernas de TI."
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 199,
+                                lineNumber: 821,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 193,
+                        lineNumber: 815,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 188,
+                lineNumber: 810,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -27602,20 +28910,20 @@ const App = ()=>{
                                 children: "Cursos"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 208,
+                                lineNumber: 830,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                 children: "Aulas e cursos em desenvolvimento"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 209,
+                                lineNumber: 831,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 207,
+                        lineNumber: 829,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27628,38 +28936,38 @@ const App = ()=>{
                                         children: course.status
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 214,
+                                        lineNumber: 836,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                         children: course.title
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 215,
+                                        lineNumber: 837,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                         children: course.description
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 216,
+                                        lineNumber: 838,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, course.title, true, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 213,
+                                lineNumber: 835,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 211,
+                        lineNumber: 833,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 206,
+                lineNumber: 828,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -27674,100 +28982,107 @@ const App = ()=>{
                                 children: "Conte\xfados sobre TI"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 224,
+                                lineNumber: 846,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                 children: "Publica\xe7\xf5es e resumos de tecnologia"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 225,
+                                lineNumber: 847,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 223,
+                        lineNumber: 845,
                         columnNumber: 9
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        className: "digest-card",
-                        href: `#${latestDigestSlug}`,
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "digest-meta",
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "digest-list",
+                        children: digestPosts.map((post)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                className: "digest-card",
+                                href: `#${post.slug}`,
                                 children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        children: "Resumo di\xe1rio"
-                                    }, void 0, false, {
-                                        fileName: "src/App.jsx",
-                                        lineNumber: 229,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("time", {
-                                        dateTime: (0, _20260520JsonDefault.default).date,
-                                        children: formatDate((0, _20260520JsonDefault.default).date)
-                                    }, void 0, false, {
-                                        fileName: "src/App.jsx",
-                                        lineNumber: 230,
-                                        columnNumber: 13
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/App.jsx",
-                                lineNumber: 228,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                children: (0, _20260520JsonDefault.default).title
-                            }, void 0, false, {
-                                fileName: "src/App.jsx",
-                                lineNumber: 232,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                children: "Principais novidades sobre intelig\xeancia artificial, desenvolvimento, mercado e ferramentas de tecnologia."
-                            }, void 0, false, {
-                                fileName: "src/App.jsx",
-                                lineNumber: 233,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "digest-card-footer",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "digest-meta",
                                         children: [
-                                            latestDigestItem.sources.length,
-                                            " fontes citadas"
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                children: "Resumo di\xe1rio"
+                                            }, void 0, false, {
+                                                fileName: "src/App.jsx",
+                                                lineNumber: 853,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("time", {
+                                                dateTime: post.date,
+                                                children: formatDate(post.date)
+                                            }, void 0, false, {
+                                                fileName: "src/App.jsx",
+                                                lineNumber: 854,
+                                                columnNumber: 17
+                                            }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 238,
-                                        columnNumber: 13
+                                        lineNumber: 852,
+                                        columnNumber: 15
                                     }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                        children: "Ler resumo completo"
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                        children: post.title
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 239,
-                                        columnNumber: 13
+                                        lineNumber: 856,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        children: post.summary
+                                    }, void 0, false, {
+                                        fileName: "src/App.jsx",
+                                        lineNumber: 857,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "digest-card-footer",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                children: [
+                                                    post.sourceCount,
+                                                    " fontes citadas"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/App.jsx",
+                                                lineNumber: 859,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                                children: "Ler resumo completo"
+                                            }, void 0, false, {
+                                                fileName: "src/App.jsx",
+                                                lineNumber: 860,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/App.jsx",
+                                        lineNumber: 858,
+                                        columnNumber: 15
                                     }, undefined)
                                 ]
-                            }, void 0, true, {
+                            }, post.date, true, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 237,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
+                                lineNumber: 851,
+                                columnNumber: 13
+                            }, undefined))
+                    }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 227,
+                        lineNumber: 849,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 222,
+                lineNumber: 844,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("footer", {
@@ -27777,7 +29092,7 @@ const App = ()=>{
                         children: "Fabricio Santana"
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 245,
+                        lineNumber: 868,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -27785,34 +29100,101 @@ const App = ()=>{
                         children: "fabricio.santana@gmail.com"
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 246,
+                        lineNumber: 869,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 244,
+                lineNumber: 867,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.jsx",
-        lineNumber: 139,
+        lineNumber: 761,
         columnNumber: 5
     }, undefined);
 };
-_s(App, "jfORuhhQsL1f/nUXhHD4AL/2JJk=");
-_c = App;
+_s1(App, "jfORuhhQsL1f/nUXhHD4AL/2JJk=");
+_c1 = App;
 exports.default = App;
-var _c;
-$RefreshReg$(_c, "App");
+var _c, _c1;
+$RefreshReg$(_c, "ProjectsLanding");
+$RefreshReg$(_c1, "App");
 
   $parcel$ReactRefreshHelpers$2430.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./images/Fabricio.jpg":"k3aP5","./styles.css":"lW6qc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./content/digests/2026-05-20.json":"kWPFX"}],"k3aP5":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./content/digests/generated.js":"aAO8W","./images/Fabricio.jpg":"k3aP5","./styles.css":"lW6qc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"aAO8W":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "digestIndex", ()=>digestIndex);
+parcelHelpers.export(exports, "digestsByFile", ()=>digestsByFile);
+var _20260521Json = require("./2026-05-21.json");
+var _20260521JsonDefault = parcelHelpers.interopDefault(_20260521Json);
+var _20260520Json = require("./2026-05-20.json");
+var _20260520JsonDefault = parcelHelpers.interopDefault(_20260520Json);
+const digestIndex = [
+    {
+        "date": "2026-05-21",
+        "file": "2026-05-21.json",
+        "sourceCount": 8,
+        "summary": 'Resumo Di\xe1rio de Tecnologia A Revolu\xe7\xe3o dos Agentes de IA - Podcast "The AI Why" com Swati Trehan: A cofundadora da Ema discute como empresas da Fortune 500, como Hitachi, est\xe3o ut',
+        "title": "Resumo di\xe1rio de tecnologia"
+    },
+    {
+        "date": "2026-05-20",
+        "file": "2026-05-20.json",
+        "sourceCount": 10,
+        "summary": "Como a Netflix Est\xe1 Usando IA Multimodal para Potencializar a Busca de V\xeddeos A Netflix desenvolveu um sistema de busca que utiliza uma arquitetura de tr\xeas camadas para orquestrar m\xfaltiplos modelos de",
+        "title": "Resumo di\xe1rio de tecnologia"
+    }
+];
+const digestsByFile = {
+    "2026-05-21.json": (0, _20260521JsonDefault.default),
+    "2026-05-20.json": (0, _20260520JsonDefault.default)
+};
+
+},{"./2026-05-21.json":"9YGgU","./2026-05-20.json":"kWPFX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9YGgU":[function(require,module,exports) {
+module.exports = JSON.parse('{"date":"2026-05-21","title":"Resumo di\xe1rio de tecnologia","items":[{"title":"Resumo gerado","summary":"### Resumo Di\xe1rio de Tecnologia\\n\\n#### A Revolu\xe7\xe3o dos Agentes de IA\\n- **Podcast \\"The AI Why\\" com Swati Trehan**: A cofundadora da Ema discute como empresas da Fortune 500, como Hitachi, est\xe3o utilizando agentes de IA para gerenciar fun\xe7\xf5es como RH, TI e atendimento ao cliente. Ela explica a evolu\xe7\xe3o dos sistemas de IA de simples copilotos para agentes aut\xf4nomos, al\xe9m de abordar desafios como a complexidade do Excel e o futuro do software empresarial. [Ou\xe7a aqui](https://podcasts.apple.com/ca/podcast/the-ai-why-with-liam-lawson/id1723870953).\\n- **Artigo da The AI Report**: Swati Trehan detalha como a Ema orquestra m\xfaltiplos modelos de IA e porque o RH \xe9 um ponto de entrada crucial para a ado\xe7\xe3o de IA nas empresas. [Leia mais](https://newsletter.theaireport.ai/p/ai-agents-are-replacing-software).\\n\\n#### Inova\xe7\xf5es da Google\\n- **Co-Scientist da Google DeepMind**: Um novo sistema de IA multi-agente que ajuda pesquisadores a gerar e refinar hip\xf3teses cient\xedficas. O sistema utiliza um \\"torneio de ideias\\" para debater e priorizar as melhores hip\xf3teses, j\xe1 sendo testado em problemas complexos como resist\xeancia a antimicrobianos. [Saiba mais](https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-to-accelerate-research/).\\n- **Lan\xe7amento do Gemini 3.5**: Este modelo promete executar tarefas complexas de forma mais eficiente, sendo ideal para desenvolvedores e empresas. O Gemini 3.5 Flash \xe9 descrito como o modelo mais capaz at\xe9 agora, com melhorias significativas em velocidade e desempenho. [Confira os detalhes](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/).\\n\\n#### Google I/O 2026\\n- **Principais Lan\xe7amentos**: O evento trouxe inova\xe7\xf5es como o Gemini Omni, que permite edi\xe7\xe3o de v\xeddeo com compreens\xe3o f\xedsica do mundo real, e o Gemini Spark, um agente pessoal que opera continuamente para gerenciar tarefas e monitorar projetos. [Leia mais sobre o evento](https://whatsupinai.beehiiv.com/p/the-google-i-o-2026).\\n\\n#### Ferramentas e Aplica\xe7\xf5es de IA\\n- **StoreClaw**: Uma plataforma de IA que ajuda a otimizar e automatizar opera\xe7\xf5es de e-commerce, monitorando pedidos e convers\xf5es em tempo real. [Explore a ferramenta](https://www.storeclaw.ai/).\\n- **GhostSnap**: Um aplicativo que permite capturar m\xfaltiplas capturas de tela, compact\xe1-las automaticamente e col\xe1-las de uma s\xf3 vez, otimizando o compartilhamento de informa\xe7\xf5es visuais. [Saiba mais](https://ghostsnap.app/).\\n\\n#### Movimentos de Mercado\\n- **Manus**: Agora parte da Meta, a Manus traz solu\xe7\xf5es de IA para empresas, permitindo a cria\xe7\xe3o de apresenta\xe7\xf5es, sites e aplicativos de forma simplificada. [Visite o site](https://manus.im/).\\n\\nEssas inova\xe7\xf5es e discuss\xf5es refletem um momento significativo na evolu\xe7\xe3o da tecnologia de IA e seu impacto em diversas ind\xfastrias, desde a pesquisa cient\xedfica at\xe9 o com\xe9rcio eletr\xf4nico.","sources":[{"title":"The AI Why with Liam Lawson","url":"https://podcasts.apple.com/ca/podcast/the-ai-why-with-liam-lawson/id1723870953","sourceName":"Apple\xa0Podcasts"},{"title":"⚡️ AI agents are replacing software","url":"https://newsletter.theaireport.ai/p/ai-agents-are-replacing-software","sourceName":"The AI Report"},{"title":"Co-Scientist: A multi-agent AI partner to accelerate research","url":"https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-to-accelerate-research/","sourceName":"Google DeepMind"},{"title":"Gemini 3.5: frontier intelligence with action","url":"https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/","sourceName":"Google"},{"title":"AI Agent for Ecommerce — Run Your Store 24/7","url":"https://www.storeclaw.ai/","sourceName":"StoreClaw"},{"title":"Manus: Hands On AI","url":"https://manus.im/"},{"title":"GhostSnap — Snap. Pack. Paste.","url":"https://ghostsnap.app/"},{"title":"The Google I/O 2026","url":"https://whatsupinai.beehiiv.com/p/the-google-i-o-2026","sourceName":"What\'s Up in AI"}]}]}');
+
+},{}],"kWPFX":[function(require,module,exports) {
+module.exports = JSON.parse('{"date":"2026-05-20","title":"Resumo di\xe1rio de tecnologia","items":[{"title":"Resumo gerado","summary":"### Como a Netflix Est\xe1 Usando IA Multimodal para Potencializar a Busca de V\xeddeos\\nA Netflix desenvolveu um sistema de busca que utiliza uma arquitetura de tr\xeas camadas para orquestrar m\xfaltiplos modelos de IA, permitindo que editores encontrem rapidamente momentos espec\xedficos em grandes volumes de filmagens. O sistema \xe9 projetado para lidar com bilh\xf5es de pontos de dados, mantendo um desempenho de consulta em menos de um segundo. Essa abordagem permite que modelos especializados, como reconhecimento de personagens e classifica\xe7\xe3o de cenas, sejam utilizados em conjunto, melhorando a precis\xe3o e a efici\xeancia da busca. [Leia mais](https://blog.bytebytego.com/p/how-netflix-is-using-multimodal-ai).\\n\\n### Lan\xe7amento do Gemini 3.5: Intelig\xeancia Fronteiri\xe7a com A\xe7\xe3o\\nO Google apresentou o Gemini 3.5, um modelo que combina intelig\xeancia avan\xe7ada com a capacidade de executar tarefas complexas. O modelo \xe9 otimizado para desempenho em tarefas de codifica\xe7\xe3o e agentes, sendo quatro vezes mais r\xe1pido que outros modelos. O Gemini 3.5 Flash j\xe1 est\xe1 dispon\xedvel para desenvolvedores e empresas, prometendo acelerar o desenvolvimento de aplica\xe7\xf5es e a automa\xe7\xe3o de fluxos de trabalho. [Leia mais](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/).\\n\\n### Novidades nos Agentes Gerenciados do Claude: Sandboxes Aut\xf4nomos e T\xfaneis MCP\\nA Anthropic lan\xe7ou uma vers\xe3o beta p\xfablica de sandboxes aut\xf4nomos para seus Agentes Gerenciados, permitindo que as equipes executem ferramentas de agentes em sua pr\xf3pria infraestrutura. Al\xe9m disso, os t\xfaneis MCP permitem que os agentes acessem servidores privados sem exp\xf4-los \xe0 internet p\xfablica, aumentando a seguran\xe7a e o controle sobre os dados. [Leia mais](https://claude.com/blog/claude-managed-agents-updates).\\n\\n### Meta Inicia Corte de 8.000 Empregos em Empreitada de Efici\xeancia em IA\\nA Meta anunciou a demiss\xe3o de 8.000 funcion\xe1rios como parte de uma reestrutura\xe7\xe3o focada em reduzir custos e investir em intelig\xeancia artificial. A empresa est\xe1 reavaliando sua estrutura organizacional, com cortes significativos em equipes de engenharia e produto. [Leia mais](https://finance.yahoo.com/news/meta-begins-8000-global-job-cuts-in-asian-hub-of-singapore-004153264.html).\\n\\n### Uma Verdade Desconfort\xe1vel para Gerentes Intermedi\xe1rios sobre IA\\nUm artigo discute como a IA pode substituir muitas fun\xe7\xf5es administrativas de gerentes intermedi\xe1rios, como a coordena\xe7\xe3o de informa\xe7\xf5es e atualiza\xe7\xf5es de status. No entanto, a verdadeira lideran\xe7a, que envolve desenvolvimento de pessoas e tomada de decis\xf5es complexas, n\xe3o pode ser automatizada. A discuss\xe3o destaca a necessidade de os gerentes se adaptarem e se concentrarem em habilidades de lideran\xe7a em vez de apenas tarefas administrativas. [Leia mais](https://www.inthemakingleadership.com/p/an-uncomfortable-truth-for-middle).\\n\\n### Seis N\xedveis de Complexidade em um Briefing Matinal com Codex\\nUm artigo explora como usar o Codex para melhorar a efici\xeancia de briefings matinais, come\xe7ando com uma simples integra\xe7\xe3o de ferramentas como Slack e Gmail, e evoluindo para automa\xe7\xf5es mais complexas. O autor sugere que a implementa\xe7\xe3o gradual de capacidades pode ajudar os usu\xe1rios a se familiarizarem com a tecnologia de IA. [Leia mais](https://jxnl.co/writing/2026/05/18/six-levels-of-complexity-of-an-ai-powered-morning-brief-with-codex/).\\n\\n### Uso de Subagentes e Agentes Personalizados no Codex\\nO OpenAI Codex agora oferece suporte a subagentes, permitindo que usu\xe1rios definam agentes personalizados para tarefas espec\xedficas. Essa funcionalidade \xe9 semelhante \xe0 implementa\xe7\xe3o do Claude Code e visa melhorar a efici\xeancia em tarefas de programa\xe7\xe3o. [Leia mais](https://simonwillison.net/2026/Mar/16/codex-subagents/).\\n\\n### C\xf3digo como Estrutura de Agente\\nUm novo estudo discute como o c\xf3digo pode servir como uma infraestrutura operacional para sistemas de IA, abordando a intera\xe7\xe3o entre racioc\xednio, a\xe7\xe3o e modelagem de ambientes. O artigo prop\xf5e uma vis\xe3o unificada que destaca a import\xe2ncia do c\xf3digo em sistemas de agentes. [Leia mais](https://arxiv.org/abs/2605.18747).\\n\\n### Google Lan\xe7a Gemini 3.5 Flash e GitHub Sofre Viola\xe7\xe3o via Extens\xe3o Maliciosa\\nO Google lan\xe7ou o Gemini 3.5 Flash, um modelo poderoso para codifica\xe7\xe3o e agentes aut\xf4nomos, enquanto o GitHub confirmou a viola\xe7\xe3o de reposit\xf3rios internos devido a uma extens\xe3o comprometida. A empresa tomou medidas imediatas para mitigar os danos e proteger os dados. [Leia mais](https://codenewsletter.ai/p/google-drops-gemini-3-5-flash-github-breached-via-a-malicious-extension).\\n\\n### Uma Nova Era para a Busca com IA\\nO Google anunciou melhorias significativas em sua ferramenta de busca, integrando capacidades de IA que permitem intera\xe7\xf5es mais intuitivas e personalizadas. O novo modelo de busca, alimentado pelo Gemini 3.5 Flash, promete transformar a experi\xeancia do usu\xe1rio ao permitir consultas mais complexas e interativas. [Leia mais](https://blog.google/products-and-platforms/products/search/search-io-2026/).","sources":[{"title":"How Netflix is Using Multimodal AI to Power Video Search","url":"https://blog.bytebytego.com/p/how-netflix-is-using-multimodal-ai"},{"title":"Gemini 3.5: frontier intelligence with action","url":"https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/","sourceName":"Google"},{"title":"New in Claude Managed Agents: self-hosted sandboxes and MCP tunnels","url":"https://claude.com/blog/claude-managed-agents-updates","sourceName":"Claude"},{"title":"Meta Begins 8,000 Global Job Cuts in AI Efficiency Push","url":"https://finance.yahoo.com/news/meta-begins-8000-global-job-cuts-in-asian-hub-of-singapore-004153264.html","sourceName":"Yahoo Finance"},{"title":"An uncomfortable truth for middle managers about AI","url":"https://www.inthemakingleadership.com/p/an-uncomfortable-truth-for-middle"},{"title":"Six levels of complexity in a Codex morning brief - Jason Liu","url":"https://jxnl.co/writing/2026/05/18/six-levels-of-complexity-of-an-ai-powered-morning-brief-with-codex/"},{"title":"Use subagents and custom agents in Codex","url":"https://simonwillison.net/2026/Mar/16/codex-subagents/","sourceName":"Simon Willison’s Weblog"},{"title":"Code as Agent Harness","url":"https://arxiv.org/abs/2605.18747","sourceName":"arXiv.org"},{"title":"Google drops Gemini 3.5 Flash, GitHub breached via a malicious extension","url":"https://codenewsletter.ai/p/google-drops-gemini-3-5-flash-github-breached-via-a-malicious-extension","sourceName":"The Code"},{"title":"A new era for AI Search","url":"https://blog.google/products-and-platforms/products/search/search-io-2026/","sourceName":"Google"}]}]}');
+
+},{}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}],"k3aP5":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "Fabricio.c6839701.jpg" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
@@ -27849,37 +29231,7 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"lW6qc":[function() {},{}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"km3Ru":[function(require,module,exports) {
+},{}],"lW6qc":[function() {},{}],"km3Ru":[function(require,module,exports) {
 "use strict";
 var Refresh = require("react-refresh/runtime");
 function debounce(func, delay) {
@@ -27999,9 +29351,6 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"react-refresh/runtime":"786KC"}],"kWPFX":[function(require,module,exports) {
-module.exports = JSON.parse('{"date":"2026-05-20","title":"Resumo di\xe1rio de tecnologia","items":[{"title":"Resumo gerado","summary":"### Resumo Di\xe1rio de Tecnologia\\n\\n#### Gemini 3.5: Intelig\xeancia de Fronteira com A\xe7\xe3o\\n- **[Gemini 3.5: frontier intelligence with action](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/)** (Google)\\n  - O Google lan\xe7ou o Gemini 3.5, que combina intelig\xeancia de ponta com a\xe7\xe3o, permitindo a execu\xe7\xe3o de fluxos de trabalho complexos. O modelo 3.5 Flash \xe9 otimizado para tarefas de codifica\xe7\xe3o e \xe9 quatro vezes mais r\xe1pido que outros modelos. Ele j\xe1 est\xe1 dispon\xedvel para desenvolvedores e empresas, com aplica\xe7\xf5es em setores como finan\xe7as e automa\xe7\xe3o de processos.\\n  \\n- **[Gemini 3.5 Flash](https://ai.google.dev/gemini-api/docs/models/gemini-3.5-flash?hl=pt-br)** (Google AI for Developers)\\n  - O modelo oferece intelig\xeancia otimizada para tarefas do mundo real, com suporte para entradas multimodais e capacidade de execu\xe7\xe3o em larga escala.\\n\\n#### Novidades em Agentes Gerenciados Claude\\n- **[New in Claude Managed Agents: self-hosted sandboxes and MCP tunnels](https://claude.com/blog/claude-managed-agents-updates)** (Claude)\\n  - A Claude introduziu sandboxes auto-hospedadas e t\xfaneis MCP, permitindo que as equipes executem ferramentas de agentes dentro de sua pr\xf3pria infraestrutura, aumentando a seguran\xe7a e o controle.\\n\\n#### Demiss\xf5es na Meta e Impacto da IA\\n- **[Meta Begins 8,000 Global Job Cuts in AI Efficiency Push](https://finance.yahoo.com/news/meta-begins-8000-global-job-cuts-in-asian-hub-of-singapore-004153264.html)** (Yahoo Finance)\\n  - A Meta anunciou a demiss\xe3o de 8.000 funcion\xe1rios como parte de uma reestrutura\xe7\xe3o para reduzir custos enquanto investe em intelig\xeancia artificial. As demiss\xf5es afetar\xe3o principalmente equipes de engenharia e produto.\\n\\n#### Reflex\xf5es sobre Gest\xe3o e IA\\n- **[An uncomfortable truth for middle managers about AI](https://www.inthemakingleadership.com/p/an-uncomfortable-truth-for-middle)** \\n  - Jack Dorsey argumenta que a IA pode substituir muitas fun\xe7\xf5es de gerentes intermedi\xe1rios, levantando quest\xf5es sobre a verdadeira natureza da gest\xe3o versus lideran\xe7a.\\n\\n#### Avan\xe7os em Pesquisa e Desenvolvimento\\n- **[Code as Agent Harness](https://arxiv.org/abs/2605.18747)** (arXiv)\\n  - Um estudo discute como o c\xf3digo pode servir como uma infraestrutura operacional para sistemas de agentes, abordando desafios e aplica\xe7\xf5es pr\xe1ticas.\\n\\n#### Colabora\xe7\xe3o e Inova\xe7\xf5es em IA\\n- **[KPMG integrates Claude across its core business and workforce of more than 276,000 in strategic alliance](https://www.anthropic.com/news/anthropic-kpmg)** (Anthropic)\\n  - A KPMG anunciou uma alian\xe7a global com a Anthropic para integrar a IA Claude em suas opera\xe7\xf5es, visando melhorar a efici\xeancia e a inova\xe7\xe3o.\\n\\n- **[Automation Anywhere Collaborates with Cisco, NVIDIA, Okta, and OpenAI, Launching EnterpriseClaw to Run Next-Generation AI Agents Inside Enterprise Systems](https://www.prnewswire.com/news-releases/automation-anywhere-collaborates-with-cisco-nvidia-okta-and-openai-launching-enterpriseclaw-to-run-next-generation-ai-agents-inside-enterprise-systems-302775670.html)** \\n  - A Automation Anywhere lan\xe7ou o EnterpriseClaw, permitindo que agentes de IA operem em sistemas empresariais com controle centralizado.\\n\\n#### Desafios e Oportunidades em IA\\n- **[Gen Z is over-relying on AI at work—and it could cost them their careers | Fortune](https://fortune.com/2026/05/19/gen-z-workers-over-reliance-ai-early-career-jobs/)** \\n  - Um estudo revela que muitos trabalhadores da Gera\xe7\xe3o Z est\xe3o excessivamente dependentes da IA, o que pode prejudicar seu desenvolvimento profissional.\\n\\n#### Novas Funcionalidades em Navegadores\\n- **[Copilot in Edge | Microsoft Edge](https://www.microsoft.com/en-in/edge/copilot)** \\n  - O Microsoft Edge agora inclui o Copilot, que ajuda os usu\xe1rios a realizar tarefas diretamente no navegador, melhorando a produtividade.\\n\\n- **[Go behind the browser with Chrome’s new AI features](https://blog.google/products-and-platforms/products/chrome/new-ai-features-for-chrome/)** \\n  - O Google Chrome est\xe1 recebendo atualiza\xe7\xf5es significativas com novas funcionalidades de IA, permitindo que os usu\xe1rios realizem tarefas complexas de forma mais eficiente.\\n\\n#### Considera\xe7\xf5es Finais\\n- O cen\xe1rio tecnol\xf3gico est\xe1 em r\xe1pida evolu\xe7\xe3o, com a IA desempenhando um papel central em inova\xe7\xf5es, reestrutura\xe7\xf5es e desafios enfrentados por empresas e trabalhadores. As novas ferramentas e modelos, como o Gemini 3.5 e as integra\xe7\xf5es de Claude, est\xe3o moldando o futuro do trabalho e da colabora\xe7\xe3o.","sources":[{"title":"Gemini 3.5: frontier intelligence with action","url":"https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/","sourceName":"Google"},{"title":"Gemini 3.5 Flash","url":"https://ai.google.dev/gemini-api/docs/models/gemini-3.5-flash?hl=pt-br","sourceName":"Google AI for Developers"},{"title":"New in Claude Managed Agents: self-hosted sandboxes and MCP tunnels","url":"https://claude.com/blog/claude-managed-agents-updates","sourceName":"Claude"},{"title":"Meta Begins 8,000 Global Job Cuts in AI Efficiency Push","url":"https://finance.yahoo.com/news/meta-begins-8000-global-job-cuts-in-asian-hub-of-singapore-004153264.html","sourceName":"Yahoo Finance"},{"title":"An uncomfortable truth for middle managers about AI","url":"https://www.inthemakingleadership.com/p/an-uncomfortable-truth-for-middle"},{"title":"Code as Agent Harness","url":"https://arxiv.org/abs/2605.18747","sourceName":"arXiv.org"},{"title":"KPMG integrates Claude across its core business and workforce of more than 276,000 in strategic alliance","url":"https://www.anthropic.com/news/anthropic-kpmg"},{"title":"Automation Anywhere Collaborates with Cisco, NVIDIA, Okta, and OpenAI, Launching EnterpriseClaw to Run Next-Generation AI Agents Inside Enterprise Systems","url":"https://www.prnewswire.com/news-releases/automation-anywhere-collaborates-with-cisco-nvidia-okta-and-openai-launching-enterpriseclaw-to-run-next-generation-ai-agents-inside-enterprise-systems-302775670.html"},{"title":"Gen Z is over-relying on AI at work—and it could cost them their careers | Fortune","url":"https://fortune.com/2026/05/19/gen-z-workers-over-reliance-ai-early-career-jobs/","sourceName":"Fortune"},{"title":"Copilot in Edge | Microsoft Edge","url":"https://www.microsoft.com/en-in/edge/copilot"},{"title":"Go behind the browser with Chrome’s new AI features","url":"https://blog.google/products-and-platforms/products/chrome/new-ai-features-for-chrome/","sourceName":"Google"}]}]}');
-
-},{}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequireb173")
+},{"react-refresh/runtime":"786KC"}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequireb173")
 
 //# sourceMappingURL=index.975ef6c8.js.map
