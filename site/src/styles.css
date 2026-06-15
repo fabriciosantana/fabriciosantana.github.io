@@ -980,3 +980,47 @@ p {
     flex-direction: column;
   }
 }
+
+.success-section {
+  align-items: start;
+}
+
+.success-case-card {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 12px 30px rgba(30, 58, 138, 0.07);
+  padding: 28px;
+}
+
+.success-case-kicker {
+  color: var(--accent-dark);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+}
+
+.success-case-header h3 {
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  line-height: 1.35;
+  margin-bottom: 14px;
+}
+
+.success-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.success-stack span {
+  background: #f8fbff;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 8px 12px;
+}

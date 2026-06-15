@@ -86,6 +86,7 @@ const projectLanding = {
       solutions: "Soluções",
       process: "Processo",
       packages: "Pacotes de entrega",
+      success: "Casos de sucesso",
       risk: "Redução de risco",
       leadership: "Liderança técnica",
       skills: "Competências",
@@ -140,6 +141,35 @@ const projectLanding = {
     packagesTitle: "Escolha o ciclo certo para o seu momento",
     packagesText:
       "Todos os pacotes têm duração fixa de 4 semanas. A melhor escolha depende da urgência, da complexidade técnica e do volume de funcionalidades desejado.",
+
+    successTitle: "Casos de sucesso",
+    successText:
+      "Alguns exemplos mostram como a equipe transforma requisitos em software pronto para uso, com foco em valor de negócio e entrega técnica consistente.",
+    successCase: {
+      name: "Todo List Multiusuário",
+      summary:
+        "Aplicação full-stack de gestão de tarefas para múltiplos usuários, com autenticação, isolamento por conta, visão Kanban e tabela, ordenação, filtragem, arquivamento, exclusão e drag-and-drop para mudança de status.",
+      problem:
+        "Resolver a necessidade de organizar tarefas individuais com segurança, separação de dados por usuário e uma experiência simples para uso diário em ambiente web.",
+      stack: [
+        "Java",
+        "Spring Boot",
+        "Spring Security",
+        "JPA",
+        "REST APIs",
+        "JWT",
+        "Flyway",
+        "PostgreSQL",
+        "Angular",
+        "Bootstrap",
+        "GitHub Actions",
+        "Playwright",
+        "Prometheus",
+        "Grafana",
+        "Loki",
+        "Tempo",
+      ],
+    },
     packages: [
       {
         name: "Essential Delivery",
@@ -221,7 +251,7 @@ const projectLanding = {
     faqTitle: "Perguntas frequentes",
     faqs: [
       {
-        question: "A equipe trabalha com clientes dos Estados Unidos?",
+        question: "A equipe trabalha com clientes internacionais?",
         answer:
           "Sim. A comunicação pode ser feita em inglês, com reuniões remotas e alinhamentos adequados a clientes internacionais.",
       },
@@ -288,6 +318,7 @@ const projectLanding = {
       solutions: "Solutions",
       process: "Process",
       packages: "Delivery packages",
+      success: "Success cases",
       risk: "Risk reduction",
       leadership: "Technical leadership",
       skills: "Skills",
@@ -342,6 +373,35 @@ const projectLanding = {
     packagesTitle: "Choose the right cycle for your stage",
     packagesText:
       "All packages run for a fixed 4-week cycle. The best choice depends on urgency, technical complexity, and the amount of functionality expected.",
+
+    successTitle: "Success cases",
+    successText:
+      "These examples show how the team turns requirements into production-ready software, with a focus on business value and consistent technical delivery.",
+    successCase: {
+      name: "Multi-user Todo List",
+      summary:
+        "A full-stack task management application for multiple users, with authentication, account-level data isolation, Kanban and table views, sorting, filtering, archiving, deletion, and drag-and-drop status changes.",
+      problem:
+        "Solve the need to organize personal tasks securely, keep each user’s data separated, and offer a simple daily web experience.",
+      stack: [
+        "Java",
+        "Spring Boot",
+        "Spring Security",
+        "JPA",
+        "REST APIs",
+        "JWT",
+        "Flyway",
+        "PostgreSQL",
+        "Angular",
+        "Bootstrap",
+        "GitHub Actions",
+        "Playwright",
+        "Prometheus",
+        "Grafana",
+        "Loki",
+        "Tempo",
+      ],
+    },
     packages: [
       {
         name: "Essential Delivery",
@@ -514,7 +574,6 @@ const ProjectsLanding = () => {
           <p className="eyebrow">{content.heroEyebrow}</p>
           <h1>{content.heroTitle}</h1>
           <p className="projects-lead">{content.heroText}</p>
-          <p className="hero-note">{content.heroNote}</p>
         </div>
         <aside className="hero-proof" aria-label="Experience highlights">
           <div className="hero-proof-title">{content.labels.contact}</div>
@@ -589,6 +648,7 @@ const ProjectsLanding = () => {
           <p className="eyebrow">{content.labels.packages}</p>
           <h2>{content.packagesTitle}</h2>
           <p>{content.packagesText}</p>
+          <p className="packages-note">{content.packagesNote}</p>
         </div>
         <div className="pricing-grid">
           {content.packages.map((item) => (
@@ -609,6 +669,27 @@ const ProjectsLanding = () => {
             </article>
           ))}
         </div>
+      </section>
+      <section className="projects-section success-section">
+        <div className="section-heading wide-heading">
+          <p className="eyebrow">{content.labels.success}</p>
+          <h2>{content.successTitle}</h2>
+          <p>{content.successText}</p>
+        </div>
+        <article className="success-case-card">
+          <div className="success-case-header">
+            <div>
+              <p className="success-case-kicker">{content.successCase.name}</p>
+              <h3>{content.successCase.summary}</h3>
+            </div>
+          </div>
+          <p>{content.successCase.problem}</p>
+          <div className="success-stack">
+            {content.successCase.stack.map((tech) => (
+              <span key={tech}>{tech}</span>
+            ))}
+          </div>
+        </article>
       </section>
       <section className="projects-section risk-section">
         <div className="section-heading wide-heading">
