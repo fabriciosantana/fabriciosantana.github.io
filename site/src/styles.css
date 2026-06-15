@@ -964,8 +964,17 @@ p {
   .projects-hero,
   .projects-section,
   .projects-final {
-    padding-bottom: 56px;
-    padding-top: 56px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+
+  .projects-hero {
+    gap: 20px;
+    min-height: 0;
+  }
+
+  .projects-hero h1 {
+    font-size: clamp(1.8rem, 8vw, 2.5rem);
   }
 
   .projects-actions .button,
