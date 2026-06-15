@@ -910,8 +910,17 @@ p {
 
 @media (max-width: 560px) {
   .projects-hero, .projects-section, .projects-final {
-    padding-top: 56px;
-    padding-bottom: 56px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .projects-hero {
+    min-height: 0;
+    gap: 20px;
+  }
+
+  .projects-hero h1 {
+    font-size: clamp(1.8rem, 8vw, 2.5rem);
   }
 
   .projects-actions .button, .projects-final .button, .pricing-card .button, .hero-proof-actions .button {
@@ -922,6 +931,50 @@ p {
     flex-direction: column;
     align-items: stretch;
   }
+}
+
+.success-section {
+  align-items: start;
+}
+
+.success-case-card {
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 8px;
+  padding: 28px;
+  box-shadow: 0 12px 30px #1e3a8a12;
+}
+
+.success-case-kicker {
+  color: var(--accent-dark);
+  letter-spacing: 0;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+  font-size: .8rem;
+  font-weight: 800;
+}
+
+.success-case-header h3 {
+  margin-bottom: 14px;
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  line-height: 1.35;
+}
+
+.success-stack {
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+  display: flex;
+}
+
+.success-stack span {
+  border: 1px solid var(--line);
+  color: var(--text);
+  background: #f8fbff;
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-size: .9rem;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=index.4d663569.css.map */
