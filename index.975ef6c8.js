@@ -27290,7 +27290,7 @@ const projectLanding = {
         faqTitle: "Perguntas frequentes",
         faqs: [
             {
-                question: "A equipe trabalha com clientes dos Estados Unidos?",
+                question: "A equipe trabalha com clientes internacionais?",
                 answer: "Sim. A comunica\xe7\xe3o pode ser feita em ingl\xeas, com reuni\xf5es remotas e alinhamentos adequados a clientes internacionais."
             },
             {
