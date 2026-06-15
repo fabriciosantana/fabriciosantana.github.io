@@ -328,9 +328,9 @@ const projectLanding = {
     switchLabel: "Português",
     heroEyebrow: "Custom software development",
     heroTitle:
-      "Launch your MVP, API, automation, or AI solution with clear scope, fixed delivery, and predictable pricing.",
+      "Get your MVP, API, automation, or AI solution built with clear scope and fixed delivery.",
     heroText:
-      "Get a software partner that turns a defined business problem into working software without open-ended billing, scope drift, or delivery surprises.",
+      "Fixed pricing. Clear milestones. No scope drift. Built for clients who need software shipped on time and without surprises.",
     heroCta: "Contact on WhatsApp",
     secondaryCta: "See packages",
     heroNote: "First fixed step: 1 week, up to 5 meetings, US$ 500.",
@@ -339,9 +339,9 @@ const projectLanding = {
       ["60+", "engineers led in mission-critical institutional systems"],
       ["4 weeks", "per delivery cycle with agreed scope and fixed price"],
     ],
-    problemTitle: "Who this offer is for",
+    problemTitle: "If you need software delivered without surprises",
     problemText:
-      "For companies that need predictable software development: no vague proposal, no open-ended hours, and no uncertainty about what will be delivered. Before building, the team understands the problem, organizes priorities, and turns the project into an executable plan.",
+      "This offer is for clients who want a clear scope, fixed price, and a delivery process that stays aligned from day one to final handoff.",
     processTitle: "A simple flow to reduce risk",
     steps: [
       {
@@ -370,19 +370,19 @@ const projectLanding = {
       "Initial product prioritization",
       "Work plan for solution development",
     ],
-    packagesTitle: "Choose the right cycle for your stage",
+    packagesTitle: "Pick the delivery cycle that fits your budget",
     packagesText:
-      "All packages run for a fixed 4-week cycle. The best choice depends on urgency, technical complexity, and the amount of functionality expected.",
+      "Every package runs for 4 weeks. Choose the one that matches your scope, urgency, and the amount of product you need to ship now.",
 
     successTitle: "Success cases",
     successText:
-      "These examples show how the team turns requirements into production-ready software, with a focus on business value and consistent technical delivery.",
+      "A sample project that shows how a clear problem turns into working software with secure access, task organization, and a simple daily workflow.",
     successCase: {
       name: "Multi-user Todo List",
       summary:
-        "A full-stack task management application for multiple users, with authentication, account-level data isolation, Kanban and table views, sorting, filtering, archiving, deletion, and drag-and-drop status changes.",
+        "Full-stack task management app for multiple users with secure login, isolated data per account, table and Kanban views, filtering, sorting, archiving, deletion, and drag-and-drop status updates.",
       problem:
-        "Solve the need to organize personal tasks securely, keep each user’s data separated, and offer a simple daily web experience.",
+        "Replaces scattered task handling with a simple web app where each user sees only their own data and can manage work quickly.",
       stack: [
         "Java",
         "Spring Boot",
@@ -408,7 +408,7 @@ const projectLanding = {
         price: { pt: "R$ 12.000", en: "US$ 2,000" },
         tag: "For MVPs and focused modules",
         description:
-          "Best when the problem is well defined and the company needs a solid, testable delivery that is ready to evolve.",
+          "Best for a focused MVP or module that needs to ship with quality and room to evolve.",
         team: "Scrum Master, 1 full-stack engineer, and 1 engineer focused on test automation, DevOps, observability, and deployment.",
         includes: [
           "Cycle backlog",
@@ -422,7 +422,7 @@ const projectLanding = {
         price: { pt: "R$ 24.000", en: "US$ 4,000" },
         tag: "Recommended choice",
         description:
-          "For companies that need to accelerate a product, API, or integration with more development capacity and refinement.",
+          "For teams that need faster shipping of a product, API, or integration without losing control of scope.",
         team: "Technical leadership, Scrum Master, 2 full-stack engineers, and 1 specialist in quality, DevOps, and deployment.",
         includes: [
           "More delivery capacity",
@@ -437,7 +437,7 @@ const projectLanding = {
         price: { pt: "R$ 36.000", en: "US$ 6,000" },
         tag: "For critical or AI projects",
         description:
-          "For solutions with higher complexity, relevant integrations, advanced automation, security requirements, or artificial intelligence components.",
+          "For more complex builds with integrations, automation, security needs, or AI components.",
         team: "Technical lead, Scrum Master, 2 full-stack engineers, QA/DevOps specialist, and AI, data, or integration specialist.",
         includes: [
           "Evolutionary architecture",
@@ -447,9 +447,9 @@ const projectLanding = {
         ],
       },
     ],
-    leadershipTitle: "Technical leadership with real experience in critical systems",
+    leadershipTitle: "Technical leadership you can trust",
     leadershipText:
-      "Fabricio Santana acts as the technical owner, leader, and project manager. His experience includes leading teams of more than 60 engineers, mission-critical systems for the Brazilian legislative process, digital transformation, mobile applications, paperless workflows, automation, security, testing, and artificial intelligence initiatives.",
+      "Fabricio Santana leads delivery, architecture, and execution. His background includes large engineering teams, critical systems, digital transformation, automation, security, testing, and AI initiatives.",
     leadershipBullets: [
       "Coordination of complex projects and communication between business and technology",
       "Architecture, backend, APIs, integrations, security, and quality",
@@ -458,7 +458,7 @@ const projectLanding = {
     ],
     useCasesTitle: "What the team can build for your company",
     useCasesText:
-      "This offer is designed for projects that need to move from idea to working software, with organized code, tests, and deployment.",
+      "Built for products, internal tools, automations, integrations, and AI features that need to move from idea to shipped software.",
     useCases: [
       "MVPs and web products",
       "REST APIs and Java/Spring Boot backends",
@@ -539,9 +539,9 @@ const projectLanding = {
       "Cybersecurity",
       "Artificial Intelligence",
     ],
-    finalTitle: "Ready to turn your need into a clear delivery plan?",
+    finalTitle: "Ready to move your project forward?",
     finalText:
-      "Start with the Discovery Sprint. In one week, your company gets technical clarity, a work plan, and an objective recommendation for the best development cycle.",
+      "Start with the Discovery Sprint and get a clear plan before you commit to a larger build.",
   },
 };
 
