@@ -4,6 +4,8 @@ import { digestIndex, digestsByFile } from "./content/digests/generated.js";
 import profilePhoto from "./images/Fabricio.jpg";
 import "./styles.css";
 
+const whatsappNumber = "5561982336222";
+const whatsappUrl = `https://wa.me/${whatsappNumber}`;
 const courses = [
   {
     title: "Engenharia de Software",
@@ -37,16 +39,21 @@ const formatDate = (date) =>
     year: "numeric",
   }).format(new Date(`${date}T00:00:00`));
 
+const formatPrice = (price, language) => price[language];
+
 const renderDigestMarkdown = (markdown) => {
   const escapeHtml = (value) =>
-    value
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;");
+    value.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
   const renderInline = (value) =>
     escapeHtml(value)
-      .replace(/\*\*\[([^\]]+)\]\((https?:\/\/[^)]+)\)\*\*/g, '<a href="$2" target="_blank" rel="noreferrer">$1</a>')
-      .replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, '<a href="$2" target="_blank" rel="noreferrer">$1</a>')
+      .replace(
+        /\*\*\[([^\]]+)\]\((https?:\/\/[^)]+)\)\*\*/g,
+        '<a href="$2" target="_blank" rel="noreferrer">$1</a>'
+      )
+      .replace(
+        /\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g,
+        '<a href="$2" target="_blank" rel="noreferrer">$1</a>'
+      )
       .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
 
   return markdown
@@ -71,6 +78,608 @@ const renderDigestMarkdown = (markdown) => {
     .join("");
 };
 
+const projectLanding = {
+  pt: {
+    nav: ["Soluções", "Como funciona", "Pacotes", "Contato"],
+    labels: {
+      positioning: "Posicionamento",
+      solutions: "Soluções",
+      process: "Processo",
+      packages: "Pacotes de entrega",
+      risk: "Redução de risco",
+      leadership: "Liderança técnica",
+      skills: "Competências",
+      faq: "FAQ",
+      contact: "Próximo passo",
+    },
+    switchLabel: "English",
+    heroEyebrow: "Desenvolvimento de software sob demanda",
+    heroTitle:
+      "Transforme seu problema em um MVP, API, automação ou solução com IA com escopo claro e entrega previsível.",
+    heroText:
+      "Receba uma solução de software com preço fixo, escopo definido e sem surpresas de entrega.",
+    heroCta: "Falar no WhatsApp",
+    secondaryCta: "Ver pacotes",
+    heroNote: "Primeira etapa fixa: 1 semana, até 5 encontros, R$ 3.000.",
+    stats: [
+      ["20+", "anos de experiência em engenharia, liderança e arquitetura"],
+      ["60+", "engenheiros liderados em sistemas críticos institucionais"],
+      ["4 semanas", "por ciclo de entrega com escopo e valor combinados"],
+    ],
+    problemTitle: "Para quem esta oferta foi criada",
+    problemText:
+      "Para empresas que precisam contratar desenvolvimento de software com previsibilidade: sem proposta vaga, sem horas abertas e sem incerteza sobre o que será entregue. Antes de construir, a equipe entende o problema, organiza prioridades e transforma o projeto em um plano executável.",
+    processTitle: "Um fluxo simples para reduzir risco",
+    steps: [
+      {
+        title: "1. Discovery Sprint",
+        text: "Em 1 semana, até 5 encontros para entender o problema, mapear requisitos, riscos, integrações e prioridades. Entrega: relatório detalhado e plano de trabalho.",
+      },
+      {
+        title: "2. Backlog e acordo de entrega",
+        text: "O escopo do primeiro ciclo é definido com clareza: funcionalidades, critérios de aceite, responsabilidades, dependências e indicadores de sucesso.",
+      },
+      {
+        title: "3. Ciclos de 4 semanas",
+        text: "A equipe executa o ciclo com práticas inspiradas no Scrum, acompanhamento frequente, testes, revisão técnica e demonstração do que foi entregue.",
+      },
+    ],
+    discoveryTitle: "Etapa inicial obrigatória",
+    discoveryName: "Discovery Sprint",
+    discoveryPrice: { pt: "R$ 3.000", en: "US$ 500" },
+    discoveryDuration: "1 semana",
+    discoveryDescription:
+      "A forma mais segura de começar. O cliente paga uma etapa fixa para receber clareza antes de assumir um ciclo maior de desenvolvimento.",
+    discoveryItems: [
+      "Até 5 encontros remotos",
+      "Entendimento do problema e objetivos de negócio",
+      "Levantamento de requisitos, riscos e integrações",
+      "Priorização inicial do produto",
+      "Plano de trabalho para desenvolvimento da solução",
+    ],
+    packagesTitle: "Escolha o ciclo certo para o seu momento",
+    packagesText:
+      "Todos os pacotes têm duração fixa de 4 semanas. A melhor escolha depende da urgência, da complexidade técnica e do volume de funcionalidades desejado.",
+    packages: [
+      {
+        name: "Essential Delivery",
+        price: { pt: "R$ 12.000", en: "US$ 2,000" },
+        tag: "Para MVPs e módulos objetivos",
+        description:
+          "Ideal quando o problema está bem delimitado e a empresa precisa de uma entrega sólida, testável e pronta para evoluir.",
+        team: "Scrum Master, 1 engenheiro full-stack e 1 engenheiro de testes, DevOps, observabilidade e implantação.",
+        includes: [
+          "Backlog do ciclo",
+          "Desenvolvimento full-stack",
+          "Testes automatizados",
+          "Deploy e acompanhamento técnico",
+        ],
+      },
+      {
+        name: "Product Acceleration",
+        price: { pt: "R$ 24.000", en: "US$ 4,000" },
+        tag: "Escolha recomendada",
+        description:
+          "Para empresas que precisam acelerar a construção de um produto, API ou integração com mais capacidade de desenvolvimento e refinamento.",
+        team: "Liderança técnica, Scrum Master, 2 engenheiros full-stack e 1 especialista em qualidade, DevOps e implantação.",
+        includes: [
+          "Mais velocidade de entrega",
+          "Arquitetura e revisão técnica",
+          "Testes e CI/CD",
+          "Demonstração e relatório do ciclo",
+        ],
+        featured: true,
+      },
+      {
+        name: "Scale & Intelligence",
+        price: { pt: "R$ 36.000", en: "US$ 6,000" },
+        tag: "Para projetos críticos ou com IA",
+        description:
+          "Para soluções com maior complexidade, integrações relevantes, automação avançada, requisitos de segurança ou componentes de inteligência artificial.",
+        team: "Responsável técnico, Scrum Master, 2 engenheiros full-stack, especialista em QA/DevOps e especialista em IA, dados ou integrações.",
+        includes: [
+          "Arquitetura evolutiva",
+          "Automação e IA quando aplicável",
+          "Observabilidade e segurança",
+          "Plano técnico de escala",
+        ],
+      },
+    ],
+    leadershipTitle: "Liderança técnica com experiência real em sistemas críticos",
+    leadershipText:
+      "Fabricio Santana atua como responsável técnico, líder e gestor dos projetos. Sua experiência inclui coordenação de times com mais de 60 engenheiros, sistemas críticos para o processo legislativo brasileiro, transformação digital, aplicações móveis, fluxos sem papel, automação, segurança, testes e iniciativas de inteligência artificial.",
+    leadershipBullets: [
+      "Coordenação de projetos complexos e comunicação entre negócio e tecnologia",
+      "Arquitetura, backend, APIs, integrações, segurança e qualidade",
+      "Experiência acadêmica em Engenharia de Software e Ciência da Computação",
+      "Práticas modernas de engenharia para software seguro, testável e sustentável",
+    ],
+    useCasesTitle: "O que a equipe pode construir para sua empresa",
+    useCasesText:
+      "A oferta é especialmente adequada para projetos que precisam sair do plano e virar software funcional, com código organizado, testes e implantação.",
+    useCases: [
+      "MVPs e produtos web",
+      "APIs REST e backends Java/Spring Boot",
+      "Ferramentas internas e dashboards",
+      "Integrações entre sistemas e bancos de dados",
+      "Automação de processos manuais",
+      "Aplicações com inteligência artificial",
+      "Testes automatizados e qualidade contínua",
+      "Melhorias de arquitetura e segurança",
+    ],
+    riskTitle: "Menos risco para contratar desenvolvimento remoto",
+    riskItems: [
+      "Escopo do ciclo definido antes da execução",
+      "Critérios de aceite claros para cada funcionalidade",
+      "Demonstrações frequentes do que foi entregue",
+      "Código versionado em repositório Git",
+      "Testes automatizados quando aplicável",
+      "Deploy, observabilidade e acompanhamento técnico",
+      "Você mantém a propriedade do código produzido",
+      "Sem cobrança aberta por horas indefinidas",
+    ],
+    faqTitle: "Perguntas frequentes",
+    faqs: [
+      {
+        question: "A equipe trabalha com clientes dos Estados Unidos?",
+        answer:
+          "Sim. A comunicação pode ser feita em inglês, com reuniões remotas e alinhamentos adequados a clientes internacionais.",
+      },
+      {
+        question: "Os valores em dólar são fixos?",
+        answer:
+          "Na versão em inglês, os valores são apresentados em dólar. A contratação pode ser ajustada conforme a plataforma usada.",
+      },
+      {
+        question: "O cliente é dono do código?",
+        answer:
+          "Sim. O código produzido para o projeto pertence ao cliente, conforme as condições acordadas na contratação.",
+      },
+      {
+        question: "O projeto precisa começar pelo Discovery Sprint?",
+        answer:
+          "Sim. Essa etapa reduz risco, organiza o escopo e permite recomendar o pacote certo antes de iniciar um ciclo maior.",
+      },
+      {
+        question: "Quais canais de comunicação são usados?",
+        answer:
+          "WhatsApp, email, reuniões remotas e, quando necessário, ferramentas do próprio cliente ou da plataforma de contratação.",
+      },
+      {
+        question: "O trabalho inclui implantação?",
+        answer:
+          "Sim, os pacotes consideram suporte técnico para implantação e acompanhamento dentro do escopo acordado para o ciclo.",
+      },
+    ],
+    techTitle: "Principais tecnologias e competências",
+    techs: [
+      "Java",
+      "Spring Boot",
+      "Backend Development",
+      "REST APIs",
+      "Software Architecture",
+      "System Integration",
+      "PostgreSQL",
+      "Oracle Database",
+      "SQL",
+      "Angular",
+      "Bootstrap",
+      "Git",
+      "Docker",
+      "CI/CD",
+      "GitHub Actions",
+      "Automated Testing",
+      "JUnit",
+      "Cucumber",
+      "Playwright",
+      "Agile Methodologies",
+      "Scrum",
+      "Cybersecurity",
+      "Artificial Intelligence",
+    ],
+    finalTitle: "Vamos transformar sua necessidade em um plano de entrega claro?",
+    finalText:
+      "Comece pelo Discovery Sprint. Em uma semana, sua empresa recebe clareza técnica, plano de trabalho e uma recomendação objetiva sobre o melhor ciclo de desenvolvimento.",
+  },
+  en: {
+    nav: ["Solutions", "How it works", "Packages", "Contact"],
+    labels: {
+      positioning: "Positioning",
+      solutions: "Solutions",
+      process: "Process",
+      packages: "Delivery packages",
+      risk: "Risk reduction",
+      leadership: "Technical leadership",
+      skills: "Skills",
+      faq: "FAQ",
+      contact: "Next step",
+    },
+    switchLabel: "Português",
+    heroEyebrow: "Custom software development",
+    heroTitle:
+      "Launch your MVP, API, automation, or AI solution with clear scope, fixed delivery, and predictable pricing.",
+    heroText:
+      "Get a software partner that turns a defined business problem into working software without open-ended billing, scope drift, or delivery surprises.",
+    heroCta: "Contact on WhatsApp",
+    secondaryCta: "See packages",
+    heroNote: "First fixed step: 1 week, up to 5 meetings, US$ 500.",
+    stats: [
+      ["20+", "years in engineering, technical leadership, and architecture"],
+      ["60+", "engineers led in mission-critical institutional systems"],
+      ["4 weeks", "per delivery cycle with agreed scope and fixed price"],
+    ],
+    problemTitle: "Who this offer is for",
+    problemText:
+      "For companies that need predictable software development: no vague proposal, no open-ended hours, and no uncertainty about what will be delivered. Before building, the team understands the problem, organizes priorities, and turns the project into an executable plan.",
+    processTitle: "A simple flow to reduce risk",
+    steps: [
+      {
+        title: "1. Discovery Sprint",
+        text: "In 1 week, up to 5 meetings to understand the problem, map requirements, risks, integrations, and priorities. Deliverable: a detailed report and work plan.",
+      },
+      {
+        title: "2. Backlog and delivery agreement",
+        text: "The first cycle scope is clearly defined: features, acceptance criteria, responsibilities, dependencies, and success indicators.",
+      },
+      {
+        title: "3. Four-week delivery cycles",
+        text: "The team executes the cycle with Scrum-inspired practices, frequent alignment, testing, technical review, and a demo of what was delivered.",
+      },
+    ],
+    discoveryTitle: "Required first step",
+    discoveryName: "Discovery Sprint",
+    discoveryPrice: { pt: "R$ 3.000", en: "US$ 500" },
+    discoveryDuration: "1 week",
+    discoveryDescription:
+      "The safest way to start. The client pays for a fixed step to gain clarity before committing to a larger development cycle.",
+    discoveryItems: [
+      "Up to 5 remote meetings",
+      "Problem and business-goal understanding",
+      "Requirements, risks, and integrations mapping",
+      "Initial product prioritization",
+      "Work plan for solution development",
+    ],
+    packagesTitle: "Choose the right cycle for your stage",
+    packagesText:
+      "All packages run for a fixed 4-week cycle. The best choice depends on urgency, technical complexity, and the amount of functionality expected.",
+    packages: [
+      {
+        name: "Essential Delivery",
+        price: { pt: "R$ 12.000", en: "US$ 2,000" },
+        tag: "For MVPs and focused modules",
+        description:
+          "Best when the problem is well defined and the company needs a solid, testable delivery that is ready to evolve.",
+        team: "Scrum Master, 1 full-stack engineer, and 1 engineer focused on test automation, DevOps, observability, and deployment.",
+        includes: [
+          "Cycle backlog",
+          "Full-stack development",
+          "Automated tests",
+          "Deployment and technical follow-up",
+        ],
+      },
+      {
+        name: "Product Acceleration",
+        price: { pt: "R$ 24.000", en: "US$ 4,000" },
+        tag: "Recommended choice",
+        description:
+          "For companies that need to accelerate a product, API, or integration with more development capacity and refinement.",
+        team: "Technical leadership, Scrum Master, 2 full-stack engineers, and 1 specialist in quality, DevOps, and deployment.",
+        includes: [
+          "More delivery capacity",
+          "Architecture and technical review",
+          "Testing and CI/CD",
+          "Cycle demo and report",
+        ],
+        featured: true,
+      },
+      {
+        name: "Scale & Intelligence",
+        price: { pt: "R$ 36.000", en: "US$ 6,000" },
+        tag: "For critical or AI projects",
+        description:
+          "For solutions with higher complexity, relevant integrations, advanced automation, security requirements, or artificial intelligence components.",
+        team: "Technical lead, Scrum Master, 2 full-stack engineers, QA/DevOps specialist, and AI, data, or integration specialist.",
+        includes: [
+          "Evolutionary architecture",
+          "Automation and AI when applicable",
+          "Observability and security",
+          "Technical scale plan",
+        ],
+      },
+    ],
+    leadershipTitle: "Technical leadership with real experience in critical systems",
+    leadershipText:
+      "Fabricio Santana acts as the technical owner, leader, and project manager. His experience includes leading teams of more than 60 engineers, mission-critical systems for the Brazilian legislative process, digital transformation, mobile applications, paperless workflows, automation, security, testing, and artificial intelligence initiatives.",
+    leadershipBullets: [
+      "Coordination of complex projects and communication between business and technology",
+      "Architecture, backend, APIs, integrations, security, and quality",
+      "Academic experience in Software Engineering and Computer Science",
+      "Modern engineering practices for secure, testable, and maintainable software",
+    ],
+    useCasesTitle: "What the team can build for your company",
+    useCasesText:
+      "This offer is designed for projects that need to move from idea to working software, with organized code, tests, and deployment.",
+    useCases: [
+      "MVPs and web products",
+      "REST APIs and Java/Spring Boot backends",
+      "Internal tools and dashboards",
+      "System and database integrations",
+      "Manual process automation",
+      "Artificial intelligence applications",
+      "Automated testing and continuous quality",
+      "Architecture and security improvements",
+    ],
+    riskTitle: "Lower risk when hiring remote development",
+    riskItems: [
+      "Cycle scope agreed before execution",
+      "Clear acceptance criteria for each feature",
+      "Frequent demos of delivered work",
+      "Code versioned in a Git repository",
+      "Automated tests when applicable",
+      "Deployment, observability, and technical follow-up",
+      "You keep ownership of the produced code",
+      "No open-ended hourly billing",
+    ],
+    faqTitle: "Frequently asked questions",
+    faqs: [
+      {
+        question: "Does the team work with US clients?",
+        answer:
+          "Yes. Communication can be handled in English, with remote meetings and alignment suitable for international clients.",
+      },
+      {
+        question: "Are the dollar prices fixed?",
+        answer:
+          "In the English version, the prices are presented in USD. Contract details can be adjusted according to the platform used.",
+      },
+      {
+        question: "Does the client own the code?",
+        answer:
+          "Yes. The code produced for the project belongs to the client, according to the conditions agreed during contracting.",
+      },
+      {
+        question: "Does the project need to start with the Discovery Sprint?",
+        answer:
+          "Yes. This step reduces risk, organizes scope, and makes it possible to recommend the right package before starting a larger cycle.",
+      },
+      {
+        question: "Which communication channels are used?",
+        answer:
+          "WhatsApp, email, remote meetings, and, when needed, the client’s own tools or the hiring platform.",
+      },
+      {
+        question: "Is deployment included?",
+        answer:
+          "Yes, the packages include technical support for deployment and follow-up within the agreed cycle scope.",
+      },
+    ],
+    techTitle: "Core technologies and skills",
+    techs: [
+      "Java",
+      "Spring Boot",
+      "Backend Development",
+      "REST APIs",
+      "Software Architecture",
+      "System Integration",
+      "PostgreSQL",
+      "Oracle Database",
+      "SQL",
+      "Angular",
+      "Bootstrap",
+      "Git",
+      "Docker",
+      "CI/CD",
+      "GitHub Actions",
+      "Automated Testing",
+      "JUnit",
+      "Cucumber",
+      "Playwright",
+      "Agile Methodologies",
+      "Scrum",
+      "Cybersecurity",
+      "Artificial Intelligence",
+    ],
+    finalTitle: "Ready to turn your need into a clear delivery plan?",
+    finalText:
+      "Start with the Discovery Sprint. In one week, your company gets technical clarity, a work plan, and an objective recommendation for the best development cycle.",
+  },
+};
+
+const ProjectsLanding = () => {
+  const [language, setLanguage] = useState("en");
+  const content = projectLanding[language];
+
+  return (
+    <main className="site-shell projects-page">
+      <header className="site-header projects-header">
+        <a className="brand" href="/" aria-label="Fabricio Santana">
+          Fabricio Santana
+        </a>
+        <nav className="nav-links" aria-label="Projects navigation">
+          <a href="#solucoes">{content.nav[0]}</a>
+          <a href="#como-funciona">{content.nav[1]}</a>
+          <a href="#pacotes">{content.nav[2]}</a>
+          <a href="#contato">{content.nav[3]}</a>
+          <button
+            className="language-toggle"
+            type="button"
+            onClick={() => setLanguage(language === "pt" ? "en" : "pt")}
+          >
+            {content.switchLabel}
+          </button>
+        </nav>
+      </header>
+      <section className="projects-hero">
+        <div className="projects-hero-copy">
+          <p className="eyebrow">{content.heroEyebrow}</p>
+          <h1>{content.heroTitle}</h1>
+          <p className="projects-lead">{content.heroText}</p>
+          <p className="hero-note">{content.heroNote}</p>
+        </div>
+        <aside className="hero-proof" aria-label="Experience highlights">
+          <div className="hero-proof-title">{content.labels.contact}</div>
+          {content.stats.map(([value, label]) => (
+            <div className="proof-item" key={value}>
+              <strong>{value}</strong>
+              <span>{label}</span>
+            </div>
+          ))}
+          <div className="hero-proof-actions">
+            <a className="button primary" href={whatsappUrl} target="_blank" rel="noreferrer">
+              {content.heroCta}
+            </a>
+          </div>
+        </aside>
+      </section>
+      <section className="projects-section split-section">
+        <div>
+          <p className="eyebrow">{content.labels.positioning}</p>
+          <h2>{content.problemTitle}</h2>
+        </div>
+        <p className="large-copy">{content.problemText}</p>
+      </section>
+      <section className="projects-section use-cases-section" id="solucoes">
+        <div className="section-heading wide-heading">
+          <p className="eyebrow">{content.labels.solutions}</p>
+          <h2>{content.useCasesTitle}</h2>
+          <p>{content.useCasesText}</p>
+        </div>
+        <div className="use-case-grid">
+          {content.useCases.map((item) => (
+            <article className="use-case-card" key={item}>
+              <h3>{item}</h3>
+            </article>
+          ))}
+        </div>
+      </section>
+      <section className="projects-section" id="como-funciona">
+        <div className="section-heading wide-heading">
+          <p className="eyebrow">{content.labels.process}</p>
+          <h2>{content.processTitle}</h2>
+        </div>
+        <div className="process-grid">
+          {content.steps.map((step) => (
+            <article className="process-card" key={step.title}>
+              <h3>{step.title}</h3>
+              <p>{step.text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+      <section className="projects-section discovery-band">
+        <div>
+          <p className="eyebrow">{content.discoveryTitle}</p>
+          <h2>{content.discoveryName}</h2>
+          <p>{content.discoveryDescription}</p>
+        </div>
+        <div className="discovery-card">
+          <div className="price-row">
+            <strong>{formatPrice(content.discoveryPrice, language)}</strong>
+            <span>{content.discoveryDuration}</span>
+          </div>
+          <ul>
+            {content.discoveryItems.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </div>
+      </section>
+      <section className="projects-section" id="pacotes">
+        <div className="section-heading wide-heading">
+          <p className="eyebrow">{content.labels.packages}</p>
+          <h2>{content.packagesTitle}</h2>
+          <p>{content.packagesText}</p>
+        </div>
+        <div className="pricing-grid">
+          {content.packages.map((item) => (
+            <article className={`pricing-card${item.featured ? " featured" : ""}`} key={item.name}>
+              <span className="package-tag">{item.tag}</span>
+              <h3>{item.name}</h3>
+              <div className="package-price">{formatPrice(item.price, language)}</div>
+              <p>{item.description}</p>
+              <strong className="team-line">{item.team}</strong>
+              <ul>
+                {item.includes.map((feature) => (
+                  <li key={feature}>{feature}</li>
+                ))}
+              </ul>
+              <a className="button primary" href={whatsappUrl} target="_blank" rel="noreferrer">
+                {content.heroCta}
+              </a>
+            </article>
+          ))}
+        </div>
+      </section>
+      <section className="projects-section risk-section">
+        <div className="section-heading wide-heading">
+          <p className="eyebrow">{content.labels.risk}</p>
+          <h2>{content.riskTitle}</h2>
+        </div>
+        <div className="risk-grid">
+          {content.riskItems.map((item) => (
+            <div className="risk-item" key={item}>
+              {item}
+            </div>
+          ))}
+        </div>
+      </section>
+      <section className="projects-section split-section">
+        <div>
+          <p className="eyebrow">{content.labels.leadership}</p>
+          <h2>{content.leadershipTitle}</h2>
+        </div>
+        <div>
+          <p className="large-copy">{content.leadershipText}</p>
+          <ul className="check-list">
+            {content.leadershipBullets.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </div>
+      </section>
+      <section className="projects-section tech-section" id="tecnologias">
+        <div className="section-heading wide-heading">
+          <p className="eyebrow">{content.labels.skills}</p>
+          <h2>{content.techTitle}</h2>
+        </div>
+        <div className="tech-cloud">
+          {content.techs.map((tech) => (
+            <span key={tech}>{tech}</span>
+          ))}
+        </div>
+      </section>
+      <section className="projects-section faq-section">
+        <div className="section-heading wide-heading">
+          <p className="eyebrow">{content.labels.faq}</p>
+          <h2>{content.faqTitle}</h2>
+        </div>
+        <div className="faq-grid">
+          {content.faqs.map((item) => (
+            <article className="faq-item" key={item.question}>
+              <h3>{item.question}</h3>
+              <p>{item.answer}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+      <section className="projects-final" id="contato">
+        <p className="eyebrow">{content.labels.contact}</p>
+        <h2>{content.finalTitle}</h2>
+        <p>{content.finalText}</p>
+        <div className="final-actions">
+          <a className="button primary" href={whatsappUrl} target="_blank" rel="noreferrer">
+            {content.heroCta}: +55 61 98233-6222
+          </a>
+        </div>
+      </section>
+      <footer className="site-footer">
+        <p>Fabricio Santana</p>
+        <a href="mailto:fabricio.santana@gmail.com">fabricio.santana@gmail.com</a>
+      </footer>
+    </main>
+  );
+};
+
 const App = () => {
   const [newsletterMessage, setNewsletterMessage] = useState("");
   const [currentHash, setCurrentHash] = useState(window.location.hash);
@@ -88,6 +697,10 @@ const App = () => {
     return () => window.removeEventListener("hashchange", handleHashChange);
   }, []);
 
+  if (window.location.pathname.startsWith("/projects")) {
+    return <ProjectsLanding />;
+  }
+
   if (selectedDigestPost) {
     const selectedDigest = selectedDigestPost.digest;
     const selectedDigestItem = selectedDigest.items[0];
@@ -100,6 +713,7 @@ const App = () => {
           </a>
           <nav className="nav-links" aria-label="Navegacao principal">
             <a href="#sobre">Sobre</a>
+            <a href="/projects">Serviços</a>
             <a href="#cursos">Cursos</a>
             <a href="#conteudos">Conteúdos</a>
           </nav>
@@ -160,8 +774,8 @@ const App = () => {
         <div className="intro-copy">
           <p className="eyebrow">Tecnologia, ensino e gestão</p>
           <p className="intro-text">
-            Sou Fabricio Santana, profissional de tecnologia com experiência em desenvolvimento
-            de software, liderança técnica, computação em nuvem e ensino superior.
+            Sou Fabricio Santana, profissional de tecnologia com experiência em desenvolvimento de
+            software, liderança técnica, computação em nuvem e ensino superior.
           </p>
           <p className="newsletter-callout">
             Receba meu resumo diário sobre tecnologia e inovação.
@@ -200,8 +814,8 @@ const App = () => {
         </div>
         <div className="text-panel">
           <p>
-            Atuo há mais de 20 anos na área de tecnologia, conectando engenharia de software,
-            gestão de times, cloud computing e inteligência artificial. Também leciono em cursos de
+            Atuo há mais de 20 anos na área de tecnologia, conectando engenharia de software, gestão
+            de times, cloud computing e inteligência artificial. Também leciono em cursos de
             graduação em Ciência da Computação e Engenharia de Software.
           </p>
           <p>

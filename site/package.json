@@ -2,7 +2,10 @@
   "name": "fabriciosantana.github.io",
   "version": "1.0.0",
   "description": "Fabricio Santana",
-  "source": "src/index.html",
+  "source": [
+    "src/index.html",
+    "src/projects/index.html"
+  ],
   "homepage": "https://fabriciosantana.github.io/",
   "scripts": {
     "start": "parcel",
