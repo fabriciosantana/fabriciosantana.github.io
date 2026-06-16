@@ -1,0 +1,174 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=black, urlcolor=blue}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\setlist[itemize]{leftmargin=1.5em,itemsep=0.2em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=1.7em,itemsep=0.2em,topsep=0.2em}
+\pagenumbering{arabic}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries Lead Prioritization and Sales Automation Proposal}
+\end{center}
+\vspace{0.5em}
+
+Hello,\par
+
+My name is Fabricio Santana. I am a software engineer and technical lead with 20+ years of experience in backend development, software architecture, database integration, automated testing, cloud computing, and delivery of critical systems. I have also led large engineering teams and worked on projects where data consistency, business rules, validation, security, and maintainability are essential.\par
+
+Your project is a strong match for my background because the main challenge is not only creating a lead score. The important part is building a reliable sales automation workflow that connects CRM data, lead enrichment, prioritization rules, automatic assignment, and daily actionable communication for the sales team.\par
+
+\section*{Working methodology}
+
+My delivery method is designed to reduce risk before development starts. The work begins with a fixed Discovery Sprint and then moves into a delivery package only after scope, priorities, responsibilities, dependencies, and acceptance criteria are clear.\par
+
+The first step is a one-week Discovery Sprint with a fixed price of USD 500. In this phase, I can hold up to five remote meetings to understand the business problem, review the current platform, analyze the current data sources and workflows, map requirements, identify risks, review integrations, and define priorities. The deliverable is a practical work plan for the implementation, including recommended scope, technical approach, milestones, success criteria, and the most appropriate delivery package.\par
+
+After discovery, the project can move into one of three fixed-price, four-week delivery packages. The package is selected according to scope, complexity, delivery speed, integration needs, quality requirements, and the amount of engineering support required. Some roles may participate part-time depending on the agreed scope, especially Scrum Master, technical leadership, test automation, DevOps, observability, and deployment support.\par
+
+\textbf{Delivery package options}\par
+
+\begin{itemize}
+\item \textbf{Essential Delivery} --- USD 2,000, 4 weeks. Includes a Scrum Master and one full-stack engineer. This package is designed for a focused module, MVP, backend feature, import flow, or small integration with limited uncertainty. It is suitable when the scope is well defined, the number of integrations is limited, and the main goal is to deliver a reliable working feature without unnecessary overhead.
+\item \textbf{Product Acceleration} --- USD 4,000, 4 weeks. Includes a Scrum Master, two full-stack engineers, and one engineer focused on test automation, DevOps, observability, and deployment. This package is recommended when faster delivery is needed or when the scope includes a product, API, integration, internal workflow, multiple features, or more demanding quality needs.
+\item \textbf{Scale \& Intelligence} --- USD 6,000, 4 weeks. Includes a Technical lead, Scrum Master, two full-stack engineers, and one engineer focused on test automation, DevOps, observability, and deployment. This package is designed for complex systems, advanced data workflows, automation, auditability, security, observability, broader platform evolution, or stronger technical scale planning.
+\end{itemize}
+
+Role responsibilities are clear: the Scrum Master organizes scope, communication, ceremonies, progress tracking, and delivery alignment; full-stack engineers implement backend, frontend, API, and database changes as needed; the test automation, DevOps, observability, and deployment engineer supports automated tests, CI/CD, monitoring, release quality, and deployment; and the Technical lead, included in the Scale \& Intelligence package, owns architecture, technical decisions, code quality, and risk management for more complex projects.\par
+
+Each delivery cycle is executed with Scrum-inspired practices, frequent alignment, technical review, automated testing when applicable, and a demonstration of what was delivered. The client keeps ownership of the produced code, and the scope is agreed before execution to avoid open-ended work and unclear expectations.\par
+
+\textbf{Construction defect warranty.} After delivery and acceptance, I include a 30-day warranty for construction defects related to the approved scope. This covers fixes for implementation errors, broken agreed behavior, or defects introduced by the delivered code. It does not cover new features, changes in business rules, new CRM or Apollo fields not included in the approved scope, third-party service changes, infrastructure changes outside the project, or requests that expand the original acceptance criteria.\par
+
+\section*{Opportunity analysis}
+
+This project should be treated as a sales operations automation system, not as a standalone scoring script. The lead prioritization algorithm is important, but it will only create business value if the data is reliable, the scoring criteria are explainable, the assignment rules match the sales process, and the WhatsApp summaries are concise enough to drive daily action.\par
+
+The main technical risks are CRM data quality, missing or inconsistent lead attributes, duplicate leads, API limitations, enrichment source reliability, WhatsApp provider constraints, and unclear sales ownership rules. For this reason, I recommend starting with a transparent and configurable scoring model, then improving it with data-science techniques once historical conversion data is available and clean enough.\par
+
+A practical first version can combine deterministic business rules, weighted scoring, enrichment attributes, and measurable feedback from sales activity. If your CRM contains historical outcomes such as contacted leads, meetings booked, opportunities created, won deals, lost deals, revenue, and response time, the system can later evolve toward a more predictive model.\par
+
+\section*{Proposed work plan}
+
+I would approach the project in structured phases:\par
+
+\textbf{1. Discovery, process mapping, and technical design}\par
+
+\begin{itemize}
+\item Review the current CRM, available lead fields, sales stages, assignment process, and daily sales routine.
+\item Identify the external enrichment sources, including Apollo.io access method, available attributes, limits, and compliance constraints.
+\item Define the initial lead scoring criteria, assignment rules, escalation rules, and daily WhatsApp summary format.
+\item Confirm acceptance criteria, integration responsibilities, credentials, environments, and deployment process before implementation.
+\end{itemize}
+
+\textbf{2. CRM integration and lead data pipeline}\par
+
+\begin{itemize}
+\item Connect to the CRM through its API or another approved integration method.
+\item Pull new and updated leads on a scheduled basis.
+\item Normalize lead data into a consistent structure for scoring, enrichment, assignment, and reporting.
+\item Add validation, duplicate checks, error handling, and logs for integration failures.
+\item Preserve traceability between source CRM records and automation decisions.
+\end{itemize}
+
+\textbf{3. Lead enrichment and prioritization algorithm}\par
+
+\begin{itemize}
+\item Integrate with approved enrichment sources such as Apollo.io, using official APIs or agreed data-access methods.
+\item Enrich lead profiles with relevant company, role, industry, size, location, contact, intent, and fit attributes when available.
+\item Implement an initial scoring model based on configurable weights, business rules, and confidence indicators.
+\item Make the scoring logic explainable, so sales leaders can understand why a lead was prioritized.
+\item Prepare the model for future improvement using historical conversion data, if available.
+\end{itemize}
+
+\textbf{4. Automated assignment and sales workflow rules}\par
+
+\begin{itemize}
+\item Assign prioritized leads to salespeople using agreed criteria such as territory, language, account ownership, product line, seniority, workload, and availability.
+\item Define fallback behavior for incomplete data, unavailable salespeople, duplicate ownership, or ambiguous assignment.
+\item Update CRM records with assignment decisions, priority level, next action, and automation metadata when supported by the CRM.
+\item Include safeguards so automation does not overwrite important manual decisions without clear rules.
+\end{itemize}
+
+\textbf{5. WhatsApp daily summaries and actionable insights}\par
+
+\begin{itemize}
+\item Integrate with a WhatsApp provider such as WhatsApp Business Platform, Twilio, Zenvia, 360dialog, or another approved provider.
+\item Send each salesperson a daily prioritized list of new leads to contact.
+\item Include actionable follow-ups for previously assigned leads based on CRM status, inactivity, due dates, or agreed next steps.
+\item Include relevant updates, such as news or important account changes, when reliable sources and rules are defined.
+\item Keep messages concise and operational, with clear priority, context, and recommended next action.
+\end{itemize}
+
+\textbf{6. Testing, monitoring, documentation, and handoff}\par
+
+\begin{itemize}
+\item Test CRM synchronization, enrichment, scoring, assignment, WhatsApp delivery, and edge cases.
+\item Add logs and operational visibility for failed syncs, failed messages, missing data, and unusual assignment patterns.
+\item Document the scoring rules, integration setup, scheduling, error handling, and maintenance process.
+\item Provide a handoff session or written notes so your team can understand, operate, and evolve the automation.
+\end{itemize}
+
+\section*{Estimated timeline}
+
+For the recommended starting scope, my estimated timeline is 5 weeks after receiving CRM access, sample lead data, Apollo.io or enrichment-source access details, WhatsApp provider details, sales team structure, and current assignment rules: 1 week for Discovery Sprint and 4 weeks for one Product Acceleration delivery cycle.\par
+
+A practical schedule would be:\par
+
+\begin{itemize}
+\item Week 1: Discovery Sprint, CRM review, sales process mapping, data review, scoring design, and implementation plan.
+\item Week 2: CRM integration, lead data normalization, validation, duplicate handling, and initial scheduling.
+\item Week 3: enrichment integration, initial prioritization algorithm, explainability fields, and scoring tests.
+\item Week 4: automated assignment rules, CRM updates, WhatsApp integration, and daily summary templates.
+\item Week 5: end-to-end testing, monitoring, documentation, refinements, demo, and handoff.
+\end{itemize}
+
+If discovery confirms that the CRM API is straightforward, the enrichment source is available through an official integration, and the WhatsApp provider is already configured, this schedule is realistic for a first operational version. If the project requires custom crawling, complex compliance review, advanced predictive modeling, multi-country sales rules, or a new management dashboard, the timeline and package recommendation should be adjusted before implementation starts.\par
+
+\section*{Availability and communication}
+
+I can work remotely and keep communication in English through Workana messages, scheduled calls, and written progress updates. I usually prefer short alignment checkpoints during the week, especially after reviewing the codebase and after each major implementation milestone.\par
+
+This helps reduce misunderstandings and keeps the project aligned with your actual data, business rules, and operational workflow.\par
+
+\section*{Budget}
+
+Based on the current understanding, my recommended starting budget is USD 4,500: USD 500 for the one-week Discovery Sprint plus USD 4,000 for one Product Acceleration delivery cycle, assuming:\par
+
+\begin{itemize}
+\item The CRM provides API access or another reliable integration method.
+\item The client can provide sample lead data, current sales stages, and assignment rules.
+\item Apollo.io or another enrichment source can be accessed through an approved method, preferably an official API or export.
+\item WhatsApp sending will use an approved provider and the client will provide or configure the required business account, templates, and credentials.
+\item The first version uses a transparent configurable scoring model, with optional predictive improvements after enough historical outcome data is reviewed.
+\end{itemize}
+
+The Discovery Sprint will refine the scope and confirm whether Product Acceleration is sufficient. If the review shows complex CRM customization, strict compliance requirements, advanced crawling, multiple sales territories, bidirectional WhatsApp interactions, or machine-learning model training based on historical conversions, I will recommend moving to Scale \& Intelligence before implementation starts.\par
+
+\section*{Questions before final confirmation}
+
+Before confirming the final scope, I would like to clarify a few points:\par
+
+\begin{enumerate}
+\item Which CRM do you currently use, and does it provide API access?
+\item Which lead attributes are available today, and which ones are reliable enough for scoring?
+\item Do you have historical outcome data such as contacted leads, meetings booked, opportunities, wins, losses, deal value, and response time?
+\item How should Apollo.io or external enrichment be accessed: official API, export, or another approved method?
+\item Are there compliance, privacy, or data-retention rules that the automation must follow?
+\item Which WhatsApp provider do you want to use, or should the project include provider selection?
+\item How many salespeople will receive daily summaries?
+\item What rules should guide assignment: territory, language, product line, account ownership, seniority, workload, availability, or other criteria?
+\item Should the automation only send summaries, or should salespeople be able to take actions directly from WhatsApp?
+\item What should count as success for the first version: faster response time, more contacted leads, more meetings booked, higher conversion rate, or better pipeline visibility?
+\end{enumerate}
+
+Once these points are clear, I can confirm the final delivery plan and milestones.\par
+
+\end{document}
