@@ -37,7 +37,7 @@ Choose the package based on complexity and risk, not only on feature count. For 
 
 ## Standard proposal shape
 
-Use this order:
+Use this order for the formal proposal:
 
 1. Title.
 2. Greeting and presentation.
@@ -51,6 +51,55 @@ Use this order:
 10. Questions before final confirmation.
 
 The presentation and Working methodology may be reused, but the specific fit paragraph, analysis, work plan, budget assumptions, and questions must be tailored to the opportunity.
+
+## Commercial funnel artifacts
+
+Do not treat every opportunity as if it automatically deserves a full formal proposal. Treat proposal work as a small sales funnel.
+
+For each opportunity, prefer creating these artifacts:
+
+```text
+opportunities/<platform-or-client>-<short-topic>/
+  qualification.md
+  opportunity-and-analysis.md
+  bid-message.md
+  proposal.tex
+  proposal.pdf
+```
+
+Use `qualification.md` to decide whether to pursue the opportunity and how much effort to invest. The decision should be one of:
+
+- `pursue`: strong fit and enough commercial signal to prepare both bid message and formal proposal.
+- `pursue discovery only`: useful opportunity but scope, budget, client maturity, or unknowns make it safer to sell only the Discovery Sprint first.
+- `skip`: weak fit, low budget signal, unclear client, high risk of open-ended scope, or poor alignment with the offer.
+
+Evaluate at least:
+
+- budget signal or likely ability to pay;
+- clarity of scope;
+- fit with Fabricio's positioning;
+- urgency and business pain;
+- access to decision maker;
+- risk of uncontrolled scope;
+- seriousness of client signals;
+- likelihood of competing only on low price.
+
+## Bid message
+
+For platforms such as Workana, always prepare a short `bid-message.md` in addition to the formal proposal. The bid message is often the first and most important sales filter.
+
+Recommended structure:
+
+1. Specific recognition of the client's problem.
+2. Short technical diagnosis that shows judgment.
+3. Proposed next step, usually Discovery Sprint.
+4. Direct call to action or one high-value question.
+
+The bid message should be concise, specific, and commercially sharp. It should not be a compressed version of the full proposal. Its goal is to earn a conversation or make the Discovery Sprint feel like the obvious low-risk next step.
+
+Example pattern:
+
+"This is not just a CRM automation task. The key risk is making sure lead scoring, enrichment, assignment rules, and daily summaries work as one reliable sales workflow. I would start with a short Discovery Sprint to review your CRM, lead data, enrichment access, messaging provider, and current sales rules, then confirm the best fixed-scope implementation package."
 
 ## Tone and argument
 
@@ -115,6 +164,14 @@ Default patterns:
 
 Always include assumptions under the budget. Then state that Discovery will confirm whether the recommended package is sufficient and identify conditions that would require a higher package or additional cycle.
 
+Choose the commercial framing according to buyer maturity and scope clarity:
+
+- For uncertain or early-stage clients, sell the Discovery Sprint first and avoid pushing a full implementation budget too early.
+- For serious clients with a clear operational problem and credible budget, present Discovery plus the recommended package.
+- For clients who need a lower-risk entry point, offer a minimum operational version first, then expansion after acceptance.
+
+Make the Discovery Sprint feel like a concrete deliverable, not paid conversation. When relevant, list discovery outputs such as current-flow map, risk analysis, prioritized backlog, recommended architecture, integration plan, validated estimate, acceptance criteria, and package recommendation.
+
 ## Warranty
 
 Include a construction defect warranty in LaTeX/PDF proposals unless the context suggests not to.
@@ -141,8 +198,18 @@ Questions should cover:
 - Operational workflow and user responsibilities.
 - Success metrics.
 - Deadlines or external constraints.
+- Budget approval or budget range, when appropriate.
+- Decision maker and integration owner, when appropriate.
 
 Do not ask generic questions if a more specific question is possible.
+
+Include at least one question that helps qualify buying intent, such as:
+
+- Do you already have a budget range approved for this project?
+- Who will approve access to the CRM, messaging provider, repository, or production environment?
+- Would you prefer to start with a Discovery Sprint before committing to full implementation?
+- Is there a target date for the first operational version?
+- What would make this project successful in the first 30 days?
 
 ## Output files
 
@@ -150,7 +217,9 @@ For each opportunity, prefer this structure:
 
 ```text
 opportunities/<platform-or-client>-<short-topic>/
+  qualification.md
   opportunity-and-analysis.md
+  bid-message.md
   proposal.tex
   proposal.pdf
 ```
