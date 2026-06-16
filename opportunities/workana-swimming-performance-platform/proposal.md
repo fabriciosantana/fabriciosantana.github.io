@@ -1,12 +1,26 @@
-# Workana Proposal
-
-## Proposal to submit in English
+# Swimming Performance Platform Proposal
 
 Hello,
 
 My name is Fabricio Santana. I am a software engineer and technical lead with 20+ years of experience in backend development, software architecture, database integration, automated testing, cloud computing, and delivery of critical systems. I have also led large engineering teams and worked on projects where data consistency, business rules, validation, security, and maintainability are essential.
 
 Your project is a strong match for my background because the main challenge is not only importing Excel files. The important part is building a reliable data import workflow that protects the integrity of swimmer profiles, competition results, scores, and rankings.
+
+## Working methodology
+
+My delivery method is designed to reduce risk before development starts. The work begins with a fixed Discovery Sprint and then moves into a delivery package only after scope, priorities, responsibilities, dependencies, and acceptance criteria are clear.
+
+The first step is a one-week Discovery Sprint with a fixed price of USD 500. In this phase, I can hold up to five remote meetings to understand the business problem, review the current platform, analyze the Excel files, map requirements, identify risks, review integrations, and define priorities. The deliverable is a practical work plan for the implementation, including recommended scope, technical approach, milestones, success criteria, and the most appropriate delivery package.
+
+After discovery, the project can move into one of three fixed-price, four-week delivery packages. The team composition below represents the available delivery setup for each package. Some roles may participate part-time depending on the agreed scope, especially QA, DevOps, observability, and specialist support.
+
+- Essential Delivery: USD 2,000. Best for a focused module that needs to ship with quality and room to evolve. Available setup: Technical lead, Scrum Master, one full-stack engineer, and one engineer focused on test automation, DevOps, observability, and deployment. For this swimming platform, based on the current description, this appears to be the most appropriate starting package. It should be enough if the work can be limited to a controlled import flow, clear validation rules, duplicate prevention, swimmer matching, and focused backend adjustments.
+- Product Acceleration: USD 4,000. Recommended when the client needs faster delivery of a product, API, or integration without losing control of scope. Available setup: Technical lead, Scrum Master, two full-stack engineers, and one specialist in quality, DevOps, and deployment. For this project, this would be recommended only if discovery shows multiple Excel formats, more complex matching rules, broader ranking recalculation, stronger automated test coverage, or deeper integration with the existing production workflow.
+- Scale & Intelligence: USD 6,000. Designed for more complex projects with integrations, automation, security needs, data workflows, or AI components. Available setup: Technical lead, Scrum Master, two full-stack engineers, QA/DevOps specialist, and an AI, data, or integration specialist. For this project, this package makes sense if fuzzy matching requires more advanced data logic, if historical data cleanup is included, or if the import process needs observability, audit trails, and broader platform hardening.
+
+Role responsibilities are clear: the Technical lead owns architecture, technical decisions, code quality, and risk management; the Scrum Master organizes scope, communication, ceremonies, and progress tracking; full-stack engineers implement backend, frontend, API, and database changes as needed; the QA/DevOps profile supports automated tests, CI/CD, deployment, monitoring, and release quality; and the data/integration specialist supports matching logic, import rules, data normalization, and complex reconciliation scenarios.
+
+Each delivery cycle is executed with Scrum-inspired practices, frequent alignment, technical review, automated testing when applicable, and a demonstration of what was delivered. The client keeps ownership of the produced code, and the scope is agreed before execution to avoid open-ended work and unclear expectations.
 
 ## Proposed work plan
 
@@ -50,16 +64,16 @@ I would approach the project in structured phases:
 
 ## Estimated timeline
 
-My estimated timeline is 4 to 6 weeks after receiving repository access, database/schema information, sample Excel files, and the current scoring rules.
+For the recommended starting scope, my estimated timeline is 5 weeks after receiving repository access, database/schema information, sample Excel files, and the current scoring rules: 1 week for Discovery Sprint and 4 weeks for one Essential Delivery cycle.
 
 A practical schedule would be:
 
-- Week 1: technical assessment, import design, and confirmation of rules.
+- Week 1: Discovery Sprint, technical assessment, import design, and confirmation of rules.
 - Weeks 2 and 3: Excel import, validation, duplicate prevention, and swimmer matching.
 - Weeks 4 and 5: scoring/ranking updates, recalculation logic, and automated tests.
-- Week 6, if needed: refinements, documentation, edge cases, and final handoff.
+- Optional extension, only if needed: refinements, additional edge cases, broader documentation, or scope items identified during discovery.
 
-If the existing codebase is well organized and the scoring rules are already clear, this may be completed closer to 4 weeks.
+If discovery confirms that the current assumptions are correct, one Essential Delivery cycle should be enough. If the existing codebase, Excel formats, or ranking rules are more complex than expected, the timeline and package recommendation should be adjusted before implementation starts.
 
 ## Availability and communication
 
@@ -69,14 +83,14 @@ This helps reduce misunderstandings and keeps the project aligned with your actu
 
 ## Budget
 
-For the complete scope described, my estimated budget is USD 4,500, assuming:
+Based on the current understanding, my recommended starting budget is USD 2,500: USD 500 for the one-week Discovery Sprint plus USD 2,000 for one Essential Delivery cycle, assuming:
 
 - The platform already exists and the work is focused on improving the import, matching, scoring, and ranking logic.
 - You can provide access to the codebase, database schema, and anonymized Excel samples.
 - The number of Excel formats is limited and can be mapped during the first phase.
 - The updated scoring criteria can be clearly defined with your input.
 
-If the project includes many unknown Excel formats, major database refactoring, a new admin interface, or cleanup of a large volume of historical data, I would recommend splitting the work into a paid discovery phase first and then confirming the final implementation budget.
+The Discovery Sprint will refine the scope and confirm whether one Essential Delivery cycle is sufficient. If the review shows many unknown Excel formats, major database refactoring, a new admin interface, complex historical data cleanup, or advanced scoring changes, I will recommend moving to Product Acceleration or Scale & Intelligence before implementation starts.
 
 ## Questions before final confirmation
 

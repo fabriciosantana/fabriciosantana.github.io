@@ -1,0 +1,159 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=black, urlcolor=blue}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\setlist[itemize]{leftmargin=1.5em,itemsep=0.2em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=1.7em,itemsep=0.2em,topsep=0.2em}
+\pagenumbering{arabic}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries Swimming Performance Platform Proposal}
+\end{center}
+\vspace{0.5em}
+
+Hello,\par
+
+My name is Fabricio Santana. I am a software engineer and technical lead with 20+ years of experience in backend development, software architecture, database integration, automated testing, cloud computing, and delivery of critical systems. I have also led large engineering teams and worked on projects where data consistency, business rules, validation, security, and maintainability are essential.\par
+
+Your project is a strong match for my background because the main challenge is not only importing Excel files. The important part is building a reliable data import workflow that protects the integrity of swimmer profiles, competition results, scores, and rankings.\par
+
+\section*{Working methodology}
+
+My delivery method is designed to reduce risk before development starts. The work begins with a fixed Discovery Sprint and then moves into a delivery package only after scope, priorities, responsibilities, dependencies, and acceptance criteria are clear.\par
+
+The first step is a one-week Discovery Sprint with a fixed price of USD 500. In this phase, I can hold up to five remote meetings to understand the business problem, review the current platform, analyze the Excel files, map requirements, identify risks, review integrations, and define priorities. The deliverable is a practical work plan for the implementation, including recommended scope, technical approach, milestones, success criteria, and the most appropriate delivery package.\par
+
+After discovery, the project can move into one of three fixed-price, four-week delivery packages. The team composition below represents the available delivery setup for each package. Some roles may participate part-time depending on the agreed scope, especially QA, DevOps, observability, and specialist support.\par
+
+\begin{itemize}
+\item Essential Delivery: USD 2,000. Best for a focused module that needs to ship with quality and room to evolve. Available setup: Technical lead, Scrum Master, one full-stack engineer, and one engineer focused on test automation, DevOps, observability, and deployment. For this swimming platform, based on the current description, this appears to be the most appropriate starting package. It should be enough if the work can be limited to a controlled import flow, clear validation rules, duplicate prevention, swimmer matching, and focused backend adjustments.
+\item Product Acceleration: USD 4,000. Recommended when the client needs faster delivery of a product, API, or integration without losing control of scope. Available setup: Technical lead, Scrum Master, two full-stack engineers, and one specialist in quality, DevOps, and deployment. For this project, this would be recommended only if discovery shows multiple Excel formats, more complex matching rules, broader ranking recalculation, stronger automated test coverage, or deeper integration with the existing production workflow.
+\item Scale \& Intelligence: USD 6,000. Designed for more complex projects with integrations, automation, security needs, data workflows, or AI components. Available setup: Technical lead, Scrum Master, two full-stack engineers, QA/DevOps specialist, and an AI, data, or integration specialist. For this project, this package makes sense if fuzzy matching requires more advanced data logic, if historical data cleanup is included, or if the import process needs observability, audit trails, and broader platform hardening.
+\end{itemize}
+
+Role responsibilities are clear: the Technical lead owns architecture, technical decisions, code quality, and risk management; the Scrum Master organizes scope, communication, ceremonies, and progress tracking; full-stack engineers implement backend, frontend, API, and database changes as needed; the QA/DevOps profile supports automated tests, CI/CD, deployment, monitoring, and release quality; and the data/integration specialist supports matching logic, import rules, data normalization, and complex reconciliation scenarios.\par
+
+Each delivery cycle is executed with Scrum-inspired practices, frequent alignment, technical review, automated testing when applicable, and a demonstration of what was delivered. The client keeps ownership of the produced code, and the scope is agreed before execution to avoid open-ended work and unclear expectations.\par
+
+\section*{Proposed work plan}
+
+I would approach the project in structured phases:\par
+
+\begin{enumerate}
+\item Technical assessment and import design
+\end{enumerate}
+
+\begin{itemize}
+\item Review the current application architecture, database schema, existing import logic, and ranking calculation rules.
+\item Analyze representative Excel files with different layouts.
+\item Define the import workflow, validation rules, duplicate detection strategy, and matching criteria.
+\item Confirm the acceptance criteria before implementation.
+\end{itemize}
+
+\begin{enumerate}
+\item Excel import and validation process
+\end{enumerate}
+
+\begin{itemize}
+\item Implement or improve Excel/CSV parsing for the expected file structures.
+\item Normalize imported data into a controlled staging process before saving final records.
+\item Validate required fields, formats, competition metadata, events, swimmer data, times/results, and category information.
+\item Generate clear validation feedback for rows that cannot be safely imported.
+\item Prevent duplicate entries using deterministic rules based on competition, swimmer, event, date, result, and source data.
+\end{itemize}
+
+\begin{enumerate}
+\item Swimmer matching and reconciliation
+\end{enumerate}
+
+\begin{itemize}
+\item Prioritize exact matching using swimmer IDs or other unique identifiers when available.
+\item Add name-based fuzzy matching only as a fallback.
+\item Use confidence levels to avoid unsafe automatic matches.
+\item Flag unmatched or ambiguous swimmers for manual review before final reconciliation.
+\end{itemize}
+
+\begin{enumerate}
+\item Score and ranking calculation updates
+\end{enumerate}
+
+\begin{itemize}
+\item Review the existing point and ranking formulas.
+\item Implement the updated scoring criteria in a clear and testable way.
+\item Define when scores and rankings should be recalculated after each import.
+\item Recalculate only the affected rankings when possible, while preserving correctness.
+\item Add automated tests for scoring and ranking edge cases.
+\end{itemize}
+
+\begin{enumerate}
+\item Testing, documentation, and handoff
+\end{enumerate}
+
+\begin{itemize}
+\item Test the import process with multiple Excel examples and edge cases.
+\item Add technical documentation for the import flow, matching logic, duplicate prevention, and ranking recalculation.
+\item Provide a handoff session or written notes so your team can maintain and extend the feature.
+\end{itemize}
+
+\section*{Estimated timeline}
+
+For the recommended starting scope, my estimated timeline is 5 weeks after receiving repository access, database/schema information, sample Excel files, and the current scoring rules: 1 week for Discovery Sprint and 4 weeks for one Essential Delivery cycle.\par
+
+A practical schedule would be:\par
+
+\begin{itemize}
+\item Week 1: Discovery Sprint, technical assessment, import design, and confirmation of rules.
+\item Weeks 2 and 3: Excel import, validation, duplicate prevention, and swimmer matching.
+\item Weeks 4 and 5: scoring/ranking updates, recalculation logic, and automated tests.
+\item Optional extension, only if needed: refinements, additional edge cases, broader documentation, or scope items identified during discovery.
+\end{itemize}
+
+If discovery confirms that the current assumptions are correct, one Essential Delivery cycle should be enough. If the existing codebase, Excel formats, or ranking rules are more complex than expected, the timeline and package recommendation should be adjusted before implementation starts.\par
+
+\section*{Availability and communication}
+
+I can work remotely and keep communication in English through Workana messages, scheduled calls, and written progress updates. I usually prefer short alignment checkpoints during the week, especially after reviewing the codebase and after each major implementation milestone.\par
+
+This helps reduce misunderstandings and keeps the project aligned with your actual data, business rules, and operational workflow.\par
+
+\section*{Budget}
+
+Based on the current understanding, my recommended starting budget is USD 2,500: USD 500 for the one-week Discovery Sprint plus USD 2,000 for one Essential Delivery cycle, assuming:\par
+
+\begin{itemize}
+\item The platform already exists and the work is focused on improving the import, matching, scoring, and ranking logic.
+\item You can provide access to the codebase, database schema, and anonymized Excel samples.
+\item The number of Excel formats is limited and can be mapped during the first phase.
+\item The updated scoring criteria can be clearly defined with your input.
+\end{itemize}
+
+The Discovery Sprint will refine the scope and confirm whether one Essential Delivery cycle is sufficient. If the review shows many unknown Excel formats, major database refactoring, a new admin interface, complex historical data cleanup, or advanced scoring changes, I will recommend moving to Product Acceleration or Scale \& Intelligence before implementation starts.\par
+
+\section*{Questions before final confirmation}
+
+Before confirming the final scope, I would like to clarify a few points:\par
+
+\begin{enumerate}
+\item What technology stack is the current platform using for the backend and database?
+\item Can you provide anonymized examples of the Excel files, including the different structures you receive?
+\item Do most competition files include a unique swimmer ID, or is name-based matching frequently required?
+\item What fields should define a duplicate result: swimmer, event, competition, date, time/result, category, or another combination?
+\item Do you already have documented rules for the points and ranking calculations?
+\item Should valid rows be imported automatically while unmatched rows are held for review, or should the entire import wait for manual approval?
+\item Is there already an admin screen for reviewing unmatched swimmers, or should this be added as part of the project?
+\item Should ranking recalculation apply to all historical results or only affected competitions, seasons, age groups, or categories?
+\item Does the project currently have automated tests or a staging environment?
+\item Are there any deadlines related to upcoming competitions or ranking publications?
+\end{enumerate}
+
+Once these points are clear, I can confirm the final delivery plan and milestones.\par
+
+\end{document}
