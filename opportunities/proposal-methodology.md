@@ -84,6 +84,22 @@ Evaluate at least:
 - seriousness of client signals;
 - likelihood of competing only on low price.
 
+## Proposal review and improvement loop
+
+When a proposal has already been drafted, review it before treating it as ready for the client. Use a review stance similar to code review: findings first, ordered by commercial or delivery risk, with direct references to the relevant file and line when possible.
+
+Check at least:
+
+- whether the bid message is commercially sharp enough to earn a conversation;
+- whether the proposal addresses the client's explicit buying criteria, not only the technical scope;
+- whether important client phrases such as "easy to change", "secure", "scalable", "bilingual", "admin panel", or "automation" became concrete deliverables;
+- whether the timeline says "first operational release" or another bounded delivery phrase when the full future scope could exceed one cycle;
+- whether security, integrations, data ownership, CMS/admin needs, handoff, and acceptance criteria are specific enough for the opportunity;
+- whether budget language protects against uncontrolled scope while still giving the client a clear next step;
+- whether the final question helps qualify buyer intent, access, budget, or readiness to start discovery.
+
+After the review, adjust all affected artifacts together: `bid-message.md`, `opportunity-and-analysis.md`, `proposal.tex`, and then regenerate `proposal.pdf`. If the opportunity folder is not tracked by Git yet, inspect the files directly because `git diff` will not show useful changes for untracked directories. Compile with `latexmk -pdf proposal.tex` and clean auxiliary files with `latexmk -c`.
+
 ## Bid message
 
 For platforms such as Workana, always prepare a short `bid-message.md` in addition to the formal proposal. The bid message is often the first and most important sales filter.
