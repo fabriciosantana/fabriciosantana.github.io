@@ -1,0 +1,174 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=black, urlcolor=blue}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\setlist[itemize]{leftmargin=1.5em,itemsep=0.2em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=1.7em,itemsep=0.2em,topsep=0.2em}
+\pagenumbering{arabic}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries Mobile Dating Application Proposal}
+\end{center}
+\vspace{0.5em}
+
+Hello,\par
+
+My name is Fabricio Santana. I am a software engineer and technical lead with 20+ years of experience in backend development, software architecture, database integration, automated testing, cloud computing, and delivery of critical systems. I have also led large engineering teams and worked on projects where data consistency, business rules, validation, security, and maintainability are essential.\par
+
+Your project is a strong match for my background because the main challenge is not only building mobile screens. The important part is defining the right MVP and designing a secure social product architecture where profiles, matching, chat, notifications, moderation, analytics, and administration work together as a reliable production system.\par
+
+My relevant approach for this kind of product is to combine mobile delivery, backend API architecture, secure authentication, real-time messaging design, push-notification workflows, moderation operations, analytics, deployment support, and automated testing into one coherent delivery plan. This keeps the first version practical while preserving a technical foundation for future growth.\par
+
+\section*{Working methodology}
+
+My delivery method is designed to reduce risk before development starts. The work begins with a fixed Discovery Sprint and then moves into a delivery package only after scope, priorities, responsibilities, dependencies, and acceptance criteria are clear.\par
+
+The first step is a one-week Discovery Sprint with a fixed price of USD 500. In this phase, I can hold up to five remote meetings to understand the business problem, review the current platform, analyze the current data sources and workflows, map requirements, identify risks, review integrations, and define priorities. The deliverable is a practical work plan for the implementation, including recommended scope, technical approach, milestones, success criteria, and the most appropriate delivery package.\par
+
+After discovery, the project can move into one of three fixed-price, four-week delivery packages. The package is selected according to scope, complexity, delivery speed, integration needs, quality requirements, and the amount of engineering support required. Some roles may participate part-time depending on the agreed scope, especially Scrum Master, technical leadership, test automation, DevOps, observability, and deployment support.\par
+
+\textbf{Delivery package options}\par
+
+\begin{itemize}
+\item \textbf{Essential Delivery} --- USD 2,000, 4 weeks. Includes a Scrum Master and one full-stack engineer. This package is designed for a focused module, MVP, backend feature, import flow, or small integration with limited uncertainty. It is suitable when the scope is well defined, the number of integrations is limited, and the main goal is to deliver a reliable working feature without unnecessary overhead.
+\item \textbf{Product Acceleration} --- USD 4,000, 4 weeks. Includes a Scrum Master, two full-stack engineers, and one engineer focused on test automation, DevOps, observability, and deployment. This package is recommended when faster delivery is needed or when the scope includes a product, API, integration, internal workflow, multiple features, or more demanding quality needs.
+\item \textbf{Scale \& Intelligence} --- USD 6,000, 4 weeks. Includes a Technical lead, Scrum Master, two full-stack engineers, and one engineer focused on test automation, DevOps, observability, and deployment. This package is designed for complex systems, advanced data workflows, automation, auditability, security, observability, broader platform evolution, or stronger technical scale planning.
+\end{itemize}
+
+Role responsibilities are clear: the Scrum Master organizes scope, communication, ceremonies, progress tracking, and delivery alignment; full-stack engineers implement backend, frontend, API, and database changes as needed; the test automation, DevOps, observability, and deployment engineer supports automated tests, CI/CD, monitoring, release quality, and deployment; and the Technical lead, included in the Scale \& Intelligence package, owns architecture, technical decisions, code quality, and risk management for more complex projects.\par
+
+For a mobile product, the implementation setup can include cross-platform mobile engineering when the selected stack requires it, along with backend, admin, testing, deployment, and observability work within the agreed package scope.\par
+
+Each delivery cycle is executed with Scrum-inspired practices, frequent alignment, technical review, automated testing when applicable, and a demonstration of what was delivered. The client keeps ownership of the produced code, and the scope is agreed before execution to avoid open-ended work and unclear expectations.\par
+
+\textbf{Construction defect warranty.} After delivery and acceptance, I include a 30-day warranty for construction defects related to the approved scope. This covers fixes for implementation errors, broken agreed behavior, or defects introduced by the delivered code. It does not cover new features, changes in business rules, new moderation rules or growth features not included in the approved scope, third-party service changes, infrastructure changes outside the project, or requests that expand the original acceptance criteria.\par
+
+\section*{Opportunity analysis}
+
+This project should be treated as a social product architecture and MVP-definition problem, not as a simple app build. A dating application needs more than profile screens and swipe interactions. It needs secure identity and session flows, reliable media handling, real-time messaging, notification delivery, moderation controls, privacy safeguards, analytics, and an operational admin surface that can support the product after launch.\par
+
+The main technical risks are defining the release boundary for version 1, keeping the architecture scalable without overengineering, controlling abuse and moderation risk, handling real-time chat and push notifications reliably, protecting user and location data, and avoiding hidden scope expansion into subscriptions, verification, advanced recommendation engines, richer chat features, and growth tooling. For this reason, I recommend starting with a launch-oriented MVP and a clear roadmap rather than trying to build a fully mature dating platform in a single cycle.\par
+
+A practical first implementation cycle can start the product foundation and the highest-value MVP slice: user registration and profile management, explainable matching criteria, swipe-based discovery, real-time text chat for matched users, push notifications, admin moderation essentials, and the technical foundation required for future product evolution. The exact delivery boundary should be confirmed during discovery.\par
+
+\section*{Proposed work plan}
+
+I would approach the project in structured phases. The Discovery Sprint is the immediate recommended commitment; the implementation phases below should be confirmed and sized after discovery.\par
+
+\textbf{1. Discovery, product definition, and technical design}\par
+
+\begin{itemize}
+\item Review the product goals, target audience, launch strategy, branding inputs, and expected MVP boundary.
+\item Define the preferred mobile approach and overall architecture for iOS, Android, backend services, storage, notifications, and administration.
+\item Identify requirements for authentication, social login, profile data, media handling, geolocation, chat, moderation, analytics, and privacy.
+\item Produce a concrete implementation plan with launch-scope backlog, recommended architecture, acceptance criteria, responsibilities, dependencies, risks, and package recommendation.
+\end{itemize}
+
+\textbf{2. Core platform architecture and backend foundation}\par
+
+\begin{itemize}
+\item Design and implement the backend foundation for accounts, profiles, preferences, matches, messaging, notifications, and admin operations.
+\item Define data models and APIs that preserve traceability and allow future product expansion.
+\item Add validation, authorization, auditability, and structured error handling.
+\item Establish the technical base for deployment, monitoring, and secure environment configuration.
+\end{itemize}
+
+\textbf{3. Mobile application MVP}\par
+
+\begin{itemize}
+\item Build the mobile flows for onboarding, authentication, profile creation, profile editing, discovery, swipe interactions, and match views.
+\item Implement responsive and consistent user flows for both iOS and Android delivery.
+\item Integrate profile images, user preferences, location-aware filtering rules, and match presentation.
+\item Keep the first implementation cycle focused on the agreed MVP slice rather than feature overload.
+\end{itemize}
+
+\textbf{4. Matching, chat, and notification workflows}\par
+
+\begin{itemize}
+\item Implement the initial matching logic using explicit criteria such as location, age range, interests, and profile preferences.
+\item Build real-time text chat for matched users with appropriate access rules.
+\item Integrate push notifications for new matches, new messages, and relevant account activity.
+\item Define fallback behavior for failed notification delivery, disconnected sessions, or incomplete profile data.
+\end{itemize}
+
+\textbf{5. Admin panel, moderation, and analytics essentials}\par
+
+\begin{itemize}
+\item Build an admin interface for user management, moderation actions, and operational oversight.
+\item Include the minimum controls needed for reporting, blocking, profile review, content takedown, and user status management according to the agreed scope.
+\item Add initial analytics for adoption, match activity, messaging activity, and moderation events.
+\item Prepare the product for future expansion into richer moderation or business metrics.
+\end{itemize}
+
+\textbf{6. Testing, security review, deployment support, and handoff}\par
+
+\begin{itemize}
+\item Test authentication, profile management, matching flows, messaging, notification delivery, admin operations, and edge cases.
+\item Review security-sensitive areas such as session handling, access control, media handling, and personal data protection.
+\item Add operational visibility for errors, failed notifications, and abnormal moderation or messaging patterns.
+\item Document the architecture, deployment prerequisites, product limitations, and next-step roadmap, and provide a handoff session or written notes.
+\end{itemize}
+
+\section*{Estimated timeline}
+
+For the immediate next step, my recommendation is a 1-week Discovery Sprint. After discovery, the first implementation cycle can be planned as a fixed 4-week delivery package. For a broad dating-app MVP with mobile app, backend, chat, notifications, moderation, and admin panel, the likely recommendation is one Scale \& Intelligence delivery cycle followed by additional cycles as needed for public launch readiness.\par
+
+A practical schedule would be:\par
+
+\begin{itemize}
+\item Week 1: Discovery Sprint, product definition, MVP boundary, architecture choices, launch-scope backlog, acceptance criteria, and implementation plan.
+\item Weeks 2 to 5: first fixed implementation cycle, covering the highest-value MVP slice agreed after discovery.
+\end{itemize}
+
+If discovery shows that the MVP is narrower than currently implied, the first implementation may be adjusted to a smaller package. If the project includes subscriptions, payments, identity verification, richer media exchange, stronger anti-abuse tooling, advanced recommendation models, or a broader analytics and growth stack, the product will likely require additional delivery cycles before or after the first public release.\par
+
+\section*{Availability and communication}
+
+I can work remotely and keep communication in English through Workana messages, scheduled calls, and written progress updates. I usually prefer short alignment checkpoints during the week, especially after reviewing the codebase and after each major implementation milestone.\par
+
+This helps reduce misunderstandings and keeps the project aligned with your actual product goals, business rules, and operational workflow.\par
+
+\section*{Budget}
+
+Based on the current understanding, my recommended immediate starting budget is USD 500 for the one-week Discovery Sprint. This gives you a concrete plan before committing to the full implementation budget.\par
+
+After discovery, a broad first implementation cycle for this type of product will likely fit the Scale \& Intelligence package at USD 6,000 for 4 weeks, assuming:\par
+
+\begin{itemize}
+\item This is a new product or early-stage product where the first release boundary can be clearly defined during discovery.
+\item The client can provide product priorities, design direction, branding assets, moderation rules, and platform-account access needed for delivery.
+\item The first implementation cycle focuses on an agreed MVP slice rather than a full long-term feature set.
+\item Social login providers, notification setup, and deployment prerequisites can be agreed during the first phase.
+\item The client understands that more advanced product layers such as subscriptions, payments, verification, richer recommendation logic, or broader anti-abuse tooling may require later cycles.
+\end{itemize}
+
+The Discovery Sprint will refine the scope and confirm whether Scale \& Intelligence is the right package for the first implementation cycle. If the review shows a narrower MVP with fewer operational requirements, I can recommend a smaller delivery shape. If it shows broader product requirements, multiple release tracks, or stronger moderation and compliance needs, I will recommend additional cycles before launch.\par
+
+\section*{Questions before final confirmation}
+
+Before confirming the final scope, I would like to clarify a few points:\par
+
+\begin{enumerate}
+\item Is this a brand-new product, or do you already have designs, prototypes, a repository, or backend services in progress?
+\item What should be included in the first release, and what can be postponed to later phases?
+\item Which mobile approach do you prefer: native, React Native, Flutter, or open technical recommendation after discovery?
+\item Which social login providers should be supported in the first version?
+\item Should chat be text-only at launch, or do you also want media, read receipts, typing indicators, and online presence?
+\item What moderation capabilities are required for launch: report, block, manual review, photo approval, content takedown, or automated flags?
+\item How should location-based matching work in the first version: approximate area, configurable radius, or another model?
+\item Which analytics matter most for the initial launch: signups, profile completion, matches, conversations started, moderation events, retention, or another metric?
+\item Is there already an approved budget range and target launch date for the first operational version?
+\item Who will approve product decisions and provide access to mobile-store accounts, authentication providers, notification setup, and deployment environments?
+\end{enumerate}
+
+Once these points are clear, I can confirm the final delivery plan and milestones.\par
+
+\end{document}
