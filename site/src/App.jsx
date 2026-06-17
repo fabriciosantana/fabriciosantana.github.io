@@ -141,6 +141,8 @@ const projectLanding = {
     packagesTitle: "Escolha o ciclo certo para o seu momento",
     packagesText:
       "Todos os pacotes têm duração fixa de 4 semanas. A melhor escolha depende da urgência, da complexidade técnica e do volume de funcionalidades desejado.",
+    packagesNote:
+      "Os papéis podem atuar de forma dedicada ou parcial conforme o escopo aprovado; o compromisso é com a entrega do ciclo, não com alocação aberta por horas.",
 
     successTitle: "Casos de sucesso",
     successText:
@@ -177,11 +179,11 @@ const projectLanding = {
         tag: "Para MVPs e módulos objetivos",
         description:
           "Ideal quando o problema está bem delimitado e a empresa precisa de uma entrega sólida, testável e pronta para evoluir.",
-        team: "Scrum Master, 1 engenheiro full-stack e 1 engenheiro de testes, DevOps, observabilidade e implantação.",
+        team: "Scrum Master e 1 engenheiro full-stack.",
         includes: [
           "Backlog do ciclo",
           "Desenvolvimento full-stack",
-          "Testes automatizados",
+          "Testes e validações dentro do escopo",
           "Deploy e acompanhamento técnico",
         ],
       },
@@ -191,10 +193,10 @@ const projectLanding = {
         tag: "Escolha recomendada",
         description:
           "Para empresas que precisam acelerar a construção de um produto, API ou integração com mais capacidade de desenvolvimento e refinamento.",
-        team: "Liderança técnica, Scrum Master, 2 engenheiros full-stack e 1 especialista em qualidade, DevOps e implantação.",
+        team: "Scrum Master, 2 engenheiros full-stack e 1 engenheiro com foco em testes, DevOps, observabilidade e deploy.",
         includes: [
           "Mais velocidade de entrega",
-          "Arquitetura e revisão técnica",
+          "Revisão técnica do ciclo",
           "Testes e CI/CD",
           "Demonstração e relatório do ciclo",
         ],
@@ -206,7 +208,7 @@ const projectLanding = {
         tag: "Para projetos críticos ou com IA",
         description:
           "Para soluções com maior complexidade, integrações relevantes, automação avançada, requisitos de segurança ou componentes de inteligência artificial.",
-        team: "Responsável técnico, Scrum Master, 2 engenheiros full-stack, especialista em QA/DevOps e especialista em IA, dados ou integrações.",
+        team: "Líder técnico, Scrum Master, 2 engenheiros full-stack e 1 engenheiro com foco em testes, DevOps, observabilidade e deploy.",
         includes: [
           "Arquitetura evolutiva",
           "Automação e IA quando aplicável",
@@ -373,6 +375,8 @@ const projectLanding = {
     packagesTitle: "Pick the delivery cycle that fits your budget",
     packagesText:
       "Every package runs for 4 weeks. Choose the one that matches your scope, urgency, and the amount of product you need to ship now.",
+    packagesNote:
+      "Roles may be dedicated or part-time depending on the approved scope; the commitment is to the delivery cycle, not open-ended hourly allocation.",
 
     successTitle: "Success cases",
     successText:
@@ -409,11 +413,11 @@ const projectLanding = {
         tag: "For MVPs and focused modules",
         description:
           "Best for a focused MVP or module that needs to ship with quality and room to evolve.",
-        team: "Scrum Master, 1 full-stack engineer, and 1 engineer focused on test automation, DevOps, observability, and deployment.",
+        team: "Scrum Master and 1 full-stack engineer.",
         includes: [
           "Cycle backlog",
           "Full-stack development",
-          "Automated tests",
+          "Testing and validation within scope",
           "Deployment and technical follow-up",
         ],
       },
@@ -423,10 +427,10 @@ const projectLanding = {
         tag: "Recommended choice",
         description:
           "For teams that need faster shipping of a product, API, or integration without losing control of scope.",
-        team: "Technical leadership, Scrum Master, 2 full-stack engineers, and 1 specialist in quality, DevOps, and deployment.",
+        team: "Scrum Master, 2 full-stack engineers, and 1 engineer focused on test automation, DevOps, observability, and deployment.",
         includes: [
           "More delivery capacity",
-          "Architecture and technical review",
+          "Cycle technical review",
           "Testing and CI/CD",
           "Cycle demo and report",
         ],
@@ -438,7 +442,7 @@ const projectLanding = {
         tag: "For critical or AI projects",
         description:
           "For more complex builds with integrations, automation, security needs, or AI components.",
-        team: "Technical lead, Scrum Master, 2 full-stack engineers, QA/DevOps specialist, and AI, data, or integration specialist.",
+        team: "Technical lead, Scrum Master, 2 full-stack engineers, and 1 engineer focused on test automation, DevOps, observability, and deployment.",
         includes: [
           "Evolutionary architecture",
           "Automation and AI when applicable",

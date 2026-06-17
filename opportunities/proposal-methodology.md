@@ -29,9 +29,11 @@ Discovery Sprint:
 
 Delivery packages:
 
-- Essential Delivery: USD 2,000 / R$ 12.000, 4 weeks. Use for focused modules, MVPs, backend features, import flows, or small integrations with limited uncertainty.
-- Product Acceleration: USD 4,000 / R$ 24.000, 4 weeks. Use when faster delivery is needed, or when the project includes a product, API, integration, internal workflow, multiple features, or more demanding quality needs.
-- Scale & Intelligence: USD 6,000 / R$ 36.000, 4 weeks. Use for complex systems, advanced data workflows, automation, AI, auditability, security, observability, broader platform evolution, or stronger technical scale planning.
+- Essential Delivery: USD 2,000 / R$ 12.000, 4 weeks. Includes Scrum Master and 1 full-stack engineer. Use for focused modules, MVPs, backend features, import flows, or small integrations with limited uncertainty.
+- Product Acceleration: USD 4,000 / R$ 24.000, 4 weeks. Includes Scrum Master, 2 full-stack engineers, and 1 engineer focused on test automation, DevOps, observability, and deployment. Use when faster delivery is needed, or when the project includes a product, API, integration, internal workflow, multiple features, or more demanding quality needs.
+- Scale & Intelligence: USD 6,000 / R$ 36.000, 4 weeks. Includes Technical lead, Scrum Master, 2 full-stack engineers, and 1 engineer focused on test automation, DevOps, observability, and deployment. Use for complex systems, advanced data workflows, automation, AI, auditability, security, observability, broader platform evolution, or stronger technical scale planning.
+
+Every formal proposal must make the package composition explicit. In the Working methodology section, list price, duration, included roles, and use case for each package. Then add a short responsibilities paragraph explaining that the Scrum Master organizes scope, communication, checkpoints, progress tracking, and delivery alignment; full-stack engineers implement backend, frontend, APIs, database, automation, and reporting work as needed; the test automation/DevOps/observability/deployment engineer supports validation, CI/CD, environment setup, deployment, monitoring, and release quality; and the Technical lead, when included, owns architecture, technical decisions, AI governance where applicable, code quality, and risk management.
 
 Choose the package based on complexity and risk, not only on feature count. For unclear but narrow work, recommend Discovery + Essential. For integrations, automation, and multiple moving parts, recommend Discovery + Product Acceleration. For AI, complex data, compliance, security, bidirectional messaging, advanced dashboards, or scale concerns, recommend Discovery + Scale & Intelligence or state that discovery may recommend it.
 
@@ -96,6 +98,9 @@ Check at least:
 - whether the timeline says "first operational release" or another bounded delivery phrase when the full future scope could exceed one cycle;
 - whether security, integrations, data ownership, CMS/admin needs, handoff, and acceptance criteria are specific enough for the opportunity;
 - whether budget language protects against uncontrolled scope while still giving the client a clear next step;
+- whether every delivery package lists price, duration, and included professional roles;
+- whether the proposal includes a responsibilities paragraph for Scrum Master, full-stack engineers, test automation/DevOps/observability/deployment engineer, and Technical lead when applicable;
+- whether the recommended package matches the risk level and the same package matrix used on the sales landing page;
 - whether the final question helps qualify buyer intent, access, budget, or readiness to start discovery.
 
 After the review, adjust all affected artifacts together: `bid-message.md`, `opportunity-and-analysis.md`, `proposal.tex`, and then regenerate `proposal.pdf`. If the opportunity folder is not tracked by Git yet, inspect the files directly because `git diff` will not show useful changes for untracked directories. Compile with `latexmk -pdf proposal.tex` and clean auxiliary files with `latexmk -c`.
