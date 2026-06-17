@@ -1,0 +1,180 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=black, urlcolor=blue}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\setlist[itemize]{leftmargin=1.5em,itemsep=0.2em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=1.7em,itemsep=0.2em,topsep=0.2em}
+\pagenumbering{arabic}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries Proposta para Sistema de Gestão Interna de Escritório de Advocacia}
+\end{center}
+\vspace{0.5em}
+
+Olá,\par
+
+Meu nome é Fabricio Santana. Sou engenheiro de software e líder técnico com mais de 20 anos de experiência em desenvolvimento backend, arquitetura de software, integração com bancos de dados, testes automatizados, computação em nuvem e entrega de sistemas críticos. Também liderei equipes grandes e atuei em projetos em que consistência de dados, regras de negócio, segurança, validação e manutenção são fatores centrais.\par
+
+Seu projeto tem forte aderência ao meu perfil porque o desafio principal não é apenas reproduzir um protótipo feito por IA. A parte importante é construir um sistema jurídico interno seguro e usável, em que gestão de processos, documentos, financeiro, agenda, tarefas, relatórios, permissões e consulta processual externa funcionem juntos em produção.\par
+
+Minha abordagem para esse tipo de projeto combina arquitetura web, modelagem de dados, controle de acesso, estratégia documental, integrações, implantação em domínio e handoff técnico em um plano de entrega coerente. Isso é importante aqui porque a qualidade do resultado depende de delimitar bem o primeiro release operacional e evitar que todos os módulos cresçam sem controle desde o início.\par
+
+\section*{Metodologia de trabalho}
+
+Meu método de entrega foi desenhado para reduzir risco antes do desenvolvimento principal. O trabalho começa com uma Discovery Sprint fechada e depois segue para um pacote de entrega somente quando escopo, prioridades, dependências, responsabilidades e critérios de aceite estiverem claros.\par
+
+O primeiro passo recomendado é uma Discovery Sprint de 1 semana, com valor fixo de R\$ 3.000. Nessa fase, posso conduzir até 5 reuniões remotas para entender o fluxo do escritório, revisar o protótipo fornecido, mapear módulos, dados, perfis de usuário, riscos, integrações, prioridades e o limite do primeiro release operacional. O entregável é um plano prático de implementação com escopo recomendado, abordagem técnica, marcos, critérios de sucesso, riscos, responsabilidades e recomendação do pacote de entrega.\par
+
+Depois da discovery, o projeto pode seguir para um dos pacotes fixos de 4 semanas. O pacote é escolhido conforme complexidade, risco, número de módulos que entram no primeiro release, necessidade de integrações e exigências de segurança, rastreabilidade e deploy.\par
+
+\textbf{Opções de pacote}\par
+
+\begin{itemize}
+\item \textbf{Essential Delivery} --- R\$ 12.000, 4 semanas. Adequado apenas se a discovery mostrar um recorte bastante estreito, com poucos módulos e baixa complexidade de integração.
+\item \textbf{Product Acceleration} --- R\$ 24.000, 4 semanas. Adequado para um sistema interno com vários módulos, mas ainda com primeiro release controlado e sem exigências mais pesadas de governança e integração.
+\item \textbf{Scale \& Intelligence} --- R\$ 36.000, 4 semanas. Adequado para sistemas mais complexos, com múltiplos módulos, regras de permissão, integração externa, maior preocupação com segurança, rastreabilidade, observabilidade e base preparada para evolução.
+\end{itemize}
+
+Para esta oportunidade, a recomendação inicial mais provável é \textbf{Scale \& Intelligence}, porque o conjunto pedido combina sistema interno completo, documentos, financeiro, agenda, tarefas, relatórios, controle de acesso, produção em domínio e integração com busca processual.\par
+
+\textbf{Garantia de defeitos de construção.} Após entrega e aceite, incluo garantia de 30 dias para defeitos de construção relacionados ao escopo aprovado. Isso cobre erros de implementação, comportamentos combinados que deixem de funcionar e defeitos introduzidos pelo código entregue. Não cobre novas funcionalidades, mudanças de regra de negócio, ampliação de escopo, alterações em serviços de terceiros, mudanças de infraestrutura fora do projeto ou comportamentos não incluídos nos critérios de aceite aprovados.\par
+
+\section*{Análise da oportunidade}
+
+Este projeto deve ser tratado como um problema de sistema operacional interno para escritório de advocacia, e não apenas como um site com módulos. O sistema precisa dar suporte a trabalho jurídico, organização documental, controle de prazos, visibilidade financeira e colaboração interna sem comprometer segurança, permissão de acesso e manutenção futura.\par
+
+Os módulos pedidos são coerentes, mas o risco real está em como eles se conectam:
+
+\begin{itemize}
+\item processos, clientes e partes precisam de um modelo de dados consistente;
+\item documentos precisam de organização, busca e versionamento em nível apropriado;
+\item financeiro precisa respeitar a forma como o escritório controla honorários, despesas e faturamento;
+\item agenda, prazos e tarefas precisam refletir responsabilidade operacional real;
+\item relatórios precisam responder a perguntas concretas do escritório;
+\item o controle de acesso precisa separar bem perfis como advogados, estagiários e administradores;
+\item a consulta processual externa precisa usar uma fonte confiável, contratualmente viável e tecnicamente estável.
+\end{itemize}
+
+Também é importante tratar segurança e responsabilidade operacional desde o início. O sistema deve apoiar o controle de prazos e compromissos, mas os alertas não devem ser tratados como substitutos da conferência profissional. Da mesma forma, documentos de clientes, dados financeiros, processos sigilosos, logs de acesso, backup e permissões precisam ser planejados considerando LGPD, sigilo profissional e boas práticas de operação.\par
+
+Outro ponto importante é o protótipo feito por IA. Como não consegui inspecioná-lo diretamente por limitações de acesso automatizado da plataforma onde ele está publicado, a proposta assume que o protótipo servirá como referência visual e funcional a ser validada durante a Discovery Sprint. Isso evita prometer replicação integral de comportamentos ou telas que ainda não tenham sido revisados tecnicamente.\par
+
+Sobre a busca processual, a Discovery Sprint deve comparar fonte oficial e provedor privado. Uma alternativa é avaliar o uso de dados oficiais via DataJud/CNJ quando a necessidade for metadados processuais. Outra alternativa é validar uma API privada especializada, como Escavador Business API ou provedor equivalente, quando o escritório precisar de consulta, monitoramento, atualizações, webhooks, cobertura ampla e suporte comercial. Essa escolha afeta custo recorrente, cobertura, limites de API, tratamento de processos sigilosos e desenho da integração.\par
+
+Por fim, a exigência de entregar o sistema rodando na internet com domínio eleva o nível do projeto. Isso inclui decidir hospedagem, configuração de ambiente, segurança básica de produção, backup, logs, publicação e handoff operacional.\par
+
+\section*{Plano de trabalho proposto}
+
+Eu dividiria o trabalho nas seguintes fases:\par
+
+\textbf{1. Discovery, validação do protótipo e desenho funcional}\par
+
+\begin{itemize}
+\item Revisar o protótipo fornecido e identificar o que precisa ser replicado no primeiro release.
+\item Mapear o fluxo operacional do escritório, os perfis de usuário e os módulos prioritários.
+\item Definir o primeiro release operacional e o que fica para ciclos posteriores.
+\item Validar a estratégia de integração com plataforma confiável de consulta processual, incluindo cobertura, custo recorrente, limites e suporte.
+\item Produzir um plano de implementação com arquitetura, escopo, riscos, critérios de aceite e pacote recomendado.
+\end{itemize}
+
+\textbf{2. Arquitetura do sistema e base técnica}\par
+
+\begin{itemize}
+\item Definir a arquitetura web, o modelo de autenticação e permissões, a estrutura de dados e a base de deploy.
+\item Estruturar os módulos centrais do sistema com foco em manutenção e evolução futura.
+\item Definir a estratégia de armazenamento documental, versionamento no nível acordado e logs operacionais.
+\item Preparar a base técnica para publicar o sistema em domínio e ambiente de produção.
+\end{itemize}
+
+\textbf{3. Módulos operacionais do primeiro release}\par
+
+\begin{itemize}
+\item Implementar os módulos acordados para processos, clientes, partes, prazos e tarefas.
+\item Implementar a base de documentos, busca e organização no nível definido na discovery.
+\item Implementar o módulo financeiro no recorte aprovado para o primeiro release.
+\item Entregar os relatórios prioritários e os fluxos operacionais essenciais.
+\end{itemize}
+
+\textbf{4. Integração processual e controles de acesso}\par
+
+\begin{itemize}
+\item Integrar o sistema com a fonte de consulta processual aprovada.
+\item Implementar perfis e restrições de acesso para advogados, estagiários e administradores.
+\item Validar comportamento de agenda, prazos e alertas no fluxo real do escritório, deixando claro que alertas são apoio operacional e não substituem revisão profissional.
+\item Tratar falhas operacionais, indisponibilidade do provedor externo e limites da integração.
+\end{itemize}
+
+\textbf{5. Testes, publicação, documentação e handoff}\par
+
+\begin{itemize}
+\item Testar os fluxos principais, perfis de acesso, dados financeiros, busca documental e integração externa.
+\item Publicar a aplicação em ambiente acessível pela internet com o domínio acordado.
+\item Documentar arquitetura, configuração, limites da integração e passos operacionais básicos.
+\item Fazer handoff técnico e orientação inicial para uso seguro do sistema.
+\end{itemize}
+
+\section*{Prazo estimado}
+
+Minha recomendação imediata é 1 semana de Discovery Sprint. Depois disso, o primeiro ciclo de implementação pode seguir em 4 semanas, focado no primeiro release operacional acordado.\par
+
+Cronograma prático sugerido:\par
+
+\begin{itemize}
+\item Semana 1: Discovery Sprint, revisão do protótipo, mapeamento funcional, escolha da integração processual, critérios de aceite e plano de implementação.
+\item Semanas 2 a 5: primeiro ciclo de implementação e entrega do release operacional inicial.
+\end{itemize}
+
+Se a discovery mostrar que todos os módulos precisam entrar já na primeira entrega com maior profundidade, ou se a integração processual tiver maior complexidade comercial ou técnica, a recomendação pode passar a ser mais de um ciclo de implementação.\par
+
+\section*{Disponibilidade e comunicação}
+
+Posso atuar remotamente, com comunicação em português, por mensagens, chamadas agendadas e atualizações escritas. Prefiro checkpoints curtos ao longo da semana, especialmente após a validação do protótipo, a definição do primeiro release e os principais marcos de implementação.\par
+
+Isso ajuda a manter o projeto alinhado com o fluxo real do escritório, as prioridades operacionais e os riscos do domínio jurídico.\par
+
+\section*{Orçamento}
+
+Com base no entendimento atual, meu próximo passo recomendado é:\par
+
+\begin{itemize}
+\item \textbf{Discovery Sprint} --- R\$ 3.000, 1 semana.
+\end{itemize}
+
+Depois da discovery, o pacote mais provavel para o primeiro release e:\par
+
+\begin{itemize}
+\item \textbf{Scale \& Intelligence} --- R\$ 36.000, 4 semanas, caso o primeiro release já inclua os principais módulos, controle de acesso, integração processual e publicação em produção.
+\end{itemize}
+
+Esta estimativa assume que o cliente fornecerá acesso ao protótipo, exemplos reais de fluxos do escritório, definição dos perfis de usuário, conteúdo ou documentos de exemplo para validação, domínio ou acesso ao provedor de hospedagem, e rapidez nas decisões sobre o primeiro release. Também assume que a plataforma de consulta processual será escolhida ou validada na Discovery Sprint com base em cobertura, estabilidade, custo e suporte. Custos recorrentes de hospedagem, domínio, provedor de consulta processual, disparo de mensagens e serviços de terceiros não estão incluídos no valor de desenvolvimento.\par
+
+Se a revisão mostrar que o primeiro release precisa ser dividido para proteger prazo, qualidade e risco, recomendarei ciclos adicionais em vez de prometer tudo de uma vez.\par
+
+\section*{Perguntas antes da confirmação final}
+
+Antes de confirmar escopo e marcos finais, eu gostaria de alinhar:\par
+
+\begin{enumerate}
+\item Quais módulos precisam obrigatoriamente entrar no primeiro release operacional?
+\item Quais telas e fluxos do protótipo precisam ser replicados com maior fidelidade?
+\item O escritório já tem uma plataforma preferida para consulta e monitoramento de processos, como DataJud/CNJ, Escavador Business API ou outro provedor, ou essa escolha ainda precisa ser definida?
+\item Quais tribunais, tipos de processo e abrangência geográfica precisam ser cobertos pela integração processual?
+\item Como deve funcionar o versionamento e a busca de documentos no primeiro release?
+\item Quais perfis de usuário precisam existir desde o primeiro dia e que restrições cada um deve ter?
+\item Quais relatórios são obrigatórios no lançamento e quais podem ficar para ciclos seguintes?
+\item Como os lembretes de prazo e compromissos devem ser enviados: apenas dentro do sistema, por e-mail, WhatsApp ou outro canal?
+\item Quem vai fornecer domínio, hospedagem, contas de nuvem, conta do provedor processual e acessos necessários para colocar o sistema em produção?
+\item Já existe um orçamento aprovado e uma data-alvo para a primeira versão rodando na internet?
+\end{enumerate}
+
+Com essas respostas, consigo fechar o plano de entrega e a recomendação final de implementação.\par
+
+\end{document}
