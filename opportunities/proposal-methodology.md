@@ -100,6 +100,8 @@ Check at least:
 
 After the review, adjust all affected artifacts together: `bid-message.md`, `opportunity-and-analysis.md`, `proposal.tex`, and then regenerate `proposal.pdf`. If the opportunity folder is not tracked by Git yet, inspect the files directly because `git diff` will not show useful changes for untracked directories. Compile with `latexmk -pdf proposal.tex` and clean auxiliary files with `latexmk -c`.
 
+For Portuguese proposals, add a final text-polishing pass before compiling the PDF. This is especially important after mechanical edits or broad substitutions. Check `proposal.tex` and the Markdown files for accent issues, broken substitutions, and wrong `e/é` usage. Search for common leftovers such as `nao`, `ja`, `tecnico`, `operacao`, `implementacao`, `gestao`, `visualizacao`, `definicao`, `orcamento`, `conclusao`, `automatico`, and `automatica`. Avoid broad replacements that can corrupt words or LaTeX commands; prefer targeted fixes after reading the affected lines.
+
 ## Bid message
 
 For platforms such as Workana, always prepare a short `bid-message.md` in addition to the formal proposal. The bid message is often the first and most important sales filter.
@@ -240,4 +242,4 @@ opportunities/<platform-or-client>-<short-topic>/
   proposal.pdf
 ```
 
-Use Markdown for analysis and LaTeX for the final proposal when the user asks for a proposal in LaTeX. Compile with `latexmk -pdf proposal.tex` and clean auxiliary files with `latexmk -c`.
+Use Markdown for analysis and LaTeX for the final proposal when the user asks for a proposal in LaTeX. Compile with `latexmk -pdf proposal.tex` and clean auxiliary files with `latexmk -c`. Run any final file listing only after `latexmk -c` has finished, otherwise the check may capture auxiliary files before cleanup completes.
