@@ -30,6 +30,7 @@ The main risks are:
 - unclear boundary between public content and internal authenticated features;
 - underestimating the complexity of authentication, roles, password recovery, session handling, and secure access;
 - migrating all existing content and functions without regressions;
+- underestimating the volume of bilingual content migration and the effort to preserve every current page behavior;
 - choosing a CMS or editing model that is not friendly for bilingual maintenance;
 - mixing marketing-site needs with internal portal workflows inside one unmanaged scope;
 - unclear hosting, deployment, and ownership expectations after launch.
@@ -52,6 +53,7 @@ Suggested estimate:
 - Likely first implementation package after discovery: USD 4,000 Product Acceleration for a well-bounded public site plus moderate employee portal, or USD 6,000 Scale \& Intelligence if the portal requires stronger access control, auditability, integrations, or broader internal workflow support.
 - Estimated timeline for discovery plus first implementation cycle: 5 weeks for the agreed first operational release, not necessarily every possible future portal workflow.
 - Additional cycles may be required if the portal later expands into document workflows, announcements, permissions matrices, integrations, or richer internal collaboration features.
+- Scope and package choice are especially sensitive to the number of pages to migrate, the amount of bilingual content that must be reviewed, whether the current site has custom interactive functions, and whether the employee portal needs only authenticated access or broader internal workflows.
 
 ## Key questions before final commitment
 
