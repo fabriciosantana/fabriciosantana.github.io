@@ -1,0 +1,185 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=black, urlcolor=blue}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\setlist[itemize]{leftmargin=1.5em,itemsep=0.2em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=1.7em,itemsep=0.2em,topsep=0.2em}
+\pagenumbering{arabic}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries Proposta para MVP de Plataforma de Retenção com IA via WhatsApp}
+\end{center}
+\vspace{0.5em}
+
+Olá,\par
+
+Meu nome é Fabricio Santana. Sou engenheiro de software e líder técnico com mais de 20 anos de experiência em desenvolvimento backend, arquitetura de software, integração com bancos de dados, testes automatizados, computação em nuvem e entrega de sistemas críticos. Também liderei equipes grandes e atuei em projetos em que regras operacionais, consistência de dados, segurança, qualidade e manutenção são fatores centrais.\par
+
+Seu projeto tem forte aderência ao meu perfil porque o desafio principal não é apenas conectar n8n, OpenAI e WhatsApp. A parte crítica é construir uma operação de retenção confiável, em que o agente de IA entenda o contexto do associado, classifique motivos de cancelamento, atue dentro de regras aprovadas, encaminhe casos sensíveis para humano, registre evidências no CRM e gere relatórios úteis para reduzir churn.\par
+
+Minha abordagem para esse tipo de projeto combina arquitetura de integração, automação de fluxos, IA aplicada, desenho de guardrails, WhatsApp API, CRM, dados operacionais, relatórios, testes, observabilidade e handoff técnico. Isso permite entregar um MVP prático para a operação atual sem bloquear uma evolução futura para produto SaaS.\par
+
+\section*{Metodologia de trabalho}
+
+Meu método de entrega foi desenhado para reduzir risco antes do desenvolvimento principal. O trabalho começa com uma Discovery Sprint fechada e depois segue para um pacote de entrega somente quando escopo, prioridades, dependências, responsabilidades e critérios de aceite estiverem claros.\par
+
+O primeiro passo recomendado é uma Discovery Sprint de 1 semana, com valor fixo de R\$ 3.000. Nessa fase, posso conduzir até 5 reuniões remotas para entender o fluxo atual de cancelamento e retenção, revisar WhatsApp, CRM, n8n, dados disponíveis, regras de negócio, limites de autonomia do agente, requisitos de LGPD, relatórios e visão de evolução SaaS. O entregável é um plano prático de implementação com escopo recomendado, arquitetura, marcos, critérios de sucesso, riscos, responsabilidades e recomendação do pacote de entrega.\par
+
+Depois da discovery, o projeto pode seguir para um dos pacotes fixos de 4 semanas. O pacote é escolhido conforme complexidade, risco, volume operacional, quantidade de integrações, qualidade dos dados, exigências de IA, relatórios, segurança e base necessária para evolução do produto.\par
+
+\textbf{Opções de pacote}\par
+
+\begin{itemize}
+\item \textbf{Essential Delivery} --- R\$ 12.000, 4 semanas. Inclui Scrum Master e 1 engenheiro full-stack. Adequado apenas se a discovery mostrar um recorte muito estreito, com poucos fluxos, integração simples e relatórios mínimos.
+\item \textbf{Product Acceleration} --- R\$ 24.000, 4 semanas. Inclui Scrum Master, 2 engenheiros full-stack e 1 engenheiro com foco em testes, DevOps, observabilidade e deploy. Adequado para um piloto interno com WhatsApp, n8n, OpenAI, CRM, classificação de motivos, escalonamento humano e relatórios operacionais básicos.
+\item \textbf{Scale \& Intelligence} --- R\$ 36.000, 4 semanas. Inclui líder técnico, Scrum Master, 2 engenheiros full-stack e 1 engenheiro com foco em testes, DevOps, observabilidade e deploy. Adequado para MVP com IA, automação, WhatsApp oficial, CRM, dados de milhares de associados, relatórios, rastreabilidade, observabilidade, governança do agente e fundação técnica para evolução SaaS.
+\end{itemize}
+
+As responsabilidades também ficam claras desde o início. O Scrum Master organiza escopo, comunicação, checkpoints, acompanhamento e alinhamento da entrega. Os engenheiros full-stack implementam integrações, backend, APIs, banco de dados, automações, telas ou relatórios necessários ao escopo aprovado. O engenheiro de testes, DevOps, observabilidade e deploy apoia qualidade, validações automatizadas quando aplicável, configuração de ambientes, publicação e monitoramento operacional. O líder técnico, incluído no pacote Scale \& Intelligence, responde por arquitetura, decisões técnicas, governança da solução de IA, qualidade do desenho e gestão de riscos técnicos.\par
+
+Para esta oportunidade, a recomendação inicial mais provável é \textbf{Scale \& Intelligence}, com possibilidade de ajuste para \textbf{Product Acceleration} se a discovery reduzir o primeiro release a um piloto interno mais estreito.\par
+
+\textbf{Garantia de defeitos de construção.} Após entrega e aceite, incluo garantia de 30 dias para defeitos de construção relacionados ao escopo aprovado. Isso cobre erros de implementação, comportamentos combinados que deixem de funcionar e defeitos introduzidos pelo código entregue. Não cobre novas funcionalidades, mudanças nas regras de retenção, novos fluxos de WhatsApp, novos campos de CRM não previstos, mudanças em serviços de terceiros, alterações de política da Meta/WhatsApp, custos de infraestrutura, mudanças de modelo ou comportamento de provedores de IA, ou solicitações que ampliem os critérios de aceite aprovados.\par
+
+\section*{Análise da oportunidade}
+
+Este projeto deve ser tratado como uma plataforma operacional de retenção, não como um chatbot genérico. Um MVP útil precisa conectar eventos de cancelamento, WhatsApp, IA, CRM, automação, classificação e relatórios em um fluxo controlado, mensurável e auditável.\par
+
+O valor de negócio está em reduzir churn, entender melhor os motivos de cancelamento, reagir mais rápido, padronizar abordagens de retenção, identificar padrões recorrentes e criar uma base de dados confiável para decisões comerciais. Para isso, o agente precisa ter limites claros: quando responder, quando classificar, quando oferecer alternativas aprovadas, quando encerrar e quando encaminhar para atendimento humano.\par
+
+Os principais riscos técnicos e operacionais são:\par
+
+\begin{itemize}
+\item uso incorreto ou não oficial do WhatsApp, com risco de bloqueio, instabilidade ou violação de políticas;
+\item falta de opt-in, base legal, política de retenção de dados ou critérios de LGPD;
+\item histórico de cancelamentos incompleto ou sem motivos padronizados;
+\item CRM sem campos adequados para registrar classificação, resumo, resultado e próximos passos;
+\item agente de IA sem guardrails, capaz de prometer condições comerciais indevidas ou insistir em casos sensíveis;
+\item relatórios pouco úteis por falta de taxonomia, eventos e métricas bem definidos;
+\item tentativa de construir um SaaS completo antes de validar o fluxo de retenção na operação própria.
+\end{itemize}
+
+Minha recomendação é começar com um MVP operacional controlado. A primeira versão deve cobrir um conjunto definido de gatilhos de cancelamento ou risco de cancelamento, uma taxonomia inicial de motivos, fluxos aprovados de conversa, integração com WhatsApp oficial, orquestração via n8n, chamadas OpenAI com instruções e limites claros, registro em CRM ou base operacional, relatórios essenciais e trilha de auditoria para revisão de qualidade.\par
+
+A evolução para SaaS deve ser considerada desde a arquitetura, mas sem transformar o primeiro ciclo em um produto completo multiempresa. A fundação pode prever separação de configurações, logs estruturados, versionamento de prompts ou regras, isolamento de dados e pontos de extensão. Recursos como billing, multi-tenant completo, painel administrativo avançado, integrações com múltiplos CRMs e gestão comercial do produto devem ser planejados como evolução após validação do MVP.\par
+
+\section*{Plano de trabalho proposto}
+
+Eu dividiria o trabalho nas seguintes fases:\par
+
+\textbf{1. Discovery, desenho do fluxo e arquitetura do MVP}\par
+
+\begin{itemize}
+\item Mapear o fluxo atual de cancelamento, retenção, atendimento humano, CRM e relatórios.
+\item Validar WhatsApp Business API ou BSP, n8n, CRM, fontes de dados, ambientes e responsabilidades de acesso.
+\item Definir os gatilhos do MVP, taxonomia inicial de motivos de cancelamento, critérios de retenção e limites do agente.
+\item Definir critérios de escalonamento humano, fallback, baixa confiança, casos sensíveis e auditoria.
+\item Produzir plano de implementação com arquitetura, riscos, critérios de aceite, marcos e pacote recomendado.
+\end{itemize}
+
+\textbf{2. Integrações e base operacional}\par
+
+\begin{itemize}
+\item Configurar a arquitetura de integração entre WhatsApp, n8n, OpenAI, CRM e base de logs ou relatórios.
+\item Estruturar eventos de entrada, callbacks, estados de conversa, registros de interação e tratamento de falhas.
+\item Definir modelo de dados para associado, conversa, motivo de cancelamento, classificação, resultado, encaminhamento e métricas.
+\item Adicionar validações, autenticação, variáveis seguras, rastreabilidade e controle básico de erros.
+\end{itemize}
+
+\textbf{3. Agente de IA e fluxos de retenção}\par
+
+\begin{itemize}
+\item Implementar o primeiro conjunto de fluxos de conversa para cancelamento ou risco de cancelamento.
+\item Configurar o uso de OpenAI com instruções, contexto, classificação, resumo, limites de resposta e formato estruturado de saída.
+\item Implementar classificação de motivos, sentimento, urgência, probabilidade de retenção e próximos passos quando aplicável.
+\item Definir respostas permitidas, mensagens de fallback e condições em que o agente não deve negociar ou responder sozinho.
+\end{itemize}
+
+\textbf{4. CRM, escalonamento humano e relatórios}\par
+
+\begin{itemize}
+\item Registrar no CRM ou base operacional o resumo da conversa, motivo classificado, status, resultado, responsável e próxima ação.
+\item Implementar escalonamento para humano em casos de baixa confiança, exceção comercial, insatisfação crítica, pedido sensível ou alto valor.
+\item Criar relatórios iniciais de volume, motivos de cancelamento, taxa de retenção, escalonamentos, principais objeções e desempenho dos fluxos.
+\item Preparar exportação ou visualização operacional simples para acompanhamento do MVP.
+\end{itemize}
+
+\textbf{5. Testes, qualidade, observabilidade e handoff}\par
+
+\begin{itemize}
+\item Testar conversas representativas, classificação de motivos, falhas de integração, escalonamento e registros no CRM.
+\item Criar conjunto inicial de avaliação com exemplos reais ou simulados de cancelamento e respostas esperadas.
+\item Adicionar logs e visibilidade para erros, baixa confiança, mensagens não classificadas, falhas de WhatsApp e problemas de CRM.
+\item Documentar arquitetura, fluxos, limites do agente, variáveis de configuração, operação e próximos passos de evolução.
+\item Realizar handoff técnico e operacional para que a equipe acompanhe, revise e evolua o MVP.
+\end{itemize}
+
+\section*{Prazo estimado}
+
+Minha recomendação imediata é 1 semana de Discovery Sprint. Depois disso, o primeiro ciclo de implementação pode seguir em 4 semanas, focado no primeiro release operacional acordado.\par
+
+Cronograma prático sugerido:\par
+
+\begin{itemize}
+\item Semana 1: Discovery Sprint, fluxo de cancelamento, validação de WhatsApp/API/CRM/n8n, taxonomia de motivos, arquitetura, riscos e critérios de aceite.
+\item Semanas 2 a 5: primeiro ciclo de implementação do MVP com integrações, agente, classificação, registros, relatórios, testes, observabilidade e handoff.
+\end{itemize}
+
+Esse cronograma assume que a empresa já consegue fornecer acesso ao CRM ou base operacional, provedor oficial de WhatsApp ou BSP, ambiente n8n, chaves de API, exemplos de conversas ou cancelamentos e regras comerciais de retenção. Se a discovery mostrar ausência de API, necessidade de saneamento pesado de dados, requisitos SaaS multiempresa já no primeiro release ou compliance mais complexo, a recomendação de prazo e pacote deve ser ajustada antes da implementação.\par
+
+\section*{Disponibilidade e comunicação}
+
+Posso atuar remotamente, com comunicação em português, por mensagens, chamadas agendadas e atualizações escritas. Prefiro checkpoints curtos ao longo da semana, especialmente após a validação do fluxo de cancelamento, definição dos limites do agente e principais marcos de integração.\par
+
+Isso ajuda a manter o MVP alinhado com a operação real, com as regras comerciais de retenção, com os requisitos de canal e com a base técnica necessária para evolução futura.\par
+
+\section*{Orçamento}
+
+Com base no entendimento atual, meu próximo passo recomendado é:\par
+
+\begin{itemize}
+\item \textbf{Discovery Sprint} --- R\$ 3.000, 1 semana.
+\end{itemize}
+
+Depois da discovery, o pacote mais provável para o primeiro release é:\par
+
+\begin{itemize}
+\item \textbf{Scale \& Intelligence} --- R\$ 36.000, 4 semanas, caso o MVP inclua agente com OpenAI, orquestração n8n, WhatsApp oficial, CRM, classificação de motivos, relatórios, logs, métricas, escalonamento humano, observabilidade e base técnica para evolução SaaS.
+\end{itemize}
+
+Se a discovery reduzir o primeiro release para um piloto interno mais simples, com poucos fluxos, integração direta e relatórios mínimos, posso recomendar \textbf{Product Acceleration} --- R\$ 24.000, 4 semanas.\par
+
+Esta estimativa assume que o cliente fornecerá acesso ao CRM ou base operacional, WhatsApp Business API ou BSP, ambiente n8n, chaves e contas necessárias, exemplos de conversas ou cancelamentos, regras comerciais de retenção, definição de responsáveis por atendimento humano e decisões rápidas sobre escopo do MVP. Custos recorrentes de WhatsApp, OpenAI, n8n, hospedagem, banco de dados, observabilidade, domínio, infraestrutura e outros serviços externos não estão incluídos no valor de desenvolvimento.\par
+
+A Discovery Sprint confirmará se o pacote recomendado é suficiente e quais itens devem ficar fora do primeiro release para manter o MVP entregável com qualidade.\par
+
+\section*{Perguntas antes da confirmação final}
+
+Antes de confirmar escopo e marcos finais, eu gostaria de alinhar:\par
+
+\begin{enumerate}
+\item Qual CRM ou sistema operacional registra hoje associados, cancelamentos, histórico de atendimento e tentativas de retenção?
+\item Vocês já possuem WhatsApp Business API oficial ou BSP contratado? Se sim, qual provedor?
+\item Os associados já têm opt-in válido para comunicação ativa pelo WhatsApp?
+\item Como o cancelamento é solicitado hoje: WhatsApp, ligação, formulário, área logada, CRM ou outro canal?
+\item Existem dados históricos com motivo de cancelamento, tentativa de retenção, resultado e perfil do associado?
+\item Quais motivos de cancelamento precisam ser classificados na primeira versão?
+\item Quais ofertas, argumentos, descontos ou encaminhamentos o agente pode usar sem aprovação humana?
+\item Em quais casos o agente deve obrigatoriamente encaminhar para atendimento humano?
+\item Qual volume esperado de conversas por dia ou por mês no MVP?
+\item Quais relatórios são indispensáveis para a operação e para a gestão?
+\item A prioridade inicial é resolver a operação própria ou já validar arquitetura para SaaS comercial?
+\item Já existe orçamento aprovado e data-alvo para a primeira versão operacional?
+\end{enumerate}
+
+Com essas respostas, consigo fechar o plano de entrega e a recomendação final de implementação.\par
+
+\end{document}
