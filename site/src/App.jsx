@@ -1006,12 +1006,7 @@ const DataprevMentorshipLanding = () => {
             estudo, priorização, rotina de questões e acompanhamento até a prova.
           </p>
           <div className="projects-actions">
-            <a
-              className="button primary"
-              href={dataprevWhatsappUrl}
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a className="button primary" href="#inscricao">
               Inscrever-se
             </a>
             <a className="button secondary" href="#programa">
@@ -1028,12 +1023,7 @@ const DataprevMentorshipLanding = () => {
             </div>
           ))}
           <div className="hero-proof-actions">
-            <a
-              className="button primary"
-              href={dataprevWhatsappUrl}
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a className="button primary" href="#inscricao">
               Inscrever-se
             </a>
           </div>
