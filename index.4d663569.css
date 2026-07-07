@@ -1166,8 +1166,100 @@ p {
   margin-bottom: 0;
 }
 
+.edital-timeline {
+  grid-column: 1 / -1;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 24px;
+  display: grid;
+}
+
+.edital-timeline-item {
+  background: #ffffffeb;
+  border: 1px solid #dbeafee6;
+  border-radius: 8px;
+  gap: 8px;
+  padding: 18px;
+  display: grid;
+}
+
+.edital-timeline-item span {
+  color: var(--accent-dark);
+  text-transform: uppercase;
+  font-size: .78rem;
+  font-weight: 800;
+}
+
+.edital-timeline-item h3 {
+  color: var(--text);
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+.edital-timeline-item p {
+  color: var(--muted);
+  margin-bottom: 0;
+  font-size: .92rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.mentorship-testimonials-section {
+  background: #fff;
+}
+
+.mentorship-testimonials-grid, .mentorship-guarantee-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  display: grid;
+}
+
+.testimonial-card, .guarantee-card {
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 8px;
+  gap: 16px;
+  padding: 26px;
+  display: grid;
+  box-shadow: 0 12px 30px #1e3a8a12;
+}
+
+.testimonial-card p {
+  color: var(--text);
+  margin-bottom: 0;
+  font-size: 1.02rem;
+  font-weight: 650;
+  line-height: 1.65;
+}
+
+.testimonial-card strong {
+  color: var(--accent-dark);
+  font-size: .9rem;
+}
+
+.testimonial-card span {
+  color: var(--muted);
+  margin-top: -10px;
+  font-size: .9rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.mentorship-guarantee-section {
+  background: linear-gradient(#f8fbff 0%, #fff 100%);
+}
+
+.guarantee-card h3 {
+  color: var(--text);
+  margin-bottom: 0;
+}
+
+.guarantee-card p {
+  margin-bottom: 0;
+}
+
 @media (max-width: 980px) {
-  .mentorship-format-grid, .mentorship-schedule-grid, .mentorship-offer-layout, .mentorship-included-grid {
+  .edital-timeline, .mentorship-format-grid, .mentorship-schedule-grid, .mentorship-offer-layout, .mentorship-included-grid, .mentorship-testimonials-grid, .mentorship-guarantee-grid {
     grid-template-columns: 1fr;
   }
 }
