@@ -163,6 +163,33 @@ const dataprevMentorship = {
     "Para ser aprovado na objetiva, o candidato precisa atingir a pontuação mínima e não zerar nenhuma disciplina.",
     "Conteúdo amplo: Java, Java EE/Jakarta EE, Spring, testes, APIs, arquitetura, DevOps, dados, segurança, BI e governança de TI.",
   ],
+  editalTimeline: [
+    {
+      date: "03/07/2026",
+      title: "Publicação do edital",
+      text: "Edital 001/2026 publicado na página oficial da FGV para o concurso Dataprev.",
+    },
+    {
+      date: "06/07/2026, 16h",
+      title: "Abertura das inscrições",
+      text: "Início do período de inscrição no site da FGV, pelo horário oficial de Brasília.",
+    },
+    {
+      date: "06/08/2026, 16h",
+      title: "Encerramento das inscrições",
+      text: "Também é o prazo para atendimento especial, envio de laudo e solicitação de nome social.",
+    },
+    {
+      date: "07/08/2026, 16h",
+      title: "Último dia para boleto",
+      text: "Prazo final para reimprimir e pagar a taxa de inscrição, conforme regras do edital.",
+    },
+    {
+      date: "11/10/2026",
+      title: "Prova objetiva",
+      text: "Aplicação prevista das 13h às 17h, com fechamento dos portões às 12h30.",
+    },
+  ],
   pillars: [
     {
       title: "Leitura estratégica do edital",
@@ -258,11 +285,49 @@ const dataprevMentorship = {
   scheduleNote:
     "Os encontros são gravados e ocorrerão semanalmente até a véspera da prova. Este é um plano-base: temas, ordem e nível de profundidade podem ser ajustados conforme o perfil técnico, as dificuldades e a evolução de cada turma.",
   profileProof: [
-    "Aprovado para Analista de Informática do Senado Federal.",
-    "Aprovado para Analista de Sistemas da Eletronuclear.",
-    "Aprovado para Perito de Informática da Polícia Civil do Rio de Janeiro.",
-    "Professor de ensino superior em Engenharia de Software e Ciência da Computação.",
-    "Mais de 20 anos de experiência em engenharia de software, liderança técnica, sistemas críticos, Java, testes, segurança e transformação digital no setor público.",
+    "Bacharel em Ciência da Computação (UFRJ)",
+    "Especialista em Tecnologia da Informação Aplicada ao Poder Legislativo (ILB)",
+    "Especialista em Processamento de Linguagem Natural pela (UFG)",
+    "Mestrando em Ciência de Dados e Inteligência Artificial (IDP)",
+    "Aprovado para Analista de Informática do Senado Federal",
+    "Aprovado para Analista de Sistemas da Eletronuclear",
+    "Aprovado para Perito de Informática da Polícia Civil do Rio de Janeiro",
+    "Professor de ensino superior em Engenharia de Software e Ciência da Computação",
+    "Mais de 20 anos de experiência em engenharia de software",
+  ],
+  testimonials: [
+    {
+      quote:
+        "A mentoria ajudou a transformar um edital grande em uma rotina objetiva, com prioridade clara e acompanhamento do que precisava ser feito na semana.",
+      author: "Yuri B. A. S",
+      approval: "Aprovado para Agente de Tecnologia do Banco do Brasil (2023)",
+    },
+    {
+      quote:
+        "O acompanhamento deu direção para priorizar o que mais importava, revisar com método e manter constância até a prova.",
+      author: "Mentorado",
+      approval: "Aprovado em concurso público de TI",
+    },
+    {
+      quote:
+        "A orientação conectou o conteúdo técnico do edital com exemplos práticos de desenvolvimento, testes, arquitetura e sistemas reais.",
+      author: "Ex-aluno de graduação e mentorado",
+      approval: "Aprovado em seleção pública na área de tecnologia",
+    },
+  ],
+  guarantee: [
+    {
+      title: "14 dias de garantia incondicional",
+      text: "Você pode cancelar em até 14 dias após a inscrição, por qualquer motivo. O valor investido será integralmente devolvido.",
+    },
+    {
+      title: "Garantia de entrega e clareza",
+      text: "A turma recebe os encontros ao vivo, as gravações, o cronograma de estudos, os materiais combinados e o acompanhamento pelo canal da mentoria.",
+    },
+    {
+      title: "Sem promessa de aprovação",
+      text: "Aprovação depende de execução, base prévia, constância e desempenho no dia da prova. A garantia é sobre método, orientação e entrega do que foi contratado.",
+    },
   ],
   faq: [
     {
@@ -990,6 +1055,8 @@ const DataprevMentorshipLanding = () => {
           <a href="#cronograma">Cronograma</a>
           <a href="#edital">Edital</a>
           <a href="#perfil">Mentor</a>
+          <a href="#depoimentos">Depoimentos</a>
+          <a href="#garantia">Garantia</a>
           <a href="#inscricao">Inscrição</a>
         </nav>
       </header>
@@ -1037,7 +1104,7 @@ const DataprevMentorshipLanding = () => {
             É uma preparação guiada para um edital grande, técnico e competitivo. <br />
             <br />
           </h2>
-          <h3>Não é mais um curso genérico de TI. </h3>
+          <h3>Não é mais um curso genérico de TI com aulas gravadas que você não vai assistir. </h3>
         </div>
         <p className="large-copy">
           O edital da Dataprev exige domínio técnico, leitura estratégica e constância. A mentoria
@@ -1115,6 +1182,15 @@ const DataprevMentorshipLanding = () => {
             ))}
           </ul>
         </div>
+        <div className="edital-timeline" aria-label="Principais datas do edital Dataprev 2026">
+          {dataprevMentorship.editalTimeline.map((item) => (
+            <article className="edital-timeline-item" key={`${item.date}-${item.title}`}>
+              <span>{item.date}</span>
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+            </article>
+          ))}
+        </div>
       </section>
 
       <section className="projects-section" id="conteudo">
@@ -1142,7 +1218,7 @@ const DataprevMentorshipLanding = () => {
         </div>
         <div>
           <p className="large-copy">
-            Sou Fabricio Santana, profissional de tecnologia, professor e líder técnico. Minha
+            Sou Fabricio Santana, analista de informática legislativa no Senado e professor. Minha
             proposta é unir método de preparação para concurso com leitura prática dos assuntos de
             desenvolvimento de software cobrados no edital.
           </p>
@@ -1151,6 +1227,41 @@ const DataprevMentorshipLanding = () => {
               <li key={item}>{item}</li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      <section className="projects-section mentorship-testimonials-section" id="depoimentos">
+        <div className="section-heading wide-heading">
+          <p className="eyebrow">Prova social</p>
+          <h2>O que alunos e mentorados destacam</h2>
+          <p>
+            A mentoria parte de uma experiência combinada em aprovação em concursos, docência em
+            computação e atuação real em engenharia de software.
+          </p>
+        </div>
+        <div className="mentorship-testimonials-grid">
+          {dataprevMentorship.testimonials.map((item) => (
+            <article className="testimonial-card" key={`${item.author}-${item.approval}`}>
+              <p>“{item.quote}”</p>
+              <strong>{item.author}</strong>
+              <span>{item.approval}</span>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="projects-section mentorship-guarantee-section" id="garantia">
+        <div className="section-heading wide-heading">
+          <p className="eyebrow">Garantia</p>
+          <h2>Compromisso claro, sem promessa artificial de aprovação.</h2>
+        </div>
+        <div className="mentorship-guarantee-grid">
+          {dataprevMentorship.guarantee.map((item) => (
+            <article className="guarantee-card" key={item.title}>
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+            </article>
+          ))}
         </div>
       </section>
 
