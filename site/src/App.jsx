@@ -6,21 +6,90 @@ import "./styles.css";
 
 const whatsappNumber = "5561982336222";
 const whatsappUrl = `https://wa.me/${whatsappNumber}`;
-const courses = [
+const focusAreas = [
+  "IA aplicada, sistemas agenticos, RAG e aplicações inteligentes",
+  "Engenharia de software, arquitetura, testes e segurança",
+  "Java, Spring Boot, Python, JavaScript, TypeScript e desenvolvimento web",
+  "Educação em Ciência da Computação e ambientes práticos de aprendizagem",
+  "Prototipagem de produtos digitais com utilidade real",
+];
+
+const workAreas = [
   {
-    title: "Engenharia de Software",
-    description: "Práticas, ferramentas e decisões técnicas para construir software com qualidade.",
-    status: "Em breve",
+    title: "Liderança em tecnologia",
+    description:
+      "Atuo com equipes, sistemas e stakeholders para entregar soluções digitais confiáveis em ambientes institucionais complexos. Minha experiência inclui transformação digital no setor público, sistemas legislativos, deliberação remota, fluxos sem papel, segurança, automação e processos apoiados por IA.",
   },
   {
-    title: "Inteligência Artificial aplicada",
-    description: "Conceitos e usos práticos de IA para profissionais de tecnologia e negócios.",
-    status: "Em planejamento",
+    title: "Ensino e formação",
+    description:
+      "Leciono disciplinas de Engenharia de Software e Ciência da Computação, com foco em Programação Orientada a Objetos, Java, testes, desenvolvimento seguro, automação e projetos práticos para estudantes de graduação.",
   },
   {
-    title: "Cloud Computing",
-    description: "Fundamentos de nuvem, arquitetura e operacao de sistemas modernos.",
-    status: "Em breve",
+    title: "IA aplicada e prototipagem",
+    description:
+      "Tenho interesse especial em IA para além das demonstrações: produtos úteis, ferramentas educacionais, automação de fluxos de trabalho, busca semântica, aplicações RAG e software com agentes.",
+  },
+];
+
+const featuredProjects = [
+  {
+    title: "poo",
+    url: "https://github.com/fabriciosantana/poo",
+    description:
+      "Material de Programação Orientada a Objetos para graduação, com foco em Java, fundamentos de OOP, exercícios e atividades práticas.",
+  },
+  {
+    title: "stsw",
+    url: "https://github.com/fabriciosantana/stsw",
+    description:
+      "Conteúdo de Segurança e Testes de Software para Engenharia de Software, incluindo desenvolvimento seguro, testes automatizados, OWASP e qualidade.",
+  },
+  {
+    title: "idp-marp-slides",
+    url: "https://github.com/fabriciosantana/idp-marp-slides",
+    description:
+      "Slides e materiais de apoio para disciplinas no IDP, usando apresentações em Markdown e recursos reutilizáveis de ensino.",
+  },
+];
+
+const technologies = [
+  "Java",
+  "Spring Boot",
+  "Python",
+  "JavaScript",
+  "TypeScript",
+  "PostgreSQL",
+  "Docker",
+  "GitHub Actions",
+  "JUnit",
+  "Cucumber",
+  "Playwright",
+  "RAG",
+  "LLMs",
+  "LaTeX",
+];
+
+const explorationAreas = [
+  "Como ensinar programação, testes e engenharia de software de forma mais efetiva",
+  "Como transformar projetos acadêmicos em evidência profissional de portfólio",
+  "Como agentes de IA e RAG podem apoiar fluxos de trabalho reais",
+  "Como instituições públicas podem usar tecnologia, automação e IA com responsabilidade",
+  "Como conectar fundamentos, experimentação técnica e pensamento de produto",
+];
+
+const contactLinks = [
+  {
+    label: "GitHub",
+    url: "https://github.com/fabriciosantana",
+  },
+  {
+    label: "LinkedIn",
+    url: "https://linkedin.com/in/fabriciofsantana",
+  },
+  {
+    label: "E-mail",
+    url: "mailto:fabricio.santana@gmail.com",
   },
 ];
 
@@ -850,18 +919,177 @@ const App = () => {
         </a>
         <nav className="nav-links" aria-label="Navegacao principal">
           <a href="#sobre">Sobre</a>
-          <a href="#cursos">Cursos</a>
+          <a href="#atuacao">Atuação</a>
+          <a href="#projetos">Projetos</a>
           <a href="#conteudos">Conteúdos</a>
+          <a href="#contato">Contato</a>
+          <a href="/projects">Serviços</a>
         </nav>
       </header>
 
       <section className="intro-section" id="inicio">
         <div className="intro-copy">
-          <p className="eyebrow">Tecnologia, ensino e gestão</p>
+          <p className="eyebrow">Tecnologia, ensino e IA aplicada</p>
+          <h1>Fabricio Fernandes Santana</h1>
           <p className="intro-text">
-            Sou Fabricio Santana, profissional de tecnologia com experiência em desenvolvimento de
-            software, liderança técnica, computação em nuvem e ensino superior.
+            Líder de tecnologia, professor e construtor de soluções em engenharia de software e
+            inteligência artificial aplicada.
           </p>
+          <p>
+            Trabalho na interseção entre liderança técnica, transformação digital no setor público,
+            educação em Ciência da Computação, produtos digitais e experimentação prática com IA,
+            RAG, automação e agentes.
+          </p>
+          <div className="intro-actions">
+            <a className="button primary" href="#projetos">
+              Ver projetos
+            </a>
+            <a className="button secondary" href="https://github.com/fabriciosantana" target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+          </div>
+        </div>
+        <img className="profile-photo" src={profilePhoto} alt="Fabricio Santana" />
+      </section>
+
+      <section className="content-section" id="sobre">
+        <div className="section-heading">
+          <p className="eyebrow">Sobre mim</p>
+          <h2>Engenharia, ensino, gestão pública e produto</h2>
+        </div>
+        <div className="text-panel">
+          <p>
+            Sou um profissional brasileiro de tecnologia e professor. Minha trajetória combina
+            Ciência da Computação, Direito, engenharia de software, administração pública, ensino e
+            empreendedorismo.
+          </p>
+          <p>
+            Essa combinação molda minha forma de trabalhar: tecnologia não apenas como código, mas
+            como instrumento para resolver problemas institucionais, educacionais e de produto com
+            clareza, responsabilidade e impacto prático.
+          </p>
+          <p>
+            Uso o GitHub como espaço público de aprendizagem, materiais técnicos, recursos de
+            ensino, experimentos e protótipos que transformam ideias em artefatos verificáveis.
+          </p>
+        </div>
+      </section>
+
+      <section className="content-section alternate" id="atuacao">
+        <div className="section-heading">
+          <p className="eyebrow">Atuação</p>
+          <h2>O que faço hoje</h2>
+        </div>
+        <div className="card-grid">
+          {workAreas.map((area) => (
+            <article className="card" key={area.title}>
+              <h3>{area.title}</h3>
+              <p>{area.description}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="content-section">
+        <div className="section-heading">
+          <p className="eyebrow">Foco atual</p>
+          <h2>Temas que conectam pesquisa, prática e entrega</h2>
+        </div>
+        <div className="text-panel compact-panel">
+          <ul className="check-list">
+            {focusAreas.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section className="content-section alternate" id="projetos">
+        <div className="section-heading">
+          <p className="eyebrow">Projetos em destaque</p>
+          <h2>Repositórios como material de ensino e evidência pública</h2>
+        </div>
+        <div className="card-grid">
+          {featuredProjects.map((project) => (
+            <a className="card project-card" href={project.url} target="_blank" rel="noreferrer" key={project.title}>
+              <span className="status-label">GitHub</span>
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <section className="content-section">
+        <div className="section-heading">
+          <p className="eyebrow">Tecnologias</p>
+          <h2>Ferramentas que uso para construir, testar e ensinar</h2>
+        </div>
+        <div className="tech-cloud personal-tech-cloud">
+          {technologies.map((tech) => (
+            <span key={tech}>{tech}</span>
+          ))}
+        </div>
+      </section>
+
+      <section className="content-section alternate">
+        <div className="section-heading">
+          <p className="eyebrow">Interesses</p>
+          <h2>Áreas que gosto de explorar</h2>
+        </div>
+        <div className="text-panel compact-panel">
+          <ul className="check-list">
+            {explorationAreas.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section className="content-section" id="conteudos">
+        <div className="section-heading">
+          <p className="eyebrow">Conteúdos sobre TI</p>
+          <h2>Publicações e resumos de tecnologia</h2>
+          <p>
+            Resumos e leituras sobre IA, engenharia de software, produtos digitais, segurança,
+            automação e tendências que acompanho de perto.
+          </p>
+        </div>
+        <div className="digest-list">
+          {digestPosts.map((post) => (
+            <a className="digest-card" href={`#${post.slug}`} key={post.date}>
+              <div className="digest-meta">
+                <span>Resumo diário</span>
+                <time dateTime={post.date}>{formatDate(post.date)}</time>
+              </div>
+              <h3>{post.title}</h3>
+              <p>{post.summary}</p>
+              <div className="digest-card-footer">
+                <span>{post.sourceCount} fontes citadas</span>
+                <strong>Ler resumo completo</strong>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <section className="content-section alternate" id="contato">
+        <div className="section-heading">
+          <p className="eyebrow">Contato</p>
+          <h2>Aberto a conversas sobre tecnologia, ensino e IA aplicada</h2>
+        </div>
+        <div className="text-panel contact-panel">
+          <p>
+            Tenho interesse em projetos que conectem pesquisa e implementação, engenharia de
+            software e educação, IA e fluxos reais de trabalho, profundidade técnica e valor público.
+          </p>
+          <div className="profile-links">
+            {contactLinks.map((link) => (
+              <a href={link.url} target={link.url.startsWith("mailto:") ? undefined : "_blank"} rel="noreferrer" key={link.label}>
+                {link.label}
+              </a>
+            ))}
+          </div>
           <p className="newsletter-callout">
             Receba meu resumo diário sobre tecnologia e inovação.
           </p>
@@ -889,66 +1117,7 @@ const App = () => {
             {newsletterMessage && <p className="form-message">{newsletterMessage}</p>}
           </form>
         </div>
-        <img className="profile-photo" src={profilePhoto} alt="Fabricio Santana" />
       </section>
-
-      <section className="content-section" id="sobre">
-        <div className="section-heading">
-          <p className="eyebrow">Sobre mim</p>
-          <h2>Minha trajetória em tecnologia</h2>
-        </div>
-        <div className="text-panel">
-          <p>
-            Atuo há mais de 20 anos na área de tecnologia, conectando engenharia de software, gestão
-            de times, cloud computing e inteligência artificial. Também leciono em cursos de
-            graduação em Ciência da Computação e Engenharia de Software.
-          </p>
-          <p>
-            Este espaço vai reunir cursos, materiais e textos sobre temas que acompanho de perto:
-            arquitetura, desenvolvimento, IA, carreira, ensino e práticas modernas de TI.
-          </p>
-        </div>
-      </section>
-
-      <section className="content-section alternate" id="cursos">
-        <div className="section-heading">
-          <p className="eyebrow">Cursos</p>
-          <h2>Aulas e cursos em desenvolvimento</h2>
-        </div>
-        <div className="card-grid">
-          {courses.map((course) => (
-            <article className="card" key={course.title}>
-              <span className="status-label">{course.status}</span>
-              <h3>{course.title}</h3>
-              <p>{course.description}</p>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="content-section" id="conteudos">
-        <div className="section-heading">
-          <p className="eyebrow">Conteúdos sobre TI</p>
-          <h2>Publicações e resumos de tecnologia</h2>
-        </div>
-        <div className="digest-list">
-          {digestPosts.map((post) => (
-            <a className="digest-card" href={`#${post.slug}`} key={post.date}>
-              <div className="digest-meta">
-                <span>Resumo diário</span>
-                <time dateTime={post.date}>{formatDate(post.date)}</time>
-              </div>
-              <h3>{post.title}</h3>
-              <p>{post.summary}</p>
-              <div className="digest-card-footer">
-                <span>{post.sourceCount} fontes citadas</span>
-                <strong>Ler resumo completo</strong>
-              </div>
-            </a>
-          ))}
-        </div>
-      </section>
-
       <footer className="site-footer">
         <p>Fabricio Santana</p>
         <a href="mailto:fabricio.santana@gmail.com">fabricio.santana@gmail.com</a>
