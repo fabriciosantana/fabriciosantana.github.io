@@ -278,7 +278,7 @@ const dataprevMentorship = {
     {
       question: "A turma é só para Desenvolvimento de Software?",
       answer:
-        "A primeira oferta é específica para o Perfil 3, Desenvolvimento de Software. Isso evita dispersão e permite trabalhar o edital com foco real.",
+        "Esta oferta é específica para o Perfil 3, Desenvolvimento de Software. Isso evita dispersão e permite trabalhar o edital com foco real.",
     },
     {
       question: "Há garantia de aprovação?",
