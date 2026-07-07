@@ -4,7 +4,8 @@
   "description": "Fabricio Santana",
   "source": [
     "src/index.html",
-    "src/projects/index.html"
+    "src/projects/index.html",
+    "src/mentoria-dataprev/index.html"
   ],
   "homepage": "https://fabriciosantana.github.io/",
   "scripts": {
