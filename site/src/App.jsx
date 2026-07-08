@@ -153,7 +153,7 @@ const renderDigestMarkdown = (markdown) => {
 const dataprevMentorship = {
   editalKeyFacts: [
     ["80 vagas imediatas", "Perfil 3: Desenvolvimento de Software"],
-    ["30 questões", "Conhecimentos Específicos valem 75 de 115 pontos"],
+    ["75 de 115 pontos", "Conhecimentos Específicos"],
     ["R$ 10.685,44", "salário inicial"],
     ["11/10/2026", "data da prova"],
   ],
@@ -1062,21 +1062,13 @@ const DataprevMentorshipLanding = () => {
 
       <section className="projects-hero mentorship-hero">
         <div className="projects-hero-copy">
-          <p className="eyebrow">Mentoria Desenvolvimento de Software</p>
+          <p className="eyebrow">Mentoria para Concursos de TI</p>
           <h2>
-            Prepare-se para o concurso da Dataprev com orientação de quem já foi aprovado e tem
-            experiência prática.
+            Prepare-se para o concurso da Dataprev com um plano de estudos estruturado e a acompanhamento de quem já foi aprovado em concursos de TI.
           </h2>
-          <p className="projects-lead">
-            Você passa a estudar com prioridade: o que vem primeiro, quais questões resolvem o
-            problema e quando revisar para não perder ritmo.
+          <p>
+            O edital reúne mais de 100 tópicos. Em vez de tentar estudar tudo com a mesma profundidade, você seguirá uma estratégia para priorizar os conteúdos mais relevantes que aumentará suas chances de um bom desempenho na prova.
           </p>
-          <div className="mentorship-authority-strip" aria-label="Autoridade do mentor">
-            <span>Analista de Informática do Senado Federal</span>
-            <span>Professor Universitário</span>
-            <span>+20 anos em Engenharia de Software</span>
-            <span>Aprovado em concursos de TI</span>
-          </div>
           <div className="projects-actions">
             <a className="button primary" href="#inscricao">
               Quero reservar minha vaga
@@ -1096,7 +1088,7 @@ const DataprevMentorshipLanding = () => {
           ))}
           <div className="hero-proof-actions">
             <a className="button primary" href="#inscricao">
-              Participar da turma
+              Participar da turma DataPrev
             </a>
           </div>
         </aside>
@@ -1106,11 +1098,6 @@ const DataprevMentorshipLanding = () => {
         <div className="section-heading wide-heading">
           <p className="eyebrow">O problema</p>
           <h2>O maior risco não é estudar pouco. É estudar errado.</h2>
-          <p>
-            O edital possui mais de 100 tópicos e 75 pontos em conhecimentos específicos. Em vez de
-            estudar tudo da mesma forma, você terá uma estratégia para priorizar os assuntos que
-            mais impactam sua nota.
-          </p>
         </div>
         <div className="mentorship-pain-grid">
           <article className="use-case-card">
