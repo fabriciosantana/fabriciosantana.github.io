@@ -300,7 +300,7 @@ const dataprevMentorship = {
     "Aprovado para Analista de Informática do Senado Federal",
     "Aprovado para Analista de Sistemas da Eletronuclear",
     "Aprovado para Perito de Informática da Polícia Civil do Rio de Janeiro",
-    "Professor de ensino superior em Engenharia de Software e Ciência da Computação",
+    "Professor de Ciência da Computação",
     "Mais de 20 anos de experiência em engenharia de software",
   ],
   testimonials: [
@@ -1230,7 +1230,7 @@ const DataprevMentorshipLanding = () => {
       <section className="projects-section split-section" id="perfil">
         <div>
           <p className="eyebrow">Mentor</p>
-          <h2>Experiência em concursos, ensino superior e engenharia de software real.</h2>
+          <h2>Experiência em concursos, ensino superior e engenharia de software.</h2>
         </div>
         <div>
           <p className="large-copy">
