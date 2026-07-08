@@ -1063,7 +1063,7 @@ const DataprevMentorshipLanding = () => {
 
       <section className="projects-hero mentorship-hero">
         <div className="projects-hero-copy">
-          <p className="eyebrow">Mentoria DataPrev - Desenvolvimento de Software (perfil 3)</p>
+          <p className="eyebrow">Mentoria Desenvolvimento de Software</p>
           <h2>
             Prepare-se para o concurso da Dataprev com orientação de quem já foi aprovado e tem
             experiência prática.
@@ -1088,7 +1088,7 @@ const DataprevMentorshipLanding = () => {
           </div>
         </div>
         <aside className="hero-proof mentorship-proof" aria-label="Resumo da oferta">
-          <div className="hero-proof-title">Edital Dataprev</div>
+          <div className="hero-proof-title">Edital Dataprev (perfil 3)</div>
           {dataprevMentorship.editalKeyFacts.map(([value, label]) => (
             <div className="proof-item" key={value}>
               <strong>{value}</strong>
