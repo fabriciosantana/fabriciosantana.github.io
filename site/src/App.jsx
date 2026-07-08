@@ -295,7 +295,7 @@ const dataprevMentorship = {
   profileProof: [
     "Bacharel em Ciência da Computação (UFRJ)",
     "Especialista em Tecnologia da Informação Aplicada ao Poder Legislativo (ILB)",
-    "Especialista em Processamento de Linguagem Natural pela (UFG)",
+    "Especialista em Processamento de Linguagem Natural (UFG)",
     "Mestrando em Ciência de Dados e Inteligência Artificial (IDP)",
     "Aprovado para Analista de Informática do Senado Federal",
     "Aprovado para Analista de Sistemas da Eletronuclear",
