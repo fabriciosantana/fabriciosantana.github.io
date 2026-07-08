@@ -1401,12 +1401,18 @@ const DataprevMentorshipLanding = () => {
         </div>
         <div className="mentorship-offer-layout">
           <div className="mentorship-registration-included">
-            <h3>O investimento inclui</h3>
+            <h3>O que está incluso</h3>
             <p>
-              Encontros, gravações, cronograma, materiais, questões e acompanhamento até a reta
-              final. Chame no WhatsApp para confirmar se ainda há vaga, receber os dados de
-              pagamento e entrar na turma.
+              Encontros ao vivo gravados, suporte durante a semana e materiais objetivos para
+              transformar o edital em rotina de estudo até a véspera da prova.
             </p>
+            <div className="mentorship-included-grid">
+              {dataprevMentorship.included.map((item) => (
+                <article className="risk-item" key={item}>
+                  {item}
+                </article>
+              ))}
+            </div>
           </div>
           <aside className="mentorship-price-card" aria-label="Valor da mentoria">
             <span className="package-tag">Turma Dataprev</span>
