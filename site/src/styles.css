@@ -1347,3 +1347,27 @@ p {
   font-weight: 800;
   padding: 8px 12px;
 }
+
+.mentorship-problem-section {
+  background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+  border-bottom: 1px solid var(--line);
+  border-top: 1px solid var(--line);
+}
+
+.mentorship-pain-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.mentorship-problem-close {
+  color: var(--text);
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+@media (max-width: 980px) {
+  .mentorship-pain-grid {
+    grid-template-columns: 1fr;
+  }
+}

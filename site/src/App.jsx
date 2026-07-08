@@ -1103,6 +1103,35 @@ const DataprevMentorshipLanding = () => {
         </aside>
       </section>
 
+      <section className="projects-section mentorship-problem-section" id="problema">
+        <div className="section-heading wide-heading">
+          <p className="eyebrow">O problema</p>
+          <h2>O maior risco não é estudar pouco. É estudar errado.</h2>
+          <p>
+            O edital possui mais de 100 tópicos e 75 pontos em conhecimentos específicos. Em vez de
+            estudar tudo da mesma forma, você terá uma estratégia para priorizar os assuntos que
+            mais impactam sua nota.
+          </p>
+        </div>
+        <div className="mentorship-pain-grid">
+          <article className="use-case-card">
+            <h3>Edital muito grande</h3>
+          </article>
+          <article className="use-case-card">
+            <h3>Pouco tempo disponível</h3>
+          </article>
+          <article className="use-case-card">
+            <h3>Dificuldade para priorizar</h3>
+          </article>
+          <article className="use-case-card">
+            <h3>Excesso de materiais</h3>
+          </article>
+        </div>
+        <p className="mentorship-problem-close">
+          A mentoria existe para eliminar exatamente esses problemas.
+        </p>
+      </section>
+
       <section className="projects-section split-section">
         <div>
           <p className="eyebrow">O que é a mentoria?</p>
