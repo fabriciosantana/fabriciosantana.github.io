@@ -1080,7 +1080,7 @@ const DataprevMentorshipLanding = () => {
           </div>
           <div className="projects-actions">
             <a className="button primary" href="#inscricao">
-              Inscrever-se
+              Quero reservar minha vaga
             </a>
             <a className="button secondary" href="#programa">
               Ver estrutura da mentoria
@@ -1097,7 +1097,7 @@ const DataprevMentorshipLanding = () => {
           ))}
           <div className="hero-proof-actions">
             <a className="button primary" href="#inscricao">
-              Inscrever-se
+              Participar da turma
             </a>
           </div>
         </aside>
@@ -1130,6 +1130,11 @@ const DataprevMentorshipLanding = () => {
         <p className="mentorship-problem-close">
           A mentoria existe para eliminar exatamente esses problemas.
         </p>
+        <div className="final-actions mentorship-section-actions">
+          <a className="button primary" href="#inscricao">
+            Quero reservar minha vaga
+          </a>
+        </div>
       </section>
 
       <section className="projects-section split-section">
@@ -1141,11 +1146,18 @@ const DataprevMentorshipLanding = () => {
           </h2>
           <h3>Não é mais um curso genérico de TI com aulas gravadas que você não vai assistir. </h3>
         </div>
-        <p className="large-copy">
-          O edital da Dataprev exige domínio técnico, leitura estratégica e constância. A mentoria
-          organiza o caminho: o que estudar primeiro, onde aprofundar, como revisar, como treinar
-          questões e como evitar dispersão em um conteúdo muito amplo.
-        </p>
+        <div>
+          <p className="large-copy">
+            O edital da Dataprev exige domínio técnico, leitura estratégica e constância. A mentoria
+            organiza o caminho: o que estudar primeiro, onde aprofundar, como revisar, como treinar
+            questões e como evitar dispersão em um conteúdo muito amplo.
+          </p>
+          <div className="final-actions mentorship-section-actions left-actions">
+            <a className="button primary" href="#inscricao">
+              Participar da turma
+            </a>
+          </div>
+        </div>
       </section>
 
       <section className="projects-section use-cases-section" id="programa">
@@ -1173,6 +1185,11 @@ const DataprevMentorshipLanding = () => {
             </article>
           ))}
         </div>
+        <div className="final-actions mentorship-section-actions">
+          <a className="button primary" href="#inscricao">
+            Entrar para a turma Dataprev
+          </a>
+        </div>
       </section>
 
       <section className="projects-section mentorship-schedule-section" id="cronograma">
@@ -1189,6 +1206,11 @@ const DataprevMentorshipLanding = () => {
               <p>{item.topics}</p>
             </article>
           ))}
+        </div>
+        <div className="final-actions mentorship-section-actions">
+          <a className="button primary" href="#inscricao">
+            Quero reservar minha vaga
+          </a>
         </div>
       </section>
 
@@ -1226,6 +1248,11 @@ const DataprevMentorshipLanding = () => {
             </article>
           ))}
         </div>
+        <div className="final-actions mentorship-section-actions">
+          <a className="button primary" href="#inscricao">
+            Participar da turma
+          </a>
+        </div>
       </section>
 
       <section className="projects-section" id="conteudo">
@@ -1243,6 +1270,11 @@ const DataprevMentorshipLanding = () => {
               <h3>{item}</h3>
             </article>
           ))}
+        </div>
+        <div className="final-actions mentorship-section-actions">
+          <a className="button primary" href="#inscricao">
+            Entrar para a turma Dataprev
+          </a>
         </div>
       </section>
 
@@ -1262,6 +1294,11 @@ const DataprevMentorshipLanding = () => {
               <li key={item}>{item}</li>
             ))}
           </ul>
+          <div className="final-actions mentorship-section-actions left-actions">
+            <a className="button primary" href="#inscricao">
+              Quero reservar minha vaga
+            </a>
+          </div>
         </div>
       </section>
 
@@ -1283,6 +1320,11 @@ const DataprevMentorshipLanding = () => {
             </article>
           ))}
         </div>
+        <div className="final-actions mentorship-section-actions">
+          <a className="button primary" href="#inscricao">
+            Participar da turma
+          </a>
+        </div>
       </section>
 
       <section className="projects-section mentorship-guarantee-section" id="garantia">
@@ -1298,6 +1340,11 @@ const DataprevMentorshipLanding = () => {
             </article>
           ))}
         </div>
+        <div className="final-actions mentorship-section-actions">
+          <a className="button primary" href="#inscricao">
+            Entrar para a turma Dataprev
+          </a>
+        </div>
       </section>
 
       <section className="projects-section faq-section">
@@ -1312,6 +1359,11 @@ const DataprevMentorshipLanding = () => {
               <p>{item.answer}</p>
             </article>
           ))}
+        </div>
+        <div className="final-actions mentorship-section-actions">
+          <a className="button primary" href="#inscricao">
+            Quero reservar minha vaga
+          </a>
         </div>
       </section>
 
@@ -1360,7 +1412,7 @@ const DataprevMentorshipLanding = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                Inscrever-se
+                Entrar para a turma Dataprev
               </a>
             </div>
           </aside>
