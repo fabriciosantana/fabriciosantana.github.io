@@ -1064,7 +1064,7 @@ const DataprevMentorshipLanding = () => {
         <div className="projects-hero-copy">
           <p className="eyebrow">Mentoria para Concursos de TI</p>
           <h2>
-            Prepare-se para o concurso da Dataprev com um plano de estudos estruturado e a acompanhamento de quem já foi aprovado em concursos de TI.
+            Prepare-se para o concurso da Dataprev com um plano de estudos estruturado e orientação de quem já foi aprovado em concursos de TI.
           </h2>
           <p>
             O edital reúne mais de 100 tópicos. Em vez de tentar estudar tudo com a mesma profundidade, você seguirá uma estratégia para priorizar os conteúdos mais relevantes que aumentará suas chances de um bom desempenho na prova.
