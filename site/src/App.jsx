@@ -313,14 +313,14 @@ const dataprevMentorship = {
     {
       quote:
         "O acompanhamento deu direção para priorizar o que mais importava, revisar com método e manter constância até a prova.",
-      author: "Mentorado",
+      author: "Luiz F. S.",
       approval: "Aprovado em concurso público de TI",
     },
     {
       quote:
         "A orientação conectou o conteúdo técnico do edital com exemplos práticos de desenvolvimento, testes, arquitetura e sistemas reais.",
-      author: "Ex-aluno de graduação e mentorado",
-      approval: "Aprovado em seleção pública na área de tecnologia",
+      author: "Renata C. S.",
+      approval: "Aprovada na área de tecnologia",
     },
   ],
   guarantee: [
@@ -1098,173 +1098,42 @@ const DataprevMentorshipLanding = () => {
         <div className="section-heading wide-heading">
           <p className="eyebrow">O problema</p>
           <h2>O maior risco não é estudar pouco. É estudar errado.</h2>
+          <p>
+            A maioria dos candidatos enfrenta desafios que dificultam uma preparação consistente.
+          </p>
         </div>
         <div className="mentorship-pain-grid">
           <article className="use-case-card">
             <h3>Edital muito grande</h3>
+            <p>
+              Mais de 100 tópicos tornam difícil saber por onde começar e quanto tempo dedicar a cada assunto.
+            </p>
           </article>
           <article className="use-case-card">
             <h3>Pouco tempo disponível</h3>
+            <p>
+              Conciliar trabalho, família e estudos exige uma rotina objetiva e prioridades bem definidas.
+            </p>
           </article>
           <article className="use-case-card">
             <h3>Dificuldade para priorizar</h3>
+            <p>
+              Nem todos os tópicos têm a mesma importância. Saber onde aprofundar faz diferença na preparação.
+            </p>
           </article>
           <article className="use-case-card">
             <h3>Excesso de materiais</h3>
+            <p>
+              Cursos, PDFs, vídeos e resumos em excesso podem gerar mais confusão do que aprendizado.
+            </p>
           </article>
         </div>
         <p className="mentorship-problem-close">
-          A mentoria existe para eliminar exatamente esses problemas.
+          A mentoria existe para eliminar exatamente esses problemas. 
         </p>
-        <div className="final-actions mentorship-section-actions">
-          <a className="button primary" href="#inscricao">
-            Quero reservar minha vaga
-          </a>
-        </div>
-      </section>
-
-      <section className="projects-section split-section" id="perfil">
-        <div>
-          <p className="eyebrow">Mentor</p>
-          <h2>Experiência em concursos, ensino superior e engenharia de software real.</h2>
-        </div>
-        <div>
-          <p className="large-copy">
-            Sou Fabricio Santana, analista de informática legislativa no Senado e professor. A
-            proposta é ajudar você a ler o edital com critério técnico, priorizar o que mais impacta
-            a nota e estudar desenvolvimento de software com exemplos de quem trabalha com sistemas
-            reais.
-          </p>
-          <ul className="check-list">
-            {dataprevMentorship.profileProof.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-          <div className="final-actions mentorship-section-actions left-actions">
-            <a className="button primary" href="#inscricao">
-              Quero reservar minha vaga
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section className="projects-section mentorship-comparison-section">
-        <div className="section-heading wide-heading">
-          <p className="eyebrow">Comparação</p>
-          <h2>O que muda quando você deixa de estudar no improviso.</h2>
-        </div>
-        <div
-          className="mentorship-comparison-table"
-          role="table"
-          aria-label="Comparação entre estudar sozinho e mentoria"
-        >
-          <div className="mentorship-comparison-row mentorship-comparison-head" role="row">
-            <strong role="columnheader">Estudando sozinho</strong>
-            <strong role="columnheader">Mentoria</strong>
-          </div>
-          <div className="mentorship-comparison-row" role="row">
-            <span role="cell">não sabe priorizar</span>
-            <span role="cell">plano semanal</span>
-          </div>
-          <div className="mentorship-comparison-row" role="row">
-            <span role="cell">excesso de conteúdo</span>
-            <span role="cell">foco</span>
-          </div>
-          <div className="mentorship-comparison-row" role="row">
-            <span role="cell">dúvidas sem resposta</span>
-            <span role="cell">acompanhamento</span>
-          </div>
-          <div className="mentorship-comparison-row" role="row">
-            <span role="cell">materiais dispersos</span>
-            <span role="cell">conteúdo organizado</span>
-          </div>
-        </div>
-        <div className="final-actions mentorship-section-actions">
-          <a className="button primary" href="#inscricao">
-            Participar da turma
-          </a>
-        </div>
-      </section>
-
-      <section className="projects-section mentorship-audience-section">
-        <div className="section-heading wide-heading">
-          <p className="eyebrow">Perfil ideal</p>
-          <h2>Para quem é e para quem não é.</h2>
-        </div>
-        <div className="mentorship-audience-grid">
-          <article className="discovery-card">
-            <h3>Para quem é</h3>
-            <ul className="check-list">
-              <li>Candidatos do Perfil 3: Desenvolvimento de Software.</li>
-              <li>Estudantes nos últimos anos da graduação.</li>
-              <li>Quem trabalha e precisa transformar pouco tempo em prioridade.</li>
-              <li>Quem já começou a estudar, mas sente dispersão.</li>
-              <li>Quem quer acelerar com plano, revisão e questões.</li>
-            </ul>
-          </article>
-          <article className="discovery-card">
-            <h3>Para quem não é</h3>
-            <ul className="mentorship-not-list">
-              <li>Quem procura promessa de aprovação.</li>
-              <li>Quem não pretende executar uma rotina de estudo.</li>
-              <li>Quem quer apenas um curso gravado para assistir quando sobrar tempo.</li>
-            </ul>
-          </article>
-        </div>
-        <div className="final-actions mentorship-section-actions">
-          <a className="button primary" href="#inscricao">
-            Entrar para a turma Dataprev
-          </a>
-        </div>
-      </section>
-
-      <section className="projects-section use-cases-section" id="programa">
-        <div className="section-heading wide-heading">
-          <p className="eyebrow">Programa</p>
-          <h2>Como a mentoria transforma o edital em execução</h2>
-          <p>
-            Você terá uma rotina guiada para decidir o que estudar, quando revisar, quais questões
-            resolver e como corrigir a rota sem desperdiçar tempo com conteúdo de baixo impacto.
-          </p>
-        </div>
-        <div className="process-grid">
-          {dataprevMentorship.pillars.map((item) => (
-            <article className="process-card" key={item.title}>
-              <h3>{item.title}</h3>
-              <p>{item.text}</p>
-            </article>
-          ))}
-        </div>
-        <div className="mentorship-format-grid">
-          {dataprevMentorship.format.map(([title, text]) => (
-            <article className="risk-item" key={title}>
-              <strong>{title}</strong>
-              <span>{text}</span>
-            </article>
-          ))}
-        </div>
-        <div className="final-actions mentorship-section-actions">
-          <a className="button primary" href="#inscricao">
-            Entrar para a turma Dataprev
-          </a>
-        </div>
-      </section>
-
-      <section className="projects-section mentorship-schedule-section" id="cronograma">
-        <div className="section-heading wide-heading">
-          <p className="eyebrow">Cronograma dos encontros</p>
-          <h2>Cada semana termina com metas claras e objetivas até a prova.</h2>
-          <p>{dataprevMentorship.scheduleNote}</p>
-        </div>
-        <div className="mentorship-schedule-grid">
-          {dataprevMentorship.schedule.map((item) => (
-            <article className="mentorship-schedule-card" key={item.meeting}>
-              <span>{item.meeting}</span>
-              <h3>{item.title}</h3>
-              <p>{item.topics}</p>
-            </article>
-          ))}
-        </div>
+        <p>
+          Em vez de estudar mais, você passa a estudar com estratégia.
+        </p>
         <div className="final-actions mentorship-section-actions">
           <a className="button primary" href="#inscricao">
             Quero reservar minha vaga
@@ -1274,7 +1143,7 @@ const DataprevMentorshipLanding = () => {
 
       <section className="projects-section discovery-band mentorship-band" id="edital">
         <div>
-          <p className="eyebrow">Base oficial</p>
+          <p className="eyebrow">A oportunidade</p>
           <h2>Edital Dataprev 2026 analisado para orientar a preparação</h2>
           <p>
             A estratégia da turma parte do Edital 001/2026 da FGV para transformar peso da prova,
@@ -1313,21 +1182,135 @@ const DataprevMentorshipLanding = () => {
         </div>
       </section>
 
-      <section className="projects-section" id="conteudo">
+      <section className="projects-section use-cases-section" id="programa">
         <div className="section-heading wide-heading">
-          <p className="eyebrow">Conteúdo priorizado</p>
-          <h2>O que você aprenderá a priorizar</h2>
+          <p className="eyebrow">A solução</p>
+          <h2>A mentoria transforma o edital em um plano de ação</h2>
           <p>
-            Você não precisa tratar todos os tópicos como se tivessem o mesmo peso. A trilha
-            organiza estudo, revisão e questões para medir evolução com mais clareza.
+            Você terá uma rotina e saberá o que estudar, em qual profundidade, quando revisar, quais questões resolver e como corrigir a rota sem desperdiçar tempo com conteúdo de baixo impacto. Tudo isso em um formato pensado para otimizar seu resultado.
           </p>
         </div>
-        <div className="use-case-grid mentorship-topic-grid">
-          {dataprevMentorship.modules.map((item) => (
-            <article className="use-case-card" key={item}>
-              <h3>{item}</h3>
+        <div className="mentorship-format-grid">
+          {dataprevMentorship.format.map(([title, text]) => (
+            <article className="risk-item" key={title}>
+              <strong>{title}</strong>
+              <span>{text}</span>
             </article>
           ))}
+        </div>
+        <div className="final-actions mentorship-section-actions">
+          <a className="button primary" href="#inscricao">
+            Entrar para a turma Dataprev
+          </a>
+        </div>
+      </section>
+
+      <section className="projects-section mentorship-schedule-section" id="cronograma">
+        <div className="section-heading wide-heading">
+          <p className="eyebrow">Cronograma dos encontros</p>
+          <h2>Cada semana termina com metas claras e objetivas até a prova.</h2>
+          <p>{dataprevMentorship.scheduleNote}</p>
+        </div>
+        <div className="mentorship-schedule-grid">
+          {dataprevMentorship.schedule.map((item) => (
+            <article className="mentorship-schedule-card" key={item.meeting}>
+              <span>{item.meeting}</span>
+              <h3>{item.title}</h3>
+              <p>{item.topics}</p>
+            </article>
+          ))}
+        </div>
+        <div className="final-actions mentorship-section-actions">
+          <a className="button primary" href="#inscricao">
+            Quero reservar minha vaga
+          </a>
+        </div>
+      </section>
+
+      <section className="projects-section split-section" id="perfil">
+        <div>
+          <p className="eyebrow">Mentor</p>
+          <h2>Experiência em concursos, ensino superior e engenharia de software real.</h2>
+        </div>
+        <div>
+          <p className="large-copy">
+            Sou Fabricio Santana, analista de informática legislativa no Senado e professor. Meu desejo é ajudar você com um método de estudo e acompanhamento que aumentará suas chances de um bom desempenho na prova.
+          </p>
+          <ul className="check-list">
+            {dataprevMentorship.profileProof.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+          <div className="final-actions mentorship-section-actions left-actions">
+            <a className="button primary" href="#inscricao">
+              Quero reservar minha vaga
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section className="projects-section mentorship-comparison-section">
+        <div className="section-heading wide-heading">
+          <p className="eyebrow">Comparação</p>
+          <h2>O que muda quando você deixa de estudar no improviso.</h2>
+        </div>
+        <div
+          className="mentorship-comparison-table"
+          role="table"
+          aria-label="Comparação entre estudar sozinho e mentoria"
+        >
+          <div className="mentorship-comparison-row mentorship-comparison-head" role="row">
+            <strong role="columnheader">Estudando sozinho</strong>
+            <strong role="columnheader">Mentoria</strong>
+          </div>
+          <div className="mentorship-comparison-row" role="row">
+            <span role="cell">❌ não sabe priorizar</span>
+            <span role="cell">✅ plano semanal</span>
+          </div>
+          <div className="mentorship-comparison-row" role="row">
+            <span role="cell">❌ excesso de conteúdo</span>
+            <span role="cell">✅ foco</span>
+          </div>
+          <div className="mentorship-comparison-row" role="row">
+            <span role="cell">❌ dúvidas sem resposta</span>
+            <span role="cell">✅ acompanhamento</span>
+          </div>
+          <div className="mentorship-comparison-row" role="row">
+            <span role="cell">❌ materiais dispersos</span>
+            <span role="cell">✅ conteúdo organizado</span>
+          </div>
+        </div>
+        <div className="final-actions mentorship-section-actions">
+          <a className="button primary" href="#inscricao">
+            Participar da turma
+          </a>
+        </div>
+      </section>
+
+      <section className="projects-section mentorship-audience-section">
+        <div className="section-heading wide-heading">
+          <p className="eyebrow">Perfil ideal</p>
+          <h2>Para quem é e para quem não é.</h2>
+        </div>
+        <div className="mentorship-audience-grid">
+          <article className="discovery-card">
+            <h3>Para quem é</h3>
+            <ul className="check-list">
+              <li>Candidatos do Perfil 3: Desenvolvimento de Software.</li>
+              <li>Estudantes nos últimos anos da graduação.</li>
+              <li>Quem trabalha e precisa transformar pouco tempo em prioridade.</li>
+              <li>Quem já começou a estudar, mas sente dispersão.</li>
+              <li>Quem quer acelerar com plano, revisão e questões.</li>
+            </ul>
+          </article>
+          <article className="discovery-card">
+            <h3>Para quem não é</h3>
+            <ul className="mentorship-not-list">
+              <li>Quem procura promessa de aprovação.</li>
+              <li>Quem não pretende executar uma rotina de estudo.</li>
+              <li>Quem quer apenas um curso gravado para assistir quando sobrar tempo.</li>
+            </ul>
+          </article>
         </div>
         <div className="final-actions mentorship-section-actions">
           <a className="button primary" href="#inscricao">
@@ -1397,29 +1380,6 @@ const DataprevMentorshipLanding = () => {
         <div className="final-actions mentorship-section-actions">
           <a className="button primary" href="#inscricao">
             Quero reservar minha vaga
-          </a>
-        </div>
-      </section>
-
-      <section className="projects-section mentorship-value-section" id="valor">
-        <div className="section-heading wide-heading">
-          <p className="eyebrow">Você receberá</p>
-          <h2>Tudo que ajuda você a transformar edital em rotina de execução.</h2>
-          <p>
-            Esses itens existem para que você não dependa de improviso: cada semana combina
-            prioridade, material, treino e acompanhamento.
-          </p>
-        </div>
-        <div className="mentorship-included-grid mentorship-value-grid">
-          {dataprevMentorship.included.map((item) => (
-            <article className="risk-item" key={item}>
-              {item}
-            </article>
-          ))}
-        </div>
-        <div className="final-actions mentorship-section-actions">
-          <a className="button primary" href="#inscricao">
-            Participar da turma
           </a>
         </div>
       </section>
