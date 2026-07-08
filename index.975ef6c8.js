@@ -27202,7 +27202,7 @@ const dataprevMentorship = {
         ],
         [
             "R$ 10.685,44",
-            "sal\xe1rio inicial para Analista de TI"
+            "sal\xe1rio inicial"
         ],
         [
             "11/10/2026",
