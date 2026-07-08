@@ -1024,8 +1024,29 @@ p {
   max-width: 900px;
 }
 
+.mentorship-proof {
+  padding: 18px;
+}
+
+.mentorship-proof .hero-proof-title {
+  margin-bottom: 8px;
+}
+
+.mentorship-proof .proof-item {
+  padding: 16px 0;
+}
+
+.mentorship-proof .proof-item:first-of-type {
+  padding-top: 4px;
+}
+
 .mentorship-proof .proof-item strong {
-  font-size: clamp(1.85rem, 3.6vw, 2.8rem);
+  font-size: clamp(1.35rem, 2.6vw, 2rem);
+}
+
+.mentorship-proof .proof-item span {
+  font-size: .84rem;
+  line-height: 1.35;
 }
 
 .mentorship-format-grid {
