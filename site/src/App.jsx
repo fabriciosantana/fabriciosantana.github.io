@@ -1066,12 +1066,18 @@ const DataprevMentorshipLanding = () => {
           <p className="eyebrow">Mentoria para concursos de TI</p>
           <h2>
             Prepare-se para o concurso da Dataprev com orientação de quem já foi aprovado e tem
-            experiência prática em desenvolvimento de software e sala de aula.
+            experiência prática.
           </h2>
           <p className="projects-lead">
             Programa em turmas de até 7 estudantes para transformar o edital da FGV em plano de
             estudo, priorização, rotina de questões e acompanhamento até a prova.
           </p>
+          <div className="mentorship-authority-strip" aria-label="Autoridade do mentor">
+            <span>Analista de Informática do Senado Federal</span>
+            <span>Professor Universitário</span>
+            <span>+20 anos em Engenharia de Software</span>
+            <span>Aprovado em concursos de TI</span>
+          </div>
           <div className="projects-actions">
             <a className="button primary" href="#inscricao">
               Inscrever-se
