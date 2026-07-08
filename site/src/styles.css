@@ -1389,3 +1389,44 @@ p {
     grid-template-columns: 1fr;
   }
 }
+
+.mentorship-comparison-table {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 12px 30px rgba(30, 58, 138, 0.07);
+  overflow: hidden;
+}
+
+.mentorship-comparison-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.mentorship-comparison-row > * {
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-weight: 700;
+  line-height: 1.5;
+  padding: 16px 20px;
+}
+
+.mentorship-comparison-row > *:first-child {
+  border-right: 1px solid var(--line);
+}
+
+.mentorship-comparison-head > * {
+  background: var(--surface-muted);
+  border-top: 0;
+  color: var(--text);
+}
+
+@media (max-width: 560px) {
+  .mentorship-comparison-row {
+    grid-template-columns: 1fr;
+  }
+
+  .mentorship-comparison-row > *:first-child {
+    border-right: 0;
+  }
+}

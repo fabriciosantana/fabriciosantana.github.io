@@ -1138,6 +1138,39 @@ const DataprevMentorshipLanding = () => {
         </div>
       </section>
 
+      <section className="projects-section mentorship-comparison-section">
+        <div className="section-heading wide-heading">
+          <p className="eyebrow">Comparação</p>
+          <h2>O que muda quando você deixa de estudar no improviso.</h2>
+        </div>
+        <div
+          className="mentorship-comparison-table"
+          role="table"
+          aria-label="Comparação entre estudar sozinho e mentoria"
+        >
+          <div className="mentorship-comparison-row mentorship-comparison-head" role="row">
+            <strong role="columnheader">Estudando sozinho</strong>
+            <strong role="columnheader">Mentoria</strong>
+          </div>
+          <div className="mentorship-comparison-row" role="row">
+            <span role="cell">não sabe priorizar</span>
+            <span role="cell">plano semanal</span>
+          </div>
+          <div className="mentorship-comparison-row" role="row">
+            <span role="cell">excesso de conteúdo</span>
+            <span role="cell">foco</span>
+          </div>
+          <div className="mentorship-comparison-row" role="row">
+            <span role="cell">dúvidas sem resposta</span>
+            <span role="cell">acompanhamento</span>
+          </div>
+          <div className="mentorship-comparison-row" role="row">
+            <span role="cell">materiais dispersos</span>
+            <span role="cell">conteúdo organizado</span>
+          </div>
+        </div>
+      </section>
+
       <section className="projects-section split-section">
         <div>
           <p className="eyebrow">O que é a mentoria?</p>
