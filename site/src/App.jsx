@@ -154,7 +154,7 @@ const dataprevMentorship = {
   editalKeyFacts: [
     ["80 vagas imediatas", "Perfil 3: Desenvolvimento de Software"],
     ["30 questões", "Conhecimentos Específicos valem 75 de 115 pontos"],
-    ["R$ 10.685,44", "salário inicial para Analista de TI"],
+    ["R$ 10.685,44", "salário inicial"],
     ["11/10/2026", "data da prova"],
   ],
   editalFacts: [
