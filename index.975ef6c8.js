@@ -27198,7 +27198,7 @@ const dataprevMentorship = {
         ],
         [
             "30 quest\xf5es",
-            "Conhecimentos Espec\xedficos valem 75 pontos"
+            "Conhecimentos Espec\xedficos valem 75 de 115 pontos"
         ],
         [
             "70 quest\xf5es",
