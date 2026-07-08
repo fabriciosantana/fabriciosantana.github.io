@@ -229,14 +229,15 @@ const dataprevMentorship = {
     ],
   ],
   included: [
-    "1 encontro semanal ao vivo em grupo de até 7 pessoas",
-    "Encontros gravados para revisão posterior",
-    "Encontros semanais até a véspera da prova",
-    "Suporte em tempo real via WhatsApp",
-    "Cronograma personalizado de estudos",
-    "Resumos dos tópicos do edital",
-    "Mapas mentais para fixação do conteúdo",
-    "Questões de concursos anteriores organizadas por tópicos",
+    "Encontros ao vivo",
+    "Gravações",
+    "Cronograma personalizado",
+    "WhatsApp",
+    "Simulados",
+    "Mapas mentais",
+    "Resumos",
+    "Questões comentadas",
+    "Acompanhamento semanal",
   ],
   pricing: {
     regular: "R$ 997,00",
@@ -1367,6 +1368,20 @@ const DataprevMentorshipLanding = () => {
         </div>
       </section>
 
+      <section className="projects-section mentorship-value-section" id="valor">
+        <div className="section-heading wide-heading">
+          <p className="eyebrow">Você receberá</p>
+          <h2>Uma estrutura de preparação para transformar o edital em execução semanal.</h2>
+        </div>
+        <div className="mentorship-included-grid mentorship-value-grid">
+          {dataprevMentorship.included.map((item) => (
+            <article className="risk-item" key={item}>
+              {item}
+            </article>
+          ))}
+        </div>
+      </section>
+
       <section className="projects-final mentorship-registration-section" id="inscricao">
         <div className="mentorship-registration-heading">
           <p className="eyebrow">Inscrição</p>
@@ -1378,18 +1393,11 @@ const DataprevMentorshipLanding = () => {
         </div>
         <div className="mentorship-offer-layout">
           <div className="mentorship-registration-included">
-            <h3>O que está incluso</h3>
+            <h3>Próximo passo</h3>
             <p>
-              Encontros ao vivo gravados, suporte durante a semana e materiais objetivos para
-              transformar o edital em rotina de estudo até a véspera da prova.
+              Chame no WhatsApp para confirmar disponibilidade da turma, receber os dados de
+              pagamento e concluir sua inscrição.
             </p>
-            <div className="mentorship-included-grid">
-              {dataprevMentorship.included.map((item) => (
-                <article className="risk-item" key={item}>
-                  {item}
-                </article>
-              ))}
-            </div>
           </div>
           <aside className="mentorship-price-card" aria-label="Valor da mentoria">
             <span className="package-tag">Turma Dataprev</span>

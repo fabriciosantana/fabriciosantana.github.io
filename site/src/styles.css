@@ -1379,3 +1379,13 @@ p {
 .mentorship-section-actions.left-actions {
   justify-content: flex-start;
 }
+
+.mentorship-value-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 980px) {
+  .mentorship-value-grid {
+    grid-template-columns: 1fr;
+  }
+}
