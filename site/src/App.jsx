@@ -1057,23 +1057,14 @@ const DataprevMentorshipLanding = () => {
         <a className="brand" href="/" aria-label="Fabricio Santana">
           Fabricio Santana
         </a>
-        <nav className="nav-links" aria-label="Navegacao da mentoria Dataprev">
-          <a href="#programa">Programa</a>
-          <a href="#cronograma">Cronograma</a>
-          <a href="#edital">Edital</a>
-          <a href="#perfil">Mentor</a>
-          <a href="#depoimentos">Depoimentos</a>
-          <a href="#garantia">Garantia</a>
-          <a href="#inscricao">Inscrição</a>
-        </nav>
       </header>
 
       <section className="projects-hero mentorship-hero">
         <div className="projects-hero-copy">
           <p className="eyebrow">Mentoria para concursos de TI</p>
           <h2>
-            Transforme um edital grande em decisões semanais de estudo, revisão e treino até a
-            prova.
+            Prepare-se para o concurso da Dataprev com orientação de quem já foi aprovado e tem
+            experiência prática.
           </h2>
           <p className="projects-lead">
             Você passa a estudar com prioridade: o que vem primeiro, quais questões resolvem o
@@ -1137,11 +1128,6 @@ const DataprevMentorshipLanding = () => {
         <p className="mentorship-problem-close">
           A mentoria existe para eliminar exatamente esses problemas.
         </p>
-        <div className="final-actions mentorship-section-actions">
-          <a className="button primary" href="#inscricao">
-            Quero reservar minha vaga
-          </a>
-        </div>
       </section>
 
       <section className="projects-section split-section" id="perfil">
@@ -1202,26 +1188,29 @@ const DataprevMentorshipLanding = () => {
         </div>
       </section>
 
-      <section className="projects-section split-section">
-        <div>
-          <p className="eyebrow">O que é a mentoria?</p>
-          <h2>
-            É uma preparação guiada para um edital grande, técnico e competitivo. <br />
-            <br />
-          </h2>
-          <h3>Não é mais um curso genérico de TI com aulas gravadas que você não vai assistir. </h3>
+      <section className="projects-section mentorship-audience-section">
+        <div className="section-heading wide-heading">
+          <p className="eyebrow">Perfil ideal</p>
+          <h2>Para quem é e para quem não é.</h2>
         </div>
-        <div>
-          <p className="large-copy">
-            O edital da Dataprev exige domínio técnico, leitura estratégica e constância. A mentoria
-            organiza o caminho: o que estudar primeiro, onde aprofundar, como revisar, como treinar
-            questões e como evitar dispersão em um conteúdo muito amplo.
-          </p>
-          <div className="final-actions mentorship-section-actions left-actions">
-            <a className="button primary" href="#inscricao">
-              Participar da turma
-            </a>
-          </div>
+        <div className="mentorship-audience-grid">
+          <article className="discovery-card">
+            <h3>Para quem é</h3>
+            <ul className="check-list">
+              <li>Candidatos do Perfil 3: Desenvolvimento de Software.</li>
+              <li>Quem trabalha e precisa transformar pouco tempo em prioridade.</li>
+              <li>Quem já começou a estudar, mas sente dispersão.</li>
+              <li>Quem quer acelerar com plano, revisão e questões.</li>
+            </ul>
+          </article>
+          <article className="discovery-card">
+            <h3>Para quem não é</h3>
+            <ul className="mentorship-not-list">
+              <li>Quem procura promessa de aprovação.</li>
+              <li>Quem não pretende executar uma rotina de estudo.</li>
+              <li>Quem quer apenas um curso gravado para assistir quando sobrar tempo.</li>
+            </ul>
+          </article>
         </div>
       </section>
 
@@ -1272,11 +1261,6 @@ const DataprevMentorshipLanding = () => {
             </article>
           ))}
         </div>
-        <div className="final-actions mentorship-section-actions">
-          <a className="button primary" href="#inscricao">
-            Quero reservar minha vaga
-          </a>
-        </div>
       </section>
 
       <section className="projects-section discovery-band mentorship-band" id="edital">
@@ -1313,11 +1297,6 @@ const DataprevMentorshipLanding = () => {
             </article>
           ))}
         </div>
-        <div className="final-actions mentorship-section-actions">
-          <a className="button primary" href="#inscricao">
-            Participar da turma
-          </a>
-        </div>
       </section>
 
       <section className="projects-section" id="conteudo">
@@ -1335,11 +1314,6 @@ const DataprevMentorshipLanding = () => {
               <h3>{item}</h3>
             </article>
           ))}
-        </div>
-        <div className="final-actions mentorship-section-actions">
-          <a className="button primary" href="#inscricao">
-            Entrar para a turma Dataprev
-          </a>
         </div>
       </section>
 
@@ -1361,11 +1335,6 @@ const DataprevMentorshipLanding = () => {
             </article>
           ))}
         </div>
-        <div className="final-actions mentorship-section-actions">
-          <a className="button primary" href="#inscricao">
-            Participar da turma
-          </a>
-        </div>
       </section>
 
       <section className="projects-section mentorship-guarantee-section" id="garantia">
@@ -1380,11 +1349,6 @@ const DataprevMentorshipLanding = () => {
               <p>{item.text}</p>
             </article>
           ))}
-        </div>
-        <div className="final-actions mentorship-section-actions">
-          <a className="button primary" href="#inscricao">
-            Entrar para a turma Dataprev
-          </a>
         </div>
       </section>
 
@@ -1412,6 +1376,10 @@ const DataprevMentorshipLanding = () => {
         <div className="section-heading wide-heading">
           <p className="eyebrow">Você receberá</p>
           <h2>Tudo que ajuda você a transformar edital em rotina de execução.</h2>
+          <p>
+            Esses itens existem para que você não dependa de improviso: cada semana combina
+            prioridade, material, treino e acompanhamento.
+          </p>
         </div>
         <div className="mentorship-included-grid mentorship-value-grid">
           {dataprevMentorship.included.map((item) => (
@@ -1433,10 +1401,11 @@ const DataprevMentorshipLanding = () => {
         </div>
         <div className="mentorship-offer-layout">
           <div className="mentorship-registration-included">
-            <h3>Próximo passo</h3>
+            <h3>O investimento inclui</h3>
             <p>
-              Chame no WhatsApp para confirmar se ainda há vaga, receber os dados de pagamento e
-              entrar na turma.
+              Encontros, gravações, cronograma, materiais, questões e acompanhamento até a reta
+              final. Chame no WhatsApp para confirmar se ainda há vaga, receber os dados de
+              pagamento e entrar na turma.
             </p>
           </div>
           <aside className="mentorship-price-card" aria-label="Valor da mentoria">

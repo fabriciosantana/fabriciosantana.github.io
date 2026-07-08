@@ -1430,3 +1430,55 @@ p {
     border-right: 0;
   }
 }
+
+.mentorship-scarcity-note {
+  background: #f8fbff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--accent-dark);
+  font-weight: 800;
+  line-height: 1.45;
+  margin-bottom: 12px;
+  padding: 14px;
+}
+
+.mentorship-audience-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.mentorship-audience-grid h3 {
+  color: var(--text);
+  margin-bottom: 0;
+}
+
+.mentorship-not-list {
+  display: grid;
+  gap: 10px;
+  list-style: none;
+  margin: 20px 0 0;
+  padding: 0;
+}
+
+.mentorship-not-list li {
+  color: var(--muted);
+  line-height: 1.5;
+  padding-left: 26px;
+  position: relative;
+}
+
+.mentorship-not-list li::before {
+  color: var(--accent-dark);
+  content: "×";
+  font-weight: 900;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+@media (max-width: 980px) {
+  .mentorship-audience-grid {
+    grid-template-columns: 1fr;
+  }
+}
