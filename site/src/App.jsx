@@ -1128,6 +1128,11 @@ const DataprevMentorshipLanding = () => {
         <p className="mentorship-problem-close">
           A mentoria existe para eliminar exatamente esses problemas.
         </p>
+        <div className="final-actions mentorship-section-actions">
+          <a className="button primary" href="#inscricao">
+            Quero reservar minha vaga
+          </a>
+        </div>
       </section>
 
       <section className="projects-section split-section" id="perfil">
@@ -1186,6 +1191,11 @@ const DataprevMentorshipLanding = () => {
             <span role="cell">conteúdo organizado</span>
           </div>
         </div>
+        <div className="final-actions mentorship-section-actions">
+          <a className="button primary" href="#inscricao">
+            Participar da turma
+          </a>
+        </div>
       </section>
 
       <section className="projects-section mentorship-audience-section">
@@ -1212,6 +1222,11 @@ const DataprevMentorshipLanding = () => {
               <li>Quem quer apenas um curso gravado para assistir quando sobrar tempo.</li>
             </ul>
           </article>
+        </div>
+        <div className="final-actions mentorship-section-actions">
+          <a className="button primary" href="#inscricao">
+            Entrar para a turma Dataprev
+          </a>
         </div>
       </section>
 
@@ -1262,6 +1277,11 @@ const DataprevMentorshipLanding = () => {
             </article>
           ))}
         </div>
+        <div className="final-actions mentorship-section-actions">
+          <a className="button primary" href="#inscricao">
+            Quero reservar minha vaga
+          </a>
+        </div>
       </section>
 
       <section className="projects-section discovery-band mentorship-band" id="edital">
@@ -1298,6 +1318,11 @@ const DataprevMentorshipLanding = () => {
             </article>
           ))}
         </div>
+        <div className="final-actions mentorship-section-actions">
+          <a className="button primary" href="#inscricao">
+            Participar da turma
+          </a>
+        </div>
       </section>
 
       <section className="projects-section" id="conteudo">
@@ -1315,6 +1340,11 @@ const DataprevMentorshipLanding = () => {
               <h3>{item}</h3>
             </article>
           ))}
+        </div>
+        <div className="final-actions mentorship-section-actions">
+          <a className="button primary" href="#inscricao">
+            Entrar para a turma Dataprev
+          </a>
         </div>
       </section>
 
@@ -1336,6 +1366,11 @@ const DataprevMentorshipLanding = () => {
             </article>
           ))}
         </div>
+        <div className="final-actions mentorship-section-actions">
+          <a className="button primary" href="#inscricao">
+            Participar da turma
+          </a>
+        </div>
       </section>
 
       <section className="projects-section mentorship-guarantee-section" id="garantia">
@@ -1350,6 +1385,11 @@ const DataprevMentorshipLanding = () => {
               <p>{item.text}</p>
             </article>
           ))}
+        </div>
+        <div className="final-actions mentorship-section-actions">
+          <a className="button primary" href="#inscricao">
+            Entrar para a turma Dataprev
+          </a>
         </div>
       </section>
 
@@ -1388,6 +1428,11 @@ const DataprevMentorshipLanding = () => {
               {item}
             </article>
           ))}
+        </div>
+        <div className="final-actions mentorship-section-actions">
+          <a className="button primary" href="#inscricao">
+            Participar da turma
+          </a>
         </div>
       </section>
 
