@@ -28878,7 +28878,7 @@ const DataprevMentorshipLanding = ()=>{
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                 className: "eyebrow",
-                                children: "Mentoria DataPrev - Desenvolvimento de Software (perfil 3)"
+                                children: "Mentoria Desenvolvimento de Software"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
                                 lineNumber: 1066,
@@ -28976,7 +28976,7 @@ const DataprevMentorshipLanding = ()=>{
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "hero-proof-title",
-                                children: "Edital Dataprev"
+                                children: "Edital Dataprev (perfil 3)"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
                                 lineNumber: 1091,
