@@ -1138,6 +1138,30 @@ const DataprevMentorshipLanding = () => {
         </div>
       </section>
 
+      <section className="projects-section split-section" id="perfil">
+        <div>
+          <p className="eyebrow">Mentor</p>
+          <h2>Experiência em concursos, ensino superior e engenharia de software real.</h2>
+        </div>
+        <div>
+          <p className="large-copy">
+            Sou Fabricio Santana, analista de informática legislativa no Senado e professor. Minha
+            proposta é unir método de preparação para concurso com leitura prática dos assuntos de
+            desenvolvimento de software cobrados no edital.
+          </p>
+          <ul className="check-list">
+            {dataprevMentorship.profileProof.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+          <div className="final-actions mentorship-section-actions left-actions">
+            <a className="button primary" href="#inscricao">
+              Quero reservar minha vaga
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section className="projects-section mentorship-comparison-section">
         <div className="section-heading wide-heading">
           <p className="eyebrow">Comparação</p>
@@ -1309,30 +1333,6 @@ const DataprevMentorshipLanding = () => {
           <a className="button primary" href="#inscricao">
             Entrar para a turma Dataprev
           </a>
-        </div>
-      </section>
-
-      <section className="projects-section split-section" id="perfil">
-        <div>
-          <p className="eyebrow">Mentor</p>
-          <h2>Experiência em concursos, ensino superior e engenharia de software real.</h2>
-        </div>
-        <div>
-          <p className="large-copy">
-            Sou Fabricio Santana, analista de informática legislativa no Senado e professor. Minha
-            proposta é unir método de preparação para concurso com leitura prática dos assuntos de
-            desenvolvimento de software cobrados no edital.
-          </p>
-          <ul className="check-list">
-            {dataprevMentorship.profileProof.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-          <div className="final-actions mentorship-section-actions left-actions">
-            <a className="button primary" href="#inscricao">
-              Quero reservar minha vaga
-            </a>
-          </div>
         </div>
       </section>
 
