@@ -1198,6 +1198,7 @@ const DataprevMentorshipLanding = () => {
             <h3>Para quem é</h3>
             <ul className="check-list">
               <li>Candidatos do Perfil 3: Desenvolvimento de Software.</li>
+              <li>Estudantes nos últimos anos da graduação.</li>
               <li>Quem trabalha e precisa transformar pouco tempo em prioridade.</li>
               <li>Quem já começou a estudar, mas sente dispersão.</li>
               <li>Quem quer acelerar com plano, revisão e questões.</li>
