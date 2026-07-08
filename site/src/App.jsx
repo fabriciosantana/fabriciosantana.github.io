@@ -156,7 +156,7 @@ const dataprevMentorship = {
     ["30 questões", "Conhecimentos Específicos valem 75 pontos"],
     ["70 questões", "Prova objetiva completa"],
     ["R$ 10.685,44", "salário inicial para Analista de TI"],
-    ["11 de outubro de 2026", "data da prova"],
+    ["11/10/2026", "data da prova"],
   ],
   editalFacts: [
     "Concurso Público Dataprev 2026, Edital 001/2026, organizado pela FGV.",
@@ -1088,7 +1088,7 @@ const DataprevMentorshipLanding = () => {
           </div>
         </div>
         <aside className="hero-proof mentorship-proof" aria-label="Resumo da oferta">
-          <div className="hero-proof-title">Edital Dataprev (perfil 3)</div>
+          <div className="hero-proof-title">Edital Dataprev</div>
           {dataprevMentorship.editalKeyFacts.map(([value, label]) => (
             <div className="proof-item" key={value}>
               <strong>{value}</strong>
