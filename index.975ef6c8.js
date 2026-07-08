@@ -27209,7 +27209,7 @@ const dataprevMentorship = {
             "sal\xe1rio inicial para Analista de TI"
         ],
         [
-            "11 de outubro de 2026",
+            "11/10/2026",
             "data da prova"
         ], 
     ],
@@ -28976,7 +28976,7 @@ const DataprevMentorshipLanding = ()=>{
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "hero-proof-title",
-                                children: "Edital Dataprev (perfil 3)"
+                                children: "Edital Dataprev"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
                                 lineNumber: 1091,
