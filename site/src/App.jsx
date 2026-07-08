@@ -193,15 +193,15 @@ const dataprevMentorship = {
   pillars: [
     {
       title: "Leitura estratégica do edital",
-      text: "Transformamos o edital em um plano de estudo executável, separando o que exige profundidade, revisão, questões e repertório prático de desenvolvimento.",
+      text: "Você deixa de olhar para o edital como uma lista infinita e passa a enxergar uma ordem clara de execução até a prova.",
     },
     {
       title: "Rotina de estudo acompanhada",
-      text: "Cada aluno sai com metas semanais, checkpoints de avanço e orientação sobre como equilibrar teoria, questões FGV e revisão ativa.",
+      text: "Você nunca ficará sem saber o que estudar na semana seguinte: cada etapa termina com metas claras e objetivas.",
     },
     {
       title: "Engenharia de software aplicada",
-      text: "A preparação conecta o conteúdo cobrado com experiência real em Java, Spring, testes, arquitetura, segurança, dados e sistemas institucionais.",
+      text: "Você entende os temas técnicos do edital a partir de exemplos reais de desenvolvimento, não apenas de definições soltas.",
     },
   ],
   modules: [
@@ -217,12 +217,18 @@ const dataprevMentorship = {
   format: [
     ["Turmas pequenas", "até 7 estudantes por turma"],
     [
-      "Encontros online e gravados",
-      "aulas e mentorias ao vivo, com gravação disponível para a turma",
+      "Você acompanha ao vivo e pode revisar depois",
+      "encontros gravados ficam disponíveis para retomar pontos importantes",
     ],
-    ["Plano de execução", "metas semanais, revisões e priorização"],
-    ["Questões e simulados", "treino orientado para padrão FGV e controle de desempenho"],
-    ["Acompanhamento", "grupo da turma e ajustes de rota durante a preparação"],
+    [
+      "Você sabe o que estudar a cada semana",
+      "metas claras, revisão orientada e prioridade definida",
+    ],
+    [
+      "Você treina com direção",
+      "questões e simulados para interpretar o padrão da FGV e medir evolução",
+    ],
+    ["Você não estuda no escuro", "grupo da turma e ajustes de rota durante a preparação"],
     [
       "Sem promessa vazia",
       "mentoria orienta método e execução; aprovação depende do desempenho do candidato",
@@ -250,41 +256,41 @@ const dataprevMentorship = {
       meeting: "Encontro 1",
       title: "Diagnóstico, edital e estratégia de prova",
       topics:
-        "Leitura orientada do edital, peso das disciplinas, metas da turma, diagnóstico inicial e montagem do cronograma individual.",
+        "Você sai com diagnóstico inicial, leitura orientada do edital e um plano individual para transformar tempo disponível em execução.",
     },
     {
       meeting: "Encontro 2",
       title: "Java, orientação a objetos e fundamentos de backend",
       topics:
-        "Revisão dos fundamentos mais cobrados, pontos de atenção em Java, POO, APIs, persistência e como estudar teoria com questões.",
+        "Você entende quais fundamentos de Java, POO, APIs e persistência merecem prioridade e como transformar teoria em acerto de questão.",
     },
     {
       meeting: "Encontro 3",
       title: "Spring, arquitetura e desenvolvimento web",
       topics:
-        "Spring, REST, microsserviços, padrões de arquitetura, integração entre sistemas e leitura prática dos tópicos de desenvolvimento.",
+        "Você aprende como estudar Spring, REST, microsserviços e arquitetura sem se perder em documentação ou conteúdo excessivo.",
     },
     {
       meeting: "Encontro 4",
       title: "Testes, qualidade, DevOps e observabilidade",
       topics:
-        "Testes automatizados, TDD, SonarQube, Git, containers, CI/CD, cloud, monitoramento e como priorizar esses temas na revisão.",
+        "Você identifica o que revisar em testes, qualidade, DevOps e observabilidade para ganhar pontos sem dispersar a preparação.",
     },
     {
       meeting: "Encontro 5",
       title: "Dados, SQL, BI, segurança e LGPD",
       topics:
-        "Modelagem, SQL, NoSQL, ETL/ELT, BI, segurança da informação, OWASP, OAuth2, LGPD e questões típicas desses blocos.",
+        "Você aprende quais questões resolver em dados, BI, segurança e LGPD e como interpretar o padrão de cobrança desses blocos.",
     },
     {
       meeting: "Encontro 6",
       title: "Governança, métodos ágeis e revisão final orientada por desempenho",
       topics:
-        "ITIL, COBIT, Scrum, Kanban, BPMN, gestão de riscos, revisão dos erros mais frequentes e plano de reta final até a prova.",
+        "Você chega à reta final com revisão orientada por erros, temas de governança organizados e plano de prova mais objetivo.",
     },
   ],
   scheduleNote:
-    "Os encontros são gravados e ocorrerão semanalmente até a véspera da prova. Este é um plano-base: temas, ordem e nível de profundidade podem ser ajustados conforme o perfil técnico, as dificuldades e a evolução de cada turma.",
+    "A cada semana, a turma transforma o edital em metas de execução, revisão e treino. Este é um plano-base: temas, ordem e profundidade podem ser ajustados conforme o perfil técnico, as dificuldades e a evolução da turma.",
   profileProof: [
     "Bacharel em Ciência da Computação (UFRJ)",
     "Especialista em Tecnologia da Informação Aplicada ao Poder Legislativo (ILB)",
@@ -323,33 +329,33 @@ const dataprevMentorship = {
     },
     {
       title: "Garantia de entrega e clareza",
-      text: "A turma recebe os encontros ao vivo, as gravações, o cronograma de estudos, os materiais combinados e o acompanhamento pelo canal da mentoria.",
+      text: "Você recebe encontros ao vivo, gravações, cronograma, materiais combinados e acompanhamento para manter a execução clara durante a preparação.",
     },
     {
       title: "Sem promessa de aprovação",
-      text: "Aprovação depende de execução, base prévia, constância e desempenho no dia da prova. A garantia é sobre método, orientação e entrega do que foi contratado.",
+      text: "Aprovação depende de execução, base prévia, constância e desempenho no dia da prova. O compromisso é reduzir dispersão, orientar prioridades e entregar o método contratado.",
     },
   ],
   faq: [
     {
       question: "A mentoria substitui curso completo de teoria?",
       answer:
-        "Não. A proposta é orientar estratégia, priorização, rotina, revisão, questões e conexão prática dos temas. Ela funciona melhor para quem já estuda ou quer estudar com direção mais clara.",
+        "Não. A mentoria ajuda você a decidir o que priorizar, como revisar, quais questões resolver e como conectar os temas técnicos a exemplos práticos. Ela funciona melhor para quem já estuda ou quer estudar com direção mais clara.",
     },
     {
       question: "Preciso já programar bem em Java?",
       answer:
-        "Não precisa dominar tudo, mas precisa ter disposição para estudar com consistência. O edital cobra desenvolvimento de software em profundidade, então a mentoria vai indicar onde aprofundar e como treinar.",
+        "Não precisa dominar tudo, mas precisa estudar com consistência. A mentoria indica onde aprofundar, como treinar e quais lacunas precisam ser atacadas primeiro.",
     },
     {
       question: "A turma é só para Desenvolvimento de Software?",
       answer:
-        "Esta oferta é específica para o Perfil 3, Desenvolvimento de Software. Isso evita dispersão e permite trabalhar o edital com foco real.",
+        "Sim. O foco no Perfil 3 evita dispersão e permite trabalhar Java, engenharia de software, dados, segurança, DevOps e governança com prioridade para essa prova.",
     },
     {
       question: "Há garantia de aprovação?",
       answer:
-        "Não. Nenhuma preparação séria pode garantir aprovação. O compromisso é com método, orientação, acompanhamento e clareza sobre o que executar até a prova.",
+        "Não. Nenhuma preparação séria pode garantir aprovação. O compromisso é dar método, orientação, acompanhamento e clareza para você executar melhor até a prova.",
     },
   ],
 };
@@ -1066,12 +1072,12 @@ const DataprevMentorshipLanding = () => {
         <div className="projects-hero-copy">
           <p className="eyebrow">Mentoria para concursos de TI</p>
           <h2>
-            Prepare-se para o concurso da Dataprev com orientação de quem já foi aprovado e tem
-            experiência prática.
+            Transforme um edital grande em decisões semanais de estudo, revisão e treino até a
+            prova.
           </h2>
           <p className="projects-lead">
-            Programa em turmas de até 7 estudantes para transformar o edital da FGV em plano de
-            estudo, priorização, rotina de questões e acompanhamento até a prova.
+            Você passa a estudar com prioridade: o que vem primeiro, quais questões resolvem o
+            problema e quando revisar para não perder ritmo.
           </p>
           <div className="mentorship-authority-strip" aria-label="Autoridade do mentor">
             <span>Analista de Informática do Senado Federal</span>
@@ -1145,9 +1151,10 @@ const DataprevMentorshipLanding = () => {
         </div>
         <div>
           <p className="large-copy">
-            Sou Fabricio Santana, analista de informática legislativa no Senado e professor. Minha
-            proposta é unir método de preparação para concurso com leitura prática dos assuntos de
-            desenvolvimento de software cobrados no edital.
+            Sou Fabricio Santana, analista de informática legislativa no Senado e professor. A
+            proposta é ajudar você a ler o edital com critério técnico, priorizar o que mais impacta
+            a nota e estudar desenvolvimento de software com exemplos de quem trabalha com sistemas
+            reais.
           </p>
           <ul className="check-list">
             {dataprevMentorship.profileProof.map((item) => (
@@ -1221,10 +1228,10 @@ const DataprevMentorshipLanding = () => {
       <section className="projects-section use-cases-section" id="programa">
         <div className="section-heading wide-heading">
           <p className="eyebrow">Programa</p>
-          <h2>Como a mentoria será organizada</h2>
+          <h2>Como a mentoria transforma o edital em execução</h2>
           <p>
-            Turma pequena, encontros ao vivo, plano de estudo, acompanhamento e foco nos temas que
-            mais pesam para Desenvolvimento de Software.
+            Você terá uma rotina guiada para decidir o que estudar, quando revisar, quais questões
+            resolver e como corrigir a rota sem desperdiçar tempo com conteúdo de baixo impacto.
           </p>
         </div>
         <div className="process-grid">
@@ -1253,7 +1260,7 @@ const DataprevMentorshipLanding = () => {
       <section className="projects-section mentorship-schedule-section" id="cronograma">
         <div className="section-heading wide-heading">
           <p className="eyebrow">Cronograma dos encontros</p>
-          <h2>Um plano de encontros semanais até a véspera da prova.</h2>
+          <h2>Cada semana termina com metas claras e objetivas até a prova.</h2>
           <p>{dataprevMentorship.scheduleNote}</p>
         </div>
         <div className="mentorship-schedule-grid">
@@ -1277,9 +1284,9 @@ const DataprevMentorshipLanding = () => {
           <p className="eyebrow">Base oficial</p>
           <h2>Edital Dataprev 2026 analisado para orientar a preparação</h2>
           <p>
-            A página foi estruturada a partir do Edital 001/2026 da FGV. A estratégia da turma parte
-            da prova objetiva, do peso dos conhecimentos específicos, dos requisitos do perfil e do
-            conteúdo cobrado em Desenvolvimento de Software.
+            A estratégia da turma parte do Edital 001/2026 da FGV para transformar peso da prova,
+            requisitos do perfil e conteúdo de Desenvolvimento de Software em prioridades reais de
+            estudo.
           </p>
           <a
             className="button secondary light-button"
@@ -1316,10 +1323,10 @@ const DataprevMentorshipLanding = () => {
       <section className="projects-section" id="conteudo">
         <div className="section-heading wide-heading">
           <p className="eyebrow">Conteúdo priorizado</p>
-          <h2>O que será trabalhado na turma</h2>
+          <h2>O que você aprenderá a priorizar</h2>
           <p>
-            A mentoria não tenta tratar todos os tópicos como se tivessem o mesmo peso. O foco é
-            organizar uma trilha viável para estudar, revisar e medir evolução.
+            Você não precisa tratar todos os tópicos como se tivessem o mesmo peso. A trilha
+            organiza estudo, revisão e questões para medir evolução com mais clareza.
           </p>
         </div>
         <div className="use-case-grid mentorship-topic-grid">
@@ -1339,10 +1346,10 @@ const DataprevMentorshipLanding = () => {
       <section className="projects-section mentorship-testimonials-section" id="depoimentos">
         <div className="section-heading wide-heading">
           <p className="eyebrow">Prova social</p>
-          <h2>O que alunos e mentorados destacam</h2>
+          <h2>O que mudou para alunos e mentorados</h2>
           <p>
-            A mentoria parte de uma experiência combinada em aprovação em concursos, docência em
-            computação e atuação real em engenharia de software.
+            Os depoimentos reforçam o ponto central da mentoria: transformar conteúdo amplo em
+            prioridade, rotina e acompanhamento até a prova.
           </p>
         </div>
         <div className="mentorship-testimonials-grid">
@@ -1364,7 +1371,7 @@ const DataprevMentorshipLanding = () => {
       <section className="projects-section mentorship-guarantee-section" id="garantia">
         <div className="section-heading wide-heading">
           <p className="eyebrow">Garantia</p>
-          <h2>Compromisso claro, sem promessa artificial de aprovação.</h2>
+          <h2>Você sabe o que está contratando, sem promessa artificial de aprovação.</h2>
         </div>
         <div className="mentorship-guarantee-grid">
           {dataprevMentorship.guarantee.map((item) => (
@@ -1404,7 +1411,7 @@ const DataprevMentorshipLanding = () => {
       <section className="projects-section mentorship-value-section" id="valor">
         <div className="section-heading wide-heading">
           <p className="eyebrow">Você receberá</p>
-          <h2>Uma estrutura de preparação para transformar o edital em execução semanal.</h2>
+          <h2>Tudo que ajuda você a transformar edital em rotina de execução.</h2>
         </div>
         <div className="mentorship-included-grid mentorship-value-grid">
           {dataprevMentorship.included.map((item) => (
@@ -1418,18 +1425,18 @@ const DataprevMentorshipLanding = () => {
       <section className="projects-final mentorship-registration-section" id="inscricao">
         <div className="mentorship-registration-heading">
           <p className="eyebrow">Inscrição</p>
-          <h2>Faça sua inscrição na turma da mentoria Dataprev.</h2>
+          <h2>Reserve sua vaga na turma da mentoria Dataprev.</h2>
           <p>
-            As turmas serão fechadas com até 7 estudantes. Chame no WhatsApp para confirmar sua
-            vaga, receber os dados de pagamento e concluir a inscrição.
+            As turmas serão fechadas com até 7 estudantes para preservar acompanhamento individual.
+            Chame no WhatsApp para confirmar disponibilidade e concluir sua inscrição.
           </p>
         </div>
         <div className="mentorship-offer-layout">
           <div className="mentorship-registration-included">
             <h3>Próximo passo</h3>
             <p>
-              Chame no WhatsApp para confirmar disponibilidade da turma, receber os dados de
-              pagamento e concluir sua inscrição.
+              Chame no WhatsApp para confirmar se ainda há vaga, receber os dados de pagamento e
+              entrar na turma.
             </p>
           </div>
           <aside className="mentorship-price-card" aria-label="Valor da mentoria">
