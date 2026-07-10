@@ -218,39 +218,36 @@ const dataprevMentorship = {
   format: [
     ["Turmas pequenas", "até 7 estudantes por turma"],
     [
-      "Você acompanha ao vivo e pode revisar depois",
-      "encontros gravados ficam disponíveis para retomar pontos importantes",
+      "Encontros ao vivo",
+      "encontros são gravados e ficam disponíveis para retomar pontos importantes",
     ],
     [
-      "Você sabe o que estudar a cada semana",
+      "Cronograma personalizado",
       "metas claras, revisão orientada e prioridade definida",
     ],
     [
-      "Você treina com direção",
-      "questões e simulados para interpretar o padrão da FGV e medir evolução",
-    ],
-    ["Você não estuda no escuro", "grupo da turma e ajustes de rota durante a preparação"],
-    [
-      "Sem promessa vazia",
+      "Resumos e mapas mentais",
       "mentoria orienta método e execução; aprovação depende do desempenho do candidato",
     ],
+    [
+      "Simulados",
+      "você treina com questões para interpretar o padrão da FGV e medir evolução",
+    ],
+    ["Suporte via WhatsApp", "Você não estuda no escuro, terá suporte no grupo da turma e direto com o mentor"],
   ],
   included: [
+    "Turmas pequenas",
     "Encontros ao vivo",
-    "Gravações",
     "Cronograma personalizado",
-    "WhatsApp",
+    "Resumos e mapas mentais",
     "Simulados",
-    "Mapas mentais",
-    "Resumos",
-    "Questões comentadas",
-    "Acompanhamento semanal",
+    "Suporte via WhatsApp",
   ],
   pricing: {
     regular: "R$ 997,00",
     alumni: "R$ 697,00",
     installments: "em até 3x",
-    alumniLabel: "ex-mentorados e ex-alunos de graduação",
+    alumniLabel: "ex-mentorados e ex-alunos de graduação",P
   },
   schedule: [
     {
@@ -1054,13 +1051,19 @@ const DataprevMentorshipLanding = () => {
 
   return (
     <main className="site-shell projects-page mentorship-page">
-      <header className="site-header projects-header">
+      <header className="site-header projects-header mentorship-header">
         <a className="brand" href="/" aria-label="Fabricio Santana">
           Fabricio Santana
         </a>
+        <nav className="nav-links mentorship-nav" aria-label="Navegação da mentoria Dataprev">
+          <a href="#problema">Problema</a>
+          <a href="#programa">Solução</a>
+          <a href="#perfil">Mentor</a>
+          <a href="#inscricao">Inscrição</a>
+        </nav>
       </header>
 
-      <section className="projects-hero mentorship-hero">
+      <section className="projects-hero mentorship-hero" id="mentoria">
         <div className="projects-hero-copy">
           <p className="eyebrow">Mentoria para Concursos de TI</p>
           <h2>
@@ -1141,47 +1144,6 @@ const DataprevMentorshipLanding = () => {
         </div>
       </section>
 
-      <section className="projects-section discovery-band mentorship-band" id="edital">
-        <div>
-          <p className="eyebrow">A oportunidade</p>
-          <h2>Edital Dataprev 2026 analisado para orientar a preparação</h2>
-          <p>
-            A estratégia da turma parte do Edital 001/2026 da FGV para transformar peso da prova,
-            requisitos do perfil e conteúdo de Desenvolvimento de Software em prioridades reais de
-            estudo.
-          </p>
-          <a
-            className="button secondary light-button"
-            href={editalUrl}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Abrir edital oficial
-          </a>
-        </div>
-        <div className="discovery-card edital-card">
-          <ul>
-            {dataprevMentorship.editalFacts.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-        </div>
-        <div className="edital-timeline" aria-label="Principais datas do edital Dataprev 2026">
-          {dataprevMentorship.editalTimeline.map((item) => (
-            <article className="edital-timeline-item" key={`${item.date}-${item.title}`}>
-              <span>{item.date}</span>
-              <h3>{item.title}</h3>
-              <p>{item.text}</p>
-            </article>
-          ))}
-        </div>
-        <div className="final-actions mentorship-section-actions">
-          <a className="button primary" href="#inscricao">
-            Participar da turma
-          </a>
-        </div>
-      </section>
-
       <section className="projects-section use-cases-section" id="programa">
         <div className="section-heading wide-heading">
           <p className="eyebrow">A solução</p>
@@ -1198,6 +1160,7 @@ const DataprevMentorshipLanding = () => {
             </article>
           ))}
         </div>
+  
         <div className="final-actions mentorship-section-actions">
           <a className="button primary" href="#inscricao">
             Entrar para a turma Dataprev
@@ -1227,67 +1190,7 @@ const DataprevMentorshipLanding = () => {
         </div>
       </section>
 
-      <section className="projects-section split-section" id="perfil">
-        <div>
-          <p className="eyebrow">Mentor</p>
-          <h2>Experiência em concursos, ensino superior e engenharia de software.</h2>
-        </div>
-        <div>
-          <p className="large-copy">
-            Sou Fabricio Santana, analista de informática legislativa no Senado e professor. Meu desejo é ajudar você com um método de estudo e acompanhamento que aumentará suas chances de um bom desempenho na prova.
-          </p>
-          <ul className="check-list">
-            {dataprevMentorship.profileProof.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-          <div className="final-actions mentorship-section-actions left-actions">
-            <a className="button primary" href="#inscricao">
-              Quero reservar minha vaga
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section className="projects-section mentorship-comparison-section">
-        <div className="section-heading wide-heading">
-          <p className="eyebrow">Comparação</p>
-          <h2>O que muda quando você deixa de estudar no improviso.</h2>
-        </div>
-        <div
-          className="mentorship-comparison-table"
-          role="table"
-          aria-label="Comparação entre estudar sozinho e mentoria"
-        >
-          <div className="mentorship-comparison-row mentorship-comparison-head" role="row">
-            <strong role="columnheader">Estudando sozinho</strong>
-            <strong role="columnheader">Mentoria</strong>
-          </div>
-          <div className="mentorship-comparison-row" role="row">
-            <span role="cell">❌ não sabe priorizar</span>
-            <span role="cell">✅ plano semanal</span>
-          </div>
-          <div className="mentorship-comparison-row" role="row">
-            <span role="cell">❌ excesso de conteúdo</span>
-            <span role="cell">✅ foco</span>
-          </div>
-          <div className="mentorship-comparison-row" role="row">
-            <span role="cell">❌ dúvidas sem resposta</span>
-            <span role="cell">✅ acompanhamento</span>
-          </div>
-          <div className="mentorship-comparison-row" role="row">
-            <span role="cell">❌ materiais dispersos</span>
-            <span role="cell">✅ conteúdo organizado</span>
-          </div>
-        </div>
-        <div className="final-actions mentorship-section-actions">
-          <a className="button primary" href="#inscricao">
-            Participar da turma
-          </a>
-        </div>
-      </section>
-
-      <section className="projects-section mentorship-audience-section">
+      <section className="projects-section mentorship-audience-section" id="publico">
         <div className="section-heading wide-heading">
           <p className="eyebrow">Perfil ideal</p>
           <h2>Para quem é e para quem não é.</h2>
@@ -1316,6 +1219,60 @@ const DataprevMentorshipLanding = () => {
           <a className="button primary" href="#inscricao">
             Entrar para a turma Dataprev
           </a>
+        </div>
+      </section>
+
+      <section className="projects-section mentorship-comparison-section" id="comparacao">
+        <div className="section-heading wide-heading">
+          <p className="eyebrow">Comparação</p>
+          <h2>O que muda quando você deixa de estudar no improviso.</h2>
+        </div>
+        <div className="mentorship-audience-grid" aria-label="Comparação entre estudar sozinho e mentoria">
+          <article className="discovery-card">
+            <h3>Estudando sozinho</h3>
+            <ul className="mentorship-not-list">
+              <li>não sabe priorizar</li>
+              <li>excesso de conteúdo</li>
+              <li>dúvidas sem resposta</li>
+              <li>materiais dispersos</li>
+            </ul>
+          </article>
+          <article className="discovery-card">
+            <h3>Mentoria</h3>
+            <ul className="check-list">
+              <li>plano semanal</li>
+              <li>foco</li>
+              <li>acompanhamento</li>
+              <li>conteúdo organizado</li>
+            </ul>
+          </article>
+        </div>
+        <div className="final-actions mentorship-section-actions">
+          <a className="button primary" href="#inscricao">
+            Participar da turma
+          </a>
+        </div>
+      </section>
+
+      <section className="projects-section split-section" id="perfil">
+        <div>
+          <p className="eyebrow">Mentor</p>
+          <h2>Experiência em concursos, ensino superior e engenharia de software.</h2>
+        </div>
+        <div>
+          <p className="large-copy">
+            Sou Fabricio Santana, analista de informática legislativa no Senado e professor. Meu desejo é ajudar você com um método de estudo e acompanhamento que aumentará suas chances de um bom desempenho na prova.
+          </p>
+          <ul className="check-list">
+            {dataprevMentorship.profileProof.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+          <div className="final-actions mentorship-section-actions left-actions">
+            <a className="button primary" href="#inscricao">
+              Quero reservar minha vaga
+            </a>
+          </div>
         </div>
       </section>
 
@@ -1364,7 +1321,7 @@ const DataprevMentorshipLanding = () => {
         </div>
       </section>
 
-      <section className="projects-section faq-section">
+      <section className="projects-section faq-section" id="faq">
         <div className="section-heading wide-heading">
           <p className="eyebrow">Perguntas frequentes</p>
           <h2>Antes de fazer sua inscrição</h2>
@@ -1380,6 +1337,47 @@ const DataprevMentorshipLanding = () => {
         <div className="final-actions mentorship-section-actions">
           <a className="button primary" href="#inscricao">
             Quero reservar minha vaga
+          </a>
+        </div>
+      </section>
+
+      <section className="projects-section discovery-band mentorship-band" id="edital">
+        <div>
+          <p className="eyebrow">A oportunidade</p>
+          <h2>Edital Dataprev 2026 analisado para orientar a preparação</h2>
+          <p>
+            A estratégia da turma parte do Edital 001/2026 da FGV para transformar peso da prova,
+            requisitos do perfil e conteúdo de Desenvolvimento de Software em prioridades reais de
+            estudo.
+          </p>
+          <a
+            className="button secondary light-button"
+            href={editalUrl}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Abrir edital oficial
+          </a>
+        </div>
+        <div className="discovery-card edital-card">
+          <ul>
+            {dataprevMentorship.editalFacts.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </div>
+        <div className="edital-timeline" aria-label="Principais datas do edital Dataprev 2026">
+          {dataprevMentorship.editalTimeline.map((item) => (
+            <article className="edital-timeline-item" key={`${item.date}-${item.title}`}>
+              <span>{item.date}</span>
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+            </article>
+          ))}
+        </div>
+        <div className="final-actions mentorship-section-actions">
+          <a className="button primary" href="#inscricao">
+            Participar da turma
           </a>
         </div>
       </section>
