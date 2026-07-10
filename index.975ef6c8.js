@@ -27273,36 +27273,33 @@ const dataprevMentorship = {
             "at\xe9 7 estudantes por turma"
         ],
         [
-            "Voc\xea acompanha ao vivo e pode revisar depois",
-            "encontros gravados ficam dispon\xedveis para retomar pontos importantes", 
+            "Encontros ao vivo",
+            "encontros s\xe3o gravados e ficam dispon\xedveis para retomar pontos importantes", 
         ],
         [
-            "Voc\xea sabe o que estudar a cada semana",
+            "Cronograma personalizado",
             "metas claras, revis\xe3o orientada e prioridade definida", 
         ],
         [
-            "Voc\xea treina com dire\xe7\xe3o",
-            "quest\xf5es e simulados para interpretar o padr\xe3o da FGV e medir evolu\xe7\xe3o", 
-        ],
-        [
-            "Voc\xea n\xe3o estuda no escuro",
-            "grupo da turma e ajustes de rota durante a prepara\xe7\xe3o"
-        ],
-        [
-            "Sem promessa vazia",
+            "Resumos e mapas mentais",
             "mentoria orienta m\xe9todo e execu\xe7\xe3o; aprova\xe7\xe3o depende do desempenho do candidato", 
+        ],
+        [
+            "Simulados",
+            "voc\xea treina com quest\xf5es para interpretar o padr\xe3o da FGV e medir evolu\xe7\xe3o", 
+        ],
+        [
+            "Suporte via WhatsApp",
+            "Voc\xea n\xe3o estuda no escuro, ter\xe1 suporte no grupo da turma e direto com o mentor"
         ], 
     ],
     included: [
+        "Turmas pequenas",
         "Encontros ao vivo",
-        "Grava\xe7\xf5es",
         "Cronograma personalizado",
-        "WhatsApp",
+        "Resumos e mapas mentais",
         "Simulados",
-        "Mapas mentais",
-        "Resumos",
-        "Quest\xf5es comentadas",
-        "Acompanhamento semanal", 
+        "Suporte via WhatsApp", 
     ],
     pricing: {
         regular: "R$ 997,00",
@@ -27351,7 +27348,7 @@ const dataprevMentorship = {
         "Aprovado para Analista de Inform\xe1tica do Senado Federal",
         "Aprovado para Analista de Sistemas da Eletronuclear",
         "Aprovado para Perito de Inform\xe1tica da Pol\xedcia Civil do Rio de Janeiro",
-        "Professor de ensino superior em Engenharia de Software e Ci\xeancia da Computa\xe7\xe3o",
+        "Professor de Ci\xeancia da Computa\xe7\xe3o",
         "Mais de 20 anos de experi\xeancia em engenharia de software", 
     ],
     testimonials: [
@@ -27899,7 +27896,7 @@ const ProjectsLanding = ()=>{
                         children: "Fabricio Santana"
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 842,
+                        lineNumber: 839,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
@@ -27911,7 +27908,7 @@ const ProjectsLanding = ()=>{
                                 children: content.nav[0]
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 846,
+                                lineNumber: 843,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -27919,7 +27916,7 @@ const ProjectsLanding = ()=>{
                                 children: content.nav[1]
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 847,
+                                lineNumber: 844,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -27927,7 +27924,7 @@ const ProjectsLanding = ()=>{
                                 children: content.nav[2]
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 848,
+                                lineNumber: 845,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -27935,7 +27932,7 @@ const ProjectsLanding = ()=>{
                                 children: content.nav[3]
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 849,
+                                lineNumber: 846,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -27945,19 +27942,19 @@ const ProjectsLanding = ()=>{
                                 children: content.switchLabel
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 850,
+                                lineNumber: 847,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 845,
+                        lineNumber: 842,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 841,
+                lineNumber: 838,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -27971,14 +27968,14 @@ const ProjectsLanding = ()=>{
                                 children: content.heroEyebrow
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 861,
+                                lineNumber: 858,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                                 children: content.heroTitle
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 862,
+                                lineNumber: 859,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -27986,13 +27983,13 @@ const ProjectsLanding = ()=>{
                                 children: content.heroText
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 863,
+                                lineNumber: 860,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 860,
+                        lineNumber: 857,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("aside", {
@@ -28004,7 +28001,7 @@ const ProjectsLanding = ()=>{
                                 children: content.labels.contact
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 866,
+                                lineNumber: 863,
                                 columnNumber: 11
                             }, undefined),
                             content.stats.map(([value, label])=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28014,20 +28011,20 @@ const ProjectsLanding = ()=>{
                                             children: value
                                         }, void 0, false, {
                                             fileName: "src/App.jsx",
-                                            lineNumber: 869,
+                                            lineNumber: 866,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                             children: label
                                         }, void 0, false, {
                                             fileName: "src/App.jsx",
-                                            lineNumber: 870,
+                                            lineNumber: 867,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, value, true, {
                                     fileName: "src/App.jsx",
-                                    lineNumber: 868,
+                                    lineNumber: 865,
                                     columnNumber: 13
                                 }, undefined)),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28040,24 +28037,24 @@ const ProjectsLanding = ()=>{
                                     children: content.heroCta
                                 }, void 0, false, {
                                     fileName: "src/App.jsx",
-                                    lineNumber: 874,
+                                    lineNumber: 871,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 873,
+                                lineNumber: 870,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 865,
+                        lineNumber: 862,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 859,
+                lineNumber: 856,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -28070,20 +28067,20 @@ const ProjectsLanding = ()=>{
                                 children: content.labels.positioning
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 882,
+                                lineNumber: 879,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                 children: content.problemTitle
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 883,
+                                lineNumber: 880,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 881,
+                        lineNumber: 878,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -28091,13 +28088,13 @@ const ProjectsLanding = ()=>{
                         children: content.problemText
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 885,
+                        lineNumber: 882,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 880,
+                lineNumber: 877,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -28112,27 +28109,27 @@ const ProjectsLanding = ()=>{
                                 children: content.labels.solutions
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 889,
+                                lineNumber: 886,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                 children: content.useCasesTitle
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 890,
+                                lineNumber: 887,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                 children: content.useCasesText
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 891,
+                                lineNumber: 888,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 888,
+                        lineNumber: 885,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28143,23 +28140,23 @@ const ProjectsLanding = ()=>{
                                     children: item
                                 }, void 0, false, {
                                     fileName: "src/App.jsx",
-                                    lineNumber: 896,
+                                    lineNumber: 893,
                                     columnNumber: 15
                                 }, undefined)
                             }, item, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 895,
+                                lineNumber: 892,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 893,
+                        lineNumber: 890,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 887,
+                lineNumber: 884,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -28174,20 +28171,20 @@ const ProjectsLanding = ()=>{
                                 children: content.labels.process
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 903,
+                                lineNumber: 900,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                 children: content.processTitle
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 904,
+                                lineNumber: 901,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 902,
+                        lineNumber: 899,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28199,31 +28196,31 @@ const ProjectsLanding = ()=>{
                                         children: step.title
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 909,
+                                        lineNumber: 906,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                         children: step.text
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 910,
+                                        lineNumber: 907,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, step.title, true, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 908,
+                                lineNumber: 905,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 906,
+                        lineNumber: 903,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 901,
+                lineNumber: 898,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -28236,27 +28233,27 @@ const ProjectsLanding = ()=>{
                                 children: content.discoveryTitle
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 917,
+                                lineNumber: 914,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                 children: content.discoveryName
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 918,
+                                lineNumber: 915,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                 children: content.discoveryDescription
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 919,
+                                lineNumber: 916,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 916,
+                        lineNumber: 913,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28269,20 +28266,20 @@ const ProjectsLanding = ()=>{
                                         children: formatPrice(content.discoveryPrice, language)
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 923,
+                                        lineNumber: 920,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                         children: content.discoveryDuration
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 924,
+                                        lineNumber: 921,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 922,
+                                lineNumber: 919,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -28290,24 +28287,24 @@ const ProjectsLanding = ()=>{
                                         children: item
                                     }, item, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 928,
+                                        lineNumber: 925,
                                         columnNumber: 15
                                     }, undefined))
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 926,
+                                lineNumber: 923,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 921,
+                        lineNumber: 918,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 915,
+                lineNumber: 912,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -28322,21 +28319,21 @@ const ProjectsLanding = ()=>{
                                 children: content.labels.packages
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 935,
+                                lineNumber: 932,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                 children: content.packagesTitle
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 936,
+                                lineNumber: 933,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                 children: content.packagesText
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 937,
+                                lineNumber: 934,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -28344,13 +28341,13 @@ const ProjectsLanding = ()=>{
                                 children: content.packagesNote
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 938,
+                                lineNumber: 935,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 934,
+                        lineNumber: 931,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28363,14 +28360,14 @@ const ProjectsLanding = ()=>{
                                         children: item.tag
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 943,
+                                        lineNumber: 940,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                         children: item.name
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 944,
+                                        lineNumber: 941,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28378,14 +28375,14 @@ const ProjectsLanding = ()=>{
                                         children: formatPrice(item.price, language)
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 945,
+                                        lineNumber: 942,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                         children: item.description
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 946,
+                                        lineNumber: 943,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
@@ -28393,7 +28390,7 @@ const ProjectsLanding = ()=>{
                                         children: item.team
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 947,
+                                        lineNumber: 944,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -28401,12 +28398,12 @@ const ProjectsLanding = ()=>{
                                                 children: feature
                                             }, feature, false, {
                                                 fileName: "src/App.jsx",
-                                                lineNumber: 950,
+                                                lineNumber: 947,
                                                 columnNumber: 19
                                             }, undefined))
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 948,
+                                        lineNumber: 945,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -28417,24 +28414,24 @@ const ProjectsLanding = ()=>{
                                         children: content.heroCta
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 953,
+                                        lineNumber: 950,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, item.name, true, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 942,
+                                lineNumber: 939,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 940,
+                        lineNumber: 937,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 933,
+                lineNumber: 930,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -28448,27 +28445,27 @@ const ProjectsLanding = ()=>{
                                 children: content.labels.success
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 962,
+                                lineNumber: 959,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                 children: content.successTitle
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 963,
+                                lineNumber: 960,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                 children: content.successText
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 964,
+                                lineNumber: 961,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 961,
+                        lineNumber: 958,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
@@ -28483,32 +28480,32 @@ const ProjectsLanding = ()=>{
                                             children: content.successCase.name
                                         }, void 0, false, {
                                             fileName: "src/App.jsx",
-                                            lineNumber: 969,
+                                            lineNumber: 966,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                             children: content.successCase.summary
                                         }, void 0, false, {
                                             fileName: "src/App.jsx",
-                                            lineNumber: 970,
+                                            lineNumber: 967,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/App.jsx",
-                                    lineNumber: 968,
+                                    lineNumber: 965,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 967,
+                                lineNumber: 964,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                 children: content.successCase.problem
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 973,
+                                lineNumber: 970,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28517,24 +28514,24 @@ const ProjectsLanding = ()=>{
                                         children: tech
                                     }, tech, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 976,
+                                        lineNumber: 973,
                                         columnNumber: 15
                                     }, undefined))
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 974,
+                                lineNumber: 971,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 966,
+                        lineNumber: 963,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 960,
+                lineNumber: 957,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -28548,20 +28545,20 @@ const ProjectsLanding = ()=>{
                                 children: content.labels.risk
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 983,
+                                lineNumber: 980,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                 children: content.riskTitle
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 984,
+                                lineNumber: 981,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 982,
+                        lineNumber: 979,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28571,18 +28568,18 @@ const ProjectsLanding = ()=>{
                                 children: item
                             }, item, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 988,
+                                lineNumber: 985,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 986,
+                        lineNumber: 983,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 981,
+                lineNumber: 978,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -28595,20 +28592,20 @@ const ProjectsLanding = ()=>{
                                 children: content.labels.leadership
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 996,
+                                lineNumber: 993,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                 children: content.leadershipTitle
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 997,
+                                lineNumber: 994,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 995,
+                        lineNumber: 992,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28618,7 +28615,7 @@ const ProjectsLanding = ()=>{
                                 children: content.leadershipText
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1000,
+                                lineNumber: 997,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -28627,24 +28624,24 @@ const ProjectsLanding = ()=>{
                                         children: item
                                     }, item, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1003,
+                                        lineNumber: 1000,
                                         columnNumber: 15
                                     }, undefined))
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1001,
+                                lineNumber: 998,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 999,
+                        lineNumber: 996,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 994,
+                lineNumber: 991,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -28659,20 +28656,20 @@ const ProjectsLanding = ()=>{
                                 children: content.labels.skills
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1010,
+                                lineNumber: 1007,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                 children: content.techTitle
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1011,
+                                lineNumber: 1008,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1009,
+                        lineNumber: 1006,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28681,18 +28678,18 @@ const ProjectsLanding = ()=>{
                                 children: tech
                             }, tech, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1015,
+                                lineNumber: 1012,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1013,
+                        lineNumber: 1010,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 1008,
+                lineNumber: 1005,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -28706,20 +28703,20 @@ const ProjectsLanding = ()=>{
                                 children: content.labels.faq
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1021,
+                                lineNumber: 1018,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                 children: content.faqTitle
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1022,
+                                lineNumber: 1019,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1020,
+                        lineNumber: 1017,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28731,31 +28728,31 @@ const ProjectsLanding = ()=>{
                                         children: item.question
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1027,
+                                        lineNumber: 1024,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                         children: item.answer
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1028,
+                                        lineNumber: 1025,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, item.question, true, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1026,
+                                lineNumber: 1023,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1024,
+                        lineNumber: 1021,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 1019,
+                lineNumber: 1016,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -28767,21 +28764,21 @@ const ProjectsLanding = ()=>{
                         children: content.labels.contact
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1034,
+                        lineNumber: 1031,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                         children: content.finalTitle
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1035,
+                        lineNumber: 1032,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         children: content.finalText
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1036,
+                        lineNumber: 1033,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28797,18 +28794,18 @@ const ProjectsLanding = ()=>{
                             ]
                         }, void 0, true, {
                             fileName: "src/App.jsx",
-                            lineNumber: 1038,
+                            lineNumber: 1035,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1037,
+                        lineNumber: 1034,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 1033,
+                lineNumber: 1030,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("footer", {
@@ -28818,7 +28815,7 @@ const ProjectsLanding = ()=>{
                         children: "Fabricio Santana"
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1044,
+                        lineNumber: 1041,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -28826,19 +28823,19 @@ const ProjectsLanding = ()=>{
                         children: "fabricio.santana@gmail.com"
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1045,
+                        lineNumber: 1042,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 1043,
+                lineNumber: 1040,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.jsx",
-        lineNumber: 840,
+        lineNumber: 837,
         columnNumber: 5
     }, undefined);
 };
@@ -28850,24 +28847,69 @@ const DataprevMentorshipLanding = ()=>{
         className: "site-shell projects-page mentorship-page",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
-                className: "site-header projects-header",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                    className: "brand",
-                    href: "/",
-                    "aria-label": "Fabricio Santana",
-                    children: "Fabricio Santana"
-                }, void 0, false, {
-                    fileName: "src/App.jsx",
-                    lineNumber: 1058,
-                    columnNumber: 9
-                }, undefined)
-            }, void 0, false, {
+                className: "site-header projects-header mentorship-header",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        className: "brand",
+                        href: "/",
+                        "aria-label": "Fabricio Santana",
+                        children: "Fabricio Santana"
+                    }, void 0, false, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 1055,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
+                        className: "nav-links mentorship-nav",
+                        "aria-label": "Navega\xe7\xe3o da mentoria Dataprev",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "#problema",
+                                children: "Problema"
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 1059,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "#programa",
+                                children: "Solu\xe7\xe3o"
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 1060,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "#perfil",
+                                children: "Mentor"
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 1061,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "#inscricao",
+                                children: "Inscri\xe7\xe3o"
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 1062,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 1058,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 1057,
+                lineNumber: 1054,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
                 className: "projects-hero mentorship-hero",
+                id: "mentoria",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "projects-hero-copy",
@@ -28877,21 +28919,21 @@ const DataprevMentorshipLanding = ()=>{
                                 children: "Mentoria para Concursos de TI"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1065,
+                                lineNumber: 1068,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                children: "Prepare-se para o concurso da Dataprev com um plano de estudos estruturado e a acompanhamento de quem j\xe1 foi aprovado em concursos de TI."
+                                children: "Prepare-se para o concurso da Dataprev com um plano de estudos estruturado e orienta\xe7\xe3o de quem j\xe1 foi aprovado em concursos de TI."
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1066,
+                                lineNumber: 1069,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                 children: "O edital re\xfane mais de 100 t\xf3picos. Em vez de tentar estudar tudo com a mesma profundidade, voc\xea seguir\xe1 uma estrat\xe9gia para priorizar os conte\xfados mais relevantes que aumentar\xe1 suas chances de um bom desempenho na prova."
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1069,
+                                lineNumber: 1072,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28903,7 +28945,7 @@ const DataprevMentorshipLanding = ()=>{
                                         children: "Quero reservar minha vaga"
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1073,
+                                        lineNumber: 1076,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -28912,19 +28954,19 @@ const DataprevMentorshipLanding = ()=>{
                                         children: "Ver estrutura da mentoria"
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1076,
+                                        lineNumber: 1079,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1072,
+                                lineNumber: 1075,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1064,
+                        lineNumber: 1067,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("aside", {
@@ -28936,7 +28978,7 @@ const DataprevMentorshipLanding = ()=>{
                                 children: "Edital Dataprev"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1082,
+                                lineNumber: 1085,
                                 columnNumber: 11
                             }, undefined),
                             dataprevMentorship.editalKeyFacts.map(([value, label])=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28946,20 +28988,20 @@ const DataprevMentorshipLanding = ()=>{
                                             children: value
                                         }, void 0, false, {
                                             fileName: "src/App.jsx",
-                                            lineNumber: 1085,
+                                            lineNumber: 1088,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                             children: label
                                         }, void 0, false, {
                                             fileName: "src/App.jsx",
-                                            lineNumber: 1086,
+                                            lineNumber: 1089,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, value, true, {
                                     fileName: "src/App.jsx",
-                                    lineNumber: 1084,
+                                    lineNumber: 1087,
                                     columnNumber: 13
                                 }, undefined)),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28970,24 +29012,24 @@ const DataprevMentorshipLanding = ()=>{
                                     children: "Participar da turma DataPrev"
                                 }, void 0, false, {
                                     fileName: "src/App.jsx",
-                                    lineNumber: 1090,
+                                    lineNumber: 1093,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1089,
+                                lineNumber: 1092,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1081,
+                        lineNumber: 1084,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 1063,
+                lineNumber: 1066,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -29002,27 +29044,27 @@ const DataprevMentorshipLanding = ()=>{
                                 children: "O problema"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1099,
+                                lineNumber: 1102,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                 children: "O maior risco n\xe3o \xe9 estudar pouco. \xc9 estudar errado."
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1100,
+                                lineNumber: 1103,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                 children: "A maioria dos candidatos enfrenta desafios que dificultam uma prepara\xe7\xe3o consistente."
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1101,
+                                lineNumber: 1104,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1098,
+                        lineNumber: 1101,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29035,20 +29077,20 @@ const DataprevMentorshipLanding = ()=>{
                                         children: "Edital muito grande"
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1107,
+                                        lineNumber: 1110,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                         children: "Mais de 100 t\xf3picos tornam dif\xedcil saber por onde come\xe7ar e quanto tempo dedicar a cada assunto."
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1108,
+                                        lineNumber: 1111,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1106,
+                                lineNumber: 1109,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
@@ -29058,20 +29100,20 @@ const DataprevMentorshipLanding = ()=>{
                                         children: "Pouco tempo dispon\xedvel"
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1113,
+                                        lineNumber: 1116,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                         children: "Conciliar trabalho, fam\xedlia e estudos exige uma rotina objetiva e prioridades bem definidas."
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1114,
+                                        lineNumber: 1117,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1112,
+                                lineNumber: 1115,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
@@ -29081,20 +29123,20 @@ const DataprevMentorshipLanding = ()=>{
                                         children: "Dificuldade para priorizar"
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1119,
+                                        lineNumber: 1122,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                         children: "Nem todos os t\xf3picos t\xeam a mesma import\xe2ncia. Saber onde aprofundar faz diferen\xe7a na prepara\xe7\xe3o."
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1120,
+                                        lineNumber: 1123,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1118,
+                                lineNumber: 1121,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
@@ -29104,26 +29146,26 @@ const DataprevMentorshipLanding = ()=>{
                                         children: "Excesso de materiais"
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1125,
+                                        lineNumber: 1128,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                         children: "Cursos, PDFs, v\xeddeos e resumos em excesso podem gerar mais confus\xe3o do que aprendizado."
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1126,
+                                        lineNumber: 1129,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1124,
+                                lineNumber: 1127,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1105,
+                        lineNumber: 1108,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -29131,14 +29173,14 @@ const DataprevMentorshipLanding = ()=>{
                         children: "A mentoria existe para eliminar exatamente esses problemas."
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1131,
+                        lineNumber: 1134,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         children: "Em vez de estudar mais, voc\xea passa a estudar com estrat\xe9gia."
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1134,
+                        lineNumber: 1137,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29149,143 +29191,18 @@ const DataprevMentorshipLanding = ()=>{
                             children: "Quero reservar minha vaga"
                         }, void 0, false, {
                             fileName: "src/App.jsx",
-                            lineNumber: 1138,
+                            lineNumber: 1141,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1137,
+                        lineNumber: 1140,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 1097,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-                className: "projects-section discovery-band mentorship-band",
-                id: "edital",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                className: "eyebrow",
-                                children: "A oportunidade"
-                            }, void 0, false, {
-                                fileName: "src/App.jsx",
-                                lineNumber: 1146,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                children: "Edital Dataprev 2026 analisado para orientar a prepara\xe7\xe3o"
-                            }, void 0, false, {
-                                fileName: "src/App.jsx",
-                                lineNumber: 1147,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                children: "A estrat\xe9gia da turma parte do Edital 001/2026 da FGV para transformar peso da prova, requisitos do perfil e conte\xfado de Desenvolvimento de Software em prioridades reais de estudo."
-                            }, void 0, false, {
-                                fileName: "src/App.jsx",
-                                lineNumber: 1148,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                className: "button secondary light-button",
-                                href: editalUrl,
-                                target: "_blank",
-                                rel: "noreferrer",
-                                children: "Abrir edital oficial"
-                            }, void 0, false, {
-                                fileName: "src/App.jsx",
-                                lineNumber: 1153,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/App.jsx",
-                        lineNumber: 1145,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "discovery-card edital-card",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                            children: dataprevMentorship.editalFacts.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                    children: item
-                                }, item, false, {
-                                    fileName: "src/App.jsx",
-                                    lineNumber: 1165,
-                                    columnNumber: 15
-                                }, undefined))
-                        }, void 0, false, {
-                            fileName: "src/App.jsx",
-                            lineNumber: 1163,
-                            columnNumber: 11
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/App.jsx",
-                        lineNumber: 1162,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "edital-timeline",
-                        "aria-label": "Principais datas do edital Dataprev 2026",
-                        children: dataprevMentorship.editalTimeline.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
-                                className: "edital-timeline-item",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        children: item.date
-                                    }, void 0, false, {
-                                        fileName: "src/App.jsx",
-                                        lineNumber: 1172,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                        children: item.title
-                                    }, void 0, false, {
-                                        fileName: "src/App.jsx",
-                                        lineNumber: 1173,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        children: item.text
-                                    }, void 0, false, {
-                                        fileName: "src/App.jsx",
-                                        lineNumber: 1174,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, `${item.date}-${item.title}`, true, {
-                                fileName: "src/App.jsx",
-                                lineNumber: 1171,
-                                columnNumber: 13
-                            }, undefined))
-                    }, void 0, false, {
-                        fileName: "src/App.jsx",
-                        lineNumber: 1169,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "final-actions mentorship-section-actions",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                            className: "button primary",
-                            href: "#inscricao",
-                            children: "Participar da turma"
-                        }, void 0, false, {
-                            fileName: "src/App.jsx",
-                            lineNumber: 1179,
-                            columnNumber: 11
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/App.jsx",
-                        lineNumber: 1178,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/App.jsx",
-                lineNumber: 1144,
+                lineNumber: 1100,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -29300,27 +29217,27 @@ const DataprevMentorshipLanding = ()=>{
                                 children: "A solu\xe7\xe3o"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1187,
+                                lineNumber: 1149,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                 children: "A mentoria transforma o edital em um plano de a\xe7\xe3o"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1188,
+                                lineNumber: 1150,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                 children: "Voc\xea ter\xe1 uma rotina e saber\xe1 o que estudar, em qual profundidade, quando revisar, quais quest\xf5es resolver e como corrigir a rota sem desperdi\xe7ar tempo com conte\xfado de baixo impacto. Tudo isso em um formato pensado para otimizar seu resultado."
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1189,
+                                lineNumber: 1151,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1186,
+                        lineNumber: 1148,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29332,25 +29249,25 @@ const DataprevMentorshipLanding = ()=>{
                                         children: title
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1196,
+                                        lineNumber: 1158,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                         children: text
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1197,
+                                        lineNumber: 1159,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, title, true, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1195,
+                                lineNumber: 1157,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1193,
+                        lineNumber: 1155,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29361,18 +29278,18 @@ const DataprevMentorshipLanding = ()=>{
                             children: "Entrar para a turma Dataprev"
                         }, void 0, false, {
                             fileName: "src/App.jsx",
-                            lineNumber: 1202,
+                            lineNumber: 1165,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1201,
+                        lineNumber: 1164,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 1185,
+                lineNumber: 1147,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -29387,27 +29304,27 @@ const DataprevMentorshipLanding = ()=>{
                                 children: "Cronograma dos encontros"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1210,
+                                lineNumber: 1173,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                 children: "Cada semana termina com metas claras e objetivas at\xe9 a prova."
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1211,
+                                lineNumber: 1174,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                 children: dataprevMentorship.scheduleNote
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1212,
+                                lineNumber: 1175,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1209,
+                        lineNumber: 1172,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29419,32 +29336,32 @@ const DataprevMentorshipLanding = ()=>{
                                         children: item.meeting
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1217,
+                                        lineNumber: 1180,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                         children: item.title
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1218,
+                                        lineNumber: 1181,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                         children: item.topics
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1219,
+                                        lineNumber: 1182,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, item.meeting, true, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1216,
+                                lineNumber: 1179,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1214,
+                        lineNumber: 1177,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29455,18 +29372,349 @@ const DataprevMentorshipLanding = ()=>{
                             children: "Quero reservar minha vaga"
                         }, void 0, false, {
                             fileName: "src/App.jsx",
-                            lineNumber: 1224,
+                            lineNumber: 1187,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1223,
+                        lineNumber: 1186,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 1208,
+                lineNumber: 1171,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                className: "projects-section mentorship-audience-section",
+                id: "publico",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "section-heading wide-heading",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "eyebrow",
+                                children: "Perfil ideal"
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 1195,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                children: "Para quem \xe9 e para quem n\xe3o \xe9."
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 1196,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 1194,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "mentorship-audience-grid",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
+                                className: "discovery-card",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                        children: "Para quem \xe9"
+                                    }, void 0, false, {
+                                        fileName: "src/App.jsx",
+                                        lineNumber: 1200,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                        className: "check-list",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                children: "Candidatos do Perfil 3: Desenvolvimento de Software."
+                                            }, void 0, false, {
+                                                fileName: "src/App.jsx",
+                                                lineNumber: 1202,
+                                                columnNumber: 15
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                children: "Estudantes nos \xfaltimos anos da gradua\xe7\xe3o."
+                                            }, void 0, false, {
+                                                fileName: "src/App.jsx",
+                                                lineNumber: 1203,
+                                                columnNumber: 15
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                children: "Quem trabalha e precisa transformar pouco tempo em prioridade."
+                                            }, void 0, false, {
+                                                fileName: "src/App.jsx",
+                                                lineNumber: 1204,
+                                                columnNumber: 15
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                children: "Quem j\xe1 come\xe7ou a estudar, mas sente dispers\xe3o."
+                                            }, void 0, false, {
+                                                fileName: "src/App.jsx",
+                                                lineNumber: 1205,
+                                                columnNumber: 15
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                children: "Quem quer acelerar com plano, revis\xe3o e quest\xf5es."
+                                            }, void 0, false, {
+                                                fileName: "src/App.jsx",
+                                                lineNumber: 1206,
+                                                columnNumber: 15
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/App.jsx",
+                                        lineNumber: 1201,
+                                        columnNumber: 13
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 1199,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
+                                className: "discovery-card",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                        children: "Para quem n\xe3o \xe9"
+                                    }, void 0, false, {
+                                        fileName: "src/App.jsx",
+                                        lineNumber: 1210,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                        className: "mentorship-not-list",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                children: "Quem procura promessa de aprova\xe7\xe3o."
+                                            }, void 0, false, {
+                                                fileName: "src/App.jsx",
+                                                lineNumber: 1212,
+                                                columnNumber: 15
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                children: "Quem n\xe3o pretende executar uma rotina de estudo."
+                                            }, void 0, false, {
+                                                fileName: "src/App.jsx",
+                                                lineNumber: 1213,
+                                                columnNumber: 15
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                children: "Quem quer apenas um curso gravado para assistir quando sobrar tempo."
+                                            }, void 0, false, {
+                                                fileName: "src/App.jsx",
+                                                lineNumber: 1214,
+                                                columnNumber: 15
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/App.jsx",
+                                        lineNumber: 1211,
+                                        columnNumber: 13
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 1209,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 1198,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "final-actions mentorship-section-actions",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            className: "button primary",
+                            href: "#inscricao",
+                            children: "Entrar para a turma Dataprev"
+                        }, void 0, false, {
+                            fileName: "src/App.jsx",
+                            lineNumber: 1219,
+                            columnNumber: 11
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 1218,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/App.jsx",
+                lineNumber: 1193,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                className: "projects-section mentorship-comparison-section",
+                id: "comparacao",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "section-heading wide-heading",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "eyebrow",
+                                children: "Compara\xe7\xe3o"
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 1227,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                children: "O que muda quando voc\xea deixa de estudar no improviso."
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 1228,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 1226,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "mentorship-audience-grid",
+                        "aria-label": "Compara\xe7\xe3o entre estudar sozinho e mentoria",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
+                                className: "discovery-card",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                        children: "Estudando sozinho"
+                                    }, void 0, false, {
+                                        fileName: "src/App.jsx",
+                                        lineNumber: 1232,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                        className: "mentorship-not-list",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                children: "n\xe3o sabe priorizar"
+                                            }, void 0, false, {
+                                                fileName: "src/App.jsx",
+                                                lineNumber: 1234,
+                                                columnNumber: 15
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                children: "excesso de conte\xfado"
+                                            }, void 0, false, {
+                                                fileName: "src/App.jsx",
+                                                lineNumber: 1235,
+                                                columnNumber: 15
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                children: "d\xfavidas sem resposta"
+                                            }, void 0, false, {
+                                                fileName: "src/App.jsx",
+                                                lineNumber: 1236,
+                                                columnNumber: 15
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                children: "materiais dispersos"
+                                            }, void 0, false, {
+                                                fileName: "src/App.jsx",
+                                                lineNumber: 1237,
+                                                columnNumber: 15
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/App.jsx",
+                                        lineNumber: 1233,
+                                        columnNumber: 13
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 1231,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
+                                className: "discovery-card",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                        children: "Mentoria"
+                                    }, void 0, false, {
+                                        fileName: "src/App.jsx",
+                                        lineNumber: 1241,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                        className: "check-list",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                children: "plano semanal"
+                                            }, void 0, false, {
+                                                fileName: "src/App.jsx",
+                                                lineNumber: 1243,
+                                                columnNumber: 15
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                children: "foco"
+                                            }, void 0, false, {
+                                                fileName: "src/App.jsx",
+                                                lineNumber: 1244,
+                                                columnNumber: 15
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                children: "acompanhamento"
+                                            }, void 0, false, {
+                                                fileName: "src/App.jsx",
+                                                lineNumber: 1245,
+                                                columnNumber: 15
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                children: "conte\xfado organizado"
+                                            }, void 0, false, {
+                                                fileName: "src/App.jsx",
+                                                lineNumber: 1246,
+                                                columnNumber: 15
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/App.jsx",
+                                        lineNumber: 1242,
+                                        columnNumber: 13
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 1240,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 1230,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "final-actions mentorship-section-actions",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            className: "button primary",
+                            href: "#inscricao",
+                            children: "Participar da turma"
+                        }, void 0, false, {
+                            fileName: "src/App.jsx",
+                            lineNumber: 1251,
+                            columnNumber: 11
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 1250,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/App.jsx",
+                lineNumber: 1225,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -29480,20 +29728,20 @@ const DataprevMentorshipLanding = ()=>{
                                 children: "Mentor"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1232,
+                                lineNumber: 1259,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                children: "Experi\xeancia em concursos, ensino superior e engenharia de software real."
+                                children: "Experi\xeancia em concursos, ensino superior e engenharia de software."
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1233,
+                                lineNumber: 1260,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1231,
+                        lineNumber: 1258,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29503,7 +29751,7 @@ const DataprevMentorshipLanding = ()=>{
                                 children: "Sou Fabricio Santana, analista de inform\xe1tica legislativa no Senado e professor. Meu desejo \xe9 ajudar voc\xea com um m\xe9todo de estudo e acompanhamento que aumentar\xe1 suas chances de um bom desempenho na prova."
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1236,
+                                lineNumber: 1263,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -29512,12 +29760,12 @@ const DataprevMentorshipLanding = ()=>{
                                         children: item
                                     }, item, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1241,
+                                        lineNumber: 1268,
                                         columnNumber: 15
                                     }, undefined))
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1239,
+                                lineNumber: 1266,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29528,378 +29776,24 @@ const DataprevMentorshipLanding = ()=>{
                                     children: "Quero reservar minha vaga"
                                 }, void 0, false, {
                                     fileName: "src/App.jsx",
-                                    lineNumber: 1245,
+                                    lineNumber: 1272,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1244,
+                                lineNumber: 1271,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1235,
+                        lineNumber: 1262,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 1230,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-                className: "projects-section mentorship-comparison-section",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "section-heading wide-heading",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                className: "eyebrow",
-                                children: "Compara\xe7\xe3o"
-                            }, void 0, false, {
-                                fileName: "src/App.jsx",
-                                lineNumber: 1254,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                children: "O que muda quando voc\xea deixa de estudar no improviso."
-                            }, void 0, false, {
-                                fileName: "src/App.jsx",
-                                lineNumber: 1255,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/App.jsx",
-                        lineNumber: 1253,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "mentorship-comparison-table",
-                        role: "table",
-                        "aria-label": "Compara\xe7\xe3o entre estudar sozinho e mentoria",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "mentorship-comparison-row mentorship-comparison-head",
-                                role: "row",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                        role: "columnheader",
-                                        children: "Estudando sozinho"
-                                    }, void 0, false, {
-                                        fileName: "src/App.jsx",
-                                        lineNumber: 1263,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                        role: "columnheader",
-                                        children: "Mentoria"
-                                    }, void 0, false, {
-                                        fileName: "src/App.jsx",
-                                        lineNumber: 1264,
-                                        columnNumber: 13
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/App.jsx",
-                                lineNumber: 1262,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "mentorship-comparison-row",
-                                role: "row",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        role: "cell",
-                                        children: "❌ n\xe3o sabe priorizar"
-                                    }, void 0, false, {
-                                        fileName: "src/App.jsx",
-                                        lineNumber: 1267,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        role: "cell",
-                                        children: "✅ plano semanal"
-                                    }, void 0, false, {
-                                        fileName: "src/App.jsx",
-                                        lineNumber: 1268,
-                                        columnNumber: 13
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/App.jsx",
-                                lineNumber: 1266,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "mentorship-comparison-row",
-                                role: "row",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        role: "cell",
-                                        children: "❌ excesso de conte\xfado"
-                                    }, void 0, false, {
-                                        fileName: "src/App.jsx",
-                                        lineNumber: 1271,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        role: "cell",
-                                        children: "✅ foco"
-                                    }, void 0, false, {
-                                        fileName: "src/App.jsx",
-                                        lineNumber: 1272,
-                                        columnNumber: 13
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/App.jsx",
-                                lineNumber: 1270,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "mentorship-comparison-row",
-                                role: "row",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        role: "cell",
-                                        children: "❌ d\xfavidas sem resposta"
-                                    }, void 0, false, {
-                                        fileName: "src/App.jsx",
-                                        lineNumber: 1275,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        role: "cell",
-                                        children: "✅ acompanhamento"
-                                    }, void 0, false, {
-                                        fileName: "src/App.jsx",
-                                        lineNumber: 1276,
-                                        columnNumber: 13
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/App.jsx",
-                                lineNumber: 1274,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "mentorship-comparison-row",
-                                role: "row",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        role: "cell",
-                                        children: "❌ materiais dispersos"
-                                    }, void 0, false, {
-                                        fileName: "src/App.jsx",
-                                        lineNumber: 1279,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        role: "cell",
-                                        children: "✅ conte\xfado organizado"
-                                    }, void 0, false, {
-                                        fileName: "src/App.jsx",
-                                        lineNumber: 1280,
-                                        columnNumber: 13
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/App.jsx",
-                                lineNumber: 1278,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/App.jsx",
-                        lineNumber: 1257,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "final-actions mentorship-section-actions",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                            className: "button primary",
-                            href: "#inscricao",
-                            children: "Participar da turma"
-                        }, void 0, false, {
-                            fileName: "src/App.jsx",
-                            lineNumber: 1284,
-                            columnNumber: 11
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/App.jsx",
-                        lineNumber: 1283,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/App.jsx",
-                lineNumber: 1252,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-                className: "projects-section mentorship-audience-section",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "section-heading wide-heading",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                className: "eyebrow",
-                                children: "Perfil ideal"
-                            }, void 0, false, {
-                                fileName: "src/App.jsx",
-                                lineNumber: 1292,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                children: "Para quem \xe9 e para quem n\xe3o \xe9."
-                            }, void 0, false, {
-                                fileName: "src/App.jsx",
-                                lineNumber: 1293,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/App.jsx",
-                        lineNumber: 1291,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "mentorship-audience-grid",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
-                                className: "discovery-card",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                        children: "Para quem \xe9"
-                                    }, void 0, false, {
-                                        fileName: "src/App.jsx",
-                                        lineNumber: 1297,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                                        className: "check-list",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                children: "Candidatos do Perfil 3: Desenvolvimento de Software."
-                                            }, void 0, false, {
-                                                fileName: "src/App.jsx",
-                                                lineNumber: 1299,
-                                                columnNumber: 15
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                children: "Estudantes nos \xfaltimos anos da gradua\xe7\xe3o."
-                                            }, void 0, false, {
-                                                fileName: "src/App.jsx",
-                                                lineNumber: 1300,
-                                                columnNumber: 15
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                children: "Quem trabalha e precisa transformar pouco tempo em prioridade."
-                                            }, void 0, false, {
-                                                fileName: "src/App.jsx",
-                                                lineNumber: 1301,
-                                                columnNumber: 15
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                children: "Quem j\xe1 come\xe7ou a estudar, mas sente dispers\xe3o."
-                                            }, void 0, false, {
-                                                fileName: "src/App.jsx",
-                                                lineNumber: 1302,
-                                                columnNumber: 15
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                children: "Quem quer acelerar com plano, revis\xe3o e quest\xf5es."
-                                            }, void 0, false, {
-                                                fileName: "src/App.jsx",
-                                                lineNumber: 1303,
-                                                columnNumber: 15
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/App.jsx",
-                                        lineNumber: 1298,
-                                        columnNumber: 13
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/App.jsx",
-                                lineNumber: 1296,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
-                                className: "discovery-card",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                        children: "Para quem n\xe3o \xe9"
-                                    }, void 0, false, {
-                                        fileName: "src/App.jsx",
-                                        lineNumber: 1307,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                                        className: "mentorship-not-list",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                children: "Quem procura promessa de aprova\xe7\xe3o."
-                                            }, void 0, false, {
-                                                fileName: "src/App.jsx",
-                                                lineNumber: 1309,
-                                                columnNumber: 15
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                children: "Quem n\xe3o pretende executar uma rotina de estudo."
-                                            }, void 0, false, {
-                                                fileName: "src/App.jsx",
-                                                lineNumber: 1310,
-                                                columnNumber: 15
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                children: "Quem quer apenas um curso gravado para assistir quando sobrar tempo."
-                                            }, void 0, false, {
-                                                fileName: "src/App.jsx",
-                                                lineNumber: 1311,
-                                                columnNumber: 15
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/App.jsx",
-                                        lineNumber: 1308,
-                                        columnNumber: 13
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/App.jsx",
-                                lineNumber: 1306,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/App.jsx",
-                        lineNumber: 1295,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "final-actions mentorship-section-actions",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                            className: "button primary",
-                            href: "#inscricao",
-                            children: "Entrar para a turma Dataprev"
-                        }, void 0, false, {
-                            fileName: "src/App.jsx",
-                            lineNumber: 1316,
-                            columnNumber: 11
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/App.jsx",
-                        lineNumber: 1315,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/App.jsx",
-                lineNumber: 1290,
+                lineNumber: 1257,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -29914,27 +29808,27 @@ const DataprevMentorshipLanding = ()=>{
                                 children: "Prova social"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1324,
+                                lineNumber: 1281,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                 children: "O que mudou para alunos e mentorados"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1325,
+                                lineNumber: 1282,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                 children: "Os depoimentos refor\xe7am o ponto central da mentoria: transformar conte\xfado amplo em prioridade, rotina e acompanhamento at\xe9 a prova."
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1326,
+                                lineNumber: 1283,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1323,
+                        lineNumber: 1280,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29950,32 +29844,32 @@ const DataprevMentorshipLanding = ()=>{
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1334,
+                                        lineNumber: 1291,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
                                         children: item.author
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1335,
+                                        lineNumber: 1292,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                         children: item.approval
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1336,
+                                        lineNumber: 1293,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, `${item.author}-${item.approval}`, true, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1333,
+                                lineNumber: 1290,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1331,
+                        lineNumber: 1288,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29986,18 +29880,18 @@ const DataprevMentorshipLanding = ()=>{
                             children: "Participar da turma"
                         }, void 0, false, {
                             fileName: "src/App.jsx",
-                            lineNumber: 1341,
+                            lineNumber: 1298,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1340,
+                        lineNumber: 1297,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 1322,
+                lineNumber: 1279,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -30012,20 +29906,20 @@ const DataprevMentorshipLanding = ()=>{
                                 children: "Garantia"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1349,
+                                lineNumber: 1306,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                 children: "Voc\xea sabe o que est\xe1 contratando, sem promessa artificial de aprova\xe7\xe3o."
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1350,
+                                lineNumber: 1307,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1348,
+                        lineNumber: 1305,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30037,25 +29931,25 @@ const DataprevMentorshipLanding = ()=>{
                                         children: item.title
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1355,
+                                        lineNumber: 1312,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                         children: item.text
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1356,
+                                        lineNumber: 1313,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, item.title, true, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1354,
+                                lineNumber: 1311,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1352,
+                        lineNumber: 1309,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30066,22 +29960,23 @@ const DataprevMentorshipLanding = ()=>{
                             children: "Entrar para a turma Dataprev"
                         }, void 0, false, {
                             fileName: "src/App.jsx",
-                            lineNumber: 1361,
+                            lineNumber: 1318,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1360,
+                        lineNumber: 1317,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 1347,
+                lineNumber: 1304,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
                 className: "projects-section faq-section",
+                id: "faq",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "section-heading wide-heading",
@@ -30091,20 +29986,20 @@ const DataprevMentorshipLanding = ()=>{
                                 children: "Perguntas frequentes"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1369,
+                                lineNumber: 1326,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                 children: "Antes de fazer sua inscri\xe7\xe3o"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1370,
+                                lineNumber: 1327,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1368,
+                        lineNumber: 1325,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30116,25 +30011,25 @@ const DataprevMentorshipLanding = ()=>{
                                         children: item.question
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1375,
+                                        lineNumber: 1332,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                         children: item.answer
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1376,
+                                        lineNumber: 1333,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, item.question, true, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1374,
+                                lineNumber: 1331,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1372,
+                        lineNumber: 1329,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30145,18 +30040,143 @@ const DataprevMentorshipLanding = ()=>{
                             children: "Quero reservar minha vaga"
                         }, void 0, false, {
                             fileName: "src/App.jsx",
-                            lineNumber: 1381,
+                            lineNumber: 1338,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1380,
+                        lineNumber: 1337,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 1367,
+                lineNumber: 1324,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                className: "projects-section discovery-band mentorship-band",
+                id: "edital",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "eyebrow",
+                                children: "A oportunidade"
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 1346,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                children: "Edital Dataprev 2026 analisado para orientar a prepara\xe7\xe3o"
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 1347,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: "A estrat\xe9gia da turma parte do Edital 001/2026 da FGV para transformar peso da prova, requisitos do perfil e conte\xfado de Desenvolvimento de Software em prioridades reais de estudo."
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 1348,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                className: "button secondary light-button",
+                                href: editalUrl,
+                                target: "_blank",
+                                rel: "noreferrer",
+                                children: "Abrir edital oficial"
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 1353,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 1345,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "discovery-card edital-card",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                            children: dataprevMentorship.editalFacts.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    children: item
+                                }, item, false, {
+                                    fileName: "src/App.jsx",
+                                    lineNumber: 1365,
+                                    columnNumber: 15
+                                }, undefined))
+                        }, void 0, false, {
+                            fileName: "src/App.jsx",
+                            lineNumber: 1363,
+                            columnNumber: 11
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 1362,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "edital-timeline",
+                        "aria-label": "Principais datas do edital Dataprev 2026",
+                        children: dataprevMentorship.editalTimeline.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
+                                className: "edital-timeline-item",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        children: item.date
+                                    }, void 0, false, {
+                                        fileName: "src/App.jsx",
+                                        lineNumber: 1372,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                        children: item.title
+                                    }, void 0, false, {
+                                        fileName: "src/App.jsx",
+                                        lineNumber: 1373,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        children: item.text
+                                    }, void 0, false, {
+                                        fileName: "src/App.jsx",
+                                        lineNumber: 1374,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, `${item.date}-${item.title}`, true, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 1371,
+                                columnNumber: 13
+                            }, undefined))
+                    }, void 0, false, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 1369,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "final-actions mentorship-section-actions",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            className: "button primary",
+                            href: "#inscricao",
+                            children: "Participar da turma"
+                        }, void 0, false, {
+                            fileName: "src/App.jsx",
+                            lineNumber: 1379,
+                            columnNumber: 11
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 1378,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/App.jsx",
+                lineNumber: 1344,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -30171,27 +30191,27 @@ const DataprevMentorshipLanding = ()=>{
                                 children: "Inscri\xe7\xe3o"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1389,
+                                lineNumber: 1387,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                 children: "Reserve sua vaga na turma da mentoria Dataprev."
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1390,
+                                lineNumber: 1388,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                 children: "As turmas ser\xe3o fechadas com at\xe9 7 estudantes para preservar acompanhamento individual. Chame no WhatsApp para confirmar disponibilidade e concluir sua inscri\xe7\xe3o."
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1391,
+                                lineNumber: 1389,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1388,
+                        lineNumber: 1386,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30204,14 +30224,14 @@ const DataprevMentorshipLanding = ()=>{
                                         children: "O que est\xe1 incluso"
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1398,
+                                        lineNumber: 1396,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                         children: "Encontros ao vivo gravados, suporte durante a semana e materiais objetivos para transformar o edital em rotina de estudo at\xe9 a v\xe9spera da prova."
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1399,
+                                        lineNumber: 1397,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30221,18 +30241,18 @@ const DataprevMentorshipLanding = ()=>{
                                                 children: item
                                             }, item, false, {
                                                 fileName: "src/App.jsx",
-                                                lineNumber: 1405,
+                                                lineNumber: 1403,
                                                 columnNumber: 17
                                             }, undefined))
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1403,
+                                        lineNumber: 1401,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1397,
+                                lineNumber: 1395,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("aside", {
@@ -30244,14 +30264,14 @@ const DataprevMentorshipLanding = ()=>{
                                         children: "Turma Dataprev"
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1412,
+                                        lineNumber: 1410,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                         children: "Investimento"
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1413,
+                                        lineNumber: 1411,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30262,13 +30282,13 @@ const DataprevMentorshipLanding = ()=>{
                                                 children: dataprevMentorship.pricing.installments
                                             }, void 0, false, {
                                                 fileName: "src/App.jsx",
-                                                lineNumber: 1416,
+                                                lineNumber: 1414,
                                                 columnNumber: 15
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1414,
+                                        lineNumber: 1412,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30278,7 +30298,7 @@ const DataprevMentorshipLanding = ()=>{
                                                 children: dataprevMentorship.pricing.alumni
                                             }, void 0, false, {
                                                 fileName: "src/App.jsx",
-                                                lineNumber: 1419,
+                                                lineNumber: 1417,
                                                 columnNumber: 15
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -30290,13 +30310,13 @@ const DataprevMentorshipLanding = ()=>{
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/App.jsx",
-                                                lineNumber: 1420,
+                                                lineNumber: 1418,
                                                 columnNumber: 15
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1418,
+                                        lineNumber: 1416,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30309,30 +30329,30 @@ const DataprevMentorshipLanding = ()=>{
                                             children: "Entrar para a turma Dataprev"
                                         }, void 0, false, {
                                             fileName: "src/App.jsx",
-                                            lineNumber: 1426,
+                                            lineNumber: 1424,
                                             columnNumber: 15
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1425,
+                                        lineNumber: 1423,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1411,
+                                lineNumber: 1409,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1396,
+                        lineNumber: 1394,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 1387,
+                lineNumber: 1385,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("footer", {
@@ -30342,7 +30362,7 @@ const DataprevMentorshipLanding = ()=>{
                         children: "Fabricio Santana"
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1440,
+                        lineNumber: 1438,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -30350,19 +30370,19 @@ const DataprevMentorshipLanding = ()=>{
                         children: "fabricio.santana@gmail.com"
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1441,
+                        lineNumber: 1439,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 1439,
+                lineNumber: 1437,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.jsx",
-        lineNumber: 1056,
+        lineNumber: 1053,
         columnNumber: 5
     }, undefined);
 };
@@ -30383,12 +30403,12 @@ const App = ()=>{
     }, []);
     if (window.location.pathname.startsWith("/mentoria-dataprev")) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(DataprevMentorshipLanding, {}, void 0, false, {
         fileName: "src/App.jsx",
-        lineNumber: 1465,
+        lineNumber: 1463,
         columnNumber: 12
     }, undefined);
     if (window.location.pathname.startsWith("/projects")) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ProjectsLanding, {}, void 0, false, {
         fileName: "src/App.jsx",
-        lineNumber: 1469,
+        lineNumber: 1467,
         columnNumber: 12
     }, undefined);
     if (selectedDigestPost) {
@@ -30407,7 +30427,7 @@ const App = ()=>{
                             children: "Fabricio Santana"
                         }, void 0, false, {
                             fileName: "src/App.jsx",
-                            lineNumber: 1479,
+                            lineNumber: 1477,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
@@ -30419,7 +30439,7 @@ const App = ()=>{
                                     children: "Sobre"
                                 }, void 0, false, {
                                     fileName: "src/App.jsx",
-                                    lineNumber: 1483,
+                                    lineNumber: 1481,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -30427,7 +30447,7 @@ const App = ()=>{
                                     children: "Mentoria Dataprev"
                                 }, void 0, false, {
                                     fileName: "src/App.jsx",
-                                    lineNumber: 1484,
+                                    lineNumber: 1482,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -30435,7 +30455,7 @@ const App = ()=>{
                                     children: "Servi\xe7os"
                                 }, void 0, false, {
                                     fileName: "src/App.jsx",
-                                    lineNumber: 1485,
+                                    lineNumber: 1483,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -30443,7 +30463,7 @@ const App = ()=>{
                                     children: "Cursos"
                                 }, void 0, false, {
                                     fileName: "src/App.jsx",
-                                    lineNumber: 1486,
+                                    lineNumber: 1484,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -30451,19 +30471,19 @@ const App = ()=>{
                                     children: "Conte\xfados"
                                 }, void 0, false, {
                                     fileName: "src/App.jsx",
-                                    lineNumber: 1487,
+                                    lineNumber: 1485,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/App.jsx",
-                            lineNumber: 1482,
+                            lineNumber: 1480,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/App.jsx",
-                    lineNumber: 1478,
+                    lineNumber: 1476,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
@@ -30475,7 +30495,7 @@ const App = ()=>{
                             children: "Voltar para conte\xfados"
                         }, void 0, false, {
                             fileName: "src/App.jsx",
-                            lineNumber: 1492,
+                            lineNumber: 1490,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30485,7 +30505,7 @@ const App = ()=>{
                                     children: "Resumo di\xe1rio"
                                 }, void 0, false, {
                                     fileName: "src/App.jsx",
-                                    lineNumber: 1496,
+                                    lineNumber: 1494,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("time", {
@@ -30493,20 +30513,20 @@ const App = ()=>{
                                     children: formatDate(selectedDigest.date)
                                 }, void 0, false, {
                                     fileName: "src/App.jsx",
-                                    lineNumber: 1497,
+                                    lineNumber: 1495,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/App.jsx",
-                            lineNumber: 1495,
+                            lineNumber: 1493,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                             children: selectedDigest.title
                         }, void 0, false, {
                             fileName: "src/App.jsx",
-                            lineNumber: 1499,
+                            lineNumber: 1497,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30516,7 +30536,7 @@ const App = ()=>{
                             }
                         }, void 0, false, {
                             fileName: "src/App.jsx",
-                            lineNumber: 1500,
+                            lineNumber: 1498,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30526,7 +30546,7 @@ const App = ()=>{
                                     children: "Fontes citadas"
                                 }, void 0, false, {
                                     fileName: "src/App.jsx",
-                                    lineNumber: 1507,
+                                    lineNumber: 1505,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -30541,29 +30561,29 @@ const App = ()=>{
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/App.jsx",
-                                                lineNumber: 1511,
+                                                lineNumber: 1509,
                                                 columnNumber: 19
                                             }, undefined)
                                         }, source.url, false, {
                                             fileName: "src/App.jsx",
-                                            lineNumber: 1510,
+                                            lineNumber: 1508,
                                             columnNumber: 17
                                         }, undefined))
                                 }, void 0, false, {
                                     fileName: "src/App.jsx",
-                                    lineNumber: 1508,
+                                    lineNumber: 1506,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/App.jsx",
-                            lineNumber: 1506,
+                            lineNumber: 1504,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/App.jsx",
-                    lineNumber: 1491,
+                    lineNumber: 1489,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("footer", {
@@ -30573,7 +30593,7 @@ const App = ()=>{
                             children: "Fabricio Santana"
                         }, void 0, false, {
                             fileName: "src/App.jsx",
-                            lineNumber: 1522,
+                            lineNumber: 1520,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -30581,19 +30601,19 @@ const App = ()=>{
                             children: "fabricio.santana@gmail.com"
                         }, void 0, false, {
                             fileName: "src/App.jsx",
-                            lineNumber: 1523,
+                            lineNumber: 1521,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/App.jsx",
-                    lineNumber: 1521,
+                    lineNumber: 1519,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/App.jsx",
-            lineNumber: 1477,
+            lineNumber: 1475,
             columnNumber: 7
         }, undefined);
     }
@@ -30610,7 +30630,7 @@ const App = ()=>{
                         children: "Fabricio Santana"
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1532,
+                        lineNumber: 1530,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
@@ -30622,7 +30642,7 @@ const App = ()=>{
                                 children: "Sobre"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1536,
+                                lineNumber: 1534,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -30630,7 +30650,7 @@ const App = ()=>{
                                 children: "Atua\xe7\xe3o"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1537,
+                                lineNumber: 1535,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -30638,7 +30658,7 @@ const App = ()=>{
                                 children: "Projetos"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1538,
+                                lineNumber: 1536,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -30646,7 +30666,7 @@ const App = ()=>{
                                 children: "Conte\xfados"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1539,
+                                lineNumber: 1537,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -30654,7 +30674,7 @@ const App = ()=>{
                                 children: "Mentoria Dataprev"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1540,
+                                lineNumber: 1538,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -30662,7 +30682,7 @@ const App = ()=>{
                                 children: "Contato"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1541,
+                                lineNumber: 1539,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -30670,19 +30690,19 @@ const App = ()=>{
                                 children: "Servi\xe7os"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1542,
+                                lineNumber: 1540,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1535,
+                        lineNumber: 1533,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 1531,
+                lineNumber: 1529,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -30697,14 +30717,14 @@ const App = ()=>{
                                 children: "Tecnologia, ensino e IA aplicada"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1548,
+                                lineNumber: 1546,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                                 children: "Fabricio Fernandes Santana"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1549,
+                                lineNumber: 1547,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -30712,14 +30732,14 @@ const App = ()=>{
                                 children: "L\xedder de tecnologia, professor e construtor de solu\xe7\xf5es em engenharia de software e intelig\xeancia artificial aplicada."
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1550,
+                                lineNumber: 1548,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                 children: "Trabalho na interse\xe7\xe3o entre lideran\xe7a t\xe9cnica, transforma\xe7\xe3o digital no setor p\xfablico, educa\xe7\xe3o em Ci\xeancia da Computa\xe7\xe3o, produtos digitais e experimenta\xe7\xe3o pr\xe1tica com IA, RAG, automa\xe7\xe3o e agentes."
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1554,
+                                lineNumber: 1552,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30731,7 +30751,7 @@ const App = ()=>{
                                         children: "Ver projetos"
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1560,
+                                        lineNumber: 1558,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -30742,19 +30762,19 @@ const App = ()=>{
                                         children: "GitHub"
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1563,
+                                        lineNumber: 1561,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1559,
+                                lineNumber: 1557,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1547,
+                        lineNumber: 1545,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -30763,13 +30783,13 @@ const App = ()=>{
                         alt: "Fabricio Santana"
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1573,
+                        lineNumber: 1571,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 1546,
+                lineNumber: 1544,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -30784,20 +30804,20 @@ const App = ()=>{
                                 children: "Sobre mim"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1578,
+                                lineNumber: 1576,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                 children: "Engenharia, ensino, gest\xe3o p\xfablica e produto"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1579,
+                                lineNumber: 1577,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1577,
+                        lineNumber: 1575,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30807,33 +30827,33 @@ const App = ()=>{
                                 children: "Sou um profissional brasileiro de tecnologia e professor. Minha trajet\xf3ria combina Ci\xeancia da Computa\xe7\xe3o, Direito, engenharia de software, administra\xe7\xe3o p\xfablica, ensino e empreendedorismo."
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1582,
+                                lineNumber: 1580,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                 children: "Essa combina\xe7\xe3o molda minha forma de trabalhar: tecnologia n\xe3o apenas como c\xf3digo, mas como instrumento para resolver problemas institucionais, educacionais e de produto com clareza, responsabilidade e impacto pr\xe1tico."
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1587,
+                                lineNumber: 1585,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                 children: "Uso o GitHub como espa\xe7o p\xfablico de aprendizagem, materiais t\xe9cnicos, recursos de ensino, experimentos e prot\xf3tipos que transformam ideias em artefatos verific\xe1veis."
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1592,
+                                lineNumber: 1590,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1581,
+                        lineNumber: 1579,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 1576,
+                lineNumber: 1574,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -30848,20 +30868,20 @@ const App = ()=>{
                                 children: "Atua\xe7\xe3o"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1601,
+                                lineNumber: 1599,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                 children: "O que fa\xe7o hoje"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1602,
+                                lineNumber: 1600,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1600,
+                        lineNumber: 1598,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30873,31 +30893,31 @@ const App = ()=>{
                                         children: area.title
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1607,
+                                        lineNumber: 1605,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                         children: area.description
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1608,
+                                        lineNumber: 1606,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, area.title, true, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1606,
+                                lineNumber: 1604,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1604,
+                        lineNumber: 1602,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 1599,
+                lineNumber: 1597,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -30911,20 +30931,20 @@ const App = ()=>{
                                 children: "Foco atual"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1616,
+                                lineNumber: 1614,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                 children: "Temas que conectam pesquisa, pr\xe1tica e entrega"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1617,
+                                lineNumber: 1615,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1615,
+                        lineNumber: 1613,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30935,23 +30955,23 @@ const App = ()=>{
                                     children: item
                                 }, item, false, {
                                     fileName: "src/App.jsx",
-                                    lineNumber: 1622,
+                                    lineNumber: 1620,
                                     columnNumber: 15
                                 }, undefined))
                         }, void 0, false, {
                             fileName: "src/App.jsx",
-                            lineNumber: 1620,
+                            lineNumber: 1618,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1619,
+                        lineNumber: 1617,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 1614,
+                lineNumber: 1612,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -30966,20 +30986,20 @@ const App = ()=>{
                                 children: "Projetos em destaque"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1630,
+                                lineNumber: 1628,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                 children: "Reposit\xf3rios como material de ensino e evid\xeancia p\xfablica"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1631,
+                                lineNumber: 1629,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1629,
+                        lineNumber: 1627,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30995,38 +31015,38 @@ const App = ()=>{
                                         children: "GitHub"
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1642,
+                                        lineNumber: 1640,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                         children: project.title
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1643,
+                                        lineNumber: 1641,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                         children: project.description
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1644,
+                                        lineNumber: 1642,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, project.title, true, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1635,
+                                lineNumber: 1633,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1633,
+                        lineNumber: 1631,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 1628,
+                lineNumber: 1626,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -31040,20 +31060,20 @@ const App = ()=>{
                                 children: "Tecnologias"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1652,
+                                lineNumber: 1650,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                 children: "Ferramentas que uso para construir, testar e ensinar"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1653,
+                                lineNumber: 1651,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1651,
+                        lineNumber: 1649,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31062,18 +31082,18 @@ const App = ()=>{
                                 children: tech
                             }, tech, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1657,
+                                lineNumber: 1655,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1655,
+                        lineNumber: 1653,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 1650,
+                lineNumber: 1648,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -31087,20 +31107,20 @@ const App = ()=>{
                                 children: "Interesses"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1664,
+                                lineNumber: 1662,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                 children: "\xc1reas que gosto de explorar"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1665,
+                                lineNumber: 1663,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1663,
+                        lineNumber: 1661,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31111,23 +31131,23 @@ const App = ()=>{
                                     children: item
                                 }, item, false, {
                                     fileName: "src/App.jsx",
-                                    lineNumber: 1670,
+                                    lineNumber: 1668,
                                     columnNumber: 15
                                 }, undefined))
                         }, void 0, false, {
                             fileName: "src/App.jsx",
-                            lineNumber: 1668,
+                            lineNumber: 1666,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1667,
+                        lineNumber: 1665,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 1662,
+                lineNumber: 1660,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -31142,27 +31162,27 @@ const App = ()=>{
                                 children: "Conte\xfados sobre TI"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1678,
+                                lineNumber: 1676,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                 children: "Publica\xe7\xf5es e resumos de tecnologia"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1679,
+                                lineNumber: 1677,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                 children: "Resumos e leituras sobre IA, engenharia de software, produtos digitais, seguran\xe7a, automa\xe7\xe3o e tend\xeancias que acompanho de perto."
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1680,
+                                lineNumber: 1678,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1677,
+                        lineNumber: 1675,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31178,7 +31198,7 @@ const App = ()=>{
                                                 children: "Resumo di\xe1rio"
                                             }, void 0, false, {
                                                 fileName: "src/App.jsx",
-                                                lineNumber: 1689,
+                                                lineNumber: 1687,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("time", {
@@ -31186,27 +31206,27 @@ const App = ()=>{
                                                 children: formatDate(post.date)
                                             }, void 0, false, {
                                                 fileName: "src/App.jsx",
-                                                lineNumber: 1690,
+                                                lineNumber: 1688,
                                                 columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1688,
+                                        lineNumber: 1686,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                         children: post.title
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1692,
+                                        lineNumber: 1690,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                         children: post.summary
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1693,
+                                        lineNumber: 1691,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31219,37 +31239,37 @@ const App = ()=>{
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/App.jsx",
-                                                lineNumber: 1695,
+                                                lineNumber: 1693,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
                                                 children: "Ler resumo completo"
                                             }, void 0, false, {
                                                 fileName: "src/App.jsx",
-                                                lineNumber: 1696,
+                                                lineNumber: 1694,
                                                 columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1694,
+                                        lineNumber: 1692,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, post.date, true, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1687,
+                                lineNumber: 1685,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1685,
+                        lineNumber: 1683,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 1676,
+                lineNumber: 1674,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -31264,20 +31284,20 @@ const App = ()=>{
                                 children: "Contato"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1705,
+                                lineNumber: 1703,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                 children: "Aberto a conversas sobre tecnologia, ensino e IA aplicada"
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1706,
+                                lineNumber: 1704,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1704,
+                        lineNumber: 1702,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31287,7 +31307,7 @@ const App = ()=>{
                                 children: "Tenho interesse em projetos que conectem pesquisa e implementa\xe7\xe3o, engenharia de software e educa\xe7\xe3o, IA e fluxos reais de trabalho, profundidade t\xe9cnica e valor p\xfablico."
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1709,
+                                lineNumber: 1707,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31299,12 +31319,12 @@ const App = ()=>{
                                         children: link.label
                                     }, link.label, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1716,
+                                        lineNumber: 1714,
                                         columnNumber: 15
                                     }, undefined))
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1714,
+                                lineNumber: 1712,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -31312,7 +31332,7 @@ const App = ()=>{
                                 children: "Receba meu resumo di\xe1rio sobre tecnologia e inova\xe7\xe3o."
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1726,
+                                lineNumber: 1724,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
@@ -31332,13 +31352,13 @@ const App = ()=>{
                                                         required: true
                                                     }, void 0, false, {
                                                         fileName: "src/App.jsx",
-                                                        lineNumber: 1733,
+                                                        lineNumber: 1731,
                                                         columnNumber: 17
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/App.jsx",
-                                                lineNumber: 1731,
+                                                lineNumber: 1729,
                                                 columnNumber: 15
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
@@ -31351,19 +31371,19 @@ const App = ()=>{
                                                         required: true
                                                     }, void 0, false, {
                                                         fileName: "src/App.jsx",
-                                                        lineNumber: 1737,
+                                                        lineNumber: 1735,
                                                         columnNumber: 17
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/App.jsx",
-                                                lineNumber: 1735,
+                                                lineNumber: 1733,
                                                 columnNumber: 15
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1730,
+                                        lineNumber: 1728,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
@@ -31375,20 +31395,20 @@ const App = ()=>{
                                                 required: true
                                             }, void 0, false, {
                                                 fileName: "src/App.jsx",
-                                                lineNumber: 1741,
+                                                lineNumber: 1739,
                                                 columnNumber: 15
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                 children: "Aceito os termos de privacidade e concordo em receber comunica\xe7\xf5es de Fabricio Santana."
                                             }, void 0, false, {
                                                 fileName: "src/App.jsx",
-                                                lineNumber: 1742,
+                                                lineNumber: 1740,
                                                 columnNumber: 15
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1740,
+                                        lineNumber: 1738,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -31397,7 +31417,7 @@ const App = ()=>{
                                         children: "Assinar newsletter"
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1747,
+                                        lineNumber: 1745,
                                         columnNumber: 13
                                     }, undefined),
                                     newsletterMessage && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -31405,25 +31425,25 @@ const App = ()=>{
                                         children: newsletterMessage
                                     }, void 0, false, {
                                         fileName: "src/App.jsx",
-                                        lineNumber: 1750,
+                                        lineNumber: 1748,
                                         columnNumber: 35
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 1729,
+                                lineNumber: 1727,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1708,
+                        lineNumber: 1706,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 1703,
+                lineNumber: 1701,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("footer", {
@@ -31433,7 +31453,7 @@ const App = ()=>{
                         children: "Fabricio Santana"
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1755,
+                        lineNumber: 1753,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -31441,19 +31461,19 @@ const App = ()=>{
                         children: "fabricio.santana@gmail.com"
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 1756,
+                        lineNumber: 1754,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 1754,
+                lineNumber: 1752,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.jsx",
-        lineNumber: 1530,
+        lineNumber: 1528,
         columnNumber: 5
     }, undefined);
 };
