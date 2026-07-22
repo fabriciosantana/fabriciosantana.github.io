@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 
 import { digestIndex, digestsByFile } from "./content/digests/generated.js";
-import profilePhoto from "./images/fabricio-plenario.png";
+import homeProfilePhoto from "./images/Fabricio.jpg";
+import mentorshipHeroPhoto from "./images/fabricio-plenario.png";
+import mentorshipMentorPhoto from "./images/fabricio-aula.png";
 import "./styles.css";
 
 const whatsappNumber = "5561982336222";
@@ -1000,9 +1002,9 @@ const DataprevMentorshipLanding = () => {
     upsertMeta('meta[property="og:title"]', { property: "og:title", content: title });
     upsertMeta('meta[property="og:description"]', { property: "og:description", content: description });
     upsertMeta('meta[property="og:type"]', { property: "og:type", content: "website" });
-    upsertMeta('meta[property="og:image"]', { property: "og:image", content: profilePhoto });
+    upsertMeta('meta[property="og:image"]', { property: "og:image", content: mentorshipHeroPhoto });
     upsertMeta('meta[name="twitter:card"]', { name: "twitter:card", content: "summary_large_image" });
-    upsertMeta('meta[name="twitter:image"]', { name: "twitter:image", content: profilePhoto });
+    upsertMeta('meta[name="twitter:image"]', { name: "twitter:image", content: mentorshipHeroPhoto });
 
     let canonical = document.head.querySelector('link[rel="canonical"]');
     if (!canonical) {
@@ -1102,7 +1104,7 @@ const DataprevMentorshipLanding = () => {
           </div>
         </div>
         <aside className="mentorship-hero-photo" aria-label="Fabricio Santana, mentor da turma">
-          <img src={profilePhoto} alt="Fabricio Santana" loading="eager" />
+          <img src={mentorshipHeroPhoto} alt="Fabricio Santana" loading="eager" />
           <p>Fabricio Santana já foi aprovado em vários concursos, hoje é Analista de Informática do Senado.</p>
         </aside>
       </section>
@@ -1189,17 +1191,23 @@ const DataprevMentorshipLanding = () => {
           <p className="eyebrow">Comparação</p>
           <h2>Preparação com mais direção e menos dispersão.</h2>
         </div>
-        <div className="mentorship-comparison-table" role="table" aria-label="Comparação entre preparação sem acompanhamento e mentoria Dataprev">
-          <div className="mentorship-comparison-row mentorship-comparison-head" role="row">
-            <strong role="columnheader">Preparação sem acompanhamento</strong>
-            <strong role="columnheader">Mentoria Dataprev</strong>
-          </div>
-          {dataprevMentorship.comparison.map(([solo, mentored]) => (
-            <div className="mentorship-comparison-row" role="row" key={solo}>
-              <span role="cell">– {solo}</span>
-              <span role="cell">✓ {mentored}</span>
-            </div>
-          ))}
+        <div className="mentorship-comparison-grid" aria-label="Comparação entre preparação sem acompanhamento e mentoria Dataprev">
+          <article className="mentorship-comparison-card">
+            <h3>Preparação sem acompanhamento</h3>
+            <ul>
+              {dataprevMentorship.comparison.map(([solo]) => (
+                <li key={solo}>{solo}</li>
+              ))}
+            </ul>
+          </article>
+          <article className="mentorship-comparison-card highlighted">
+            <h3>Mentoria Dataprev</h3>
+            <ul>
+              {dataprevMentorship.comparison.map(([solo, mentored]) => (
+                <li key={solo}>{mentored}</li>
+              ))}
+            </ul>
+          </article>
         </div>
       </section>
 
@@ -1226,7 +1234,7 @@ const DataprevMentorshipLanding = () => {
 
       <section className="projects-section mentorship-mentor-section" id="perfil">
         <div className="mentorship-mentor-media">
-          <img src={profilePhoto} alt="Fabricio Santana" loading="lazy" />
+          <img src={mentorshipMentorPhoto} alt="Fabricio Santana em aula" loading="lazy" />
           <div className="mentorship-gallery-caption">Fabricio Santana.</div>
         </div>
         <div>
@@ -1504,8 +1512,8 @@ const App = () => {
         <div className="intro-copy">
           <p className="eyebrow">Tecnologia, ensino e gestão</p>
           <p className="intro-text">
-            Sou Fabricio Santana, profissional de tecnologia com experiência em desenvolvimento de
-            software, liderança técnica, computação em nuvem e ensino superior.
+            Sou Fabricio Santana, engenheiro de software e professor, apaixonado por aprender,
+            experimentar e compartilhar conhecimento.
           </p>
           <p className="newsletter-callout">
             Receba meu resumo diário sobre tecnologia e inovação.
@@ -1534,7 +1542,7 @@ const App = () => {
             {newsletterMessage && <p className="form-message">{newsletterMessage}</p>}
           </form>
         </div>
-        <img className="profile-photo" src={profilePhoto} alt="Fabricio Santana" />
+        <img className="profile-photo" src={homeProfilePhoto} alt="Fabricio Santana" />
       </section>
 
       <section className="content-section" id="sobre">

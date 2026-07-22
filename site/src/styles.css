@@ -1661,35 +1661,57 @@ p {
   padding: 8px 10px;
 }
 
-.mentorship-comparison-table {
+.mentorship-comparison-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.mentorship-comparison-card {
   background: #ffffff;
   border: 1px solid var(--line);
   border-radius: 8px;
   box-shadow: 0 12px 30px rgba(30, 58, 138, 0.07);
-  overflow: hidden;
+  padding: 24px;
 }
 
-.mentorship-comparison-row {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.mentorship-comparison-card.highlighted {
+  border-color: rgba(30, 58, 138, 0.28);
 }
 
-.mentorship-comparison-row > * {
-  border-top: 1px solid var(--line);
-  color: var(--muted);
-  font-weight: 700;
-  line-height: 1.5;
-  padding: 16px 20px;
-}
-
-.mentorship-comparison-row > *:first-child {
-  border-right: 1px solid var(--line);
-}
-
-.mentorship-comparison-head > * {
-  background: var(--surface-muted);
-  border-top: 0;
+.mentorship-comparison-card h3 {
   color: var(--text);
+  font-size: 1.05rem;
+  margin: 0 0 16px;
+}
+
+.mentorship-comparison-card ul {
+  display: grid;
+  gap: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mentorship-comparison-card li {
+  align-items: start;
+  color: var(--muted);
+  display: grid;
+  font-weight: 700;
+  gap: 10px;
+  grid-template-columns: 18px 1fr;
+  line-height: 1.5;
+}
+
+.mentorship-comparison-card li::before {
+  color: #a16207;
+  content: "-";
+  font-weight: 900;
+}
+
+.mentorship-comparison-card.highlighted li::before {
+  color: var(--accent);
+  content: "✓";
 }
 
 .mentorship-operations-section,
@@ -1885,12 +1907,8 @@ p {
   }
 
   .mentorship-hero-facts,
-  .mentorship-comparison-row {
+  .mentorship-comparison-grid {
     grid-template-columns: 1fr;
-  }
-
-  .mentorship-comparison-row > *:first-child {
-    border-right: 0;
   }
 
   .mentorship-mobile-cta {
