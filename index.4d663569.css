@@ -1580,35 +1580,57 @@ p {
   font-weight: 700;
 }
 
-.mentorship-comparison-table {
-  border: 1px solid var(--line);
-  background: #fff;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 12px 30px #1e3a8a12;
-}
-
-.mentorship-comparison-row {
+.mentorship-comparison-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
   display: grid;
 }
 
-.mentorship-comparison-row > * {
-  border-top: 1px solid var(--line);
+.mentorship-comparison-card {
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 12px 30px #1e3a8a12;
+}
+
+.mentorship-comparison-card.highlighted {
+  border-color: #1e3a8a47;
+}
+
+.mentorship-comparison-card h3 {
+  color: var(--text);
+  margin: 0 0 16px;
+  font-size: 1.05rem;
+}
+
+.mentorship-comparison-card ul {
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+}
+
+.mentorship-comparison-card li {
   color: var(--muted);
-  padding: 16px 20px;
+  grid-template-columns: 18px 1fr;
+  align-items: start;
+  gap: 10px;
   font-weight: 700;
   line-height: 1.5;
+  display: grid;
 }
 
-.mentorship-comparison-row > :first-child {
-  border-right: 1px solid var(--line);
+.mentorship-comparison-card li:before {
+  color: #a16207;
+  content: "-";
+  font-weight: 900;
 }
 
-.mentorship-comparison-head > * {
-  background: var(--surface-muted);
-  color: var(--text);
-  border-top: 0;
+.mentorship-comparison-card.highlighted li:before {
+  color: var(--accent);
+  content: "✓";
 }
 
 .mentorship-operations-section, .mentorship-mentor-section {
@@ -1794,12 +1816,8 @@ p {
     font-size: clamp(2rem, 10vw, 2.8rem);
   }
 
-  .mentorship-hero-facts, .mentorship-comparison-row {
+  .mentorship-hero-facts, .mentorship-comparison-grid {
     grid-template-columns: 1fr;
-  }
-
-  .mentorship-comparison-row > :first-child {
-    border-right: 0;
   }
 
   .mentorship-mobile-cta {
