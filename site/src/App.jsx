@@ -1,14 +1,11 @@
 import React, { useState } from "react";
 
 import { digestIndex, digestsByFile } from "./content/digests/generated.js";
-import profilePhoto from "./images/Fabricio.jpg";
+import profilePhoto from "./images/fabricio-plenario.png";
 import "./styles.css";
 
 const whatsappNumber = "5561982336222";
 const whatsappUrl = `https://wa.me/${whatsappNumber}`;
-const dataprevWhatsappUrl = `${whatsappUrl}?text=${encodeURIComponent(
-  "Olá, Fabricio. Quero fazer minha inscrição e pagamento da mentoria Dataprev para Desenvolvimento de Software."
-)}`;
 const courses = [
   {
     title: "Engenharia de Software",
@@ -81,200 +78,188 @@ const renderDigestMarkdown = (markdown) => {
     .join("");
 };
 
+const mentorshipAvailabilityText =
+  "Olá, Fabricio. Tenho interesse na Mentoria Dataprev para Desenvolvimento de Software e gostaria de verificar a disponibilidade da turma.";
+
 const dataprevMentorship = {
-  editalKeyFacts: [
-    ["80 vagas imediatas", "Perfil 3: Desenvolvimento de Software"],
-    ["75 de 115 pontos", "Conhecimentos Específicos"],
-    ["R$ 10.685,44", "salário inicial"],
-    ["11/10/2026", "data da prova"],
-  ],
-  editalFacts: [
-    "Concurso Público Dataprev 2026, Edital 001/2026, organizado pela FGV.",
-    "Perfil 3: Desenvolvimento de Software, com vagas imediatas em Fortaleza, João Pessoa, Natal e Florianópolis, além de cadastro de reserva em outras capitais.",
-    "Prova objetiva prevista para 11 de outubro de 2026, com 70 questões e peso alto em conhecimentos específicos.",
-    "Para ser aprovado na objetiva, o candidato precisa atingir a pontuação mínima e não zerar nenhuma disciplina.",
-    "Conteúdo amplo: Java, Java EE/Jakarta EE, Spring, testes, APIs, arquitetura, DevOps, dados, segurança, BI e governança de TI.",
-  ],
-  editalTimeline: [
-    {
-      date: "03/07/2026",
-      title: "Publicação do edital",
-      text: "Edital 001/2026 publicado na página oficial da FGV para o concurso Dataprev.",
-    },
-    {
-      date: "06/07/2026, 16h",
-      title: "Abertura das inscrições",
-      text: "Início do período de inscrição no site da FGV, pelo horário oficial de Brasília.",
-    },
-    {
-      date: "06/08/2026, 16h",
-      title: "Encerramento das inscrições",
-      text: "Também é o prazo para atendimento especial, envio de laudo e solicitação de nome social.",
-    },
-    {
-      date: "07/08/2026, 16h",
-      title: "Último dia para boleto",
-      text: "Prazo final para reimprimir e pagar a taxa de inscrição, conforme regras do edital.",
-    },
-    {
-      date: "11/10/2026",
-      title: "Prova objetiva",
-      text: "Aplicação prevista das 13h às 17h, com fechamento dos portões às 12h30.",
-    },
-  ],
-  pillars: [
-    {
-      title: "Leitura estratégica do edital",
-      text: "Você deixa de olhar para o edital como uma lista infinita e passa a enxergar uma ordem clara de execução até a prova.",
-    },
-    {
-      title: "Rotina de estudo acompanhada",
-      text: "Você nunca ficará sem saber o que estudar na semana seguinte: cada etapa termina com metas claras e objetivas.",
-    },
-    {
-      title: "Engenharia de software aplicada",
-      text: "Você entende os temas técnicos do edital a partir de exemplos reais de desenvolvimento, não apenas de definições soltas.",
-    },
-  ],
-  modules: [
-    "Diagnóstico inicial e plano individual de estudo",
-    "Priorização dos tópicos de Desenvolvimento de Software",
-    "Java, Spring, APIs, orientação a objetos e arquitetura",
-    "Testes, qualidade, SonarQube, TDD e ciclo de vida de testes",
-    "Banco de dados, SQL, modelagem, NoSQL, ETL/ELT e BI",
-    "Segurança da informação, LGPD, OAuth2, OWASP, SAST e DAST",
-    "DevOps, Git, containers, microsserviços, cloud e observabilidade",
-    "Governança de TI, ITIL, COBIT, Scrum, Kanban, riscos e BPMN",
-  ],
-  format: [
-    ["Turmas pequenas", "até 7 estudantes por turma"],
-    [
-      "Encontros ao vivo",
-      "encontros são gravados e ficam disponíveis para retomar pontos importantes",
-    ],
-    [
-      "Cronograma personalizado",
-      "metas claras, revisão orientada e prioridade definida",
-    ],
-    [
-      "Resumos e mapas mentais",
-      "mentoria orienta método e execução; aprovação depende do desempenho do candidato",
-    ],
-    [
-      "Simulados",
-      "você treina com questões para interpretar o padrão da FGV e medir evolução",
-    ],
-    ["Suporte via WhatsApp", "Você não estuda no escuro, terá suporte no grupo da turma e direto com o mentor"],
-  ],
-  included: [
-    "Turmas pequenas",
-    "Encontros ao vivo",
-    "Cronograma personalizado",
-    "Resumos e mapas mentais",
-    "Simulados",
-    "Suporte via WhatsApp",
-  ],
-  pricing: {
-    regular: "R$ 997,00",
-    alumni: "R$ 697,00",
-    installments: "em até 3x",
-    alumniLabel: "ex-mentorados e ex-alunos de graduação",
+  cta: {
+    primary: "Quero reversar minha vaga",
+    final: "Falar com o mentor pelo WhatsApp",
   },
-  schedule: [
+  heroFacts: [
+    ["11/10/2026", "data prevista da prova"],
+    ["75 de 115", "pontos em conhecimentos específicos"],
+    ["até 7", "participantes por turma"],
+    ["até a prova", "acompanhamento e ajustes de rota"],
+  ],
+  authority: [
+    "Analista de Informática do Senado Federal",
+    "Professor de Ciência da Computação",
+    "Aprovado em três concursos de TI",
+    "Mais de 20 anos em engenharia de software",
+  ],
+  painPoints: [
     {
-      meeting: "Encontro 1",
-      title: "Diagnóstico, edital e estratégia de prova",
-      topics:
-        "Você sai com diagnóstico inicial, leitura orientada do edital e um plano individual para transformar tempo disponível em execução.",
+      title: "Edital técnico e extenso",
+      text: "Mais de 100 tópicos dificultam saber por onde começar e qual profundidade cada assunto exige.",
     },
     {
-      meeting: "Encontro 2",
-      title: "Java, orientação a objetos e fundamentos de backend",
-      topics:
-        "Você entende quais fundamentos de Java, POO, APIs e persistência merecem prioridade e como transformar teoria em acerto de questão.",
+      title: "Rotina de trabalho intensa",
+      text: "Quem trabalha com tecnologia precisa encaixar a preparação em poucas horas disponíveis.",
     },
     {
-      meeting: "Encontro 3",
-      title: "Spring, arquitetura e desenvolvimento web",
-      topics:
-        "Você aprende como estudar Spring, REST, microsserviços e arquitetura sem se perder em documentação ou conteúdo excessivo.",
+      title: "Base prática diferente da cobrança da banca",
+      text: "Saber desenvolver software não significa conhecer o modo como a FGV transforma conceitos em questões.",
     },
     {
-      meeting: "Encontro 4",
-      title: "Testes, qualidade, DevOps e observabilidade",
-      topics:
-        "Você identifica o que revisar em testes, qualidade, DevOps e observabilidade para ganhar pontos sem dispersar a preparação.",
-    },
-    {
-      meeting: "Encontro 5",
-      title: "Dados, SQL, BI, segurança e LGPD",
-      topics:
-        "Você aprende quais questões resolver em dados, BI, segurança e LGPD e como interpretar o padrão de cobrança desses blocos.",
-    },
-    {
-      meeting: "Encontro 6",
-      title: "Governança, métodos ágeis e revisão final orientada por desempenho",
-      topics:
-        "Você chega à reta final com revisão orientada por erros, temas de governança organizados e plano de prova mais objetivo.",
+      title: "Muitos materiais, pouca direção",
+      text: "Cursos, vídeos, PDFs e questões em excesso podem aumentar a dispersão em vez de acelerar o estudo.",
     },
   ],
-  scheduleNote:
-    "A cada semana, a turma transforma o edital em metas de execução, revisão e treino. Este é um plano-base: temas, ordem e profundidade podem ser ajustados conforme o perfil técnico, as dificuldades e a evolução da turma.",
-  profileProof: [
+  process: [
+    ["Diagnóstico inicial", "Avaliação da base técnica, disponibilidade semanal e principais dificuldades."],
+    ["Priorização do edital", "Classificação dos tópicos por relevância, dificuldade e necessidade de aprofundamento."],
+    ["Cronograma individual", "Definição das metas semanais de teoria, revisão e questões."],
+    ["Encontros e simulados", "Orientação ao vivo, treinamento no padrão FGV e correção dos erros."],
+    ["Monitoramento e ajuste de rota", "Revisão do desempenho e adaptação do plano conforme a evolução."],
+    ["Reta final", "Revisão orientada pelos erros e definição da estratégia para a prova."],
+  ],
+  deliverables: [
+    {
+      title: "Diagnóstico de partida",
+      label: "Entregue na primeira semana",
+      text:
+        "Você começa sabendo quais blocos do edital já domina, quais precisam de reforço e onde o estudo deve gerar mais ganho de desempenho.",
+      preview: ["Base técnica", "Horas disponíveis", "Lacunas críticas", "Plano inicial"],
+    },
+    {
+      title: "Matriz de prioridade do edital",
+      label: "Baseada no edital FGV",
+      text:
+        "Os tópicos de Desenvolvimento de Software são organizados por peso, dificuldade e risco, para você parar de tratar todo assunto como se tivesse a mesma importância.",
+      preview: ["Java e Spring", "Testes", "Segurança", "Dados e DevOps"],
+    },
+    {
+      title: "Cronograma de execução até a prova",
+      label: "Personalizado por rotina",
+      text:
+        "Cada semana vira uma sequência objetiva de teoria, revisão, questões e simulado, ajustada à sua disponibilidade real de estudo.",
+      preview: ["Meta semanal", "Revisão", "Questões FGV", "Simulado"],
+    },
+    {
+      title: "Caderno de treino por tópico",
+      label: "Foco no padrão da banca",
+      text:
+        "As questões deixam de ser aleatórias: o treino acompanha os temas priorizados e ajuda a transformar erro em revisão direcionada.",
+      preview: ["APIs REST", "SQL", "OWASP", "CI/CD"],
+    },
+    {
+      title: "Painel de evolução e rota",
+      label: "Acompanhamento contínuo",
+      text:
+        "A preparação passa a ter leitura objetiva: acertos, erros recorrentes, temas travados e próximos ajustes antes da reta final.",
+      preview: ["Acertos", "Erros recorrentes", "Temas travados", "Próxima ação"],
+    },
+    {
+      title: "Ferramentas visuais de revisão",
+      label: "Diagramas, mapas e infográficos",
+      text:
+        "Conceitos densos de arquitetura, segurança, testes, dados e DevOps são organizados em diagramas, mapas mentais e infográficos para acelerar revisão e conexão entre assuntos.",
+      preview: ["Diagramas", "Mapas mentais", "Fluxos", "Infográficos"],
+    },
+  ],
+  benefits: [
+    ["Turma de até sete participantes", "Número limitado para permitir acompanhamento real da evolução e das dúvidas."],
+    ["Encontros ao vivo e gravados", "Orientação semanal, correção de rota e gravação disponível para revisão."],
+    ["Cronograma personalizado", "Metas ajustadas à sua base, rotina e disponibilidade semanal."],
+    ["Materiais de revisão", "Resumos e mapas mentais dos tópicos priorizados pela mentoria, elaborados e recomendados conforme a turma."],
+    ["Simulados e questões", "Treino no padrão FGV, organizado por assunto e acompanhado por indicadores de desempenho."],
+    ["Suporte pelo WhatsApp", "Canal para dúvidas, orientações e ajustes durante a semana."],
+  ],
+  comparison: [
+    ["Estuda os tópicos na ordem do edital", "Estuda segundo prioridade e peso"],
+    ["Usa materiais dispersos", "Recebe uma trilha organizada"],
+    ["Mede evolução apenas por sensação", "Acompanha questões e simulados"],
+    ["Mantém o mesmo plano mesmo com baixo rendimento", "Ajusta a rota com base nos erros"],
+    ["Depende de motivação para avançar", "Trabalha com metas semanais"],
+  ],
+  mentorProof: [
+    "Analista de Informática Legislativa do Senado Federal",
+    "Professor de Ciência da Computação e Engenharia de Software",
+    "Aprovado para Analista de Informática do Senado Federal",
+    "Aprovado para Analista de Sistemas da Eletronuclear",
+    "Aprovado para Perito de Informática da Polícia Civil do Rio de Janeiro",
+    "Mais de 20 anos em engenharia de software",
+  ],
+  trajectory: [
     "Bacharel em Ciência da Computação (UFRJ)",
     "Especialista em Tecnologia da Informação Aplicada ao Poder Legislativo (ILB)",
     "Especialista em Processamento de Linguagem Natural (UFG)",
     "Mestrando em Ciência de Dados e Inteligência Artificial (IDP)",
-    "Aprovado para Analista de Informática do Senado Federal",
-    "Aprovado para Analista de Sistemas da Eletronuclear",
-    "Aprovado para Perito de Informática da Polícia Civil do Rio de Janeiro",
-    "Professor de Ciência da Computação",
-    "Mais de 20 anos de experiência em engenharia de software",
   ],
   testimonials: [
     {
       quote:
-        "A mentoria ajudou a transformar um edital grande em uma rotina objetiva, com prioridade clara e acompanhamento do que precisava ser feito na semana.",
-      author: "Yuri B. A. S",
-      approval: "Aprovado para Agente de Tecnologia do Banco do Brasil (2023)",
+        "Antes da orientação eu tinha dificuldade em transformar um edital grande em rotina. Com cronograma e acompanhamento, passei a saber o que estudar e revisar a cada semana.",
+      author: "Yuri",
+      approval: "Aprovado para Agente de Tecnologia do Banco do Brasil — 2023",
     },
     {
       quote:
         "O acompanhamento deu direção para priorizar o que mais importava, revisar com método e manter constância até a prova.",
-      author: "Luiz F. S.",
+      author: "Luiz",
       approval: "Aprovado em concurso público de TI",
     },
     {
       quote:
         "A orientação conectou o conteúdo técnico do edital com exemplos práticos de desenvolvimento, testes, arquitetura e sistemas reais.",
-      author: "Renata C. S.",
+      author: "Renata",
       approval: "Aprovada na área de tecnologia",
     },
   ],
-  guarantee: [
-    {
-      title: "14 dias de garantia incondicional",
-      text: "Você pode cancelar em até 14 dias após a inscrição, por qualquer motivo. O valor investido será integralmente devolvido.",
-    },
-    {
-      title: "Garantia de entrega e clareza",
-      text: "Você recebe encontros ao vivo, gravações, cronograma, materiais combinados e acompanhamento para manter a execução clara durante a preparação.",
-    },
-    {
-      title: "Sem promessa de aprovação",
-      text: "Aprovação depende de execução, base prévia, constância e desempenho no dia da prova. O compromisso é reduzir dispersão, orientar prioridades e entregar o método contratado.",
-    },
+  offerItems: [
+    "Encontros ao vivo até a prova",
+    "Cronograma personalizado",
+    "Simulados e questões por tópico",
+    "Materiais de revisão",
+    "Suporte durante a semana",
+    "Turma de até sete participantes",
+    "Garantia de 14 dias",
+  ],
+  pricing: {
+    regular: "R$ 997",
+    alumni: "R$ 697",
+    installments: "em até 3x",
+    alumniLabel: "ex-alunos e ex-mentorados",
+  },
+  urgency: [
+    "Inscrições do concurso encerram em 06/08/2026.",
+    "Prova prevista para 11/10/2026.",
+    "A turma será encerrada quando as sete vagas forem preenchidas.",
+  ],
+  editalFacts: [
+    "Concurso Público Dataprev 2026, Edital 001/2026, organizado pela FGV.",
+    "Perfil 3: Desenvolvimento de Software, com vagas imediatas em Fortaleza, João Pessoa, Natal e Florianópolis, além de cadastro de reserva em outras capitais.",
+    "Prova objetiva prevista para 11 de outubro de 2026, com 70 questões e peso alto em conhecimentos específicos.",
+    "Conteúdo amplo: Java, Java EE/Jakarta EE, Spring, testes, APIs, arquitetura, DevOps, dados, segurança, BI e governança de TI.",
+  ],
+  editalTimeline: [
+    ["03/07/2026", "Publicação do edital"],
+    ["06/07/2026", "Abertura das inscrições"],
+    ["06/08/2026", "Encerramento das inscrições"],
+    ["07/08/2026", "Último dia para boleto"],
+    ["11/10/2026", "Prova objetiva"],
   ],
   faq: [
     {
       question: "A mentoria substitui curso completo de teoria?",
       answer:
-        "Não. A mentoria ajuda você a decidir o que priorizar, como revisar, quais questões resolver e como conectar os temas técnicos a exemplos práticos. Ela funciona melhor para quem já estuda ou quer estudar com direção mais clara.",
+        "Não. A mentoria ajuda você a decidir o que priorizar, como revisar, quais questões resolver e como conectar os temas técnicos a exemplos práticos.",
     },
     {
       question: "Preciso já programar bem em Java?",
       answer:
-        "Não precisa dominar tudo, mas precisa estudar com consistência. A mentoria indica onde aprofundar, como treinar e quais lacunas precisam ser atacadas primeiro.",
+        "Não precisa dominar tudo, mas precisa estudar com consistência. O diagnóstico inicial indicará onde aprofundar e quais lacunas atacar primeiro.",
     },
     {
       question: "A turma é só para Desenvolvimento de Software?",
@@ -284,7 +269,7 @@ const dataprevMentorship = {
     {
       question: "Há garantia de aprovação?",
       answer:
-        "Não. Nenhuma preparação séria pode garantir aprovação. O compromisso é dar método, orientação, acompanhamento e clareza para você executar melhor até a prova.",
+        "Não. Aprovação depende de execução, base prévia, constância e desempenho no dia da prova. O compromisso é entregar método, orientação e acompanhamento.",
     },
   ],
 };
@@ -976,9 +961,102 @@ const ProjectsLanding = () => {
   );
 };
 
+const trackMentorshipEvent = (eventName, details = {}) => {
+  if (typeof window === "undefined") {
+    return;
+  }
+
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({ event: eventName, ...details });
+};
+
 const DataprevMentorshipLanding = () => {
+  const [selectedDeliverable, setSelectedDeliverable] = useState(null);
+  const [showMobileCta, setShowMobileCta] = useState(false);
   const editalUrl =
-    "https://conhecimento.fgv.br/sites/default/files/concursos/edital-dataprev_supe-versaofinal.pdf";
+    "https://conhecimento.fgv.br/sites/default/files/concursos/dataprev_-_edital_no_01-2026_-_abertura_-_final_0.pdf";
+  const searchParams = typeof window !== "undefined" ? window.location.search : "";
+  const dataprevWhatsappUrl = `${whatsappUrl}?text=${encodeURIComponent(
+    mentorshipAvailabilityText
+  )}${searchParams ? `&${searchParams.slice(1)}` : ""}`;
+
+  React.useEffect(() => {
+    const title = "Mentoria Dataprev 2026 para Desenvolvimento de Software | Fabricio Santana";
+    const description =
+      "Mentoria em turma de até sete participantes para o Perfil 3 da Dataprev, com diagnóstico, cronograma personalizado, encontros ao vivo, simulados e acompanhamento até a prova.";
+
+    document.title = title;
+
+    const upsertMeta = (selector, attributes) => {
+      let element = document.head.querySelector(selector);
+      if (!element) {
+        element = document.createElement("meta");
+        document.head.appendChild(element);
+      }
+      Object.entries(attributes).forEach(([name, value]) => element.setAttribute(name, value));
+    };
+
+    upsertMeta('meta[name="description"]', { name: "description", content: description });
+    upsertMeta('meta[property="og:title"]', { property: "og:title", content: title });
+    upsertMeta('meta[property="og:description"]', { property: "og:description", content: description });
+    upsertMeta('meta[property="og:type"]', { property: "og:type", content: "website" });
+    upsertMeta('meta[property="og:image"]', { property: "og:image", content: profilePhoto });
+    upsertMeta('meta[name="twitter:card"]', { name: "twitter:card", content: "summary_large_image" });
+    upsertMeta('meta[name="twitter:image"]', { name: "twitter:image", content: profilePhoto });
+
+    let canonical = document.head.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement("link");
+      canonical.setAttribute("rel", "canonical");
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute("href", `${window.location.origin}/mentoria-dataprev`);
+
+    let structuredData = document.getElementById("mentorship-structured-data");
+    if (!structuredData) {
+      structuredData = document.createElement("script");
+      structuredData.setAttribute("type", "application/ld+json");
+      structuredData.setAttribute("id", "mentorship-structured-data");
+      document.head.appendChild(structuredData);
+    }
+    structuredData.textContent = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Course",
+      name: "Mentoria Dataprev 2026 para Desenvolvimento de Software",
+      description,
+      provider: {
+        "@type": "Person",
+        name: "Fabricio Santana",
+      },
+      offers: {
+        "@type": "Offer",
+        price: "997",
+        priceCurrency: "BRL",
+        availability: "https://schema.org/LimitedAvailability",
+      },
+    });
+
+    trackMentorshipEvent("mentorship_hero_view");
+
+    const updateStickyCta = () => {
+      const investmentSection = document.getElementById("investimento");
+      const pastHero = window.scrollY > window.innerHeight * 0.65;
+      const nearInvestment = investmentSection
+        ? investmentSection.getBoundingClientRect().top < window.innerHeight * 0.85
+        : false;
+      setShowMobileCta(pastHero && !nearInvestment);
+    };
+
+    updateStickyCta();
+    window.addEventListener("scroll", updateStickyCta, { passive: true });
+    return () => window.removeEventListener("scroll", updateStickyCta);
+  }, []);
+
+  const handleCtaClick = (name) => () => trackMentorshipEvent(name, { page: "mentoria_dataprev" });
+  const openDeliverable = (item) => {
+    setSelectedDeliverable(item);
+    trackMentorshipEvent("mentorship_deliverable_open", { deliverable: item.title });
+  };
 
   return (
     <main className="site-shell projects-page mentorship-page">
@@ -988,43 +1066,44 @@ const DataprevMentorshipLanding = () => {
         </a>
         <nav className="nav-links mentorship-nav" aria-label="Navegação da mentoria Dataprev">
           <a href="#problema">Problema</a>
-          <a href="#programa">Solução</a>
+          <a href="#como-funciona">Como funciona</a>
+          <a href="#entregaveis">Entregáveis</a>
           <a href="#perfil">Mentor</a>
-          <a href="#inscricao">Inscrição</a>
+          <a href="#investimento">Investimento</a>
         </nav>
       </header>
 
-      <section className="projects-hero mentorship-hero" id="mentoria">
+      <section className="projects-hero mentorship-hero" id="inicio">
         <div className="projects-hero-copy">
-          <p className="eyebrow">Mentoria para Concursos de TI</p>
-          <h2>
-            Prepare-se para o concurso da Dataprev com um plano de estudos estruturado e orientação de quem já foi aprovado em concursos de TI.
-          </h2>
-          <p>
-            O edital reúne mais de 100 tópicos. Em vez de tentar estudar tudo com a mesma profundidade, você seguirá uma estratégia para priorizar os conteúdos mais relevantes que aumentará suas chances de um bom desempenho na prova.
+          <p className="eyebrow">Mentoria Dataprev — Perfil 3: Desenvolvimento de Software</p>
+          <h2>Prepare-se para o concurso da Dataprev com um plano de estudos estruturado e orientação de quem já foi aprovado em concursos de TI.</h2>
+          <p className="projects-lead">
+            Transforme mais de 100 tópicos do edital em um plano de estudos estruturado, com
+            diagnóstico inicial, cronograma personalizado, simulados e acompanhamento em uma turma de
+            até sete participantes.
           </p>
+          <div className="mentorship-hero-facts" aria-label="Resumo da mentoria">
+            {dataprevMentorship.heroFacts.map(([value, label]) => (
+              <span key={value}>
+                <strong>{value}</strong> {label}
+              </span>
+            ))}
+          </div>
           <div className="projects-actions">
-            <a className="button primary" href="#inscricao">
-              Quero reservar minha vaga
-            </a>
-            <a className="button secondary" href="#programa">
-              Ver estrutura da mentoria
+            <a
+              className="button primary"
+              href={dataprevWhatsappUrl}
+              target="_blank"
+              rel="noreferrer"
+              onClick={handleCtaClick("mentorship_primary_cta_click")}
+            >
+              {dataprevMentorship.cta.primary}
             </a>
           </div>
         </div>
-        <aside className="hero-proof mentorship-proof" aria-label="Resumo da oferta">
-          <div className="hero-proof-title">Edital Dataprev</div>
-          {dataprevMentorship.editalKeyFacts.map(([value, label]) => (
-            <div className="proof-item" key={value}>
-              <strong>{value}</strong>
-              <span>{label}</span>
-            </div>
-          ))}
-          <div className="hero-proof-actions">
-            <a className="button primary" href="#inscricao">
-              Participar da turma DataPrev
-            </a>
-          </div>
+        <aside className="mentorship-hero-photo" aria-label="Fabricio Santana, mentor da turma">
+          <img src={profilePhoto} alt="Fabricio Santana" loading="eager" />
+          <p>Fabricio Santana já foi aprovado em vários concursos, hoje é Analista de Informática do Senado.</p>
         </aside>
       </section>
 
@@ -1033,307 +1112,186 @@ const DataprevMentorshipLanding = () => {
           <p className="eyebrow">O problema</p>
           <h2>O maior risco não é estudar pouco. É estudar errado.</h2>
           <p>
-            A maioria dos candidatos enfrenta desafios que dificultam uma preparação consistente.
+            Esta mentoria foi desenhada para quem já possui alguma base técnica, mas precisa aprender
+            a transformar conhecimento profissional em desempenho na prova.
           </p>
         </div>
         <div className="mentorship-pain-grid">
-          <article className="use-case-card">
-            <h3>Edital muito grande</h3>
-            <p>
-              Mais de 100 tópicos tornam difícil saber por onde começar e quanto tempo dedicar a cada assunto.
-            </p>
-          </article>
-          <article className="use-case-card">
-            <h3>Pouco tempo disponível</h3>
-            <p>
-              Conciliar trabalho, família e estudos exige uma rotina objetiva e prioridades bem definidas.
-            </p>
-          </article>
-          <article className="use-case-card">
-            <h3>Dificuldade para priorizar</h3>
-            <p>
-              Nem todos os tópicos têm a mesma importância. Saber onde aprofundar faz diferença na preparação.
-            </p>
-          </article>
-          <article className="use-case-card">
-            <h3>Excesso de materiais</h3>
-            <p>
-              Cursos, PDFs, vídeos e resumos em excesso podem gerar mais confusão do que aprendizado.
-            </p>
-          </article>
+          {dataprevMentorship.painPoints.map((item) => (
+            <article className="use-case-card" key={item.title}>
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+            </article>
+          ))}
         </div>
-        <p className="mentorship-problem-close">
-          A mentoria existe para eliminar exatamente esses problemas. 
-        </p>
-        <p>
-          Em vez de estudar mais, você passa a estudar com estratégia.
-        </p>
-        <div className="final-actions mentorship-section-actions">
-          <a className="button primary" href="#inscricao">
-            Quero reservar minha vaga
+        <div className="final-actions mentorship-section-actions left-actions">
+          <a className="button primary" href={dataprevWhatsappUrl} target="_blank" rel="noreferrer" onClick={handleCtaClick("mentorship_problem_cta_click")}>
+            {dataprevMentorship.cta.primary}
           </a>
         </div>
       </section>
 
-      <section className="projects-section use-cases-section" id="programa">
+      <section className="projects-section mentorship-process-section" id="como-funciona">
         <div className="section-heading wide-heading">
-          <p className="eyebrow">A solução</p>
-          <h2>A mentoria transforma o edital em um plano de ação</h2>
-          <p>
-            Você terá uma rotina e saberá o que estudar, em qual profundidade, quando revisar, quais questões resolver e como corrigir a rota sem desperdiçar tempo com conteúdo de baixo impacto. Tudo isso em um formato pensado para otimizar seu resultado.
-          </p>
+          <p className="eyebrow">Como funciona</p>
+          <h2>Um fluxo para transformar o edital em execução semanal.</h2>
+        </div>
+        <div className="mentorship-process-grid">
+          {dataprevMentorship.process.map(([title, text], index) => (
+            <article className="mentorship-process-card" key={title}>
+              <span>{String(index + 1).padStart(2, "0")}</span>
+              <h3>{title}</h3>
+              <p>{text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="projects-section mentorship-deliverables-section" id="entregaveis">
+        <div className="section-heading wide-heading">
+          <p className="eyebrow">Entregáveis</p>
+          <h2>Veja como a mentoria transforma o edital em execução.</h2>
+          <p>Estes são os artefatos que dão forma prática à mentoria: eles mostram o que você usa para sair do edital aberto e entrar em uma rotina acompanhada até a prova.</p>
+        </div>
+        <div className="mentorship-deliverable-grid">
+          {dataprevMentorship.deliverables.map((item) => (
+            <button className="mentorship-deliverable-card" type="button" key={item.title} onClick={() => openDeliverable(item)}>
+              <span>{item.label}</span>
+              <h3>{item.title}</h3>
+              <div className="mentorship-demo-preview" aria-hidden="true">
+                {item.preview.map((previewItem) => (
+                  <em key={previewItem}>{previewItem}</em>
+                ))}
+              </div>
+              <p>{item.text}</p>
+            </button>
+          ))}
+        </div>
+      </section>
+
+      <section className="projects-section mentorship-benefits-section" id="beneficios">
+        <div className="section-heading wide-heading">
+          <p className="eyebrow">Benefícios</p>
+          <h2>O que muda na sua preparação.</h2>
         </div>
         <div className="mentorship-format-grid">
-          {dataprevMentorship.format.map(([title, text]) => (
+          {dataprevMentorship.benefits.map(([title, text]) => (
             <article className="risk-item" key={title}>
               <strong>{title}</strong>
               <span>{text}</span>
             </article>
           ))}
         </div>
-  
-        <div className="final-actions mentorship-section-actions">
-          <a className="button primary" href="#inscricao">
-            Entrar para a turma Dataprev
-          </a>
-        </div>
-      </section>
-
-      <section className="projects-section mentorship-schedule-section" id="cronograma">
-        <div className="section-heading wide-heading">
-          <p className="eyebrow">Cronograma dos encontros</p>
-          <h2>Cada semana termina com metas claras e objetivas até a prova.</h2>
-          <p>{dataprevMentorship.scheduleNote}</p>
-        </div>
-        <div className="mentorship-schedule-grid">
-          {dataprevMentorship.schedule.map((item) => (
-            <article className="mentorship-schedule-card" key={item.meeting}>
-              <span>{item.meeting}</span>
-              <h3>{item.title}</h3>
-              <p>{item.topics}</p>
-            </article>
-          ))}
-        </div>
-        <div className="final-actions mentorship-section-actions">
-          <a className="button primary" href="#inscricao">
-            Quero reservar minha vaga
-          </a>
-        </div>
-      </section>
-
-      <section className="projects-section mentorship-audience-section" id="publico">
-        <div className="section-heading wide-heading">
-          <p className="eyebrow">Perfil ideal</p>
-          <h2>Para quem é e para quem não é.</h2>
-        </div>
-        <div className="mentorship-audience-grid">
-          <article className="discovery-card">
-            <h3>Para quem é</h3>
-            <ul className="check-list">
-              <li>Candidatos do Perfil 3: Desenvolvimento de Software.</li>
-              <li>Estudantes nos últimos anos da graduação.</li>
-              <li>Quem trabalha e precisa transformar pouco tempo em prioridade.</li>
-              <li>Quem já começou a estudar, mas sente dispersão.</li>
-              <li>Quem quer acelerar com plano, revisão e questões.</li>
-            </ul>
-          </article>
-          <article className="discovery-card">
-            <h3>Para quem não é</h3>
-            <ul className="mentorship-not-list">
-              <li>Quem procura promessa de aprovação.</li>
-              <li>Quem não pretende executar uma rotina de estudo.</li>
-              <li>Quem quer apenas um curso gravado para assistir quando sobrar tempo.</li>
-            </ul>
-          </article>
-        </div>
-        <div className="final-actions mentorship-section-actions">
-          <a className="button primary" href="#inscricao">
-            Entrar para a turma Dataprev
-          </a>
-        </div>
       </section>
 
       <section className="projects-section mentorship-comparison-section" id="comparacao">
         <div className="section-heading wide-heading">
           <p className="eyebrow">Comparação</p>
-          <h2>O que muda quando você deixa de estudar no improviso.</h2>
+          <h2>Preparação com mais direção e menos dispersão.</h2>
         </div>
-        <div className="mentorship-audience-grid" aria-label="Comparação entre estudar sozinho e mentoria">
-          <article className="discovery-card">
-            <h3>Estudando sozinho</h3>
-            <ul className="mentorship-not-list">
-              <li>não sabe priorizar</li>
-              <li>excesso de conteúdo</li>
-              <li>dúvidas sem resposta</li>
-              <li>materiais dispersos</li>
-            </ul>
-          </article>
-          <article className="discovery-card">
-            <h3>Mentoria</h3>
-            <ul className="check-list">
-              <li>plano semanal</li>
-              <li>foco</li>
-              <li>acompanhamento</li>
-              <li>conteúdo organizado</li>
-            </ul>
-          </article>
-        </div>
-        <div className="final-actions mentorship-section-actions">
-          <a className="button primary" href="#inscricao">
-            Participar da turma
-          </a>
+        <div className="mentorship-comparison-table" role="table" aria-label="Comparação entre preparação sem acompanhamento e mentoria Dataprev">
+          <div className="mentorship-comparison-row mentorship-comparison-head" role="row">
+            <strong role="columnheader">Preparação sem acompanhamento</strong>
+            <strong role="columnheader">Mentoria Dataprev</strong>
+          </div>
+          {dataprevMentorship.comparison.map(([solo, mentored]) => (
+            <div className="mentorship-comparison-row" role="row" key={solo}>
+              <span role="cell">– {solo}</span>
+              <span role="cell">✓ {mentored}</span>
+            </div>
+          ))}
         </div>
       </section>
 
-      <section className="projects-section split-section" id="perfil">
+      <section className="projects-section mentorship-operations-section" id="turma">
+        <article className="discovery-card">
+          <p className="eyebrow">Turma pequena</p>
+          <h2>Por que a turma tem apenas sete participantes?</h2>
+          <p>
+            Porque o acompanhamento inclui análise da base, cronograma personalizado, correção de
+            simulados, dúvidas e ajustes de rota. Sete participantes é o limite definido para
+            preservar atenção individual sem perder os benefícios da troca em grupo.
+          </p>
+        </article>
+        <article className="discovery-card">
+          <p className="eyebrow">Dedicação esperada</p>
+          <h2>Quanto tempo reservar para estudar?</h2>
+          <p>
+            Como referência, o participante deve conseguir reservar aproximadamente 1h30 a 2h por
+            dia, ajustáveis conforme sua base e disponibilidade. O diagnóstico inicial será usado
+            para construir um plano realista.
+          </p>
+        </article>
+      </section>
+
+      <section className="projects-section mentorship-mentor-section" id="perfil">
+        <div className="mentorship-mentor-media">
+          <img src={profilePhoto} alt="Fabricio Santana" loading="lazy" />
+          <div className="mentorship-gallery-caption">Fabricio Santana.</div>
+        </div>
         <div>
           <p className="eyebrow">Mentor</p>
           <h2>Experiência em concursos, ensino superior e engenharia de software.</h2>
-        </div>
-        <div>
           <p className="large-copy">
-            Sou Fabricio Santana, analista de informática legislativa no Senado e professor. Meu desejo é ajudar você com um método de estudo e acompanhamento que aumentará suas chances de um bom desempenho na prova.
+            Minha contribuição não é apenas ensinar técnicas de estudo. É ajudar você a compreender
+            como Java, arquitetura, testes, segurança, dados e DevOps podem ser cobrados pela FGV,
+            conectando teoria, experiência profissional e resolução de questões.
           </p>
-          <ul className="check-list">
-            {dataprevMentorship.profileProof.map((item) => (
+          <div className="mentorship-pillar-grid">
+            <span>Aprovado em concursos de TI</span>
+            <span>Professor universitário</span>
+            <span>20+ anos em engenharia</span>
+          </div>
+          <ul className="check-list mentorship-mentor-list">
+            {dataprevMentorship.mentorProof.map((item) => (
               <li key={item}>{item}</li>
             ))}
           </ul>
-          <div className="final-actions mentorship-section-actions left-actions">
-            <a className="button primary" href="#inscricao">
-              Quero reservar minha vaga
-            </a>
-          </div>
+          <details className="mentorship-details">
+            <summary>Ver trajetória completa</summary>
+            <ul className="check-list">
+              {dataprevMentorship.trajectory.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </details>
         </div>
       </section>
 
       <section className="projects-section mentorship-testimonials-section" id="depoimentos">
         <div className="section-heading wide-heading">
           <p className="eyebrow">Prova social</p>
-          <h2>O que mudou para alunos e mentorados</h2>
-          <p>
-            Os depoimentos reforçam o ponto central da mentoria: transformar conteúdo amplo em
-            prioridade, rotina e acompanhamento até a prova.
-          </p>
+          <h2>Relatos de alunos e mentorados</h2>
         </div>
         <div className="mentorship-testimonials-grid">
           {dataprevMentorship.testimonials.map((item) => (
             <article className="testimonial-card" key={`${item.author}-${item.approval}`}>
+              <div className="testimonial-avatar" aria-hidden="true">{item.author[0]}</div>
               <p>“{item.quote}”</p>
               <strong>{item.author}</strong>
               <span>{item.approval}</span>
             </article>
           ))}
         </div>
-        <div className="final-actions mentorship-section-actions">
-          <a className="button primary" href="#inscricao">
-            Participar da turma
-          </a>
-        </div>
       </section>
 
-      <section className="projects-section mentorship-guarantee-section" id="garantia">
-        <div className="section-heading wide-heading">
-          <p className="eyebrow">Garantia</p>
-          <h2>Você sabe o que está contratando, sem promessa artificial de aprovação.</h2>
-        </div>
-        <div className="mentorship-guarantee-grid">
-          {dataprevMentorship.guarantee.map((item) => (
-            <article className="guarantee-card" key={item.title}>
-              <h3>{item.title}</h3>
-              <p>{item.text}</p>
-            </article>
-          ))}
-        </div>
-        <div className="final-actions mentorship-section-actions">
-          <a className="button primary" href="#inscricao">
-            Entrar para a turma Dataprev
-          </a>
-        </div>
-      </section>
-
-      <section className="projects-section faq-section" id="faq">
-        <div className="section-heading wide-heading">
-          <p className="eyebrow">Perguntas frequentes</p>
-          <h2>Antes de fazer sua inscrição</h2>
-        </div>
-        <div className="faq-grid">
-          {dataprevMentorship.faq.map((item) => (
-            <article className="faq-item" key={item.question}>
-              <h3>{item.question}</h3>
-              <p>{item.answer}</p>
-            </article>
-          ))}
-        </div>
-        <div className="final-actions mentorship-section-actions">
-          <a className="button primary" href="#inscricao">
-            Quero reservar minha vaga
-          </a>
-        </div>
-      </section>
-
-      <section className="projects-section discovery-band mentorship-band" id="edital">
-        <div>
-          <p className="eyebrow">A oportunidade</p>
-          <h2>Edital Dataprev 2026 analisado para orientar a preparação</h2>
-          <p>
-            A estratégia da turma parte do Edital 001/2026 da FGV para transformar peso da prova,
-            requisitos do perfil e conteúdo de Desenvolvimento de Software em prioridades reais de
-            estudo.
-          </p>
-          <a
-            className="button secondary light-button"
-            href={editalUrl}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Abrir edital oficial
-          </a>
-        </div>
-        <div className="discovery-card edital-card">
-          <ul>
-            {dataprevMentorship.editalFacts.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-        </div>
-        <div className="edital-timeline" aria-label="Principais datas do edital Dataprev 2026">
-          {dataprevMentorship.editalTimeline.map((item) => (
-            <article className="edital-timeline-item" key={`${item.date}-${item.title}`}>
-              <span>{item.date}</span>
-              <h3>{item.title}</h3>
-              <p>{item.text}</p>
-            </article>
-          ))}
-        </div>
-        <div className="final-actions mentorship-section-actions">
-          <a className="button primary" href="#inscricao">
-            Participar da turma
-          </a>
-        </div>
-      </section>
-
-      <section className="projects-final mentorship-registration-section" id="inscricao">
+      <section className="projects-final mentorship-registration-section" id="investimento" onMouseEnter={() => trackMentorshipEvent("mentorship_price_view")}>
         <div className="mentorship-registration-heading">
-          <p className="eyebrow">Inscrição</p>
-          <h2>Reserve sua vaga na turma da mentoria Dataprev.</h2>
-          <p>
-            As turmas serão fechadas com até 7 estudantes para preservar acompanhamento individual.
-            Chame no WhatsApp para confirmar disponibilidade e concluir sua inscrição.
-          </p>
+          <p className="eyebrow">Investimento</p>
+          <h2>Mentoria Dataprev — Perfil 3</h2>
+          <p>Entre em contato para confirmar a disponibilidade da turma e sua elegibilidade para a condição especial.</p>
         </div>
         <div className="mentorship-offer-layout">
           <div className="mentorship-registration-included">
             <h3>O que está incluso</h3>
-            <p>
-              Encontros ao vivo gravados, suporte durante a semana e materiais objetivos para
-              transformar o edital em rotina de estudo até a véspera da prova.
-            </p>
-            <div className="mentorship-included-grid">
-              {dataprevMentorship.included.map((item) => (
-                <article className="risk-item" key={item}>
-                  {item}
-                </article>
+            <ul className="check-list">
+              {dataprevMentorship.offerItems.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+            <div className="mentorship-scarcity-note">
+              {dataprevMentorship.urgency.map((item) => (
+                <p key={item}>{item}</p>
               ))}
             </div>
           </div>
@@ -1346,24 +1304,96 @@ const DataprevMentorshipLanding = () => {
             </div>
             <div className="mentorship-price-alt">
               <strong>{dataprevMentorship.pricing.alumni}</strong>
-              <span>
-                {dataprevMentorship.pricing.installments} para{" "}
-                {dataprevMentorship.pricing.alumniLabel}
-              </span>
+              <span>{dataprevMentorship.pricing.installments} para {dataprevMentorship.pricing.alumniLabel}</span>
             </div>
-            <div className="final-actions registration-actions">
-              <a
-                className="button primary"
-                href={dataprevWhatsappUrl}
-                target="_blank"
-                rel="noreferrer"
-              >
-                Entrar para a turma Dataprev
-              </a>
-            </div>
+            <p className="mentorship-guarantee-note">Garantia incondicional de 14 dias. Sem promessa de aprovação.</p>
+            <a className="button primary" href={dataprevWhatsappUrl} target="_blank" rel="noreferrer" onClick={handleCtaClick("mentorship_whatsapp_click")}>
+              {dataprevMentorship.cta.final}
+            </a>
           </aside>
         </div>
       </section>
+
+      <section className="projects-section discovery-band mentorship-band" id="edital">
+        <div>
+          <p className="eyebrow">Edital</p>
+          <h2>Dataprev 2026 analisado para orientar a preparação.</h2>
+          <p>
+            A estratégia da turma parte do Edital 001/2026 da FGV para transformar peso da prova,
+            requisitos do perfil e conteúdo de Desenvolvimento de Software em prioridades reais de estudo.
+          </p>
+          <a className="button secondary light-button" href={editalUrl} target="_blank" rel="noreferrer">
+            Abrir edital oficial
+          </a>
+        </div>
+        <div className="discovery-card edital-card">
+          <ul>
+            {dataprevMentorship.editalFacts.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </div>
+        <div className="edital-timeline" aria-label="Principais datas do edital Dataprev 2026">
+          {dataprevMentorship.editalTimeline.map(([date, title]) => (
+            <article className="edital-timeline-item" key={`${date}-${title}`}>
+              <span>{date}</span>
+              <h3>{title}</h3>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="projects-section faq-section" id="faq">
+        <div className="section-heading wide-heading">
+          <p className="eyebrow">Perguntas frequentes</p>
+          <h2>Antes de fazer sua inscrição</h2>
+        </div>
+        <div className="faq-grid mentorship-faq-grid">
+          {dataprevMentorship.faq.map((item) => (
+            <details className="faq-item mentorship-faq-item" key={item.question} onToggle={(event) => event.currentTarget.open && trackMentorshipEvent("mentorship_faq_open", { question: item.question })}>
+              <summary>{item.question}</summary>
+              <p>{item.answer}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      <section className="projects-final mentorship-final-cta" id="inscricao">
+        <p className="eyebrow">Próximo passo</p>
+        <h2>Quer verificar se ainda há disponibilidade na turma?</h2>
+        <p>
+          A conversa inicial serve para confirmar encaixe, disponibilidade e condição aplicável antes da inscrição.
+        </p>
+        <div className="final-actions">
+          <a className="button primary" href={dataprevWhatsappUrl} target="_blank" rel="noreferrer" onClick={handleCtaClick("mentorship_final_cta_click")}>
+            {dataprevMentorship.cta.final}
+          </a>
+        </div>
+      </section>
+
+      {showMobileCta && (
+        <a className="mentorship-mobile-cta" href={dataprevWhatsappUrl} target="_blank" rel="noreferrer" onClick={handleCtaClick("mentorship_mobile_sticky_cta_click")}>
+          Verificar disponibilidade
+        </a>
+      )}
+
+      {selectedDeliverable && (
+        <div className="mentorship-modal" role="dialog" aria-modal="true" aria-labelledby="deliverable-title" onClick={() => setSelectedDeliverable(null)}>
+          <div className="mentorship-modal-panel" onClick={(event) => event.stopPropagation()}>
+            <button className="mentorship-modal-close" type="button" onClick={() => setSelectedDeliverable(null)} aria-label="Fechar demonstração">
+              ×
+            </button>
+            <span className="status-label">{selectedDeliverable.label}</span>
+            <h2 id="deliverable-title">{selectedDeliverable.title}</h2>
+            <div className="mentorship-demo-large">
+              {selectedDeliverable.preview.map((previewItem) => (
+                <span key={previewItem}>{previewItem}</span>
+              ))}
+            </div>
+            <p>{selectedDeliverable.text}</p>
+          </div>
+        </div>
+      )}
 
       <footer className="site-footer">
         <p>Fabricio Santana</p>

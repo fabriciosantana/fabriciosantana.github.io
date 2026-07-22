@@ -15,7 +15,7 @@ A nova versão deve combinar:
 
 # Prioridade P0 — Alterações críticas para conversão
 
-## Tarefa 1 — Reestruturar a primeira dobra
+## [x] Tarefa 1 — Reestruturar a primeira dobra
 
 ### Objetivo
 
@@ -66,7 +66,7 @@ Fazer o visitante entender, em até cinco segundos:
 
 ---
 
-## Tarefa 2 — Inserir autoridade resumida na primeira dobra
+## [x] Tarefa 2 — Inserir autoridade resumida na primeira dobra
 
 ### Conteúdo
 
@@ -84,7 +84,7 @@ Fazer o visitante entender, em até cinco segundos:
 
 ---
 
-## Tarefa 3 — Padronizar todos os CTAs
+## [x] Tarefa 3 — Padronizar todos os CTAs
 
 ### CTA principal
 
@@ -111,7 +111,7 @@ Fazer o visitante entender, em até cinco segundos:
 
 ---
 
-## Tarefa 4 — Criar seção “Como funciona”
+## [x] Tarefa 4 — Criar seção “Como funciona”
 
 ### Conteúdo
 
@@ -148,7 +148,7 @@ Revisão orientada pelos erros e definição da estratégia para a prova.
 
 ---
 
-## Tarefa 5 — Mostrar entregáveis reais
+## [x] Tarefa 5 — Mostrar entregáveis reais
 
 ### Criar seção
 
@@ -174,7 +174,7 @@ Revisão orientada pelos erros e definição da estratégia para a prova.
 
 # Prioridade P1 — Fortalecimento da proposta de valor
 
-## Tarefa 6 — Reescrever a seção “O problema”
+## [x] Tarefa 6 — Reescrever a seção “O problema”
 
 ### Manter o título
 
@@ -211,7 +211,7 @@ Revisão orientada pelos erros e definição da estratégia para a prova.
 
 ---
 
-## Tarefa 7 — Tornar a seção de benefícios mais concreta
+## [x] Tarefa 7 — Tornar a seção de benefícios mais concreta
 
 ### Turma de até sete participantes
 
@@ -245,7 +245,7 @@ Revisão orientada pelos erros e definição da estratégia para a prova.
 
 ---
 
-## Tarefa 8 — Melhorar a comparação
+## [x] Tarefa 8 — Melhorar a comparação
 
 ### Preparação sem acompanhamento
 
@@ -272,7 +272,7 @@ Revisão orientada pelos erros e definição da estratégia para a prova.
 
 ---
 
-## Tarefa 9 — Explicar por que são apenas sete participantes
+## [x] Tarefa 9 — Explicar por que são apenas sete participantes
 
 ### Título
 
@@ -290,7 +290,7 @@ Revisão orientada pelos erros e definição da estratégia para a prova.
 
 ---
 
-## Tarefa 10 — Incluir referência de dedicação esperada
+## [x] Tarefa 10 — Incluir referência de dedicação esperada
 
 ### Texto sugerido
 
@@ -310,7 +310,7 @@ Revisão orientada pelos erros e definição da estratégia para a prova.
 
 # Prioridade P2 — Autoridade e prova social
 
-## Tarefa 11 — Melhorar a seção do mentor
+## [x] Tarefa 11 — Melhorar a seção do mentor
 
 ### Introdução sugerida
 
@@ -332,7 +332,7 @@ Revisão orientada pelos erros e definição da estratégia para a prova.
 
 ---
 
-## Tarefa 12 — Fortalecer os depoimentos
+## [x] Tarefa 12 — Fortalecer os depoimentos
 
 ### Para cada depoimento, incluir, mediante autorização
 
@@ -366,7 +366,7 @@ Revisão orientada pelos erros e definição da estratégia para a prova.
 
 ---
 
-## Tarefa 13 — Adicionar evidências visuais de autoridade
+## [x] Tarefa 13 — Adicionar evidências visuais de autoridade
 
 ### Criar uma pequena galeria com
 
@@ -387,7 +387,7 @@ Revisão orientada pelos erros e definição da estratégia para a prova.
 
 # Prioridade P3 — Oferta, preço e redução de risco
 
-## Tarefa 14 — Antecipar a seção de investimento
+## [x] Tarefa 14 — Antecipar a seção de investimento
 
 ### Nova posição recomendada
 
@@ -407,7 +407,7 @@ Mover a oferta para depois de:
 
 ---
 
-## Tarefa 15 — Melhorar o card de oferta
+## [x] Tarefa 15 — Melhorar o card de oferta
 
 ### Estrutura sugerida
 
@@ -442,7 +442,7 @@ Mover a oferta para depois de:
 
 ---
 
-## Tarefa 16 — Inserir urgência legítima
+## [x] Tarefa 16 — Inserir urgência legítima
 
 ### Informações permitidas
 
@@ -465,7 +465,7 @@ Mover a oferta para depois de:
 
 # Prioridade P4 — Conteúdo, UX e desempenho
 
-## Tarefa 17 — Reduzir repetições
+## [x] Tarefa 17 — Reduzir repetições
 
 ### Eliminar duplicações entre
 
@@ -485,7 +485,7 @@ Mover a oferta para depois de:
 
 ---
 
-## Tarefa 18 — Reduzir espaços verticais excessivos
+## [x] Tarefa 18 — Reduzir espaços verticais excessivos
 
 ### Implementação
 
@@ -509,7 +509,7 @@ Mover a oferta para depois de:
 
 ---
 
-## Tarefa 19 — Aumentar diversidade visual
+## [x] Tarefa 19 — Aumentar diversidade visual
 
 ### Utilizar
 
@@ -530,7 +530,7 @@ Mover a oferta para depois de:
 
 ---
 
-## Tarefa 20 — Criar CTA fixo no mobile
+## [x] Tarefa 20 — Criar CTA fixo no mobile
 
 ### Texto
 
@@ -546,7 +546,7 @@ Mover a oferta para depois de:
 
 ---
 
-## Tarefa 21 — Implementar analytics de conversão
+## [x] Tarefa 21 — Implementar analytics de conversão
 
 ### Eventos a registrar
 
@@ -567,7 +567,7 @@ Mover a oferta para depois de:
 
 ---
 
-## Tarefa 22 — Revisar SEO e compartilhamento
+## [x] Tarefa 22 — Revisar SEO e compartilhamento
 
 ### Adicionar ou revisar
 
@@ -590,7 +590,7 @@ Mover a oferta para depois de:
 
 ---
 
-## Tarefa 23 — Revisar consistência editorial
+## [x] Tarefa 23 — Revisar consistência editorial
 
 ### Corrigir
 
@@ -716,3 +716,13 @@ A nova versão deve aumentar a conversão por meio de:
 - consistência;
 - redução de risco;
 - clareza do próximo passo.
+
+---
+
+## Registro de conclusão
+
+Atualizado em 2026-07-22.
+
+As tarefas foram implementadas na landing page React em `site/src/App.jsx`, com estilos complementares em `site/src/styles.css`. A implementação inclui nova primeira dobra, credenciais resumidas, CTAs padronizados para WhatsApp, seção “Como funciona”, entregáveis demonstrativos em modal, benefícios, comparação, explicação da turma reduzida, dedicação esperada, seção do mentor, depoimentos, oferta antecipada, urgência legítima, FAQ em acordeão, CTA mobile, eventos `dataLayer`, metadados SEO, URL canônica e dados estruturados básicos.
+
+Adaptação registrada: os entregáveis foram implementados como painéis HTML interativos dentro da própria página e abrem em modal. A seção passou a apresentar artefatos reais da mentoria, como diagnóstico, matriz de prioridade, cronograma, caderno de treino e painel de evolução, sem depender de imagens artificiais.
